@@ -8,10 +8,10 @@ bin
 
 # ignore
 *.log
-logs/
+logs
 log
 run-data
-generated/
+generated
 
 # idea
 out
