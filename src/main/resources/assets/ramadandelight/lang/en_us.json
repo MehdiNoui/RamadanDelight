@@ -1,5 +1,18 @@
 {
   "creativetab.ramadandelight_tab": "Ramadan Delight",
+  "item.ramadandelight.harira": "Harira",
+  "item.ramadandelight.chorba": "Chorba",
+  "item.ramadandelight.haleem": "Haleem",
   "item.ramadandelight.bourek": "Bourek",
+  "item.ramadandelight.bourek_sheet": "Bourek Sheet",
+  "item.ramadandelight.raw_bourek": "Raw Bourek",
+  "item.ramadandelight.raw_samosa": "Raw Samosa",
+  "item.ramadandelight.samosa": "Samosa",
+  "item.ramadandelight.raw_kebab": "Raw Kebab",
+  "item.ramadandelight.kebab": "Kebab",
+  "item.ramadandelight.manakish": "Manakish",
+  "item.ramadandelight.makloba": "Makloba",
+  "item.ramadandelight.sayadieh": "Sayadieh",
+  "item.ramadandelight.tabbouleh": "Tabbouleh",
   "item.ramadandelight.parsley": "Parsley"
 }

@@ -17,7 +17,20 @@ public class ModCreativeTab {
             () -> CreativeModeTab.builder().icon(()-> new ItemStack(ModItems.BOUREK.get()))
                     .title(Component.translatable("creativetab.ramadandelight_tab"))
                     .displayItems((pParameters, pOutput) ->{
+                                pOutput.accept(ModItems.HARIRA.get());
+                                pOutput.accept(ModItems.CHORBA.get());
+                                pOutput.accept(ModItems.HALEEM.get());
+                                pOutput.accept(ModItems.BOUREK_SHEET.get());
+                                pOutput.accept(ModItems.RAW_BOUREK.get());
                                 pOutput.accept(ModItems.BOUREK.get());
+                                pOutput.accept(ModItems.RAW_SAMOSA.get());
+                                pOutput.accept(ModItems.SAMOSA.get());
+                                pOutput.accept(ModItems.RAW_KEBAB.get());
+                                pOutput.accept(ModItems.KEBAB.get());
+                                pOutput.accept(ModItems.MANAKISH.get());
+                                pOutput.accept(ModItems.MAKLOBA.get());
+                                pOutput.accept(ModItems.SAYADIEH.get());
+                                pOutput.accept(ModItems.TABBOULEH.get());
                                 pOutput.accept(ModItems.PARSLEY.get());
                     }
                     ).build());

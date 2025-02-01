@@ -17,7 +17,20 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        simpleItem(ModItems.HARIRA);
+        simpleItem(ModItems.CHORBA);
+        simpleItem(ModItems.HALEEM);
         simpleItem(ModItems.BOUREK);
+        simpleItem(ModItems.BOUREK_SHEET);
+        simpleItem(ModItems.RAW_BOUREK);
+        simpleItem(ModItems.RAW_SAMOSA);
+        simpleItem(ModItems.SAMOSA);
+        simpleItem(ModItems.RAW_KEBAB);
+        simpleItem(ModItems.KEBAB);
+        simpleItem(ModItems.MANAKISH);
+        simpleItem(ModItems.MAKLOBA);
+        simpleItem(ModItems.SAYADIEH);
+        simpleItem(ModItems.TABBOULEH);
         simpleItem(ModItems.PARSLEY);
     }
 

@@ -9,6 +9,8 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import vectorwing.farmersdelight.common.item.ConsumableItem;
+import vectorwing.farmersdelight.common.item.DrinkableItem;
 
 
 public class ModItems {
@@ -28,8 +30,41 @@ public class ModItems {
         ITEMS.register(eventBus);
     }
 
+    public static final RegistryObject<Item> HARIRA = ITEMS.register("harira",
+            ()->new ConsumableItem(bowlFoodItem(ModFoods.HARIRA),true));
+    public static final RegistryObject<Item> CHORBA = ITEMS.register("chorba",
+            ()->new ConsumableItem(bowlFoodItem(ModFoods.CHORBA),true));
+    public static final RegistryObject<Item> HALEEM = ITEMS.register("haleem",
+            ()->new ConsumableItem(bowlFoodItem(ModFoods.HALEEM),true));
+
     public static final RegistryObject<Item> BOUREK = ITEMS.register("bourek",
-            ()->new Item(new Item.Properties().food(ModFoods.BOUREK)));
+            () -> new Item(new Item.Properties().food(ModFoods.BOUREK)));
+    public static final RegistryObject<Item> BOUREK_SHEET = ITEMS.register("bourek_sheet",
+            () -> new Item(new Item.Properties().food(ModFoods.BOUREK_SHEET)));
+    public static final RegistryObject<Item> RAW_BOUREK = ITEMS.register("raw_bourek",
+            () -> new Item(new Item.Properties().food(ModFoods.RAW_BOUREK)));
+
+    public static final RegistryObject<Item> RAW_SAMOSA = ITEMS.register("raw_samosa",
+            () -> new Item(new Item.Properties().food(ModFoods.RAW_SAMOSA)));
+    public static final RegistryObject<Item> SAMOSA = ITEMS.register("samosa",
+            () -> new Item(new Item.Properties().food(ModFoods.SAMOSA)));
+
+    public static final RegistryObject<Item> RAW_KEBAB = ITEMS.register("raw_kebab",
+            () -> new Item(new Item.Properties().food(ModFoods.RAW_KEBAB)));
+    public static final RegistryObject<Item> KEBAB = ITEMS.register("kebab",
+            () -> new Item(new Item.Properties().food(ModFoods.KEBAB)));
+
+    public static final RegistryObject<Item> MANAKISH = ITEMS.register("manakish",
+            () -> new Item(new Item.Properties().food(ModFoods.MANAKISH)));
+
+    public static final RegistryObject<Item> MAKLOBA = ITEMS.register("makloba",
+            ()->new ConsumableItem(bowlFoodItem(ModFoods.MAKLOBA),true));
+    public static final RegistryObject<Item> SAYADIEH = ITEMS.register("sayadieh",
+            ()->new ConsumableItem(bowlFoodItem(ModFoods.SAYADIEH),true));
+
+    public static final RegistryObject<Item> TABBOULEH = ITEMS.register("tabbouleh",
+            ()->new ConsumableItem(bowlFoodItem(ModFoods.TABBOULEH),true));
+
     public static final RegistryObject<Item> PARSLEY = ITEMS.register("parsley",
             ()->new Item(new Item.Properties()));
 }
