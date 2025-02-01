@@ -1,6 +1,7 @@
 package net.mehdinoui.ramadandelight.common.datagen;
 
 import net.mehdinoui.ramadandelight.RamadanDelight;
+import net.mehdinoui.ramadandelight.common.registry.ModItems;
 import net.minecraft.data.PackOutput;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Item;
@@ -16,7 +17,8 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        //simpleItem(ModItems.BEETROOT_POUCH);
+        simpleItem(ModItems.BOUREK);
+        simpleItem(ModItems.PARSLEY);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

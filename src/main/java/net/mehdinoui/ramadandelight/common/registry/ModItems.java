@@ -1,6 +1,7 @@
 package net.mehdinoui.ramadandelight.common.registry;
 
 import net.mehdinoui.ramadandelight.RamadanDelight;
+import net.mehdinoui.ramadandelight.common.item.ModFoods;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
@@ -27,6 +28,8 @@ public class ModItems {
         ITEMS.register(eventBus);
     }
 
-    public static final RegistryObject<Item> TEST = ITEMS.register("test",
+    public static final RegistryObject<Item> BOUREK = ITEMS.register("bourek",
+            ()->new Item(new Item.Properties().food(ModFoods.BOUREK)));
+    public static final RegistryObject<Item> PARSLEY = ITEMS.register("parsley",
             ()->new Item(new Item.Properties()));
 }

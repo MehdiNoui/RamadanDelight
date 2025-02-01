@@ -14,10 +14,11 @@ public class ModCreativeTab {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, RamadanDelight.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> RamadanDelight_TAB = CREATIVE_MODE_TABS.register("veggiesdelight_tab",
-            () -> CreativeModeTab.builder().icon(()-> new ItemStack(ModItems.TEST.get()))
-                    .title(Component.translatable("creativetab.veggiesdelight_tab"))
+            () -> CreativeModeTab.builder().icon(()-> new ItemStack(ModItems.BOUREK.get()))
+                    .title(Component.translatable("creativetab.ramadandelight_tab"))
                     .displayItems((pParameters, pOutput) ->{
-
+                                pOutput.accept(ModItems.BOUREK.get());
+                                pOutput.accept(ModItems.PARSLEY.get());
                     }
                     ).build());
 
