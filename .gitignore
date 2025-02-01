@@ -11,6 +11,7 @@ bin
 logs
 log
 run-data/logs/
+run-data/config/
 src/generated/
 
 # idea
