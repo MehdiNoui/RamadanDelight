@@ -6,6 +6,13 @@ bin
 .classpath
 .project
 
+# ignore
+*.log
+logs/
+log
+run-data
+generated/
+
 # idea
 out
 *.ipr
