@@ -4,6 +4,7 @@ import net.mehdinoui.ramadandelight.RamadanDelight;
 import net.mehdinoui.ramadandelight.common.item.ModFoods;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.Items;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -67,4 +68,7 @@ public class ModItems {
 
     public static final RegistryObject<Item> PARSLEY = ITEMS.register("parsley",
             ()->new Item(new Item.Properties()));
+    public static final RegistryObject<Item> PARSLEY_SEEDS = ITEMS.register("parsley_seeds",
+            ()->new ItemNameBlockItem(ModBlocks.PARSLEY_CROP.get(),new Item.Properties()));
+
 }

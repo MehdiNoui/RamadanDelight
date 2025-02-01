@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/crop",
+  "textures": {
+    "crop": "ramadandelight:block/parsley_stage0"
+  },
+  "render_type": "minecraft:cutout"
+}

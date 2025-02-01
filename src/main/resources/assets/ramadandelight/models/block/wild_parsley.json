@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "ramadandelight:block/wild_parsley"
+  },
+  "render_type": "minecraft:cutout"
+}

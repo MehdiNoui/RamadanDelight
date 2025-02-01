@@ -32,6 +32,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.SAYADIEH);
         simpleItem(ModItems.TABBOULEH);
         simpleItem(ModItems.PARSLEY);
+        simpleItem(ModItems.PARSLEY_SEEDS);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
