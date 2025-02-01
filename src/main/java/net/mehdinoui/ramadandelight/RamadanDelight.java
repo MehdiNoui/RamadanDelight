@@ -17,7 +17,6 @@ import org.slf4j.Logger;
 @Mod(RamadanDelight.MOD_ID)
 public class RamadanDelight
 {
-    //testing github
     public static final String MOD_ID = "ramadandelight";
     private static final Logger LOGGER = LogUtils.getLogger();
 
