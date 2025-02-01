@@ -3,6 +3,7 @@ plugins {
     id 'idea'
     id 'maven-publish'
     id 'net.minecraftforge.gradle' version '[6.0,6.2)'
+    id 'org.spongepowered.mixin' version '0.7.+'
     id 'org.parchmentmc.librarian.forgegradle' version '1.+'
 }
 
@@ -12,7 +13,6 @@ group = mod_group_id
 base {
     archivesName = mod_id
 }
-
 
 java.toolchain.languageVersion = JavaLanguageVersion.of(17)
 
@@ -33,12 +33,32 @@ minecraft {
         }
 
         client {
-            property 'forge.enabledGameTestNamespaces', mod_id
+            workingDirectory project.file('run')
+            // Recommended logging data for a userdev environment
+            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+
+            // Recommended logging level for the console
+            property 'forge.logging.console.level', 'debug'
+            mods {
+                farmersdelight {
+                    source sourceSets.main
+                }
+            }
         }
 
         server {
-            property 'forge.enabledGameTestNamespaces', mod_id
-            args '--nogui'
+            workingDirectory project.file('run')
+
+            // Recommended logging data for a userdev environment
+            property 'forge.logging.markers', 'SCAN,REGISTRIES,REGISTRYDUMP'
+
+            // Recommended logging level for the console
+            property 'forge.logging.console.level', 'debug'
+            mods {
+                farmersdelight {
+                    source sourceSets.main
+                }
+            }
         }
         gameTestServer {
             property 'forge.enabledGameTestNamespaces', mod_id
@@ -55,11 +75,47 @@ minecraft {
 sourceSets.main.resources { srcDir 'src/generated/resources' }
 
 repositories {
+    maven {
+        // CraftTweaker and JEI
+        name = "BlameJared"
+        url = "https://maven.blamejared.com/"
+        content {
+            includeGroup "com.blamejared.crafttweaker"
+            includeGroup "org.openzen.zencode"
+            includeGroup "mezz.jei"
+        }
+    }
+    maven {
+        // JEI fallback
+        name = "Modmaven"
+        url = "https://modmaven.dev/"
+        content {
+            includeGroup "mezz.jei"
+        }
+    }
+    maven {
+        name = "Cursemaven"
+        url "https://www.cursemaven.com"
+        content {
+            includeGroup "curse.maven"
+        }
+    }
+    maven { url "https://maven.ryanliptak.com/" }
+
 }
 
 dependencies {
     minecraft "net.minecraftforge:forge:${minecraft_version}-${forge_version}"
 
+    implementation fg.deobf("curse.maven:farmers-delight-398521:${4679319}")
+
+    compileOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-common-api:${jei_version}"))
+    compileOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge-api:${jei_version}"))
+    // at runtime, use the full JEI jar for Forge
+    runtimeOnly(fg.deobf("mezz.jei:jei-${minecraft_version}-forge:${jei_version}"))
+
+    compileOnly fg.deobf("squeek.appleskin:appleskin-forge:${appleskin_version}:api")
+    runtimeOnly fg.deobf("squeek.appleskin:appleskin-forge:${appleskin_version}")
 }
 
 tasks.named('processResources', ProcessResources).configure {

@@ -9,17 +9,24 @@ version="${mod_version}" #mandatory
 displayName="${mod_name}" #mandatory
 authors="${mod_authors}" #optiona
 description='''${mod_description}'''
-
+# Forge dep
 [[dependencies.ramadandelight]]
-    modId="forge" #mandatory
-    mandatory=true #mandatory
-    versionRange="${forge_version_range}" #mandatory
+    modId="forge"
+    mandatory=true
+    versionRange="${forge_version_range}"
     ordering="NONE"
     side="BOTH"
-# Here's another dependency
+# minecraft dep
 [[dependencies.ramadandelight]]
     modId="minecraft"
     mandatory=true
     versionRange="${minecraft_version_range}"
     ordering="NONE"
     side="BOTH"
+# farmer's delight dep
+[[dependencies.ramadandelight]]
+modId="farmersdelight"
+mandatory=true
+versionRange="[1.2.3,)"
+ordering="NONE"
+side="BOTH"
