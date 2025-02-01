@@ -36,7 +36,7 @@ public class ModBlocks {
     }
 
     public static final RegistryObject<Block> PARSLEY_BAG = registerBlock("parsley_bag",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
 
     public static final RegistryObject<Block> PARSLEY_CROP = BLOCKS.register("parsley_crop",
             () -> new ParsleyCropBlock(Block.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));

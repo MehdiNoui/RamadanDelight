@@ -32,7 +32,7 @@ public class ModCreativeTab {
                                 pOutput.accept(ModItems.SAYADIEH.get());
                                 pOutput.accept(ModItems.TABBOULEH.get());
                                 pOutput.accept(ModItems.PARSLEY.get());
-                                //pOutput.accept(ModBlocks.PARSLEY_BAG.get());
+                                pOutput.accept(ModBlocks.PARSLEY_BAG.get());
                                 pOutput.accept(ModItems.PARSLEY_SEEDS.get());
                                 pOutput.accept(ModBlocks.WILD_PARSLEY.get());
                     }
