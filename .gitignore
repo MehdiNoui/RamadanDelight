@@ -10,8 +10,8 @@ bin
 *.log
 logs
 log
-run-data
-generated
+run-data/logs/
+src/generated/
 
 # idea
 out
