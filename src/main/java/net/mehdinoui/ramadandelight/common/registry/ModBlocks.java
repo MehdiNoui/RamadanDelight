@@ -46,5 +46,5 @@ public class ModBlocks {
 
 
     public static final RegistryObject<Block> MAKLOBA_BLOCK = BLOCKS.register("makloba_block",
-            () -> new FeastBlock(Block.Properties.copy(Blocks.PUMPKIN), ModItems.MAKLOBA, false));
+            () -> new FeastBlock(Block.Properties.copy(Blocks.CAKE), ModItems.MAKLOBA, true));
 }

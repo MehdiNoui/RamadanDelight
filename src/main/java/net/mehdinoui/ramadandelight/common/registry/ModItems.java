@@ -15,7 +15,6 @@ import vectorwing.farmersdelight.common.item.ConsumableItem;
 import vectorwing.farmersdelight.common.item.DrinkableItem;
 
 import static vectorwing.farmersdelight.common.registry.ModItems.basicItem;
-import static vectorwing.farmersdelight.common.registry.ModItems.registerWithTab;
 
 
 public class ModItems {
@@ -62,8 +61,9 @@ public class ModItems {
     public static final RegistryObject<Item> MANAKISH = ITEMS.register("manakish",
             () -> new Item(new Item.Properties().food(ModFoods.MANAKISH)));
 
-    public static final RegistryObject<Item> MAKLOBA_BLOCK = registerWithTab("makloba_block",
+    public static final RegistryObject<Item> MAKLOBA_BLOCK = ITEMS.register("makloba_block",
             () -> new BlockItem(ModBlocks.MAKLOBA_BLOCK.get(), basicItem().stacksTo(1)));
+
     public static final RegistryObject<Item> MAKLOBA = ITEMS.register("makloba",
             ()->new ConsumableItem(bowlFoodItem(ModFoods.MAKLOBA),true));
 
