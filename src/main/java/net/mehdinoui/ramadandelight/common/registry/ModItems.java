@@ -3,6 +3,7 @@ package net.mehdinoui.ramadandelight.common.registry;
 import net.mehdinoui.ramadandelight.RamadanDelight;
 import net.mehdinoui.ramadandelight.common.item.ModFoods;
 import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemNameBlockItem;
 import net.minecraft.world.item.Items;
@@ -12,6 +13,9 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import vectorwing.farmersdelight.common.item.ConsumableItem;
 import vectorwing.farmersdelight.common.item.DrinkableItem;
+
+import static vectorwing.farmersdelight.common.registry.ModItems.basicItem;
+import static vectorwing.farmersdelight.common.registry.ModItems.registerWithTab;
 
 
 public class ModItems {
@@ -58,8 +62,11 @@ public class ModItems {
     public static final RegistryObject<Item> MANAKISH = ITEMS.register("manakish",
             () -> new Item(new Item.Properties().food(ModFoods.MANAKISH)));
 
+    public static final RegistryObject<Item> MAKLOBA_BLOCK = registerWithTab("makloba_block",
+            () -> new BlockItem(ModBlocks.MAKLOBA_BLOCK.get(), basicItem().stacksTo(1)));
     public static final RegistryObject<Item> MAKLOBA = ITEMS.register("makloba",
             ()->new ConsumableItem(bowlFoodItem(ModFoods.MAKLOBA),true));
+
     public static final RegistryObject<Item> SAYADIEH = ITEMS.register("sayadieh",
             ()->new ConsumableItem(bowlFoodItem(ModFoods.SAYADIEH),true));
 

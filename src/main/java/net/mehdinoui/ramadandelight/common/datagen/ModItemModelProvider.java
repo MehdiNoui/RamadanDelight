@@ -28,6 +28,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.RAW_KEBAB);
         simpleItem(ModItems.KEBAB);
         simpleItem(ModItems.MANAKISH);
+        simpleItem(ModItems.MAKLOBA_BLOCK);
         simpleItem(ModItems.MAKLOBA);
         simpleItem(ModItems.SAYADIEH);
         simpleItem(ModItems.TABBOULEH);

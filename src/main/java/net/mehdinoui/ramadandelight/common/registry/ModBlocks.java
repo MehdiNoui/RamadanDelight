@@ -14,6 +14,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import vectorwing.farmersdelight.common.block.FeastBlock;
 
 
 import java.util.function.Supplier;
@@ -37,11 +38,13 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> PARSLEY_BAG = registerBlock("parsley_bag",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
-
     public static final RegistryObject<Block> PARSLEY_CROP = BLOCKS.register("parsley_crop",
             () -> new ParsleyCropBlock(Block.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
     public static final RegistryObject<Block> WILD_PARSLEY = registerBlock("wild_parsley",
             () -> new FlowerBlock(() -> MobEffects.LUCK, 5,
                     BlockBehaviour.Properties.copy(Blocks.ALLIUM).noCollission().noOcclusion()));
 
+
+    public static final RegistryObject<Block> MAKLOBA_BLOCK = BLOCKS.register("makloba_block",
+            () -> new FeastBlock(Block.Properties.copy(Blocks.PUMPKIN), ModItems.MAKLOBA, false));
 }
