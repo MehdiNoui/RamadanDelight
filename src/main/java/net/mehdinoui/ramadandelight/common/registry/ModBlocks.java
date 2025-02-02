@@ -1,6 +1,7 @@
 package net.mehdinoui.ramadandelight.common.registry;
 
 import net.mehdinoui.ramadandelight.RamadanDelight;
+import net.mehdinoui.ramadandelight.common.block.BourekBlock;
 import net.mehdinoui.ramadandelight.common.block.MaklobaBlock;
 import net.mehdinoui.ramadandelight.common.block.ParsleyCropBlock;
 import net.minecraft.world.effect.MobEffects;
@@ -46,4 +47,6 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> MAKLOBA_BLOCK = BLOCKS.register("makloba_block",
             () -> new MaklobaBlock(Block.Properties.copy(Blocks.CAKE), ModItems.MAKLOBA, true));
+    public static final RegistryObject<Block> BOUREK_BLOCK = BLOCKS.register("bourek_block",
+            () -> new BourekBlock(Block.Properties.copy(Blocks.CAKE)));
 }

@@ -48,6 +48,10 @@ public class ModItems {
     public static final RegistryObject<Item> RAW_BOUREK = ITEMS.register("raw_bourek",
             () -> new Item(new Item.Properties().food(ModFoods.RAW_BOUREK)));
 
+    public static final RegistryObject<Item> BOUREK_BLOCK = ITEMS.register("bourek_block",
+            () -> new BlockItem(ModBlocks.BOUREK_BLOCK.get(), basicItem().stacksTo(1)));
+
+
     public static final RegistryObject<Item> RAW_SAMOSA = ITEMS.register("raw_samosa",
             () -> new Item(new Item.Properties().food(ModFoods.RAW_SAMOSA)));
     public static final RegistryObject<Item> SAMOSA = ITEMS.register("samosa",
@@ -63,7 +67,6 @@ public class ModItems {
 
     public static final RegistryObject<Item> MAKLOBA_BLOCK = ITEMS.register("makloba_block",
             () -> new BlockItem(ModBlocks.MAKLOBA_BLOCK.get(), basicItem().stacksTo(1)));
-
     public static final RegistryObject<Item> MAKLOBA = ITEMS.register("makloba",
             ()->new ConsumableItem(bowlFoodItem(ModFoods.MAKLOBA),true));
 

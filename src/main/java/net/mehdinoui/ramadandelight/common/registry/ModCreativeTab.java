@@ -23,6 +23,7 @@ public class ModCreativeTab {
                                 pOutput.accept(ModItems.BOUREK_SHEET.get());
                                 pOutput.accept(ModItems.RAW_BOUREK.get());
                                 pOutput.accept(ModItems.BOUREK.get());
+                                pOutput.accept(ModItems.BOUREK_BLOCK.get());
                                 pOutput.accept(ModItems.RAW_SAMOSA.get());
                                 pOutput.accept(ModItems.SAMOSA.get());
                                 pOutput.accept(ModItems.RAW_KEBAB.get());

@@ -22,6 +22,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.HALEEM);
         simpleItem(ModItems.BOUREK);
         simpleItem(ModItems.BOUREK_SHEET);
+        simpleItem(ModItems.BOUREK_BLOCK);
         simpleItem(ModItems.RAW_BOUREK);
         simpleItem(ModItems.RAW_SAMOSA);
         simpleItem(ModItems.SAMOSA);
