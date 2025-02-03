@@ -21,7 +21,7 @@ import java.util.function.Supplier;
 
 public class BourekBlock extends FeastBlock {
     protected static final VoxelShape PLATE_SHAPE = Block.box(1.0D, 0.0D, 4.0D, 15.0D, 2.0D, 12.0D);
-    protected static final VoxelShape BOUREK_SHAPE = Shapes.joinUnoptimized(PLATE_SHAPE, Block.box(2.0D, 2.0D, 5.0D, 8.0D, 13.0D, 12.0D), BooleanOp.OR);
+    protected static final VoxelShape BOUREK_SHAPE = Shapes.joinUnoptimized(PLATE_SHAPE, Block.box(2.0D, 2.0D, 5.0D, 14.0D, 8.0D, 11.0D), BooleanOp.OR);
 
     public static final IntegerProperty BOUREK_SERVINGS = IntegerProperty.create("servings", 0, 8);
     public final List<Supplier<Item>> bourekServings = Arrays.asList(
