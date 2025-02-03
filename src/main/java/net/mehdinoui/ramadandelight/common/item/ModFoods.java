@@ -23,7 +23,6 @@ public class ModFoods {
             .effect(()-> new MobEffectInstance(ModEffects.COMFORT.get(),BRIEF_DURATION,0),1.0f)
             .build();
 
-
     //Bourek
     public static final FoodProperties BOUREK_SHEET = new FoodProperties.Builder().
             nutrition(2).saturationMod(0.1F).fast().build();
@@ -45,6 +44,8 @@ public class ModFoods {
             nutrition(5).saturationMod(0.3F).fast().build();
 
     //Free Palestine
+    public static final FoodProperties FLAT_BREAD = new FoodProperties.Builder().
+            nutrition(3).saturationMod(0.2F).fast().build();
     public static final FoodProperties MANAKISH = new FoodProperties.Builder().
             nutrition(6).saturationMod(0.4F)
             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, BRIEF_DURATION, 0), 1.0F)
@@ -59,6 +60,10 @@ public class ModFoods {
             nutrition(10).saturationMod(0.6F)
             .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT.get(), MEDIUM_DURATION, 0), 1.0F)
             .build();
+    public static final FoodProperties TAGINE = new FoodProperties.Builder().
+            nutrition(10).saturationMod(0.6F)
+            .effect(() -> new MobEffectInstance(ModEffects.COMFORT.get(), MEDIUM_DURATION, 0), 1.0F)
+            .build();
 
     //Salades
     public static final FoodProperties TABBOULEH = new FoodProperties.Builder().
@@ -66,4 +71,7 @@ public class ModFoods {
             .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 400, 0), 1.0F)
             .build();
 
+    //Quiche
+    public static final FoodProperties QUICHE_SLICE = new FoodProperties.Builder().
+            nutrition(5).saturationMod(0.4f).build();
 }

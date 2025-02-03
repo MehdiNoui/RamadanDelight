@@ -34,6 +34,7 @@ public class ModItems {
         ITEMS.register(eventBus);
     }
 
+    //Soups
     public static final RegistryObject<Item> HARIRA = ITEMS.register("harira",
             ()->new ConsumableItem(bowlFoodItem(ModFoods.HARIRA),true));
     public static final RegistryObject<Item> CHORBA = ITEMS.register("chorba",
@@ -41,16 +42,16 @@ public class ModItems {
     public static final RegistryObject<Item> HALEEM = ITEMS.register("haleem",
             ()->new ConsumableItem(bowlFoodItem(ModFoods.HALEEM),true));
 
+
+    //Savory and misc
     public static final RegistryObject<Item> BOUREK = ITEMS.register("bourek",
             () -> new Item(new Item.Properties().food(ModFoods.BOUREK)));
     public static final RegistryObject<Item> BOUREK_SHEET = ITEMS.register("bourek_sheet",
             () -> new Item(new Item.Properties().food(ModFoods.BOUREK_SHEET)));
     public static final RegistryObject<Item> RAW_BOUREK = ITEMS.register("raw_bourek",
             () -> new Item(new Item.Properties().food(ModFoods.RAW_BOUREK)));
-
     public static final RegistryObject<Item> BOUREK_BLOCK = ITEMS.register("bourek_block",
             () -> new BlockItem(ModBlocks.BOUREK_BLOCK.get(), basicItem().stacksTo(1)));
-
 
     public static final RegistryObject<Item> RAW_SAMOSA = ITEMS.register("raw_samosa",
             () -> new Item(new Item.Properties().food(ModFoods.RAW_SAMOSA)));
@@ -62,9 +63,13 @@ public class ModItems {
     public static final RegistryObject<Item> KEBAB = ITEMS.register("kebab",
             () -> new Item(new Item.Properties().food(ModFoods.KEBAB)));
 
+    public static final RegistryObject<Item> FLAT_BREAD = ITEMS.register("flat_bread",
+            () -> new Item(new Item.Properties().food(ModFoods.MANAKISH)));
     public static final RegistryObject<Item> MANAKISH = ITEMS.register("manakish",
             () -> new Item(new Item.Properties().food(ModFoods.MANAKISH)));
 
+
+    //Dishes
     public static final RegistryObject<Item> MAKLOBA_BLOCK = ITEMS.register("makloba_block",
             () -> new BlockItem(ModBlocks.MAKLOBA_BLOCK.get(), basicItem().stacksTo(1)));
     public static final RegistryObject<Item> MAKLOBA = ITEMS.register("makloba",
@@ -73,12 +78,26 @@ public class ModItems {
     public static final RegistryObject<Item> SAYADIEH = ITEMS.register("sayadieh",
             ()->new ConsumableItem(bowlFoodItem(ModFoods.SAYADIEH),true));
 
+    public static final RegistryObject<Item> TAGINE = ITEMS.register("tagine",
+            ()->new ConsumableItem(bowlFoodItem(ModFoods.SAYADIEH),true));
+
+
+    //Salads
     public static final RegistryObject<Item> TABBOULEH = ITEMS.register("tabbouleh",
             ()->new ConsumableItem(bowlFoodItem(ModFoods.TABBOULEH),true));
 
+
+    //Parsley
     public static final RegistryObject<Item> PARSLEY = ITEMS.register("parsley",
             ()->new Item(new Item.Properties()));
     public static final RegistryObject<Item> PARSLEY_SEEDS = ITEMS.register("parsley_seeds",
             ()->new ItemNameBlockItem(ModBlocks.PARSLEY_CROP.get(),new Item.Properties()));
+
+
+    //Quiche
+    public static final RegistryObject<Item> QUICHE = ITEMS.register("quiche",
+            () -> new BlockItem(ModBlocks.QUICHE.get(), basicItem()));
+    public static final RegistryObject<Item> QUICHE_SLICE = ITEMS.register("quiche_slice",
+            ()->new Item(new Item.Properties().food(ModFoods.QUICHE_SLICE)));
 
 }

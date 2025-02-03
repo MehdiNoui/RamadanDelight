@@ -28,10 +28,12 @@ public class ModCreativeTab {
                                 pOutput.accept(ModItems.SAMOSA.get());
                                 pOutput.accept(ModItems.RAW_KEBAB.get());
                                 pOutput.accept(ModItems.KEBAB.get());
+                                pOutput.accept(ModItems.FLAT_BREAD.get());
                                 pOutput.accept(ModItems.MANAKISH.get());
                                 pOutput.accept(ModItems.MAKLOBA_BLOCK.get());
                                 pOutput.accept(ModItems.MAKLOBA.get());
                                 pOutput.accept(ModItems.SAYADIEH.get());
+                                pOutput.accept(ModItems.TAGINE.get());
                                 pOutput.accept(ModItems.TABBOULEH.get());
                                 pOutput.accept(ModItems.PARSLEY.get());
                                 pOutput.accept(ModBlocks.PARSLEY_BAG.get());
