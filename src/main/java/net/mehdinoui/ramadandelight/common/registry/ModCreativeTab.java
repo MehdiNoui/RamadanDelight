@@ -35,6 +35,8 @@ public class ModCreativeTab {
                                 pOutput.accept(ModItems.SAYADIEH.get());
                                 pOutput.accept(ModItems.TAGINE.get());
                                 pOutput.accept(ModItems.TABBOULEH.get());
+                                pOutput.accept(ModItems.QUICHE.get());
+                                pOutput.accept(ModItems.QUICHE_SLICE.get());
                                 pOutput.accept(ModItems.PARSLEY.get());
                                 pOutput.accept(ModBlocks.PARSLEY_BAG.get());
                                 pOutput.accept(ModItems.PARSLEY_SEEDS.get());
