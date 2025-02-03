@@ -64,7 +64,7 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.KEBAB)));
 
     public static final RegistryObject<Item> FLAT_BREAD = ITEMS.register("flat_bread",
-            () -> new Item(new Item.Properties().food(ModFoods.MANAKISH)));
+            () -> new Item(new Item.Properties().food(ModFoods.FLAT_BREAD)));
     public static final RegistryObject<Item> MANAKISH = ITEMS.register("manakish",
             () -> new Item(new Item.Properties().food(ModFoods.MANAKISH)));
 
