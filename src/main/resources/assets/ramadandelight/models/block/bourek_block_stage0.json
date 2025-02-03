@@ -3,7 +3,7 @@
 	"textures": {
 		"1": "ramadandelight:block/bourek_tray",
 		"2": "ramadandelight:block/bourek_roll",
-		"particle": "bourek_roll"
+		"particle": "ramadandelight:block/bourek_roll"
 	},
 	"elements": [
 		{
