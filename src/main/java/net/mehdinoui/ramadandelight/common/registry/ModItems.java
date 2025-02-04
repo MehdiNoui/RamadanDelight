@@ -84,7 +84,7 @@ public class ModItems {
             ()->new ConsumableItem(bowlFoodItem(ModFoods.SAYADIEH),true));
 
     public static final RegistryObject<Item> TAGINE = ITEMS.register("tagine",
-            ()->new ConsumableItem(bowlFoodItem(ModFoods.SAYADIEH),true));
+            ()->new ConsumableItem(bowlFoodItem(ModFoods.TAGINE),true));
 
 
     //Salads
