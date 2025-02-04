@@ -1,0 +1,23 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "ramadandelight:wild_parsley"
+    }
+  ],
+  "results": [
+    {
+      "item": "ramadandelight:parsley_seeds"
+    },
+    {
+      "item": "minecraft:gray_dye"
+    }
+  ],
+  "processingTime": 50
+}

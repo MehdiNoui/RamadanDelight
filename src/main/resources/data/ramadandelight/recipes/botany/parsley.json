@@ -1,0 +1,49 @@
+{
+  "bookshelf:load_conditions": [
+    {
+      "type": "bookshelf:item_exists",
+      "values": [
+        "ramadandelight:parsley_seeds",
+        "ramadandelight:parsley"
+      ]
+    }
+  ],
+  "type": "botanypots:crop",
+  "seed": {
+    "item": "ramadandelight:parsley_seeds"
+  },
+  "categories": [
+    "dirt"
+  ],
+  "growthTicks": 1200,
+  "display": {
+    "type": "botanypots:aging",
+    "block": "ramadandelight:parsley_crop"
+  },
+  "drops": [
+    {
+      "chance": 1.00,
+      "output": {
+        "item": "ramadandelight:parsley"
+      },
+      "minRolls": 1,
+      "maxRolls": 2
+    },
+    {
+      "chance": 0.05,
+      "output": {
+        "item": "ramadandelight:parsley"
+      },
+      "minRolls": 1,
+      "maxRolls": 2
+    },
+    {
+      "chance": 0.05,
+      "output": {
+        "item": "ramadandelight:parsley_seeds"
+      },
+      "minRolls": 1,
+      "maxRolls": 2
+    }
+  ]
+}
