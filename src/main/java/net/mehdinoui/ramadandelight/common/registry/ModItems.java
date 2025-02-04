@@ -44,6 +44,9 @@ public class ModItems {
 
 
     //Savory and misc
+    public static final RegistryObject<Item> SAVORY_FILLING = ITEMS.register("savory_filling",
+            ()->new ConsumableItem(bowlFoodItem(ModFoods.SAVORY_FILLING),true));
+
     public static final RegistryObject<Item> BOUREK = ITEMS.register("bourek",
             () -> new Item(new Item.Properties().food(ModFoods.BOUREK)));
     public static final RegistryObject<Item> BOUREK_SHEET = ITEMS.register("bourek_sheet",
@@ -63,6 +66,8 @@ public class ModItems {
     public static final RegistryObject<Item> KEBAB = ITEMS.register("kebab",
             () -> new Item(new Item.Properties().food(ModFoods.KEBAB)));
 
+    public static final RegistryObject<Item> SMALL_DOUGH = ITEMS.register("small_dough",
+            () -> new Item(new Item.Properties().food(ModFoods.SMALL_DOUGH)));
     public static final RegistryObject<Item> FLAT_BREAD = ITEMS.register("flat_bread",
             () -> new Item(new Item.Properties().food(ModFoods.FLAT_BREAD)));
     public static final RegistryObject<Item> MANAKISH = ITEMS.register("manakish",

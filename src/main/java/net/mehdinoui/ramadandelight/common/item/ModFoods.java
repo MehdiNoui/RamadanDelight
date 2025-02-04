@@ -74,4 +74,11 @@ public class ModFoods {
     //Quiche
     public static final FoodProperties QUICHE_SLICE = new FoodProperties.Builder().
             nutrition(5).saturationMod(0.4f).build();
+
+    //misc
+    public static final FoodProperties SMALL_DOUGH = new FoodProperties.Builder().
+            nutrition(1).saturationMod(0.2F).build();
+    public static final FoodProperties SAVORY_FILLING = new FoodProperties.Builder().
+            nutrition(7).saturationMod(0.6F).build();
+
 }

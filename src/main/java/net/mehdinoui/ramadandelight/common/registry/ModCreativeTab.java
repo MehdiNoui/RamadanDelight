@@ -22,12 +22,14 @@ public class ModCreativeTab {
                                 pOutput.accept(ModItems.HALEEM.get());
                                 pOutput.accept(ModItems.BOUREK_SHEET.get());
                                 pOutput.accept(ModItems.RAW_BOUREK.get());
+                                pOutput.accept(ModItems.SAVORY_FILLING.get());
                                 pOutput.accept(ModItems.BOUREK.get());
                                 pOutput.accept(ModItems.BOUREK_BLOCK.get());
                                 pOutput.accept(ModItems.RAW_SAMOSA.get());
                                 pOutput.accept(ModItems.SAMOSA.get());
                                 pOutput.accept(ModItems.RAW_KEBAB.get());
                                 pOutput.accept(ModItems.KEBAB.get());
+                                pOutput.accept(ModItems.SMALL_DOUGH.get());
                                 pOutput.accept(ModItems.FLAT_BREAD.get());
                                 pOutput.accept(ModItems.MANAKISH.get());
                                 pOutput.accept(ModItems.MAKLOBA_BLOCK.get());
