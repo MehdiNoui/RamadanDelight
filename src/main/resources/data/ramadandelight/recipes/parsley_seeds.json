@@ -1,0 +1,11 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ramadandelight:parsley"
+    }
+  ],
+  "result":{
+    "item":"ramadandelight:parsley_seeds"
+  }
+}

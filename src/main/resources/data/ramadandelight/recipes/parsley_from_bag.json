@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ramadandelight:parsley_bag"
+    }
+  ],
+  "result":{
+    "item":"ramadandelight:parsley",
+    "count": 9
+  }
+}
