@@ -1,10 +1,10 @@
 {
   "type": "minecraft:smelting",
   "category": "food",
-  "cookingtime": 200,
-  "experience": 0.35,
+  "cookingtime": 100,
+  "experience": 0.15,
   "ingredient": {
-    "item": ""
+    "item": "ramadandelight:small_dough"
   },
   "result": "ramadandelight:flat_bread"
 }
