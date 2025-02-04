@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:dough"
+    },
+    {
+      "item": "minecraft:water_bucket"
+    }
+  ],
+  "result":{
+    "item": "ramadandelight:bourek_sheet",
+    "count": 3
+  }
+}

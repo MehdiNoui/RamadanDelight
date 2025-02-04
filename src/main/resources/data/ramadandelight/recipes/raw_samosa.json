@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "tag": "forge:dough"
+    },
+    {
+      "item": "ramadandelight:parsley"
+    },
+    {
+      "item": "farmersdelight:beef_patty"
+    },
+    {
+      "item": "farmersdelight:onion"
+    }
+  ],
+  "result":{
+    "item":"ramadandelight:raw_samosa",
+    "count": 3
+  }
+}

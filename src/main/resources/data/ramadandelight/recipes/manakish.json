@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ramadandelight:flat_bread"
+    },
+    {
+      "item": "ramadandelight:parsley"
+    },
+    {
+      "item": "farmersdelight:cooked_chicken_cuts"
+    },
+    {
+      "item": "farmersdelight:onion"
+    }
+  ],
+  "result":{
+    "item":"ramadandelight:manakish"
+  }
+}

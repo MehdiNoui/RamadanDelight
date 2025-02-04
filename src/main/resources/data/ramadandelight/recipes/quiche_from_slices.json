@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "##",
+    "##"
+  ],
+  "key": {
+    "#": {
+      "item": "ramadandelight:quiche_slice"
+    }
+  },
+  "result":{
+    "item":"ramadandelight:quiche"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "ramadandelight:bourek"
+    },
+    {
+      "item": "ramadandelight:bourek"
+    },
+    {
+      "item": "ramadandelight:bourek"
+    },
+    {
+      "item": "ramadandelight:bourek"
+    },
+    {
+      "item": "ramadandelight:bourek"
+    },
+    {
+      "item": "ramadandelight:bourek"
+    },
+    {
+      "item": "ramadandelight:bourek"
+    },
+    {
+      "item": "ramadandelight:bourek"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result":{
+    "item":"ramadandelight:bourek_block"
+  }
+}
