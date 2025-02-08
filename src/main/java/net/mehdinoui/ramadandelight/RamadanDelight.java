@@ -4,14 +4,19 @@ import com.mojang.logging.LogUtils;
 import net.mehdinoui.ramadandelight.common.registry.ModBlocks;
 import net.mehdinoui.ramadandelight.common.registry.ModCreativeTab;
 import net.mehdinoui.ramadandelight.common.registry.ModItems;
+import net.minecraft.world.item.crafting.Ingredient;
+import net.minecraft.world.level.block.ComposterBlock;
 import net.minecraftforge.common.MinecraftForge;
+import net.minecraftforge.common.crafting.CompoundIngredient;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import net.minecraft.world.entity.animal.Chicken;
 import org.slf4j.Logger;
 
+import java.util.Arrays;
 
 
 @Mod(RamadanDelight.MOD_ID)
@@ -41,7 +46,15 @@ public class RamadanDelight
         @SubscribeEvent
         public static void onCommonSetup(FMLCommonSetupEvent event) {
             event.enqueueWork(() -> {
-                /*ComposterBlock.COMPOSTABLES.put(ModItems.BELLPEPPER_SEEDS.get(), 0.3F);*/
+                //30%
+                ComposterBlock.COMPOSTABLES.put(ModItems.PARSLEY_SEEDS.get(), 0.3F);
+                //65%
+                ComposterBlock.COMPOSTABLES.put(ModItems.PARSLEY.get(), 0.65F);
+                ComposterBlock.COMPOSTABLES.put(ModBlocks.WILD_PARSLEY.get(), 0.65F);
+                //100%
+                ComposterBlock.COMPOSTABLES.put(ModItems.QUICHE.get(), 1F);
+                ComposterBlock.COMPOSTABLES.put(ModItems.BOUREK.get(), 1F);
+
             });
         }
     }
