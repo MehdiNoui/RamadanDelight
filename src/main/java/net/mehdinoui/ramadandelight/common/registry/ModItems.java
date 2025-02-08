@@ -105,4 +105,7 @@ public class ModItems {
     public static final RegistryObject<Item> QUICHE_SLICE = ITEMS.register("quiche_slice",
             ()->new Item(new Item.Properties().food(ModFoods.QUICHE_SLICE)));
 
+    //Fanous
+    public static final RegistryObject<Item> FANOUS = ITEMS.register("fanous",
+            () -> new BlockItem(ModBlocks.FANOUS.get(), basicItem()));
 }

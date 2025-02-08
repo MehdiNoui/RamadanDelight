@@ -2,6 +2,7 @@ package net.mehdinoui.ramadandelight.common.registry;
 
 import net.mehdinoui.ramadandelight.RamadanDelight;
 import net.mehdinoui.ramadandelight.common.block.BourekBlock;
+import net.mehdinoui.ramadandelight.common.block.FanousLantern;
 import net.mehdinoui.ramadandelight.common.block.MaklobaBlock;
 import net.mehdinoui.ramadandelight.common.block.ParsleyCropBlock;
 import net.minecraft.world.effect.MobEffects;
@@ -11,6 +12,7 @@ import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
+import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -52,4 +54,7 @@ public class ModBlocks {
             () -> new BourekBlock(Block.Properties.copy(Blocks.CAKE)));
     public static final RegistryObject<Block> QUICHE = BLOCKS.register("quiche",
             () -> new PieBlock(Block.Properties.copy(Blocks.CAKE), ModItems.QUICHE_SLICE));
+
+    public static final RegistryObject<Block> FANOUS = BLOCKS.register("fanous",
+            () -> new FanousLantern(BlockBehaviour.Properties.copy(Blocks.LANTERN).pushReaction(PushReaction.DESTROY)));
 }
