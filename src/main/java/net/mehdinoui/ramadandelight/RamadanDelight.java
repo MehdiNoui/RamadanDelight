@@ -55,6 +55,10 @@ public class RamadanDelight
                 ComposterBlock.COMPOSTABLES.put(ModItems.QUICHE.get(), 1F);
                 ComposterBlock.COMPOSTABLES.put(ModItems.BOUREK.get(), 1F);
 
+                Ingredient newChickenFood = Ingredient.of(ModItems.PARSLEY_SEEDS.get());
+                Chicken.FOOD_ITEMS = new CompoundIngredient(Arrays.asList(Chicken.FOOD_ITEMS, newChickenFood))
+                {
+                };
             });
         }
     }
