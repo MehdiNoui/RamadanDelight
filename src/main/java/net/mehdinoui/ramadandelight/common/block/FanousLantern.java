@@ -42,12 +42,22 @@ public class FanousLantern extends Block implements SimpleWaterloggedBlock {
     @Nullable
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
-        FluidState fluidState = context.getLevel().getFluidState(context.getClickedPos());
+        BlockPos pos = context.getClickedPos();
+        BlockPos belowPos = pos.below();
+        BlockState belowState = context.getLevel().getBlockState(belowPos);
+
+        // Ensure the block is being placed on a solid surface
+        if (!belowState.isFaceSturdy(context.getLevel(), belowPos, Direction.UP)) {
+            return null;
+        }
+
+        FluidState fluidState = context.getLevel().getFluidState(pos);
         return this.defaultBlockState().setValue(WATERLOGGED, fluidState.getType() == Fluids.WATER);
     }
 
     @Override
     public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor level, BlockPos pos, BlockPos facingPos) {
+
         if (state.getValue(WATERLOGGED)) {
             level.scheduleTick(pos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
         }
