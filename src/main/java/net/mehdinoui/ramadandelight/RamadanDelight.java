@@ -58,7 +58,7 @@ public class RamadanDelight
                 ComposterBlock.COMPOSTABLES.put(ModItems.PARSLEY_SEEDS.get(), 0.3F);
                 //65%
                 ComposterBlock.COMPOSTABLES.put(ModItems.PARSLEY.get(), 0.65F);
-                ComposterBlock.COMPOSTABLES.put(ModBlocks.WILD_PARSLEY.get(), 0.65F);
+
                 //100%
                 ComposterBlock.COMPOSTABLES.put(ModItems.QUICHE.get(), 1F);
                 ComposterBlock.COMPOSTABLES.put(ModItems.BOUREK.get(), 1F);
