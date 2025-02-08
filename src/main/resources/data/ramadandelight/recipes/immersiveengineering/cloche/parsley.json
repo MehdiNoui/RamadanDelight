@@ -1,0 +1,26 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:cloche",
+  "results": [
+    {
+      "item": "ramadandelight:parsley",
+      "count": 2
+    }
+  ],
+  "input": {
+    "item": "ramadandelight:parsley_seeds"
+  },
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 800,
+  "render": {
+    "type": "crop",
+    "block": "ramadandelight:parsley_crop"
+  }
+}
