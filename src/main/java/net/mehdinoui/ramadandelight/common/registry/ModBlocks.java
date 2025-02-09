@@ -1,16 +1,14 @@
 package net.mehdinoui.ramadandelight.common.registry;
 
 import net.mehdinoui.ramadandelight.RamadanDelight;
-import net.mehdinoui.ramadandelight.common.block.BourekBlock;
-import net.mehdinoui.ramadandelight.common.block.FanousLantern;
-import net.mehdinoui.ramadandelight.common.block.MaklobaBlock;
-import net.mehdinoui.ramadandelight.common.block.ParsleyCropBlock;
+import net.mehdinoui.ramadandelight.common.block.*;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.FlowerBlock;
+import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -57,6 +55,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> FANOUS = BLOCKS.register("fanous",
             () -> new FanousLantern(BlockBehaviour.Properties.copy(Blocks.LANTERN).pushReaction(PushReaction.DESTROY)));
+
     public static final RegistryObject<Block> MOSAIC_TILES = registerBlock("mosaic_tiles",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.CALCITE)));
+            () -> new CustomTiles(BlockBehaviour.Properties.copy(Blocks.STONE)));
 }
