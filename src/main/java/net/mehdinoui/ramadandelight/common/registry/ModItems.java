@@ -108,4 +108,8 @@ public class ModItems {
     //Fanous
     public static final RegistryObject<Item> FANOUS = ITEMS.register("fanous",
             () -> new BlockItem(ModBlocks.FANOUS.get(), basicItem()));
+    public static final RegistryObject<Item> REDSTONE_FANOUS = ITEMS.register("redstone_fanous",
+            () -> new BlockItem(ModBlocks.REDSTONE_FANOUS.get(), basicItem()));
+    public static final RegistryObject<Item> SOUL_FANOUS = ITEMS.register("soul_fanous",
+            () -> new BlockItem(ModBlocks.SOUL_FANOUS.get(), basicItem()));
 }

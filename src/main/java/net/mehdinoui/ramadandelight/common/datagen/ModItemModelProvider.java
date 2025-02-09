@@ -42,6 +42,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.SAVORY_FILLING);
         simpleItem(ModItems.SMALL_DOUGH);
         simpleItem(ModItems.FANOUS);
+        simpleItem(ModItems.REDSTONE_FANOUS);
+        simpleItem(ModItems.SOUL_FANOUS);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

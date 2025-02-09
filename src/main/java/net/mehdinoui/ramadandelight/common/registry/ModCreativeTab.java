@@ -19,6 +19,8 @@ public class ModCreativeTab {
                     .displayItems((pParameters, pOutput) ->{
                                 pOutput.accept(ModBlocks.MOSAIC_TILES.get());
                                 pOutput.accept(ModItems.FANOUS.get());
+                                pOutput.accept(ModItems.REDSTONE_FANOUS.get());
+                                pOutput.accept(ModItems.SOUL_FANOUS.get());
 
                                 pOutput.accept(ModBlocks.PARSLEY_BAG.get());
 

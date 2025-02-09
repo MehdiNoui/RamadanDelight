@@ -55,6 +55,10 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> FANOUS = BLOCKS.register("fanous",
             () -> new FanousLantern(BlockBehaviour.Properties.copy(Blocks.LANTERN).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> SOUL_FANOUS = BLOCKS.register("soul_fanous",
+            () -> new FanousLantern(BlockBehaviour.Properties.copy(Blocks.SOUL_LANTERN).pushReaction(PushReaction.DESTROY)));
+    public static final RegistryObject<Block> REDSTONE_FANOUS = BLOCKS.register("redstone_fanous",
+            () -> new FanousLantern(BlockBehaviour.Properties.copy(Blocks.LANTERN).pushReaction(PushReaction.DESTROY)));
 
     public static final RegistryObject<Block> MOSAIC_TILES = registerBlock("mosaic_tiles",
             () -> new CustomTiles(BlockBehaviour.Properties.copy(Blocks.CALCITE)));
