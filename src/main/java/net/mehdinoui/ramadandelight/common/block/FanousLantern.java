@@ -25,9 +25,11 @@ public class FanousLantern extends Block implements SimpleWaterloggedBlock {
 
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
 
-    private static final VoxelShape FLOOR_SHAPE = Shapes.or(
-            Block.box(5, 0, 5, 11, 8, 11),
-            Block.box(6, 8, 6, 10, 10, 10)
+    private static final VoxelShape SHAPE = Shapes.or(
+            Block.box(4, 0, 4, 12, 1, 12),
+            Block.box(5,1,5,11,8,11),
+            Block.box(4, 8, 4, 12, 9, 12),
+            Block.box(6, 9, 5, 10, 11, 11)
     );
 
     public FanousLantern(Properties properties) {
@@ -37,7 +39,7 @@ public class FanousLantern extends Block implements SimpleWaterloggedBlock {
 
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-        return FLOOR_SHAPE;
+        return SHAPE;
     }
 
     @Nullable
