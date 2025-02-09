@@ -17,6 +17,7 @@ public class ModCreativeTab {
             () -> CreativeModeTab.builder().icon(()-> new ItemStack(ModItems.PARSLEY.get()))
                     .title(Component.translatable("creativetab.ramadandelight_tab"))
                     .displayItems((pParameters, pOutput) ->{
+                                pOutput.accept(ModBlocks.MOSAIC_TILES.get());
                                 pOutput.accept(ModItems.FANOUS.get());
 
                                 pOutput.accept(ModBlocks.PARSLEY_BAG.get());
