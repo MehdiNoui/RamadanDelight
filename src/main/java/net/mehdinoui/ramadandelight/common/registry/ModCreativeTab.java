@@ -25,6 +25,9 @@ public class ModCreativeTab {
 
                                 pOutput.accept(ModItems.DRUM.get());
 
+                                pOutput.accept(ModBlocks.WINDOW_BLOCK.get());
+                                pOutput.accept(ModBlocks.STAINED_WINDOW_BLOCK.get());
+
                                 pOutput.accept(ModBlocks.PARSLEY_BAG.get());
 
                                 pOutput.accept(ModBlocks.WILD_PARSLEY.get());

@@ -1,0 +1,7 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "ramadandelight:block/window"
+  },
+  "render_type": "minecraft:translucent"
+}

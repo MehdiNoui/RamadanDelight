@@ -4,11 +4,8 @@ import net.mehdinoui.ramadandelight.RamadanDelight;
 import net.mehdinoui.ramadandelight.common.block.*;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.*;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.level.block.FlowerBlock;
-import net.minecraft.world.level.block.RotatedPillarBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -65,4 +62,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> DRUM_BLOCK = registerBlock("drum_block",
             () -> new DrumBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
+    public static final RegistryObject<Block> WINDOW_BLOCK = registerBlock("window_block",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+
+    public static final RegistryObject<Block> STAINED_WINDOW_BLOCK = registerBlock("stained_window_block",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
 }

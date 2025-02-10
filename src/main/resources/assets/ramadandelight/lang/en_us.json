@@ -32,5 +32,7 @@
   "block.ramadandelight.redstone_fanous": "Redstone Fanous",
   "block.ramadandelight.soul_fanous": "Soul Fanous",
   "block.ramadandelight.mosaic_tiles": "Mosaic Tiles",
-  "block.ramadandelight.drum_block": "Drum"
+  "block.ramadandelight.drum_block": "Drum",
+  "block.ramadandelight.window_block": "Window Block",
+  "block.ramadandelight.stained_window_block": "Stained Window Block"
 }
