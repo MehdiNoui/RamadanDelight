@@ -18,9 +18,12 @@ public class ModCreativeTab {
                     .title(Component.translatable("creativetab.ramadandelight_tab"))
                     .displayItems((pParameters, pOutput) ->{
                                 pOutput.accept(ModBlocks.MOSAIC_TILES.get());
+
                                 pOutput.accept(ModItems.FANOUS.get());
                                 pOutput.accept(ModItems.REDSTONE_FANOUS.get());
                                 pOutput.accept(ModItems.SOUL_FANOUS.get());
+
+                                pOutput.accept(ModItems.DRUM.get());
 
                                 pOutput.accept(ModBlocks.PARSLEY_BAG.get());
 
