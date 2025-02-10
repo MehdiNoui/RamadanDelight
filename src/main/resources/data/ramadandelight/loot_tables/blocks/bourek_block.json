@@ -206,25 +206,6 @@
       ],
       "conditions": [
         {
-          "condition": "minecraft:block_state_property",
-          "block": "ramadandelight:bourek_block",
-          "properties": {
-            "servings": "0"
-          }
-        }
-      ]
-    },
-    {
-      "name": "pool2",
-      "rolls": 1,
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "minecraft:bowl"
-        }
-      ],
-      "conditions": [
-        {
           "condition": "minecraft:inverted",
           "term": {
             "condition": "minecraft:block_state_property",
