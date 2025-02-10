@@ -112,4 +112,8 @@ public class ModItems {
             () -> new BlockItem(ModBlocks.REDSTONE_FANOUS.get(), basicItem()));
     public static final RegistryObject<Item> SOUL_FANOUS = ITEMS.register("soul_fanous",
             () -> new BlockItem(ModBlocks.SOUL_FANOUS.get(), basicItem()));
+
+    public static final RegistryObject<Item> DRUM = ITEMS.register("drum",
+            () -> new BlockItem(ModBlocks.DRUM_BLOCK.get(), basicItem()));
+
 }

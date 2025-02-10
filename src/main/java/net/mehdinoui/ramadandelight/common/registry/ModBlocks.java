@@ -62,4 +62,7 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> MOSAIC_TILES = registerBlock("mosaic_tiles",
             () -> new CustomTiles(BlockBehaviour.Properties.copy(Blocks.CALCITE)));
+    public static final RegistryObject<Block> DRUM_BLOCK = registerBlock("drum_block",
+            () -> new DrumBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+
 }
