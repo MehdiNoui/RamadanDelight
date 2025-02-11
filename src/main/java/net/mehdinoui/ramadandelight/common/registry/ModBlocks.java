@@ -65,6 +65,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> WINDOW_BLOCK = registerBlock("window_block",
             () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
 
-    public static final RegistryObject<Block> STAINED_WINDOW_BLOCK = registerBlock("stained_window_block",
+    public static final RegistryObject<Block> BLUE_STAINED_WINDOW_BLOCK = registerBlock("blue_stained_window_block",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final RegistryObject<Block> GREEN_STAINED_WINDOW_BLOCK = registerBlock("green_stained_window_block",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+    public static final RegistryObject<Block> ORANGE_STAINED_WINDOW_BLOCK = registerBlock("orange_stained_window_block",
             () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
 }
