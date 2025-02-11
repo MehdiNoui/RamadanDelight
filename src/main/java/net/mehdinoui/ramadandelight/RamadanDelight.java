@@ -4,6 +4,7 @@ import com.mojang.logging.LogUtils;
 import net.mehdinoui.ramadandelight.common.registry.ModBlocks;
 import net.mehdinoui.ramadandelight.common.registry.ModCreativeTab;
 import net.mehdinoui.ramadandelight.common.registry.ModItems;
+import net.mehdinoui.ramadandelight.common.registry.ModSounds;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraft.world.item.ItemStack;
@@ -40,6 +41,7 @@ public class RamadanDelight
         ModCreativeTab.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
+        ModSounds.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
     }
