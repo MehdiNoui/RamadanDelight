@@ -1,8 +1,8 @@
 package net.mehdinoui.ramadandelight.common.block;
 
+import net.mehdinoui.ramadandelight.common.registry.ModSounds;
 import net.minecraft.core.BlockPos;
 import net.minecraft.sounds.SoundEvent;
-import net.minecraft.sounds.SoundEvents;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
@@ -30,11 +30,11 @@ public class DrumBlock extends Block {
     @Override
     public InteractionResult use(BlockState state, Level world, BlockPos pos, Player player, InteractionHand hand, BlockHitResult hit) {
         if (!world.isClientSide) {
-            // to do later
-            SoundEvent drumSound = SoundEvents.NOTE_BLOCK_BASS.get();
+            SoundEvent drumSound = ModSounds.Drum.get();
             world.playSound(null, pos, drumSound, SoundSource.BLOCKS, 1.0F, 1.0F);
             return InteractionResult.SUCCESS;
         }
         return InteractionResult.CONSUME;
     }
+
 }

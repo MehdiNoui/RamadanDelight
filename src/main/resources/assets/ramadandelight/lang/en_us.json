@@ -36,5 +36,7 @@
   "block.ramadandelight.window_block": "Window Block",
   "block.ramadandelight.blue_stained_window_block": "Blue Stained Window Block",
   "block.ramadandelight.green_stained_window_block": "Green Stained Window Block",
-  "block.ramadandelight.orange_stained_window_block": "Orange Stained Window Block"
+  "block.ramadandelight.orange_stained_window_block": "Orange Stained Window Block",
+
+  "sounds.ramadandelight.beat": "Drum Beat"
 }
