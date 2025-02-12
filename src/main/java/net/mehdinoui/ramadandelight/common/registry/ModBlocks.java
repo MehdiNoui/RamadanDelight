@@ -59,16 +59,16 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> MOSAIC_TILES = registerBlock("mosaic_tiles",
             () -> new CustomTiles(BlockBehaviour.Properties.copy(Blocks.CALCITE)));
-    public static final RegistryObject<Block> DRUM_BLOCK = registerBlock("drum_block",
+    public static final RegistryObject<Block> DRUM_BLOCK = BLOCKS.register("drum",
             () -> new DrumBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
 
     public static final RegistryObject<Block> WINDOW_BLOCK = registerBlock("window_block",
-            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).strength(1.2f, 3.0f)));
 
     public static final RegistryObject<Block> BLUE_STAINED_WINDOW_BLOCK = registerBlock("blue_stained_window_block",
-            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).strength(1.2f, 3.0f)));
     public static final RegistryObject<Block> GREEN_STAINED_WINDOW_BLOCK = registerBlock("green_stained_window_block",
-            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).strength(1.2f, 3.0f)));
     public static final RegistryObject<Block> ORANGE_STAINED_WINDOW_BLOCK = registerBlock("orange_stained_window_block",
-            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS)));
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).strength(1.2f, 3.0f)));
 }
