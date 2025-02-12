@@ -1,0 +1,21 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "B": {
+      "tag": "forge:dyes/blue"
+    },
+    "A":{
+      "item": "ramadandelight:window_block"
+    }
+  },
+  "result": {
+    "item": "ramadandelight:blue_stained_window_block",
+    "count": 8
+  }
+}

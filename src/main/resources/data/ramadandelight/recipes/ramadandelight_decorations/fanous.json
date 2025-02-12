@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "AAA",
+    "ABA",
+    "AAA"
+  ],
+  "key": {
+    "A": {
+      "tag": "forge:nuggets/iron"
+    },
+    "B":{
+      "item": "minecraft:torch"
+    }
+  },
+  "result": {
+    "item": "ramadandelight:fanous"
+  }
+}

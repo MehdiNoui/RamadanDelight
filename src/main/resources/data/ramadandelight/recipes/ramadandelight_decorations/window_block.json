@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "A",
+    "A"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:glass"
+    }
+  },
+  "result": {
+    "item": "ramadandelight:window_block"
+  }
+}
