@@ -16,7 +16,7 @@ import net.minecraft.world.phys.shapes.VoxelShape;
 import net.minecraft.world.level.BlockGetter;
 
 public class DrumBlock extends Block {
-    private static final VoxelShape SHAPE = Block.box(3, 0.0, 3, 13, 5, 13);
+    private static final VoxelShape SHAPE = Block.box(1, 0.0, 1, 15, 5, 15);
 
     public DrumBlock(BlockBehaviour.Properties properties) {
         super(properties);
