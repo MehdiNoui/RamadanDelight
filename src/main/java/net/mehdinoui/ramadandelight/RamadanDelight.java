@@ -18,7 +18,9 @@ import net.minecraftforge.common.crafting.CompoundIngredient;
 import net.minecraftforge.event.village.VillagerTradesEvent;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
@@ -41,6 +43,9 @@ public class RamadanDelight
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModSounds.register(modEventBus);
+
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Configuration.CONFIG);
+
 
         modEventBus.addListener(this::commonSetup);
     }
@@ -80,19 +85,19 @@ public class RamadanDelight
 
         @SubscribeEvent
         public static void onVillagerTrades(VillagerTradesEvent event) {
-            if (event.getType() == VillagerProfession.FARMER) {
-                List<VillagerTrades.ItemListing> level1Trades = event.getTrades().get(1);
+            if (Configuration.ENABLE_VILLAGER_TRADES.get()) {
+                if (event.getType() == VillagerProfession.FARMER) {
+                    List<VillagerTrades.ItemListing> level1Trades = event.getTrades().get(1);
 
-                level1Trades.add((entity, random) -> new MerchantOffer(
-                        new ItemStack(ModItems.PARSLEY.get(), 26), // Soybean in quantity
-                        new ItemStack(Items.EMERALD, 1), // Resulting Emeralds
-                        12, // Max uses
-                        3, // Villager XP
-                        0.05f // Price multiplier
-                ));
+                    level1Trades.add((entity, random) -> new MerchantOffer(
+                            new ItemStack(ModItems.PARSLEY.get(), 26), // Soybean in quantity
+                            new ItemStack(Items.EMERALD, 1), // Resulting Emeralds
+                            12, // Max uses
+                            3, // Villager XP
+                            0.05f // Price multiplier
+                    ));
+                }
             }
         }
     }
-
-
 }
