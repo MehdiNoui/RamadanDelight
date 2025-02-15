@@ -2,7 +2,7 @@
   "type": "minecraft:crafting_shapeless",
   "ingredients": [
     {
-      "item": "ramadandelight:flat_bread"
+      "tag": "forge:tortilla"
     },
     {
       "item": "ramadandelight:parsley"

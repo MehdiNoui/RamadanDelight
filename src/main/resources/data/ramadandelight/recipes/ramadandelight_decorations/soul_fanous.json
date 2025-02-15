@@ -4,7 +4,7 @@
   "pattern": [
     "AAA",
     "ABA",
-    "AAA"
+    "ACA"
   ],
   "key": {
     "A": {
@@ -12,6 +12,9 @@
     },
     "B":{
       "item": "minecraft:soul_torch"
+    },
+    "C": {
+      "tag": "forge:ingots/iron"
     }
   },
   "result": {
