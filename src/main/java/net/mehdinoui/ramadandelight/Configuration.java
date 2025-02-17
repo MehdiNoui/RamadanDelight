@@ -6,6 +6,7 @@ public class Configuration {
     public static final ForgeConfigSpec.Builder BUILDER = new ForgeConfigSpec.Builder();
     public static final ForgeConfigSpec CONFIG;
 
+
     // Configurable values
     public static final ForgeConfigSpec.BooleanValue ENABLE_VILLAGER_TRADES;
 
