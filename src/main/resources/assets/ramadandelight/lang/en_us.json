@@ -39,5 +39,12 @@
   "block.ramadandelight.green_stained_window_block": "Green Stained Window Block",
   "block.ramadandelight.orange_stained_window_block": "Orange Stained Window Block",
 
+  "block.ramadandelight.palm_log": "Palm Log",
+  "block.ramadandelight.palm_wood": "Palm Wood",
+  "block.ramadandelight.palm_planks": "Palm Planks",
+  "block.ramadandelight.palm_leaves": "Palm Leaves",
+  "block.ramadandelight.stripped_palm_log": "Stripped Palm Log",
+  "block.ramadandelight.stripped_palm_wood": "Stripped Palm Wood",
+
   "sounds.ramadandelight.beat": "Drum Beat"
 }

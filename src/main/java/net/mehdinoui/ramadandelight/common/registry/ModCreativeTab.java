@@ -17,6 +17,13 @@ public class ModCreativeTab {
             () -> CreativeModeTab.builder().icon(()-> new ItemStack(ModItems.PARSLEY.get()))
                     .title(Component.translatable("creativetab.ramadandelight_tab"))
                     .displayItems((pParameters, pOutput) ->{
+                                pOutput.accept(ModBlocks.PALM_PLANKS.get());
+                                pOutput.accept(ModBlocks.PALM_LOG.get());
+                                pOutput.accept(ModBlocks.PALM_WOOD.get());
+                                pOutput.accept(ModBlocks.STRIPPED_PALM_LOG.get());
+                                pOutput.accept(ModBlocks.STRIPPED_PALM_WOOD.get());
+                                pOutput.accept(ModBlocks.PALM_LEAVES.get());
+
                                 pOutput.accept(ModBlocks.MOSAIC_TILES.get());
 
                                 pOutput.accept(ModItems.FANOUS.get());
