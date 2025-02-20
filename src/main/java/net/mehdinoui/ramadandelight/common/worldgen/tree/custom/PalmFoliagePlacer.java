@@ -96,6 +96,7 @@ public class PalmFoliagePlacer extends FoliagePlacer {
                                        RandomSource pRandom, TreeConfiguration pConfig) {
         for (int[] offset : offsets) {
             BlockPos pos = center.offset(offset[0] - 3, 0, offset[1] - 3);
+            //TO-DO: replace the wool with dates
             if (pRandom.nextFloat() < 0.5) {
                 foliageSetter.set(pos, Blocks.WHITE_WOOL.defaultBlockState());
             }
