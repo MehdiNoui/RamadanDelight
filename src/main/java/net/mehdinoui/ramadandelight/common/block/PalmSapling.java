@@ -15,6 +15,6 @@ public class PalmSapling extends SaplingBlock {
 
     @Override
     protected boolean mayPlaceOn(BlockState pState, BlockGetter pLevel, BlockPos pPos) {
-        return pState.is(Blocks.END_STONE);
+        return pState.is(Blocks.SAND);
     }
 }

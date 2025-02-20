@@ -23,6 +23,7 @@ public class ModCreativeTab {
                                 pOutput.accept(ModBlocks.STRIPPED_PALM_LOG.get());
                                 pOutput.accept(ModBlocks.STRIPPED_PALM_WOOD.get());
                                 pOutput.accept(ModBlocks.PALM_LEAVES.get());
+                                pOutput.accept(ModBlocks.PALM_SAPLING.get());
 
                                 pOutput.accept(ModBlocks.MOSAIC_TILES.get());
 

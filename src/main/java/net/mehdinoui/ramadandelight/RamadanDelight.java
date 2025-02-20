@@ -5,6 +5,8 @@ import net.mehdinoui.ramadandelight.common.registry.ModBlocks;
 import net.mehdinoui.ramadandelight.common.registry.ModCreativeTab;
 import net.mehdinoui.ramadandelight.common.registry.ModItems;
 import net.mehdinoui.ramadandelight.common.registry.ModSounds;
+import net.mehdinoui.ramadandelight.common.worldgen.tree.ModFoliagePlacer;
+import net.mehdinoui.ramadandelight.common.worldgen.tree.ModTrunkPlacer;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraft.world.item.ItemStack;
@@ -43,6 +45,9 @@ public class RamadanDelight
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModSounds.register(modEventBus);
+
+        ModTrunkPlacer.register(modEventBus);
+        ModFoliagePlacer.register(modEventBus);
 
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Configuration.CONFIG);
 
