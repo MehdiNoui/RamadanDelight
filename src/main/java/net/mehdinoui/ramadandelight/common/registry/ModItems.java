@@ -112,9 +112,17 @@ public class ModItems {
     public static final RegistryObject<Item> SOUL_FANOUS = ITEMS.register("soul_fanous",
             () -> new BlockItem(ModBlocks.SOUL_FANOUS.get(), basicItem()));
 
+    //Misc
     public static final RegistryObject<Item> DRUM = ITEMS.register("drum",
             () -> new BlockItem(ModBlocks.DRUM_BLOCK.get(), basicItem()));
 
+    //Dates
+    public static final RegistryObject<Item> DATE = ITEMS.register("date",
+            () -> new Item(new Item.Properties().food(ModFoods.DATE)));
+    public static final RegistryObject<Item> DATE_STUFFED_COOKIE = ITEMS.register("date_stuffed_cookie",
+            () -> new Item(new Item.Properties().food(ModFoods.DATE_STUFFED_COOKIE)));
     public static final RegistryObject<Item> DATES_BRANCH = ITEMS.register("dates_branch",
             () -> new BlockItem(ModBlocks.DATES_BRANCH.get(), basicItem()));
+    public static final RegistryObject<Item> CLUSTER_OF_DATES = ITEMS.register("cluster_of_dates",
+            ()->new Item(new Item.Properties()));
 }

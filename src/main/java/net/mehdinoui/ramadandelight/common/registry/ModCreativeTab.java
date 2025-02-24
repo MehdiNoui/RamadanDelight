@@ -25,7 +25,10 @@ public class ModCreativeTab {
                                 pOutput.accept(ModBlocks.PALM_LEAVES.get());
                                 pOutput.accept(ModBlocks.PALM_SAPLING.get());
 
+                                pOutput.accept(ModItems.DATE.get());
+                                pOutput.accept(ModItems.DATE_STUFFED_COOKIE.get());
                                 pOutput.accept(ModItems.DATES_BRANCH.get());
+                                pOutput.accept(ModItems.CLUSTER_OF_DATES.get());
 
                                 pOutput.accept(ModBlocks.MOSAIC_TILES.get());
 

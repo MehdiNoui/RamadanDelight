@@ -48,5 +48,9 @@
   "block.ramadandelight.palm_sapling": "Date Palm Sapling",
   "block.ramadandelight.dates_branch": "Dates Palm Branch",
 
+  "item.ramadandelight.date": "Date",
+  "item.ramadandelight.date_stuffed_cookie": "Date Stuffed Cookie",
+  "item.ramadandelight.cluster_of_dates": "Cluster Of Dates",
+
   "sounds.ramadandelight.beat": "Drum Beat"
 }

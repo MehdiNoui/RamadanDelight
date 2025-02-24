@@ -46,6 +46,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.SOUL_FANOUS);
         simpleItem(ModItems.DRUM);
         simpleItem(ModItems.DATES_BRANCH);
+        simpleItem(ModItems.DATE);
+        simpleItem(ModItems.DATE_STUFFED_COOKIE);
+        simpleItem(ModItems.CLUSTER_OF_DATES);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
