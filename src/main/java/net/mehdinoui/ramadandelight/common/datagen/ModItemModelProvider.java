@@ -45,6 +45,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.REDSTONE_FANOUS);
         simpleItem(ModItems.SOUL_FANOUS);
         simpleItem(ModItems.DRUM);
+        simpleItem(ModItems.DATES_BRANCH);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

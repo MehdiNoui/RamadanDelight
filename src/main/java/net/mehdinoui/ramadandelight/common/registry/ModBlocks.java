@@ -122,4 +122,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> PALM_SAPLING = registerBlock("palm_sapling",
             () -> new PalmSapling(new PalmTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
 
+    public static final RegistryObject<Block> DATES_BRANCH = BLOCKS.register("dates_branch",
+            () -> new DatesBranchBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)
+                    .noOcclusion()
+                    .strength(0.2f)
+                    .sound(SoundType.AZALEA)));
 }

@@ -1,0 +1,16 @@
+{
+  "variants": {
+    "age=0": {
+      "model": "ramadandelight:block/branch"
+    },
+    "age=1": {
+      "model": "ramadandelight:block/date_stage0"
+    },
+    "age=2": {
+      "model": "ramadandelight:block/date_stage1"
+    },
+    "age=3": {
+      "model": "ramadandelight:block/date_stage2"
+    }
+  }
+}

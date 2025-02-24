@@ -115,4 +115,6 @@ public class ModItems {
     public static final RegistryObject<Item> DRUM = ITEMS.register("drum",
             () -> new BlockItem(ModBlocks.DRUM_BLOCK.get(), basicItem()));
 
+    public static final RegistryObject<Item> DATES_BRANCH = ITEMS.register("dates_branch",
+            () -> new BlockItem(ModBlocks.DATES_BRANCH.get(), basicItem()));
 }

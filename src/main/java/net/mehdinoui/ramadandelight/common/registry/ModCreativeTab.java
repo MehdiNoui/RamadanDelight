@@ -25,6 +25,8 @@ public class ModCreativeTab {
                                 pOutput.accept(ModBlocks.PALM_LEAVES.get());
                                 pOutput.accept(ModBlocks.PALM_SAPLING.get());
 
+                                pOutput.accept(ModItems.DATES_BRANCH.get());
+
                                 pOutput.accept(ModBlocks.MOSAIC_TILES.get());
 
                                 pOutput.accept(ModItems.FANOUS.get());
