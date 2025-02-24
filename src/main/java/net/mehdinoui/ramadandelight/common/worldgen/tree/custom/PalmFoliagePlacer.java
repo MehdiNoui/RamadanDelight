@@ -2,6 +2,8 @@ package net.mehdinoui.ramadandelight.common.worldgen.tree.custom;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
+import net.mehdinoui.ramadandelight.common.block.DatesBranchBlock;
+import net.mehdinoui.ramadandelight.common.registry.ModBlocks;
 import net.mehdinoui.ramadandelight.common.worldgen.tree.ModFoliagePlacer;
 import net.minecraft.core.BlockPos;
 import net.minecraft.util.RandomSource;
@@ -97,8 +99,9 @@ public class PalmFoliagePlacer extends FoliagePlacer {
         for (int[] offset : offsets) {
             BlockPos pos = center.offset(offset[0] - 3, 0, offset[1] - 3);
             //TO-DO: replace the wool with dates
-            if (pRandom.nextFloat() < 0.5) {
-                foliageSetter.set(pos, Blocks.WHITE_WOOL.defaultBlockState());
+            if (pRandom.nextFloat() < 0.4) {
+                int randomAge = pRandom.nextInt(4);
+                foliageSetter.set(pos,  ModBlocks.DATES_BRANCH.get().defaultBlockState().setValue(DatesBranchBlock.AGE, randomAge));
             }
         }
     }
