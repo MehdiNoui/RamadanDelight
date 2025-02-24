@@ -5,6 +5,7 @@ import net.mehdinoui.ramadandelight.common.block.*;
 import net.mehdinoui.ramadandelight.common.worldgen.tree.PalmTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
+import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.BlockGetter;
@@ -12,6 +13,7 @@ import net.minecraft.world.level.block.*;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
+import net.minecraft.world.level.block.state.properties.BlockSetType;
 import net.minecraft.world.level.material.PushReaction;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
@@ -80,7 +82,7 @@ public class ModBlocks {
     public static final RegistryObject<Block> ORANGE_STAINED_WINDOW_BLOCK = registerBlock("orange_stained_window_block",
             () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).strength(1.2f, 3.0f)));
 
-    //Wood
+    //Tree Base
     public static final RegistryObject<Block> PALM_LOG = registerBlock("palm_log",
             () -> new WoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> PALM_WOOD = registerBlock("palm_wood",
@@ -121,6 +123,105 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> PALM_SAPLING = registerBlock("palm_sapling",
             () -> new PalmSapling(new PalmTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+
+
+    //Wood set
+    public static final RegistryObject<Block> PALM_STAIRS = registerBlock("palm_stairs",
+            () -> new StairBlock(() -> ModBlocks.PALM_PLANKS.get().defaultBlockState(),
+                    BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD)){
+                public boolean isFlammable(final BlockState state, final BlockGetter world, final BlockPos pos, final Direction face) {
+                    return true;
+                }
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 20;
+                }
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            });
+
+    public static final RegistryObject<Block> PALM_SLAB = registerBlock("palm_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD)){
+                public boolean isFlammable(final BlockState state, final BlockGetter world, final BlockPos pos, final Direction face) {
+                    return true;
+                }
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 20;
+                }
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            });
+
+    public static final RegistryObject<Block> PALM_PRESSURE_PLATE = registerBlock("palm_pressure_plate",
+            () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
+                    BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE).sound(SoundType.WOOD), BlockSetType.OAK));
+    public static final RegistryObject<Block> PALM_BUTTON = registerBlock("palm_button",
+            () -> new ButtonBlock(BlockBehaviour.Properties.copy(Blocks.OAK_BUTTON).sound(SoundType.WOOD), BlockSetType.OAK, 10, true));
+
+    public static final RegistryObject<Block> PALM_FENCE = registerBlock("palm_fence",
+            () -> new FenceBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE).sound(SoundType.WOOD)){
+                public boolean isFlammable(final BlockState state, final BlockGetter world, final BlockPos pos, final Direction face) {
+                    return true;
+                }
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 20;
+                }
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            });
+
+    public static final RegistryObject<Block> PALM_FENCE_GATE = registerBlock("palm_fence_gate",
+            () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE){
+                public boolean isFlammable(final BlockState state, final BlockGetter world, final BlockPos pos, final Direction face) {
+                    return true;
+                }
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 20;
+                }
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            });
+
+    public static final RegistryObject<Block> PALM_DOOR = registerBlock("palm_door",
+            () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), BlockSetType.OAK){
+                public boolean isFlammable(final BlockState state, final BlockGetter world, final BlockPos pos, final Direction face) {
+                    return true;
+                }
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 20;
+                }
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            });
+
+    public static final RegistryObject<Block> PALM_TRAPDOOR = registerBlock("palm_trapdoor",
+            () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR), BlockSetType.OAK){
+                public boolean isFlammable(final BlockState state, final BlockGetter world, final BlockPos pos, final Direction face) {
+                    return true;
+                }
+                @Override
+                public int getFlammability(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 20;
+                }
+                @Override
+                public int getFireSpreadSpeed(BlockState state, BlockGetter world, BlockPos pos, Direction direction) {
+                    return 5;
+                }
+            });
 
     public static final RegistryObject<Block> DATES_BRANCH = BLOCKS.register("dates_branch",
             () -> new DatesBranchBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)
