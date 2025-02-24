@@ -1,5 +1,18 @@
 {
   "values": [
-    "ramadandelight:drum"
+    "ramadandelight:drum",
+    "ramadandelight:palm_log",
+    "ramadandelight:palm_wood",
+    "ramadandelight:palm_planks",
+    "ramadandelight:stripped_palm_log",
+    "ramadandelight:stripped_palm_wood",
+    "ramadandelight:palm_stairs",
+    "ramadandelight:palm_slab",
+    "ramadandelight:palm_pressure_plate",
+    "ramadandelight:palm_button",
+    "ramadandelight:palm_door",
+    "ramadandelight:palm_fence",
+    "ramadandelight:palm_fence_gate",
+    "ramadandelight:palm_trapdoor"
   ]
 }
