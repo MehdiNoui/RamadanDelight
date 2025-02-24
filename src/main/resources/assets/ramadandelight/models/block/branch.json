@@ -2,60 +2,44 @@
 	"credit": "Made with Blockbench",
 	"texture_size": [32, 32],
 	"textures": {
-		"0": "ramadandelight:block/branch",
+		"1": "ramadandelight:block/branch",
 		"particle": "ramadandelight:block/branch"
 	},
 	"elements": [
 		{
-			"from": [8, 13, 5],
+			"from": [8, 11, 5],
 			"to": [8, 16, 11],
-			"rotation": {"angle": 0, "axis": "y", "origin": [0, 0, -1]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, -2, -1]},
 			"faces": {
-				"north": {"uv": [0, 0, 0, 3], "texture": "#0"},
-				"east": {"uv": [0, 0, 6, 3], "texture": "#0"},
-				"south": {"uv": [0, 0, 0, 3], "texture": "#0"},
-				"west": {"uv": [0, 0, 6, 3], "texture": "#0"},
-				"up": {"uv": [0, 6, 0, 0], "texture": "#0"},
-				"down": {"uv": [0, 0, 0, 6], "texture": "#0"}
+				"east": {"uv": [0, 0, 6, 3], "texture": "#1"},
+				"west": {"uv": [0, 0, 6, 3], "texture": "#1"}
 			}
 		},
 		{
-			"from": [5, 13, 8],
+			"from": [5, 11, 8],
 			"to": [11, 16, 8],
-			"rotation": {"angle": 0, "axis": "y", "origin": [-3, 0, 2]},
+			"rotation": {"angle": 0, "axis": "y", "origin": [-3, -2, 2]},
 			"faces": {
-				"north": {"uv": [0, 0, 6, 3], "texture": "#0"},
-				"east": {"uv": [0, 0, 0, 1.5], "texture": "#missing"},
-				"south": {"uv": [0, 0, 6, 3], "texture": "#0"},
-				"west": {"uv": [0, 0, 0, 1.5], "texture": "#missing"},
-				"up": {"uv": [0, 0, 3, 0], "texture": "#missing"},
-				"down": {"uv": [0, 0, 3, 0], "texture": "#missing"}
+				"north": {"uv": [0, 0, 6, 3], "texture": "#1"},
+				"south": {"uv": [0, 0, 6, 3], "texture": "#1"}
 			}
 		},
 		{
-			"from": [3, 8, 8],
-			"to": [13, 13, 8],
-			"rotation": {"angle": 0, "axis": "y", "origin": [-1, 8, 9]},
+			"from": [3, 6, 8],
+			"to": [13, 11, 8],
+			"rotation": {"angle": 0, "axis": "y", "origin": [-5, -7, 2]},
 			"faces": {
-				"north": {"uv": [0, 4, 10, 7.5], "texture": "#0"},
-				"east": {"uv": [0, 4, 10, 7.5], "texture": "#0"},
-				"south": {"uv": [0, 4, 10, 7.5], "texture": "#0"},
-				"west": {"uv": [0, 4, 10, 7.5], "texture": "#0"},
-				"up": {"uv": [4, 4, 0, 0], "texture": "#missing"},
-				"down": {"uv": [4, 4, 0, 8], "texture": "#missing"}
+				"north": {"uv": [0, 4, 10, 8], "texture": "#1"},
+				"south": {"uv": [0, 4, 10, 8], "texture": "#1"}
 			}
 		},
 		{
-			"from": [8, 8, 3],
-			"to": [8, 13, 13],
-			"rotation": {"angle": 0, "axis": "y", "origin": [4, 8, 4]},
+			"from": [8, 6, 3],
+			"to": [8, 11, 13],
+			"rotation": {"angle": 0, "axis": "y", "origin": [9, 6, 3]},
 			"faces": {
-				"north": {"uv": [4, 0, 8, 1.5], "texture": "#missing"},
-				"east": {"uv": [0, 4, 10, 7.5], "texture": "#0"},
-				"south": {"uv": [4, 0, 8, 1.5], "texture": "#missing"},
-				"west": {"uv": [0, 4, 10, 7.5], "texture": "#0"},
-				"up": {"uv": [4, 4, 0, 0], "texture": "#missing"},
-				"down": {"uv": [4, 4, 0, 8], "texture": "#missing"}
+				"east": {"uv": [0, 4, 10, 8], "texture": "#1"},
+				"west": {"uv": [0, 4, 10, 8], "texture": "#1"}
 			}
 		}
 	],
@@ -64,13 +48,8 @@
 			"name": "branch",
 			"origin": [-3, -11, 2],
 			"color": 0,
-			"children": [0, 1]
-		},
-		{
-			"name": "fruits",
-			"origin": [8, 8, 8],
-			"color": 0,
-			"children": [2, 3]
+			"children": [0, 1, 2, 3]
 		}
-	]
+	],
+	"render_type": "minecraft:translucent"
 }
