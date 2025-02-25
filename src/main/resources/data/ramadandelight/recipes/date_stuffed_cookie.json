@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "#": {
+      "tag": "forge:grain"
+    },
+    "X": {
+      "item": "ramadandelight:date"
+    }
+  },
+  "pattern": [
+    "#X#"
+  ],
+  "result": {
+    "count": 8,
+    "item": "ramadandelight:date_stuffed_cookie"
+  },
+  "show_notification": true
+}
