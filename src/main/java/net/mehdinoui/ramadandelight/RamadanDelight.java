@@ -57,7 +57,8 @@ public class RamadanDelight
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-        event.enqueueWork(() -> {});
+        event.enqueueWork(() -> {
+        });
     }
 
     @Mod.EventBusSubscriber(modid = MOD_ID, bus = Mod.EventBusSubscriber.Bus.MOD)
@@ -67,12 +68,18 @@ public class RamadanDelight
             event.enqueueWork(() -> {
                 //30%
                 ComposterBlock.COMPOSTABLES.put(ModItems.PARSLEY_SEEDS.get(), 0.3F);
+                ComposterBlock.COMPOSTABLES.put(ModBlocks.PALM_SAPLING.get().asItem(), 0.3F);
+                ComposterBlock.COMPOSTABLES.put(ModBlocks.PALM_LEAVES.get().asItem(), 0.3F);
+                ComposterBlock.COMPOSTABLES.put(ModBlocks.DATES_BRANCH.get().asItem(), 0.3F);
+                ComposterBlock.COMPOSTABLES.put(ModItems.DATE.get(), 0.3F);
                 //65%
                 ComposterBlock.COMPOSTABLES.put(ModItems.PARSLEY.get(), 0.65F);
-
+                //85%
+                ComposterBlock.COMPOSTABLES.put(ModItems.DATE_STUFFED_COOKIE.get(), 0.85F);
                 //100%
                 ComposterBlock.COMPOSTABLES.put(ModItems.QUICHE.get(), 1F);
                 ComposterBlock.COMPOSTABLES.put(ModItems.BOUREK.get(), 1F);
+                ComposterBlock.COMPOSTABLES.put(ModItems.CLUSTER_OF_DATES.get(), 1F);
 
                 Ingredient newChickenFood = Ingredient.of(ModItems.PARSLEY_SEEDS.get());
                 Chicken.FOOD_ITEMS = new CompoundIngredient(Arrays.asList(Chicken.FOOD_ITEMS, newChickenFood))
