@@ -19,7 +19,7 @@
               }
             }
           ],
-          "name": "ramadandelight:parsley_seeds"
+          "name": "ramadandelight:date"
         },
         {
           "type": "minecraft:item",
@@ -28,12 +28,12 @@
               "function": "minecraft:set_count",
               "count": {
                 "min": 1.0,
-                "max": 3.0,
+                "max": 2.0,
                 "type": "minecraft:uniform"
               }
             }
           ],
-          "name": "ramadandelight:parsley"
+          "name": "ramadandelight:palm_sapling"
         }
       ]
     }
