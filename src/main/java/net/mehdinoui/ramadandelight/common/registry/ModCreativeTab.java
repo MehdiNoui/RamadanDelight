@@ -14,29 +14,29 @@ public class ModCreativeTab {
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, RamadanDelight.MOD_ID);
 
     public static final RegistryObject<CreativeModeTab> RamadanDelight_TAB = CREATIVE_MODE_TABS.register("veggiesdelight_tab",
-            () -> CreativeModeTab.builder().icon(()-> new ItemStack(ModItems.PARSLEY.get()))
+            () -> CreativeModeTab.builder().icon(()-> new ItemStack(ModBlocks.FANOUS.get()))
                     .title(Component.translatable("creativetab.ramadandelight_tab"))
                     .displayItems((pParameters, pOutput) ->{
-                                pOutput.accept(ModBlocks.PALM_PLANKS.get());
-                                pOutput.accept(ModBlocks.PALM_STAIRS.get());
-                                pOutput.accept(ModBlocks.PALM_SLAB.get());
-                                pOutput.accept(ModBlocks.PALM_DOOR.get());
-                                pOutput.accept(ModBlocks.PALM_TRAPDOOR.get());
-                                pOutput.accept(ModBlocks.PALM_FENCE.get());
-                                pOutput.accept(ModBlocks.PALM_FENCE_GATE.get());
-                                pOutput.accept(ModBlocks.PALM_BUTTON.get());
-                                pOutput.accept(ModBlocks.PALM_PRESSURE_PLATE.get());
                                 pOutput.accept(ModBlocks.PALM_LOG.get());
                                 pOutput.accept(ModBlocks.PALM_WOOD.get());
                                 pOutput.accept(ModBlocks.STRIPPED_PALM_LOG.get());
                                 pOutput.accept(ModBlocks.STRIPPED_PALM_WOOD.get());
+                                pOutput.accept(ModBlocks.PALM_PLANKS.get());
+                                pOutput.accept(ModBlocks.PALM_STAIRS.get());
+                                pOutput.accept(ModBlocks.PALM_SLAB.get());
+                                pOutput.accept(ModBlocks.PALM_FENCE.get());
+                                pOutput.accept(ModBlocks.PALM_FENCE_GATE.get());
+                                pOutput.accept(ModBlocks.PALM_DOOR.get());
+                                pOutput.accept(ModBlocks.PALM_TRAPDOOR.get());
+                                pOutput.accept(ModBlocks.PALM_PRESSURE_PLATE.get());
+                                pOutput.accept(ModBlocks.PALM_BUTTON.get());
                                 pOutput.accept(ModBlocks.PALM_LEAVES.get());
                                 pOutput.accept(ModBlocks.PALM_SAPLING.get());
 
-                                pOutput.accept(ModItems.DATE.get());
-                                pOutput.accept(ModItems.DATE_STUFFED_COOKIE.get());
                                 pOutput.accept(ModItems.DATES_BRANCH.get());
+                                pOutput.accept(ModItems.DATE.get());
                                 pOutput.accept(ModItems.CLUSTER_OF_DATES.get());
+                                pOutput.accept(ModItems.DATE_STUFFED_COOKIE.get());
 
                                 pOutput.accept(ModBlocks.MOSAIC_TILES.get());
 
