@@ -36,7 +36,6 @@ public class ModCreativeTab {
                                 pOutput.accept(ModItems.DATES_BRANCH.get());
                                 pOutput.accept(ModItems.DATE.get());
                                 pOutput.accept(ModItems.CLUSTER_OF_DATES.get());
-                                pOutput.accept(ModItems.DATE_STUFFED_COOKIE.get());
 
                                 pOutput.accept(ModBlocks.MOSAIC_TILES.get());
 
@@ -62,6 +61,8 @@ public class ModCreativeTab {
                                 pOutput.accept(ModItems.BOUREK_SHEET.get());
                                 pOutput.accept(ModItems.RAW_BOUREK.get());
                                 pOutput.accept(ModItems.RAW_SAMOSA.get());
+
+                                pOutput.accept(ModItems.DATE_STUFFED_COOKIE.get());
 
                                 pOutput.accept(ModItems.FLAT_BREAD.get());
                                 pOutput.accept(ModItems.MANAKISH.get());
