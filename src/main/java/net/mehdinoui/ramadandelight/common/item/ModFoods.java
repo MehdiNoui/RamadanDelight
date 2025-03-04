@@ -9,6 +9,10 @@ import static vectorwing.farmersdelight.common.FoodValues.*;
 
 public class ModFoods {
 
+    //Chickpea
+    public static final FoodProperties CHICKPEA = new FoodProperties.Builder().
+            nutrition(2).saturationMod(0.1F).fast().build();
+
     //Soups
     public static final FoodProperties CHORBA = new FoodProperties.Builder().
             nutrition(10).saturationMod(0.75F)

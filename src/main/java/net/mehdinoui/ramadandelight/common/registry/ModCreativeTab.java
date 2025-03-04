@@ -50,10 +50,13 @@ public class ModCreativeTab {
                                 pOutput.accept(ModBlocks.GREEN_STAINED_WINDOW_BLOCK.get());
                                 pOutput.accept(ModBlocks.ORANGE_STAINED_WINDOW_BLOCK.get());
 
+                                pOutput.accept(ModBlocks.CHICKPEA_BAG.get());
                                 pOutput.accept(ModBlocks.PARSLEY_BAG.get());
 
+                                pOutput.accept(ModBlocks.WILD_CHICKPEA.get());
                                 pOutput.accept(ModBlocks.WILD_PARSLEY.get());
 
+                                pOutput.accept(ModItems.CHICKPEA.get());
                                 pOutput.accept(ModItems.PARSLEY.get());
                                 pOutput.accept(ModItems.PARSLEY_SEEDS.get());
 

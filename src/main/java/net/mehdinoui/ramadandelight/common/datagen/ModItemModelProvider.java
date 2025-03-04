@@ -52,10 +52,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.DATE);
         simpleItem(ModItems.DATE_STUFFED_COOKIE);
         simpleItem(ModItems.CLUSTER_OF_DATES);
+        simpleItem(ModItems.CHICKPEA);
 
         buttonItem(ModBlocks.PALM_BUTTON, ModBlocks.PALM_PLANKS);
         fenceItem(ModBlocks.PALM_FENCE, ModBlocks.PALM_PLANKS);
-
         simpleBlockItem(ModBlocks.PALM_DOOR);
     }
 

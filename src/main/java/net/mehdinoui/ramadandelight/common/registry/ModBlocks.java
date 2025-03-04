@@ -50,6 +50,15 @@ public class ModBlocks {
             () -> new FlowerBlock(() -> MobEffects.LUCK, 5,
                     BlockBehaviour.Properties.copy(Blocks.ALLIUM).noCollission().noOcclusion()));
 
+    //Chickpea
+    public static final RegistryObject<Block> CHICKPEA_BAG = registerBlock("chickpea_bag",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> CHICKPEA_CROP = BLOCKS.register("chickpea_crop",
+            () -> new ChickpeaCropBlock(Block.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> WILD_CHICKPEA = registerBlock("wild_chickpea",
+            () -> new FlowerBlock(() -> MobEffects.LUCK, 5,
+                    BlockBehaviour.Properties.copy(Blocks.ALLIUM).noCollission().noOcclusion()));
+
     //Makloba
     public static final RegistryObject<Block> MAKLOBA_BLOCK = BLOCKS.register("makloba_block",
             () -> new MaklobaBlock(Block.Properties.copy(Blocks.CAKE), ModItems.MAKLOBA, true));

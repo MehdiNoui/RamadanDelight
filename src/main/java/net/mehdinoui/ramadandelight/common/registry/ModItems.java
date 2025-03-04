@@ -97,6 +97,10 @@ public class ModItems {
     public static final RegistryObject<Item> PARSLEY_SEEDS = ITEMS.register("parsley_seeds",
             ()->new ItemNameBlockItem(ModBlocks.PARSLEY_CROP.get(),new Item.Properties()));
 
+    //Chickpea
+    public static final RegistryObject<Item> CHICKPEA = ITEMS.register("chickpea",
+            ()->new ItemNameBlockItem(ModBlocks.CHICKPEA_CROP.get(),new Item.Properties()
+                    .food(ModFoods.CHICKPEA)));
 
     //Quiche
     public static final RegistryObject<Item> QUICHE = ITEMS.register("quiche",
