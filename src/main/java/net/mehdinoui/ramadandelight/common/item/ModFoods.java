@@ -65,14 +65,27 @@ public class ModFoods {
             .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT.get(), MEDIUM_DURATION, 0), 1.0F)
             .build();
     public static final FoodProperties TAGINE = new FoodProperties.Builder().
-            nutrition(12).saturationMod(0.6F)
+            nutrition(12).saturationMod(0.8F)
             .effect(() -> new MobEffectInstance(ModEffects.COMFORT.get(), MEDIUM_DURATION, 0), 1.0F)
+            .build();
+    public static final FoodProperties CHICKPEA_AND_RICE = new FoodProperties.Builder().
+            nutrition(10).saturationMod(0.6F)
+            .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT.get(), SHORT_DURATION, 0), 1.0F)
+            .build();
+    public static final FoodProperties SWEET_TAGINE = new FoodProperties.Builder().
+            nutrition(12).saturationMod(0.7F)
+            .effect(() -> new MobEffectInstance(ModEffects.COMFORT.get(), MEDIUM_DURATION, 0), 1.0F)
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 200, 0), 0.3F)
+            .build();
+    public static final FoodProperties HUMMUS_TAHINI = new FoodProperties.Builder().
+            nutrition(8).saturationMod(0.6F)
+            .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 200, 0), 0.3F)
             .build();
 
     //Salades
     public static final FoodProperties TABBOULEH = new FoodProperties.Builder().
             nutrition(6).saturationMod(0.6F)
-            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 400, 0), 1.0F)
+            .effect(() -> new MobEffectInstance(MobEffects.REGENERATION, 100, 0), 1.0F)
             .build();
 
     //Quiche
@@ -80,11 +93,29 @@ public class ModFoods {
             nutrition(7).saturationMod(0.6f).build();
 
     //Dates
-
     public static final FoodProperties DATE = new FoodProperties.Builder().
             nutrition(4).saturationMod(0.3f).build();
     public static final FoodProperties DATE_STUFFED_COOKIE = new FoodProperties.Builder().
             nutrition(6).saturationMod(0.6f).build();
+    public static final FoodProperties DATE_SYRUP = new FoodProperties.Builder().
+            nutrition(8).saturationMod(0.6f).build();
+
+    //Dessert
+    public static final FoodProperties MHALBIYA= new FoodProperties.Builder().
+            nutrition(7).saturationMod(0.6F)
+            .effect(() -> new MobEffectInstance(MobEffects.LUCK, 100, 0), 1.0F)
+            .build();
+    public static final FoodProperties LUQAIMAT= new FoodProperties.Builder().
+            nutrition(10).saturationMod(0.6F)
+            .effect(() -> new MobEffectInstance(ModEffects.COMFORT.get(), SHORT_DURATION, 0), 1.0F)
+            .build();
+    public static final FoodProperties KUNAFA = new FoodProperties.Builder().
+            nutrition(10).saturationMod(0.6F).build();
+    public static final FoodProperties ZALABIYA = new FoodProperties.Builder().
+            nutrition(8).saturationMod(0.6F)
+            .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 300, 0), 0.3F)
+            .build();
+
 
     //misc
     public static final FoodProperties SMALL_DOUGH = new FoodProperties.Builder().

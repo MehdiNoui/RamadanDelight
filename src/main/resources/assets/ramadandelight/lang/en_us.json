@@ -23,6 +23,15 @@
   "item.ramadandelight.flat_bread": "Flat Bread",
   "item.ramadandelight.small_dough": "Small Dough",
   "item.ramadandelight.savory_filling": "Savory Filling",
+  "item.ramadandelight.mhalbiya": "Mhalbiya",
+  "item.ramadandelight.chickpea_and_rice": "Chickpea And Rice",
+  "item.ramadandelight.luqaimat": "Luqaimat",
+  "item.ramadandelight.kunafa": "Kunafa",
+  "item.ramadandelight.sweet_tagine": "Sweet Tagine",
+  "item.ramadandelight.hummus_tahini": "Hummus Tahini",
+  "item.ramadandelight.zalabiya": "Zalabiya",
+
+
 
 
   "item.ramadandelight.chickpea": "Chickpea",
@@ -65,6 +74,7 @@
   "item.ramadandelight.date": "Date",
   "item.ramadandelight.date_stuffed_cookie": "Date Stuffed Cookie",
   "item.ramadandelight.cluster_of_dates": "Cluster Of Dates",
+  "item.ramadandelight.date_syrup": "Date Syrup",
 
   "sounds.ramadandelight.beat": "Drum Beat"
 }

@@ -3,17 +3,15 @@ package net.mehdinoui.ramadandelight.common.registry;
 import net.mehdinoui.ramadandelight.RamadanDelight;
 import net.mehdinoui.ramadandelight.common.item.ModFoods;
 import net.minecraft.world.food.FoodProperties;
-import net.minecraft.world.item.BlockItem;
-import net.minecraft.world.item.Item;
-import net.minecraft.world.item.ItemNameBlockItem;
-import net.minecraft.world.item.Items;
+import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import vectorwing.farmersdelight.common.item.ConsumableItem;
+import vectorwing.farmersdelight.common.item.DrinkableItem;
 
-import static vectorwing.farmersdelight.common.registry.ModItems.basicItem;
+import static vectorwing.farmersdelight.common.registry.ModItems.*;
 
 
 public class ModItems {
@@ -78,12 +76,16 @@ public class ModItems {
             () -> new BlockItem(ModBlocks.MAKLOBA_BLOCK.get(), basicItem().stacksTo(1)));
     public static final RegistryObject<Item> MAKLOBA = ITEMS.register("makloba",
             ()->new ConsumableItem(bowlFoodItem(ModFoods.MAKLOBA),true));
-
     public static final RegistryObject<Item> SAYADIEH = ITEMS.register("sayadieh",
             ()->new ConsumableItem(bowlFoodItem(ModFoods.SAYADIEH),true));
-
     public static final RegistryObject<Item> TAGINE = ITEMS.register("tagine",
             ()->new ConsumableItem(bowlFoodItem(ModFoods.TAGINE),true));
+    public static final RegistryObject<Item> CHICKPEA_AND_RICE = ITEMS.register("chickpea_and_rice",
+            ()->new ConsumableItem(bowlFoodItem(ModFoods.CHICKPEA_AND_RICE),true));
+    public static final RegistryObject<Item> SWEET_TAGINE = ITEMS.register("sweet_tagine",
+            ()->new ConsumableItem(bowlFoodItem(ModFoods.SWEET_TAGINE),true));
+    public static final RegistryObject<Item> HUMMUS_TAHINI = ITEMS.register("hummus_tahini",
+            ()->new ConsumableItem(bowlFoodItem(ModFoods.HUMMUS_TAHINI),true));
 
 
     //Salads
@@ -129,4 +131,17 @@ public class ModItems {
             () -> new BlockItem(ModBlocks.DATES_BRANCH.get(), basicItem()));
     public static final RegistryObject<Item> CLUSTER_OF_DATES = ITEMS.register("cluster_of_dates",
             ()->new Item(new Item.Properties()));
+    public static final RegistryObject<Item> DATE_SYRUP = ITEMS.register("date_syrup",
+            () -> new DrinkableItem(drinkItem().food(ModFoods.DATE_SYRUP), true, false));
+
+
+    //DESERTS
+    public static final RegistryObject<Item> MHALBIYA = ITEMS.register("mhalbiya",
+            () -> new ConsumableItem(foodItem(ModFoods.MHALBIYA).craftRemainder(Items.GLASS_BOTTLE).stacksTo(16)));
+    public static final RegistryObject<Item> ZALABIYA = ITEMS.register("zalabiya",
+            () -> new Item(new Item.Properties().food(ModFoods.ZALABIYA)));
+    public static final RegistryObject<Item> LUQAIMAT = ITEMS.register("luqaimat",
+            ()->new ConsumableItem(bowlFoodItem(ModFoods.LUQAIMAT),true));
+    public static final RegistryObject<Item> KUNAFA = ITEMS.register("kunafa",
+            () -> new Item(new Item.Properties().food(ModFoods.KUNAFA)));
 }

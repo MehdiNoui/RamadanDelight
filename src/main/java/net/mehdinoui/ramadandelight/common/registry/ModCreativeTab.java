@@ -65,7 +65,11 @@ public class ModCreativeTab {
                                 pOutput.accept(ModItems.RAW_BOUREK.get());
                                 pOutput.accept(ModItems.RAW_SAMOSA.get());
 
+                                pOutput.accept(ModItems.DATE_SYRUP.get());
                                 pOutput.accept(ModItems.DATE_STUFFED_COOKIE.get());
+                                pOutput.accept(ModItems.MHALBIYA.get());
+                                pOutput.accept(ModItems.KUNAFA.get());
+                                pOutput.accept(ModItems.ZALABIYA.get());
 
                                 pOutput.accept(ModItems.FLAT_BREAD.get());
                                 pOutput.accept(ModItems.MANAKISH.get());
@@ -78,13 +82,16 @@ public class ModCreativeTab {
                                 pOutput.accept(ModItems.QUICHE.get());
                                 pOutput.accept(ModItems.QUICHE_SLICE.get());
 
+                                pOutput.accept(ModItems.HUMMUS_TAHINI.get());
                                 pOutput.accept(ModItems.SAVORY_FILLING.get());
+                                pOutput.accept(ModItems.SWEET_TAGINE.get());
                                 pOutput.accept(ModItems.TABBOULEH.get());
 
                                 pOutput.accept(ModItems.HARIRA.get());
                                 pOutput.accept(ModItems.CHORBA.get());
                                 pOutput.accept(ModItems.HALEEM.get());
 
+                                pOutput.accept(ModItems.CHICKPEA_AND_RICE.get());
                                 pOutput.accept(ModItems.SAYADIEH.get());
                                 pOutput.accept(ModItems.TAGINE.get());
 

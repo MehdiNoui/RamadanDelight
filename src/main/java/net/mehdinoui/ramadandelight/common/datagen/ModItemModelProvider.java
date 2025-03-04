@@ -53,6 +53,14 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.DATE_STUFFED_COOKIE);
         simpleItem(ModItems.CLUSTER_OF_DATES);
         simpleItem(ModItems.CHICKPEA);
+        simpleItem(ModItems.SWEET_TAGINE);
+        simpleItem(ModItems.ZALABIYA);
+        simpleItem(ModItems.LUQAIMAT);
+        simpleItem(ModItems.MHALBIYA);
+        simpleItem(ModItems.KUNAFA);
+        simpleItem(ModItems.DATE_SYRUP);
+        simpleItem(ModItems.CHICKPEA_AND_RICE);
+        simpleItem(ModItems.HUMMUS_TAHINI);
 
         buttonItem(ModBlocks.PALM_BUTTON, ModBlocks.PALM_PLANKS);
         fenceItem(ModBlocks.PALM_FENCE, ModBlocks.PALM_PLANKS);
