@@ -114,6 +114,13 @@ public class RamadanDelight
                             2, // Villager XP
                             0.05f // Price multiplier
                     ));
+                    level1Trades.add((entity, random) -> new MerchantOffer(
+                            new ItemStack(ModItems.PARSLEY.get(), 26), //YOU GET
+                            new ItemStack(Items.EMERALD, 1), //I GET
+                            16, // Max uses
+                            2, // Villager XP
+                            0.05f // Price multiplier
+                    ));
                     level2Trades.add((entity, random) -> new MerchantOffer(
                             new ItemStack(Items.EMERALD, 1),
                             new ItemStack(ModItems.DATE.get(), 4),
