@@ -1,0 +1,21 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "ramadandelight:wild_chickpea"
+    }
+  ],
+  "results": [
+    {
+      "item": "ramadandelight:chickpea",
+      "count": 2
+    }
+  ],
+  "processingTime": 50
+}
