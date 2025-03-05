@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item":"ramadandelight:chickpea",
+      "count": 9
+    }
+  ],
+  "result":{
+    "item":"ramadandelight:chickpea_bag"
+  }
+}
