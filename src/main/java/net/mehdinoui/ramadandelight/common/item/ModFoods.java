@@ -98,6 +98,7 @@ public class ModFoods {
     public static final FoodProperties DATE_STUFFED_COOKIE = new FoodProperties.Builder().
             nutrition(6).saturationMod(0.6f).build();
     public static final FoodProperties DATE_SYRUP = new FoodProperties.Builder().
+            effect(() -> new MobEffectInstance(MobEffects.SATURATION, 100, 0), 1.0F).
             nutrition(8).saturationMod(0.6f).build();
 
     //Dessert
@@ -106,7 +107,7 @@ public class ModFoods {
             .effect(() -> new MobEffectInstance(MobEffects.LUCK, 100, 0), 1.0F)
             .build();
     public static final FoodProperties LUQAIMAT= new FoodProperties.Builder().
-            nutrition(10).saturationMod(0.6F)
+            nutrition(12).saturationMod(0.6F)
             .effect(() -> new MobEffectInstance(ModEffects.COMFORT.get(), SHORT_DURATION, 0), 1.0F)
             .build();
     public static final FoodProperties KUNAFA = new FoodProperties.Builder().
