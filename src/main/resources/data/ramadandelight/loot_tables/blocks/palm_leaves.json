@@ -68,7 +68,7 @@
                   "chances": [
                     0.025,
                     0.040,
-                    0.065,
+                    0.055,
                     0.08
                   ],
                   "condition": "minecraft:table_bonus",
