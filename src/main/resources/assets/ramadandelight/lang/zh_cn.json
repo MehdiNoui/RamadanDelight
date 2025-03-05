@@ -5,7 +5,7 @@
     "item.ramadandelight.chorba": "丘尔巴汤",
     "item.ramadandelight.haleem": "哈利姆炖菜",
     "item.ramadandelight.bourek": "阿尔及利亚卷",
-    "item.ramadandelight.bourek_sheet": "阿尔及利亚卷面皮",
+    "item.ramadandelight.bourek_sheet": "阿尔及利亚面皮",
     "item.ramadandelight.raw_bourek": "生阿尔及利亚卷",
     "item.ramadandelight.raw_samosa": "生咖喱角",
     "item.ramadandelight.samosa": "咖喱角",
@@ -23,7 +23,21 @@
     "item.ramadandelight.flat_bread": "大饼",
     "item.ramadandelight.small_dough": "小面团",
     "item.ramadandelight.savory_filling": "咸味馅料",
+    "item.ramadandelight.mhalbiya": "穆哈列比布丁",
+    "item.ramadandelight.chickpea_and_rice": "鹰嘴豆米饭",
+    "item.ramadandelight.luqaimat": "炸糖丸",
+    "item.ramadandelight.kunafa": "库纳法甜薄饼",
+    "item.ramadandelight.sweet_tagine": "甜味塔吉锅",
+    "item.ramadandelight.hummus_tahini": "鹰嘴豆泥拌芝麻酱",
+    "item.ramadandelight.zalabiya": "阿拉伯炸糖糕",
   
+    
+    
+    
+    "item.ramadandelight.chickpea": "鹰嘴豆",
+    "block.ramadandelight.chickpea_bag": "鹰嘴豆袋",
+    "block.ramadandelight.wild_chickpea": "野生鹰嘴豆",
+    
     "item.ramadandelight.parsley": "欧芹",
     "block.ramadandelight.parsley_bag": "欧芹袋",
     "item.ramadandelight.parsley_seeds": "欧芹种子",
@@ -60,6 +74,7 @@
     "item.ramadandelight.date": "椰枣",
     "item.ramadandelight.date_stuffed_cookie": "椰枣夹心饼干",
     "item.ramadandelight.cluster_of_dates": "椰枣簇",
+    "item.ramadandelight.date_syrup": "椰枣糖浆",
   
     "sounds.ramadandelight.beat": "鼓点"
   }
