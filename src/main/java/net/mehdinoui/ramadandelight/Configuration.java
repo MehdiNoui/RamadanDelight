@@ -30,7 +30,6 @@ public class Configuration {
         ENABLE_WANDERING_TRADER_SELLS = BUILDER
                 .comment("Enable Ramadan Delight Wandering Trader trades")
                 .define("enableWanderingTrades", true);
-        BUILDER.pop();
 
         BUILDER.pop();
 
