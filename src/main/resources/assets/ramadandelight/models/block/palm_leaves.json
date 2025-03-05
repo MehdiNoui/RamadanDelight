@@ -3,5 +3,5 @@
   "textures": {
     "all": "ramadandelight:block/palm_leaves"
   },
-  "render_type": "minecraft:translucent"
+  "render_type": "minecraft:cutout"
 }

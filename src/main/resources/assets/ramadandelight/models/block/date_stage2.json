@@ -65,5 +65,5 @@
 			"children": [2, 3]
 		}
 	],
-	"render_type": "minecraft:translucent"
+	"render_type": "minecraft:cutout"
 }

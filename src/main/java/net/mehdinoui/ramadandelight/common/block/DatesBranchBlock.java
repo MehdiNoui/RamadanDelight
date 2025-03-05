@@ -25,10 +25,12 @@ public class DatesBranchBlock extends Block implements BonemealableBlock {
 
     public static final IntegerProperty AGE = IntegerProperty.create("age", 0, 3);
     protected static final VoxelShape[] SHAPE_BY_AGE = new VoxelShape[]{
-            Block.box(4.0D, 6.0D, 4.0D, 12.0D, 14.0D, 12.0D),
-            Block.box(3.0D, 4.0D, 3.0D, 13.0D, 14.0D, 13.0D),
-            Block.box(2.0D, 2.0D, 2.0D, 14.0D, 14.0D, 14.0D),
-            Block.box(2.0D, 1.0D, 2.0D, 14.0D, 15.0D, 14.0D)
+
+            Block.box(3.0D, 7.0D, 3.0D, 13.0D, 16.0D, 13.0D),
+            Block.box(3.0D, 4.0D, 3.0D, 13.0D, 12.0D, 13.0D),
+            Block.box(3.0D, 1.0D, 3.0D, 13.0D, 12.0D, 13.0D),
+            Block.box(2.0D, 0.0D, 2.0D, 14.0D, 12.0D, 14.0D)
+
     };
     public DatesBranchBlock(Properties pProperties) {
         super(pProperties);
