@@ -3,7 +3,7 @@
   "category": "misc",
   "key": {
     "#": {
-      "tag": "forge:grain"
+      "tag": "forge:grain/wheat"
     },
     "X": {
       "item": "ramadandelight:date"

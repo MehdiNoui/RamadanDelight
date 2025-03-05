@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 2.0,
+  "ingredients": [
+    {
+      "tag": "forge:dough"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    [
+      {
+        "item": "minecraft:honey_bottle"
+      },
+      {
+        "item": "ramadandelight:date_syrup"
+      }
+    ]
+  ],
+  "result": {
+    "item": "ramadandelight:zalabiya",
+    "count": 2
+  }
+}

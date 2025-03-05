@@ -1,0 +1,33 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 2.0,
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "ingredients": [
+    {
+      "item": "ramadandelight:small_dough"
+    },
+    {
+      "item": "ramadandelight:small_dough"
+    },
+    {
+      "item": "ramadandelight:small_dough"
+    },
+    {
+      "item": "ramadandelight:small_dough"
+    },
+    [
+      {
+        "item": "minecraft:honey_bottle"
+      },
+      {
+        "item": "ramadandelight:date_syrup"
+      }
+    ]
+  ],
+  "result": {
+    "item": "ramadandelight:luqaimat"
+  }
+}

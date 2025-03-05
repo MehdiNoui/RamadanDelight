@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 2.0,
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "ingredients": [
+    {
+      "tag": "forge:cooked_beef"
+    },
+    {
+      "item": "minecraft:apple"
+    },
+    {
+      "tag": "forge:berries"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "result": {
+    "item": "ramadandelight:sweet_tagine"
+  }
+}

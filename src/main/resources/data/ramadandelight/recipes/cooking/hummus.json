@@ -1,0 +1,25 @@
+{
+  "type": "farmersdelight:cooking",
+  "cookingtime": 200,
+  "experience": 2.0,
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "ingredients": [
+    {
+      "item": "ramadandelight:chickpea"
+    },
+    {
+      "item": "ramadandelight:chickpea"
+    },
+    {
+      "item": "ramadandelight:chickpea"
+    },
+    {
+      "tag": "forge:grain/wheat"
+    }
+  ],
+  "result": {
+    "item": "ramadandelight:hummus_tahini"
+  }
+}
