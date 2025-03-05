@@ -15,6 +15,7 @@ import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.item.trading.MerchantOffer;
 import net.minecraft.world.entity.animal.Chicken;
 import net.minecraft.world.level.block.ComposterBlock;
+import net.minecraftforge.common.BasicItemListing;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.crafting.CompoundIngredient;
 import net.minecraftforge.event.village.VillagerTradesEvent;
@@ -146,6 +147,17 @@ public class RamadanDelight
                             0.05f // Price multiplier
                     ));
                 }
+            }
+        }
+        @SubscribeEvent
+        public static void onWandererTrades(WandererTradesEvent event) {
+            if (Configuration.ENABLE_WANDERING_TRADER_SELLS.get()) {
+                List<VillagerTrades.ItemListing> trades = event.getGenericTrades();
+                trades.add(new BasicItemListing(5, new ItemStack(ModBlocks.PALM_SAPLING.get()), 1, 1, 0.05f));
+                trades.add(new BasicItemListing(5, new ItemStack(ModItems.DATES_BRANCH.get()), 1, 1, 0.05f));
+                trades.add(new BasicItemListing(1, new ItemStack(ModItems.PARSLEY_SEEDS.get()), 12, 1, 0.05f));
+                trades.add(new BasicItemListing(1, new ItemStack(ModItems.CHICKPEA.get()), 12, 1, 0.05f));
+                trades.add(new BasicItemListing(1, new ItemStack(ModItems.DATE.get()), 12, 1, 0.05f));
             }
         }
     }

@@ -10,6 +10,7 @@ public class Configuration {
     public static final ForgeConfigSpec.BooleanValue ENABLE_VILLAGER_TRADES;
     public static final ForgeConfigSpec.BooleanValue ENABLE_FARMER_VILLAGER_TRADES;
     public static final ForgeConfigSpec.BooleanValue ENABLE_MASON_VILLAGER_TRADES;
+    public static final ForgeConfigSpec.BooleanValue ENABLE_WANDERING_TRADER_SELLS;
 
     static {
         BUILDER.push("Villager Settings");
@@ -25,6 +26,11 @@ public class Configuration {
         ENABLE_MASON_VILLAGER_TRADES = BUILDER
                 .comment("Enable Ramadan Delight Mason villager trades (such as Mosaic Tiles)")
                 .define("enableMasonVillagerTrades", true);
+
+        ENABLE_WANDERING_TRADER_SELLS = BUILDER
+                .comment("Enable Ramadan Delight Wandering Trader trades")
+                .define("enableWanderingTrades", true);
+        BUILDER.pop();
 
         BUILDER.pop();
 
