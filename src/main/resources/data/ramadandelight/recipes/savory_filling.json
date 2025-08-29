@@ -8,7 +8,7 @@
       "tag": "forge:eggs"
     },
     {
-      "item": "farmersdelight:onion"
+      "tag": "forge:crops/onion"
     },
     {
       "tag": "forge:cooked_meat"

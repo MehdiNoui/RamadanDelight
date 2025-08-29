@@ -1,10 +1,7 @@
 {
   "type": "farmersdelight:cooking",
   "cookingtime": 200,
-  "experience": 2.0,
-  "container": {
-    "item": "minecraft:bowl"
-  },
+  "experience": 1.0,
   "ingredients": [
     {
       "tag": "forge:raw_chicken"
@@ -13,7 +10,7 @@
       "item": "minecraft:carrot"
     },
     {
-      "item": "minecraft:potato"
+      "tag": "forge:potatoes"
     },
     {
       "item": "ramadandelight:chickpea"
@@ -22,6 +19,7 @@
       "item": "ramadandelight:parsley"
     }
   ],
+  "recipe_book_tab": "meals",
   "result": {
     "item": "ramadandelight:tagine"
   }

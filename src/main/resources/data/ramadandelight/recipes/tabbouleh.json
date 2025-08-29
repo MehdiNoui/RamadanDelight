@@ -5,10 +5,10 @@
       "item": "ramadandelight:parsley"
     },
     {
-      "item": "farmersdelight:tomato"
+      "tag": "forge:crops/tomato"
     },
     {
-      "item": "farmersdelight:onion"
+      "tag": "forge:crops/onion"
     },
     {
       "item": "minecraft:bowl"

@@ -1,10 +1,7 @@
 {
   "type": "farmersdelight:cooking",
   "cookingtime": 200,
-  "experience": 2.0,
-  "container": {
-    "item": "minecraft:bowl"
-  },
+  "experience": 1.0,
   "ingredients": [
     {
       "tag": "forge:raw_fishes/cod"
@@ -16,6 +13,7 @@
       "item": "farmersdelight:rice"
     }
   ],
+  "recipe_book_tab": "meals",
   "result": {
     "item": "ramadandelight:sayadieh"
   }

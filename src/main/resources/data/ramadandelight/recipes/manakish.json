@@ -8,10 +8,10 @@
       "item": "ramadandelight:parsley"
     },
     {
-      "item": "farmersdelight:cooked_chicken_cuts"
+      "tag": "forge:cooked_chicken"
     },
     {
-      "item": "farmersdelight:onion"
+      "tag": "forge:crops/onion"
     }
   ],
   "result":{

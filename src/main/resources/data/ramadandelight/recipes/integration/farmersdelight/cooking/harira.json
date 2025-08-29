@@ -1,10 +1,7 @@
 {
   "type": "farmersdelight:cooking",
   "cookingtime": 200,
-  "experience": 2.0,
-  "container": {
-    "item": "minecraft:bowl"
-  },
+  "experience": 1.0,
   "ingredients": [
     {
       "item": "ramadandelight:parsley"
@@ -19,6 +16,7 @@
       "item": "minecraft:carrot"
     }
   ],
+  "recipe_book_tab": "meals",
   "result": {
     "item": "ramadandelight:harira"
   }

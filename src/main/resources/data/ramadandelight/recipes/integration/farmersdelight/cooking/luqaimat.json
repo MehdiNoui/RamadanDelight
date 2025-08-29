@@ -1,14 +1,8 @@
 {
   "type": "farmersdelight:cooking",
   "cookingtime": 200,
-  "experience": 2.0,
-  "container": {
-    "item": "minecraft:bowl"
-  },
+  "experience": 1.0,
   "ingredients": [
-    {
-      "item": "ramadandelight:small_dough"
-    },
     {
       "item": "ramadandelight:small_dough"
     },
@@ -27,6 +21,7 @@
       }
     ]
   ],
+  "recipe_book_tab": "misc",
   "result": {
     "item": "ramadandelight:luqaimat"
   }
