@@ -1,6 +1,5 @@
 package net.mehdinoui.ramadandelight.common.block;
 
-
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Blocks;
