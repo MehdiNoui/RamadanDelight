@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "ACA",
+    "CBC",
+    "ACA"
+  ],
+  "key": {
+    "A": {
+      "item": "minecraft:copper_ingot"
+    },
+    "B":{
+      "item": "minecraft:torch"
+    },
+    "C": {
+      "item": "ramadandelight:green_stained_glass_block"
+    }
+  },
+  "result": {
+    "item": "ramadandelight:copper_fanous"
+  }
+}

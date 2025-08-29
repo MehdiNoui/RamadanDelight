@@ -23,10 +23,6 @@ public class ModItems {
         return new Item.Properties().food(food).craftRemainder(Items.BOWL).stacksTo(16);
     }
 
-    public static Item.Properties bottleItem(FoodProperties food) {
-        return new Item.Properties().food(food).craftRemainder(Items.GLASS_BOTTLE).stacksTo(32);
-    }
-
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
     }
@@ -38,7 +34,6 @@ public class ModItems {
             ()->new ConsumableItem(bowlFoodItem(ModFoods.CHORBA),true));
     public static final RegistryObject<Item> HALEEM = ITEMS.register("haleem",
             ()->new ConsumableItem(bowlFoodItem(ModFoods.HALEEM),true));
-
 
     //Savory and misc
     public static final RegistryObject<Item> SAVORY_FILLING = ITEMS.register("savory_filling",
@@ -70,7 +65,6 @@ public class ModItems {
     public static final RegistryObject<Item> MANAKISH = ITEMS.register("manakish",
             () -> new Item(new Item.Properties().food(ModFoods.MANAKISH)));
 
-
     //Dishes
     public static final RegistryObject<Item> MAKLOBA_BLOCK = ITEMS.register("makloba_block",
             () -> new BlockItem(ModBlocks.MAKLOBA_BLOCK.get(), basicItem().stacksTo(1)));
@@ -87,11 +81,9 @@ public class ModItems {
     public static final RegistryObject<Item> HUMMUS_TAHINI = ITEMS.register("hummus_tahini",
             ()->new ConsumableItem(bowlFoodItem(ModFoods.HUMMUS_TAHINI),true));
 
-
     //Salads
     public static final RegistryObject<Item> TABBOULEH = ITEMS.register("tabbouleh",
             ()->new ConsumableItem(bowlFoodItem(ModFoods.TABBOULEH),true));
-
 
     //Parsley
     public static final RegistryObject<Item> PARSLEY = ITEMS.register("parsley",
@@ -113,10 +105,13 @@ public class ModItems {
     //Fanous
     public static final RegistryObject<Item> FANOUS = ITEMS.register("fanous",
             () -> new BlockItem(ModBlocks.FANOUS.get(), basicItem()));
+    public static final RegistryObject<Item> COPPER_FANOUS = ITEMS.register("copper_fanous",
+            () -> new BlockItem(ModBlocks.COPPER_FANOUS.get(), basicItem()));
     public static final RegistryObject<Item> REDSTONE_FANOUS = ITEMS.register("redstone_fanous",
             () -> new BlockItem(ModBlocks.REDSTONE_FANOUS.get(), basicItem()));
     public static final RegistryObject<Item> SOUL_FANOUS = ITEMS.register("soul_fanous",
             () -> new BlockItem(ModBlocks.SOUL_FANOUS.get(), basicItem()));
+
 
     //Misc
     public static final RegistryObject<Item> DRUM = ITEMS.register("drum",

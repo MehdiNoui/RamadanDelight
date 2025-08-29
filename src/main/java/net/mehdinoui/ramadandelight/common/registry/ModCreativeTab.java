@@ -40,6 +40,7 @@ public class ModCreativeTab {
                                 pOutput.accept(ModBlocks.MOSAIC_TILES.get());
 
                                 pOutput.accept(ModItems.FANOUS.get());
+                                pOutput.accept(ModItems.COPPER_FANOUS.get());
                                 pOutput.accept(ModItems.REDSTONE_FANOUS.get());
                                 pOutput.accept(ModItems.SOUL_FANOUS.get());
 
