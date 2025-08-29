@@ -53,7 +53,12 @@
     "block.ramadandelight.blue_stained_glass_block": "蓝色染色玻璃块",
     "block.ramadandelight.green_stained_glass_block": "绿色染色玻璃块",
     "block.ramadandelight.orange_stained_glass_block": "橙色染色玻璃块",
-  
+
+    "block.ramadandelight.stained_glass_pane": "Stained Glass Pane",
+    "block.ramadandelight.blue_stained_glass_pane": "Blue Stained Glass Pane",
+    "block.ramadandelight.green_stained_glass_pane": "Green Stained Glass Pane",
+    "block.ramadandelight.orange_stained_glass_pane": "Orange Stained Glass Pane",
+
     "block.ramadandelight.palm_log": "枣椰原木",
     "block.ramadandelight.palm_wood": "枣椰木",
     "block.ramadandelight.palm_planks": "枣椰木板",

@@ -8,6 +8,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.BlockItem;
+import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
 import net.minecraft.world.item.Item;
@@ -92,6 +93,16 @@ public class ModBlocks {
             () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).strength(1.2f, 2.0f)));
     public static final RegistryObject<Block> ORANGE_STAINED_GLASS_BLOCK = registerBlock("orange_stained_glass_block",
             () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).strength(1.2f, 2.0f)));
+
+    //Glass Panes
+    public static final RegistryObject<Block> STAINED_GLASS_PANE = registerBlock("stained_glass_pane",
+            () -> new StainedGlassPaneBlock(DyeColor.WHITE, BlockBehaviour.Properties.copy(Blocks.BLUE_STAINED_GLASS_PANE).strength(1.2f, 2.0f).noOcclusion()));
+    public static final RegistryObject<Block> BLUE_STAINED_GLASS_PANE = registerBlock("blue_stained_glass_pane",
+            () -> new StainedGlassPaneBlock(DyeColor.BLUE, BlockBehaviour.Properties.copy(Blocks.BLUE_STAINED_GLASS_PANE).strength(1.2f, 2.0f).noOcclusion()));
+    public static final RegistryObject<Block> GREEN_STAINED_GLASS_PANE = registerBlock("green_stained_glass_pane",
+            () -> new StainedGlassPaneBlock(DyeColor.GREEN, BlockBehaviour.Properties.copy(Blocks.GREEN_STAINED_GLASS_PANE).strength(1.2f, 2.0f).noOcclusion()));
+    public static final RegistryObject<Block> ORANGE_STAINED_GLASS_PANE = registerBlock("orange_stained_glass_pane",
+            () -> new StainedGlassPaneBlock(DyeColor.ORANGE, BlockBehaviour.Properties.copy(Blocks.ORANGE_STAINED_GLASS_PANE).strength(1.2f, 2.0f).noOcclusion()));
 
     //Tree Base
     public static final RegistryObject<Block> PALM_LOG = registerBlock("palm_log",
