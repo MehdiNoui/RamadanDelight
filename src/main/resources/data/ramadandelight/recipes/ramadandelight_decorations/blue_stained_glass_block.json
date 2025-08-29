@@ -8,14 +8,14 @@
   ],
   "key": {
     "B": {
-      "tag": "forge:dyes/green"
+      "tag": "forge:dyes/blue"
     },
     "A":{
-      "item": "ramadandelight:window_block"
+      "item": "ramadandelight:stained_glass_block"
     }
   },
   "result": {
-    "item": "ramadandelight:green_stained_window_block",
+    "item": "ramadandelight:blue_stained_glass_block",
     "count": 8
   }
 }

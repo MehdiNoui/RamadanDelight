@@ -45,10 +45,10 @@ public class ModCreativeTab {
 
                                 pOutput.accept(ModItems.DRUM.get());
 
-                                pOutput.accept(ModBlocks.WINDOW_BLOCK.get());
-                                pOutput.accept(ModBlocks.BLUE_STAINED_WINDOW_BLOCK.get());
-                                pOutput.accept(ModBlocks.GREEN_STAINED_WINDOW_BLOCK.get());
-                                pOutput.accept(ModBlocks.ORANGE_STAINED_WINDOW_BLOCK.get());
+                                pOutput.accept(ModBlocks.STAINED_GLASS_BLOCK.get());
+                                pOutput.accept(ModBlocks.BLUE_STAINED_GLASS_BLOCK.get());
+                                pOutput.accept(ModBlocks.GREEN_STAINED_GLASS_BLOCK.get());
+                                pOutput.accept(ModBlocks.ORANGE_STAINED_GLASS_BLOCK.get());
 
                                 pOutput.accept(ModBlocks.CHICKPEA_BAG.get());
                                 pOutput.accept(ModBlocks.PARSLEY_BAG.get());

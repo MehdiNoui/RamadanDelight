@@ -11,11 +11,11 @@
       "tag": "forge:dyes/orange"
     },
     "A":{
-      "item": "ramadandelight:window_block"
+      "item": "ramadandelight:stained_glass_block"
     }
   },
   "result": {
-    "item": "ramadandelight:orange_stained_window_block",
+    "item": "ramadandelight:orange_stained_glass_block",
     "count": 8
   }
 }

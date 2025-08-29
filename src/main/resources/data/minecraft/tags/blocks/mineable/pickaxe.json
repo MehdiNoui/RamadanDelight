@@ -3,10 +3,10 @@
     "ramadandelight:fanous",
     "ramadandelight:redstone_fanous",
     "ramadandelight:soul_fanous",
-    "ramadandelight:window_block",
-    "ramadandelight:blue_stained_window_block",
-    "ramadandelight:green_stained_window_block",
-    "ramadandelight:orange_stained_window_block",
+    "ramadandelight:stained_glass_block",
+    "ramadandelight:blue_stained_glass_block",
+    "ramadandelight:green_stained_glass_block",
+    "ramadandelight:orange_stained_glass_block",
     "ramadandelight:mosaic_tiles"
   ]
 }

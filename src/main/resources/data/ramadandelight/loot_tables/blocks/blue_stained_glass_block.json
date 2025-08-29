@@ -21,11 +21,11 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "ramadandelight:window_block"
+          "name": "ramadandelight:blue_stained_glass_block"
         }
       ],
       "rolls": 1.0
     }
   ],
-  "random_sequence": "ramadandelight:blocks/window_block"
+  "random_sequence": "ramadandelight:blocks/blue_stained_glass_block"
 }
