@@ -2,8 +2,8 @@
   "type": "minecraft:crafting_shaped",
   "category": "misc",
   "pattern": [
-    "AAA",
-    "ABA",
+    "ACA",
+    "CBC",
     "ACA"
   ],
   "key": {
@@ -14,7 +14,7 @@
       "item": "minecraft:torch"
     },
     "C": {
-      "tag": "forge:ingots/iron"
+      "item": "ramadandelight:stained_glass_block"
     }
   },
   "result": {
