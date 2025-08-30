@@ -72,7 +72,9 @@
   "block.ramadandelight.palm_door": "Date Palm Door",
   "block.ramadandelight.palm_fence": "Date Palm Fence",
   "block.ramadandelight.palm_fence_gate": "Date Palm Fence Gate",
-  "block.ramadandelight.palm_trapdoor": "Date Palm trap door",
+  "block.ramadandelight.palm_trapdoor": "Date Palm Trap Door",
+  "block.ramadandelight.palm_sign": "Date Palm Sign",
+  "block.ramadandelight.palm_hanging_sign": "Date Palm Hanging Sign",
 
   "block.ramadandelight.palm_sapling": "Date Palm Sapling",
   "block.ramadandelight.dates_branch": "Dates Palm Branch",

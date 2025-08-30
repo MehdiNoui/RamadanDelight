@@ -1,0 +1,16 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "ramadandelight:palm_hanging_sign"
+    }
+  ],
+  "result": [
+    {
+      "item": "ramadandelight:palm_planks"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/axes"
+  }
+}
