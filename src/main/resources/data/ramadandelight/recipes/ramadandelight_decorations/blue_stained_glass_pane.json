@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": {
+      "item": "ramadandelight:blue_stained_glass_block"
+    }
+  },
+  "result": {
+    "count": 16,
+    "item": "ramadandelight:blue_stained_glass_pane"
+  }
+}
