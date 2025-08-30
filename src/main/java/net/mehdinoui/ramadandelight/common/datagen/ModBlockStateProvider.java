@@ -33,6 +33,21 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockItem(ModBlocks.PALM_FENCE_GATE);
         blockItem(ModBlocks.PALM_TRAPDOOR, "_bottom");
 
+        signBlock(((StandingSignBlock) ModBlocks.PALM_SIGN.get()), ((WallSignBlock) ModBlocks.PALM_WALL_SIGN.get()),
+                blockTexture(ModBlocks.PALM_PLANKS.get()));
+
+        hangingSignBlock(ModBlocks.PALM_HANGING_SIGN.get(), ModBlocks.PALM_WALL_HANGING_SIGN.get(),
+                blockTexture(ModBlocks.PALM_PLANKS.get()));
+    }
+
+    public void hangingSignBlock(Block signBlock, Block wallSignBlock, ResourceLocation texture) {
+        ModelFile sign = models().sign(name(signBlock), texture);
+        hangingSignBlock(signBlock, wallSignBlock, sign);
+    }
+
+    public void hangingSignBlock(Block signBlock, Block wallSignBlock, ModelFile sign) {
+        simpleBlock(signBlock, sign);
+        simpleBlock(wallSignBlock, sign);
     }
 
     private String name(Block block) {

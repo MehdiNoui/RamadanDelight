@@ -2,6 +2,11 @@ package net.mehdinoui.ramadandelight.common.registry;
 
 import net.mehdinoui.ramadandelight.RamadanDelight;
 import net.mehdinoui.ramadandelight.common.block.*;
+import net.mehdinoui.ramadandelight.common.block.signs.PalmHangingSignBlock;
+import net.mehdinoui.ramadandelight.common.block.signs.PalmStandingSignBlock;
+import net.mehdinoui.ramadandelight.common.block.signs.PalmWallHangingSignBlock;
+import net.mehdinoui.ramadandelight.common.block.signs.PalmWallSignBlock;
+import net.mehdinoui.ramadandelight.common.util.RDWoodTypes;
 import net.mehdinoui.ramadandelight.common.worldgen.tree.PalmTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -250,4 +255,17 @@ public class ModBlocks {
                     .noOcclusion()
                     .strength(0.2f)
                     .sound(SoundType.AZALEA)));
+
+    public static final RegistryObject<Block> PALM_SIGN = BLOCKS.register("palm_sign",
+            () -> new PalmStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN),
+                    RDWoodTypes.PALM));
+    public static final RegistryObject<Block> PALM_WALL_SIGN = BLOCKS.register("palm_wall_sign",
+            () -> new PalmWallSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_SIGN),
+                    RDWoodTypes.PALM));
+    public static final RegistryObject<Block> PALM_HANGING_SIGN = BLOCKS.register("palm_hanging_sign",
+            () -> new PalmHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_HANGING_SIGN),
+                    RDWoodTypes.PALM));
+    public static final RegistryObject<Block> PALM_WALL_HANGING_SIGN = BLOCKS.register("palm_wall_hanging_sign",
+            () -> new PalmWallHangingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_WALL_HANGING_SIGN),
+                    RDWoodTypes.PALM));
 }

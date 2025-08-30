@@ -1,12 +1,11 @@
 package net.mehdinoui.ramadandelight;
 
 import com.mojang.logging.LogUtils;
-import net.mehdinoui.ramadandelight.common.registry.ModBlocks;
-import net.mehdinoui.ramadandelight.common.registry.ModCreativeTab;
-import net.mehdinoui.ramadandelight.common.registry.ModItems;
-import net.mehdinoui.ramadandelight.common.registry.ModSounds;
+import net.mehdinoui.ramadandelight.common.registry.*;
+import net.mehdinoui.ramadandelight.common.util.RDWoodTypes;
 import net.mehdinoui.ramadandelight.common.worldgen.tree.ModFoliagePlacer;
 import net.mehdinoui.ramadandelight.common.worldgen.tree.ModTrunkPlacer;
+import net.minecraft.client.renderer.Sheets;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.npc.VillagerTrades;
 import net.minecraft.world.item.ItemStack;
@@ -25,6 +24,7 @@ import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
+import net.minecraftforge.fml.event.lifecycle.FMLClientSetupEvent;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
@@ -47,6 +47,7 @@ public class RamadanDelight
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
         ModSounds.register(modEventBus);
+        ModEntities.register(modEventBus);
 
         ModTrunkPlacer.register(modEventBus);
         ModFoliagePlacer.register(modEventBus);
@@ -98,6 +99,10 @@ public class RamadanDelight
     public static class newSubscriber {
         public newSubscriber() {
             MinecraftForge.EVENT_BUS.register(this);
+        }
+        @SubscribeEvent
+        public static void onClientSetup(FMLClientSetupEvent event) {
+            Sheets.addWoodType(RDWoodTypes.PALM);
         }
 
         @SubscribeEvent

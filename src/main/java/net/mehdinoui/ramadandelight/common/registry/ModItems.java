@@ -139,4 +139,12 @@ public class ModItems {
             ()->new ConsumableItem(bowlFoodItem(ModFoods.LUQAIMAT),true));
     public static final RegistryObject<Item> KUNAFA = ITEMS.register("kunafa",
             () -> new Item(new Item.Properties().food(ModFoods.KUNAFA)));
+
+    //SIGNS
+    public static final RegistryObject<Item> PALM_SIGN = ITEMS.register("palm_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16),
+                    ModBlocks.PALM_SIGN.get(),ModBlocks.PALM_WALL_SIGN.get()));
+    public static final RegistryObject<Item> PALM_HANGING_SIGN = ITEMS.register("palm_hanging_sign",
+            () -> new HangingSignItem(ModBlocks.PALM_HANGING_SIGN.get(),ModBlocks.PALM_WALL_HANGING_SIGN.get(),
+                new Item.Properties().stacksTo(16)));
 }

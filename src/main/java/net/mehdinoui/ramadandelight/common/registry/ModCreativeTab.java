@@ -30,6 +30,8 @@ public class ModCreativeTab {
                                 pOutput.accept(ModBlocks.PALM_TRAPDOOR.get());
                                 pOutput.accept(ModBlocks.PALM_PRESSURE_PLATE.get());
                                 pOutput.accept(ModBlocks.PALM_BUTTON.get());
+                                pOutput.accept(ModBlocks.PALM_SIGN.get());
+                                pOutput.accept(ModBlocks.PALM_HANGING_SIGN.get());
                                 pOutput.accept(ModBlocks.PALM_LEAVES.get());
                                 pOutput.accept(ModBlocks.PALM_SAPLING.get());
 
