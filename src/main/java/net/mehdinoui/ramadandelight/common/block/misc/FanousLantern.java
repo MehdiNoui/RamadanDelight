@@ -48,8 +48,7 @@ public class FanousLantern extends Block implements SimpleWaterloggedBlock {
         BlockPos pos = context.getClickedPos();
         BlockPos belowPos = pos.below();
         BlockState belowState = context.getLevel().getBlockState(belowPos);
-
-        // Ensure the block is being placed on a solid surface
+        
         if (!belowState.isFaceSturdy(context.getLevel(), belowPos, Direction.UP)) {
             return null;
         }
