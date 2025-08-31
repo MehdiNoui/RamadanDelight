@@ -31,8 +31,10 @@
   "item.ramadandelight.hummus_tahini": "Hummus Tahini",
   "item.ramadandelight.zalabiya": "Zalabiya",
 
-
-
+  "item.ramadandelight.date": "Date",
+  "item.ramadandelight.date_stuffed_cookie": "Date Stuffed Cookie",
+  "item.ramadandelight.cluster_of_dates": "Cluster Of Dates",
+  "item.ramadandelight.date_syrup": "Date Syrup",
 
   "item.ramadandelight.chickpea": "Chickpea",
   "block.ramadandelight.chickpea_bag": "Chickpea Bag",
@@ -75,14 +77,11 @@
   "block.ramadandelight.palm_trapdoor": "Date Palm Trap Door",
   "block.ramadandelight.palm_sign": "Date Palm Sign",
   "block.ramadandelight.palm_hanging_sign": "Date Palm Hanging Sign",
-
+  "item.ramadandelight.palm_boat": "Date Palm Boat",
+  "item.ramadandelight.palm_chest_boat": "Date Palm Chest Boat",
   "block.ramadandelight.palm_sapling": "Date Palm Sapling",
   "block.ramadandelight.dates_branch": "Dates Palm Branch",
 
-  "item.ramadandelight.date": "Date",
-  "item.ramadandelight.date_stuffed_cookie": "Date Stuffed Cookie",
-  "item.ramadandelight.cluster_of_dates": "Cluster Of Dates",
-  "item.ramadandelight.date_syrup": "Date Syrup",
-
+  "entity.ramadandelight.mod_chest_boat": "Boat With Chest",
   "sounds.ramadandelight.beat": "Drum Beat"
 }

@@ -30,10 +30,12 @@
     "item.ramadandelight.sweet_tagine": "甜味塔吉锅",
     "item.ramadandelight.hummus_tahini": "鹰嘴豆泥拌芝麻酱",
     "item.ramadandelight.zalabiya": "阿拉伯炸糖糕",
-  
-    
-    
-    
+
+    "item.ramadandelight.date": "椰枣",
+    "item.ramadandelight.date_stuffed_cookie": "椰枣夹心饼干",
+    "item.ramadandelight.cluster_of_dates": "椰枣簇",
+    "item.ramadandelight.date_syrup": "椰枣糖浆",
+
     "item.ramadandelight.chickpea": "鹰嘴豆",
     "block.ramadandelight.chickpea_bag": "鹰嘴豆袋",
     "block.ramadandelight.wild_chickpea": "野生鹰嘴豆",
@@ -75,14 +77,11 @@
     "block.ramadandelight.palm_trapdoor": "枣椰木活板门",
     "block.ramadandelight.palm_sign": "Date Palm Sign",
     "block.ramadandelight.palm_hanging_sign": "Date Palm Hanging Sign",
-
+    "item.ramadandelight.palm_boat": "Date Palm Boat",
+    "item.ramadandelight.palm_chest_boat": "Date Palm Chest Boat",
     "block.ramadandelight.palm_sapling": "枣椰树苗",
     "block.ramadandelight.dates_branch": "枣椰树枝",
-  
-    "item.ramadandelight.date": "椰枣",
-    "item.ramadandelight.date_stuffed_cookie": "椰枣夹心饼干",
-    "item.ramadandelight.cluster_of_dates": "椰枣簇",
-    "item.ramadandelight.date_syrup": "椰枣糖浆",
-  
+
+    "entity.ramadandelight.mod_chest_boat": "Boat With Chest",
     "sounds.ramadandelight.beat": "鼓点"
   }

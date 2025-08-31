@@ -1,6 +1,7 @@
 package net.mehdinoui.ramadandelight.common.entity.custom;
 
 import net.mehdinoui.ramadandelight.common.registry.ModEntities;
+import net.mehdinoui.ramadandelight.common.registry.ModItems;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;
@@ -28,10 +29,8 @@ public class RDBoatChestEntity extends ChestBoat {
 
     @Override
     public Item getDropItem() {
-        switch (getModVariant()) {
-            case PALM -> {
-                return ModItems.PALM_CHEST_BOAT.get();
-            }
+        return switch (getModVariant()) {
+            case PALM -> ModItems.PALM_CHEST_BOAT.get();
         };
     }
 

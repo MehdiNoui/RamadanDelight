@@ -73,6 +73,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.PALM_SIGN);
         simpleItem(ModItems.PALM_HANGING_SIGN);
 
+        simpleItem(ModItems.PALM_BOAT);
+        simpleItem(ModItems.PALM_CHEST_BOAT);
     }
 
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {

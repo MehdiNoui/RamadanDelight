@@ -2,6 +2,7 @@ package net.mehdinoui.ramadandelight.common.entity.custom;
 
 import net.mehdinoui.ramadandelight.common.registry.ModBlocks;
 import net.mehdinoui.ramadandelight.common.registry.ModEntities;
+import net.mehdinoui.ramadandelight.common.registry.ModItems;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.network.syncher.EntityDataAccessor;
 import net.minecraft.network.syncher.EntityDataSerializers;

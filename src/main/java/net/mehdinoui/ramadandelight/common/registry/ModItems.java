@@ -1,7 +1,9 @@
 package net.mehdinoui.ramadandelight.common.registry;
 
 import net.mehdinoui.ramadandelight.RamadanDelight;
+import net.mehdinoui.ramadandelight.common.entity.custom.RDBoatEntity;
 import net.mehdinoui.ramadandelight.common.item.ModFoods;
+import net.mehdinoui.ramadandelight.common.item.custom.ModBoatItem;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -147,4 +149,12 @@ public class ModItems {
     public static final RegistryObject<Item> PALM_HANGING_SIGN = ITEMS.register("palm_hanging_sign",
             () -> new HangingSignItem(ModBlocks.PALM_HANGING_SIGN.get(),ModBlocks.PALM_WALL_HANGING_SIGN.get(),
                 new Item.Properties().stacksTo(16)));
+
+    //BOATS
+    public static final RegistryObject<Item> PALM_BOAT = ITEMS.register("palm_boat",
+            () -> new ModBoatItem(false, RDBoatEntity.Type.PALM,
+                    new Item.Properties()));
+    public static final RegistryObject<Item> PALM_CHEST_BOAT = ITEMS.register("palm_chest_boat",
+            () -> new ModBoatItem(true, RDBoatEntity.Type.PALM,
+                    new Item.Properties()));
 }

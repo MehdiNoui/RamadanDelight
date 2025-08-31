@@ -18,7 +18,6 @@ import net.minecraft.world.entity.vehicle.Boat;
 import java.util.Map;
 import java.util.stream.Stream;
 
-import javax.swing.*;
 
 public class RDBoatRenderer extends BoatRenderer {
     private final Map<RDBoatEntity.Type, Pair<ResourceLocation, ListModel<Boat>>> boatResources;

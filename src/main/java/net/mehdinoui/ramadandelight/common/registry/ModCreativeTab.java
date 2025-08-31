@@ -32,6 +32,8 @@ public class ModCreativeTab {
                                 pOutput.accept(ModBlocks.PALM_BUTTON.get());
                                 pOutput.accept(ModBlocks.PALM_SIGN.get());
                                 pOutput.accept(ModBlocks.PALM_HANGING_SIGN.get());
+                                pOutput.accept(ModItems.PALM_BOAT.get());
+                                pOutput.accept(ModItems.PALM_CHEST_BOAT.get());
                                 pOutput.accept(ModBlocks.PALM_LEAVES.get());
                                 pOutput.accept(ModBlocks.PALM_SAPLING.get());
 

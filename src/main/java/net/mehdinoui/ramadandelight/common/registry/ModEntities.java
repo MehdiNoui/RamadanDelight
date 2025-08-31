@@ -23,6 +23,7 @@ public class ModEntities {
 
     public static void register(IEventBus eventBus){
         BLOCK_ENTITES.register(eventBus);
+        ENTITY_TYPES.register(eventBus);
     }
 
     public static final RegistryObject<BlockEntityType<RDSignBlockEntity>> MOD_SIGN =
