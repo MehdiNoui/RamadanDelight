@@ -1,4 +1,4 @@
-package net.mehdinoui.ramadandelight.common.block;
+package net.mehdinoui.ramadandelight.common.block.misc;
 
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;

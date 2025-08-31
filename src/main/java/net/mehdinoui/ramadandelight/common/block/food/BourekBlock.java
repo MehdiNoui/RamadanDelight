@@ -1,4 +1,4 @@
-package net.mehdinoui.ramadandelight.common.block;
+package net.mehdinoui.ramadandelight.common.block.food;
 
 import net.mehdinoui.ramadandelight.common.registry.ModItems;
 import net.minecraft.core.BlockPos;

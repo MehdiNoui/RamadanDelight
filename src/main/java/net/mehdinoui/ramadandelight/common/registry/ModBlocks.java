@@ -1,11 +1,20 @@
 package net.mehdinoui.ramadandelight.common.registry;
 
 import net.mehdinoui.ramadandelight.RamadanDelight;
-import net.mehdinoui.ramadandelight.common.block.*;
+import net.mehdinoui.ramadandelight.common.block.crops.ChickpeaCropBlock;
+import net.mehdinoui.ramadandelight.common.block.crops.DatesBranchBlock;
+import net.mehdinoui.ramadandelight.common.block.crops.ParsleyCropBlock;
+import net.mehdinoui.ramadandelight.common.block.food.BourekBlock;
+import net.mehdinoui.ramadandelight.common.block.food.MaklobaBlock;
+import net.mehdinoui.ramadandelight.common.block.misc.CustomTiles;
+import net.mehdinoui.ramadandelight.common.block.misc.DrumBlock;
+import net.mehdinoui.ramadandelight.common.block.misc.FanousLantern;
 import net.mehdinoui.ramadandelight.common.block.signs.PalmHangingSignBlock;
 import net.mehdinoui.ramadandelight.common.block.signs.PalmStandingSignBlock;
 import net.mehdinoui.ramadandelight.common.block.signs.PalmWallHangingSignBlock;
 import net.mehdinoui.ramadandelight.common.block.signs.PalmWallSignBlock;
+import net.mehdinoui.ramadandelight.common.block.tree.PalmSapling;
+import net.mehdinoui.ramadandelight.common.block.tree.WoodBlock;
 import net.mehdinoui.ramadandelight.common.util.RDWoodTypes;
 import net.mehdinoui.ramadandelight.common.worldgen.tree.PalmTreeGrower;
 import net.minecraft.core.BlockPos;

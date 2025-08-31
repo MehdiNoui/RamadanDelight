@@ -2,7 +2,7 @@ package net.mehdinoui.ramadandelight.common.worldgen.tree.custom;
 
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.mehdinoui.ramadandelight.common.block.DatesBranchBlock;
+import net.mehdinoui.ramadandelight.common.block.crops.DatesBranchBlock;
 import net.mehdinoui.ramadandelight.common.registry.ModBlocks;
 import net.mehdinoui.ramadandelight.common.worldgen.tree.ModFoliagePlacer;
 import net.minecraft.core.BlockPos;

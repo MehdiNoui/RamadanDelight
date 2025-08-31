@@ -1,4 +1,4 @@
-package net.mehdinoui.ramadandelight.common.block;
+package net.mehdinoui.ramadandelight.common.block.crops;
 
 import net.mehdinoui.ramadandelight.common.registry.ModItems;
 import net.minecraft.world.level.ItemLike;
@@ -9,18 +9,18 @@ import net.minecraft.world.level.block.state.StateDefinition;
 import net.minecraft.world.level.block.state.properties.BlockStateProperties;
 import net.minecraft.world.level.block.state.properties.IntegerProperty;
 
-public class ParsleyCropBlock extends CropBlock {
+public class ChickpeaCropBlock extends CropBlock {
 
-    public static final int MAX_AGE = 3;
-    public static final IntegerProperty AGE = BlockStateProperties.AGE_3;
+    public static final int MAX_AGE = 5;
+    public static final IntegerProperty AGE = BlockStateProperties.AGE_5;
 
-    public ParsleyCropBlock(Properties pProperties) {
+    public ChickpeaCropBlock(Properties pProperties) {
         super(pProperties);
     }
 
     @Override
     protected ItemLike getBaseSeedId() {
-        return ModItems.PARSLEY_SEEDS.get();
+        return ModItems.CHICKPEA.get();
     }
 
     @Override

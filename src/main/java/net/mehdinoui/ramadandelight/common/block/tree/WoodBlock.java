@@ -1,4 +1,4 @@
-package net.mehdinoui.ramadandelight.common.block;
+package net.mehdinoui.ramadandelight.common.block.tree;
 
 import net.mehdinoui.ramadandelight.common.registry.ModBlocks;
 import net.minecraft.core.BlockPos;

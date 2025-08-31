@@ -1,4 +1,4 @@
-package net.mehdinoui.ramadandelight.common.block;
+package net.mehdinoui.ramadandelight.common.block.misc;
 
 import net.mehdinoui.ramadandelight.common.registry.ModSounds;
 import net.minecraft.core.BlockPos;
