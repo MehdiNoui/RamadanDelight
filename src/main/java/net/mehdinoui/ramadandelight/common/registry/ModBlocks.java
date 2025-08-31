@@ -90,7 +90,16 @@ public class ModBlocks {
     public static final RegistryObject<Block> SOUL_FANOUS = BLOCKS.register("soul_fanous",
             () -> new FanousLantern(BlockBehaviour.Properties.copy(Blocks.SOUL_LANTERN).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> REDSTONE_FANOUS = BLOCKS.register("redstone_fanous",
-            () -> new FanousLantern(BlockBehaviour.Properties.copy(Blocks.LANTERN).pushReaction(PushReaction.DESTROY)));
+            () -> new FanousLantern(BlockBehaviour.Properties.copy(Blocks.LANTERN).pushReaction(PushReaction.DESTROY)){
+                @Override
+                public boolean isSignalSource(BlockState state) {
+                    return true;
+                }
+                @Override
+                public int getSignal(BlockState state, BlockGetter level, BlockPos pos, Direction direction) {
+                    return 7;
+                }
+            });
 
     //Misc
     public static final RegistryObject<Block> MOSAIC_TILES = registerBlock("mosaic_tiles",
