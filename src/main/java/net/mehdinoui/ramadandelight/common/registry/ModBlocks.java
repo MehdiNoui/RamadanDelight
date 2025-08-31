@@ -92,6 +92,10 @@ public class ModBlocks {
     public static final RegistryObject<Block> REDSTONE_FANOUS = BLOCKS.register("redstone_fanous",
             () -> new FanousLantern(BlockBehaviour.Properties.copy(Blocks.LANTERN).pushReaction(PushReaction.DESTROY)){
                 @Override
+                public int getLightEmission(BlockState state, BlockGetter level, BlockPos pos) {
+                    return 7;
+                }
+                @Override
                 public boolean isSignalSource(BlockState state) {
                     return true;
                 }
