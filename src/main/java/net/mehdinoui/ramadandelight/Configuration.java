@@ -12,6 +12,8 @@ public class Configuration {
     public static final ForgeConfigSpec.BooleanValue ENABLE_MASON_VILLAGER_TRADES;
     public static final ForgeConfigSpec.BooleanValue ENABLE_WANDERING_TRADER_SELLS;
 
+    public static final ForgeConfigSpec.BooleanValue GENERATE_VILLAGE_STRUCTURES;
+
     static {
         BUILDER.push("Villager Settings");
 
@@ -32,6 +34,11 @@ public class Configuration {
                 .define("enableWanderingTrades", true);
 
         BUILDER.pop();
+
+        BUILDER.push("Village Settings");
+        GENERATE_VILLAGE_STRUCTURES = BUILDER
+                .comment("Enable Ramadan Delight to add Palm Trees to Desert Villages")
+                .define("enableVillageStructures", true);
 
         CONFIG = BUILDER.build();
     }

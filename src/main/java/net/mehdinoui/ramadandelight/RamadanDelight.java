@@ -2,8 +2,10 @@ package net.mehdinoui.ramadandelight;
 
 import com.mojang.logging.LogUtils;
 import net.mehdinoui.ramadandelight.common.registry.*;
+import net.mehdinoui.ramadandelight.common.worldgen.ModVillageStructures;
 import net.mehdinoui.ramadandelight.common.worldgen.tree.ModFoliagePlacer;
 import net.mehdinoui.ramadandelight.common.worldgen.tree.ModTrunkPlacer;
+import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
@@ -31,5 +33,8 @@ public class RamadanDelight
         ModFoliagePlacer.register(modEventBus);
 
         ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Configuration.CONFIG);
+
+        MinecraftForge.EVENT_BUS.addListener(ModVillageStructures::addNewVillageBuilding);
+        MinecraftForge.EVENT_BUS.register(this);
     }
 }
