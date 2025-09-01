@@ -25,7 +25,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
         fenceBlock((FenceBlock) ModBlocks.PALM_FENCE.get(), blockTexture(ModBlocks.PALM_PLANKS.get()));
         fenceGateBlock((FenceGateBlock) ModBlocks.PALM_FENCE_GATE.get(), blockTexture(ModBlocks.PALM_PLANKS.get()));
         doorBlockWithRenderType((DoorBlock)ModBlocks.PALM_DOOR.get(), modLoc("block/palm_door_bottom"), modLoc("block/palm_door_top"), "cutout");
-        trapdoorBlockWithRenderType((TrapDoorBlock) ModBlocks.PALM_TRAPDOOR.get(), modLoc("block/palm_trap_door"), true, "cutout");
 
         blockItem(ModBlocks.PALM_STAIRS);
         blockItem(ModBlocks.PALM_SLAB);
