@@ -1,0 +1,21 @@
+{
+	"render_type": "minecraft:cutout",
+	"textures": {
+		"0": "ramadandelight:block/palm_trap_door",
+		"particle": "ramadandelight:block/palm_trap_door"
+	},
+	"elements": [
+		{
+			"from": [0, 0, 13],
+			"to": [16, 16, 16],
+			"faces": {
+				"north": {"uv": [16, 0, 0, 16], "rotation": 180, "texture": "#0"},
+				"east": {"uv": [0, 0, 3, 16], "texture": "#0"},
+				"south": {"uv": [0, 0, 16, 16], "rotation": 180, "texture": "#0"},
+				"west": {"uv": [13, 16, 16, 0], "texture": "#0"},
+				"up": {"uv": [16, 0, 0, 3], "rotation": 180, "texture": "#0"},
+				"down": {"uv": [0, 0, 16, 3], "texture": "#0"}
+			}
+		}
+	]
+}
