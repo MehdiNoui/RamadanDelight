@@ -35,7 +35,7 @@ public class ModVillagerEvents {
                         0.05f // Price multiplier
                 ));
                 level1Trades.add((entity, random) -> new MerchantOffer(
-                        new ItemStack(ModItems.PARSLEY.get(), 26), //YOU GET
+                        new ItemStack(ModItems.CHICKPEA.get(), 26), //YOU GET
                         new ItemStack(Items.EMERALD, 1), //I GET
                         16, // Max uses
                         2, // Villager XP
@@ -49,10 +49,24 @@ public class ModVillagerEvents {
                         0.05f // Price multiplier
                 ));
                 level3Trades.add((entity, random) -> new MerchantOffer(
-                        new ItemStack(ModItems.CLUSTER_OF_DATES.get(), 1),
+                        new ItemStack(ModItems.CLUSTER_OF_DATES.get(), 3),
                         new ItemStack(Items.EMERALD, 1), // Resulting Emeralds
                         12, // Max uses
                         20, // Villager XP
+                        0.05f // Price multiplier
+                ));
+                level3Trades.add((entity, random) -> new MerchantOffer(
+                        new ItemStack(ModItems.DATE_SYRUP.get(), 4),
+                        new ItemStack(Items.EMERALD, 1 ), // Resulting Emeralds
+                        12, // Max uses
+                        20, // Villager XP
+                        0.05f // Price multiplier
+                ));
+                level3Trades.add((entity, random) -> new MerchantOffer(
+                        new ItemStack(Items.EMERALD, 3 ),
+                        new ItemStack(ModItems.DATE_STUFFED_COOKIE.get(), 18),
+                        12, // Max uses
+                        10, // Villager XP
                         0.05f // Price multiplier
                 ));
             }
@@ -77,6 +91,8 @@ public class ModVillagerEvents {
             trades.add(new BasicItemListing(1, new ItemStack(ModItems.PARSLEY_SEEDS.get()), 12, 1, 0.05f));
             trades.add(new BasicItemListing(1, new ItemStack(ModItems.CHICKPEA.get()), 12, 1, 0.05f));
             trades.add(new BasicItemListing(1, new ItemStack(ModItems.DATE.get()), 12, 1, 0.05f));
+            trades.add(new BasicItemListing(1, new ItemStack(ModItems.DATE.get()), 12, 1, 0.05f));
+
         }
     }
 }
