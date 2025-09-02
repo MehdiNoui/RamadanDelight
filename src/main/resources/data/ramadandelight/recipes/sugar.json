@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item":"ramadandelight:date_syrup"
+    }
+  ],
+  "result":{
+    "item":"minecraft:sugar",
+    "count": 3
+  }
+}
