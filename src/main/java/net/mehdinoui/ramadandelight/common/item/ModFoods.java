@@ -99,7 +99,7 @@ public class ModFoods {
             nutrition(6).saturationMod(0.6f).build();
     public static final FoodProperties DATE_SYRUP = new FoodProperties.Builder().
             effect(() -> new MobEffectInstance(MobEffects.SATURATION, 100, 0), 1.0F).
-            nutrition(8).saturationMod(0.6f).build();
+            nutrition(8).saturationMod(0.6f).alwaysEat().build();
 
     //Dessert
     public static final FoodProperties MHALBIYA= new FoodProperties.Builder().

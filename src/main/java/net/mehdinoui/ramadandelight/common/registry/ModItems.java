@@ -4,8 +4,10 @@ import net.mehdinoui.ramadandelight.RamadanDelight;
 import net.mehdinoui.ramadandelight.common.entity.custom.RDBoatEntity;
 import net.mehdinoui.ramadandelight.common.item.ModFoods;
 import net.mehdinoui.ramadandelight.common.item.custom.ModBoatItem;
+import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.food.FoodProperties;
 import net.minecraft.world.item.*;
+import net.minecraft.world.level.Level;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -129,8 +131,13 @@ public class ModItems {
     public static final RegistryObject<Item> CLUSTER_OF_DATES = ITEMS.register("cluster_of_dates",
             ()->new Item(new Item.Properties()));
     public static final RegistryObject<Item> DATE_SYRUP = ITEMS.register("date_syrup",
-            () -> new DrinkableItem(drinkItem().food(ModFoods.DATE_SYRUP), true, false));
-
+            () -> new DrinkableItem(drinkItem().food(ModFoods.DATE_SYRUP), true, false) {
+                @Override
+                public ItemStack finishUsingItem(ItemStack stack, Level level, LivingEntity consumer) {
+                    if (!level.isClientSide) { consumer.removeAllEffects(); }
+                    return super.finishUsingItem(stack, level, consumer);
+                }
+            });
 
     //DESERTS
     public static final RegistryObject<Item> MHALBIYA = ITEMS.register("mhalbiya",
