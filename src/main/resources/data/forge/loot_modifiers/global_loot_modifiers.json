@@ -1,6 +1,9 @@
 {
   "replace": false,
   "entries": [
+    "ramadandelight:add_loot_abandoned_mineshaft",
+    "ramadandelight:add_loot_desert_pyramid",
+    "ramadandelight:add_loot_shipwreck_supply",
     "ramadandelight:add_loot_village_plains_house",
     "ramadandelight:add_loot_village_taiga_house",
     "ramadandelight:add_loot_village_snowy_house",
