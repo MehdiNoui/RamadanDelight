@@ -24,6 +24,7 @@ import javax.annotation.Nullable;
 public class FanousLantern extends Block implements SimpleWaterloggedBlock {
 
     public static final BooleanProperty WATERLOGGED = BlockStateProperties.WATERLOGGED;
+    public static final BooleanProperty HANGING = BlockStateProperties.HANGING;
 
     private static final VoxelShape SHAPE = Shapes.or(
             Block.box(4, 0, 4, 12, 1, 12),
@@ -31,40 +32,66 @@ public class FanousLantern extends Block implements SimpleWaterloggedBlock {
             Block.box(4, 8, 4, 12, 9, 12),
             Block.box(6, 9, 5, 10, 11, 11)
     );
+    private static final VoxelShape SHAPE_HANGING = Shapes.or(
+            Block.box(5, 0, 5, 11, 2, 11),
+            Block.box(6, 2, 6, 10, 8, 10),
+            Block.box(4, 8, 4, 12, 9, 12)
+    );
 
     public FanousLantern(Properties properties) {
         super(properties);
-        this.registerDefaultState(this.stateDefinition.any().setValue(WATERLOGGED, false));
+        this.registerDefaultState(this.stateDefinition.any()
+                .setValue(WATERLOGGED, false)
+                .setValue(HANGING, false));
+    }
+
+    @Override
+    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
+        builder.add(WATERLOGGED, HANGING);
     }
 
     @Override
     public VoxelShape getShape(BlockState state, BlockGetter level, BlockPos pos, CollisionContext context) {
-        return SHAPE;
+        if(state.getValue(HANGING)){
+            return SHAPE_HANGING;
+        }else{
+            return SHAPE;
+        }
     }
 
     @Nullable
     @Override
     public BlockState getStateForPlacement(BlockPlaceContext context) {
         BlockPos pos = context.getClickedPos();
-        BlockPos belowPos = pos.below();
-        BlockState belowState = context.getLevel().getBlockState(belowPos);
-        
-        if (!belowState.isFaceSturdy(context.getLevel(), belowPos, Direction.UP)) {
-            return null;
-        }
-
         FluidState fluidState = context.getLevel().getFluidState(pos);
-        return this.defaultBlockState().setValue(WATERLOGGED, fluidState.getType() == Fluids.WATER);
-    }
 
+        boolean canHang = context.getLevel()
+                .getBlockState(pos.above()).isFaceSturdy(context.getLevel(), pos.above(), Direction.DOWN)
+                || context.getLevel().getBlockState(pos.above()).is(Blocks.CHAIN);;
+        boolean canStand = context.getLevel()
+                .getBlockState(pos.below()).isFaceSturdy(context.getLevel(), pos.below(), Direction.UP);
+
+        if(canHang){
+            return this.defaultBlockState()
+                    .setValue(WATERLOGGED, fluidState.getType() == Fluids.WATER)
+                    .setValue(HANGING, true);
+        }else if(canStand){
+            return this.defaultBlockState()
+                    .setValue(WATERLOGGED, fluidState.getType() == Fluids.WATER)
+                    .setValue(HANGING, false);
+        }
+        return null;
+    }
     @Override
     public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor level, BlockPos pos, BlockPos facingPos) {
-
         if (state.getValue(WATERLOGGED)) {
             level.scheduleTick(pos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
         }
-        if (facing == Direction.DOWN && !facingState.isFaceSturdy(level, facingPos, Direction.UP)) {
-            return Blocks.AIR.defaultBlockState();
+        Direction requiredSupport = state.getValue(HANGING) ? Direction.UP : Direction.DOWN;
+        if (facing == requiredSupport) {
+            if (!facingState.isFaceSturdy(level, facingPos, requiredSupport.getOpposite())) {
+                return Blocks.AIR.defaultBlockState();
+            }
         }
         return super.updateShape(state, facing, facingState, level, pos, facingPos);
     }
@@ -72,11 +99,6 @@ public class FanousLantern extends Block implements SimpleWaterloggedBlock {
     @Override
     public FluidState getFluidState(BlockState state) {
         return state.getValue(WATERLOGGED) ? Fluids.WATER.getSource(false) : super.getFluidState(state);
-    }
-
-    @Override
-    protected void createBlockStateDefinition(StateDefinition.Builder<Block, BlockState> builder) {
-        builder.add(WATERLOGGED);
     }
 
     @Override

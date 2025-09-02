@@ -1,7 +1,10 @@
 {
   "variants": {
-    "": {
+    "hanging=false": {
       "model": "ramadandelight:block/redstone_fanous"
+    },
+    "hanging=true": {
+      "model": "ramadandelight:block/redstone_fanous_hanging"
     }
   }
 }
