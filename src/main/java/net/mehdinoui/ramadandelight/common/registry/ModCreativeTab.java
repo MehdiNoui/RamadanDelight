@@ -80,6 +80,7 @@ public class ModCreativeTab {
                                 pOutput.accept(ModItems.MHALBIYA.get());
                                 pOutput.accept(ModItems.KUNAFA.get());
                                 pOutput.accept(ModItems.ZALABIYA.get());
+                                pOutput.accept(ModItems.LUQAIMAT.get());
 
                                 pOutput.accept(ModItems.FLAT_BREAD.get());
                                 pOutput.accept(ModItems.MANAKISH.get());
