@@ -15,6 +15,7 @@
     }
   ],
   "result":{
-    "item":"ramadandelight:mosaic_tiles"
+    "item":"ramadandelight:mosaic_tiles",
+    "count": 4
   }
 }
