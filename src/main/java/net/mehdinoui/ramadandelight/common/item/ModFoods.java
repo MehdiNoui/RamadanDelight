@@ -23,7 +23,7 @@ public class ModFoods {
             .effect(()-> new MobEffectInstance(ModEffects.COMFORT.get(),BRIEF_DURATION,0),1.0f)
             .build();
     public static final FoodProperties HARIRA = new FoodProperties.Builder().
-            nutrition(11).saturationMod(0.6F)
+            nutrition(12).saturationMod(0.6F)
             .effect(()-> new MobEffectInstance(ModEffects.COMFORT.get(),BRIEF_DURATION,0),1.0f)
             .build();
 
@@ -31,9 +31,9 @@ public class ModFoods {
     public static final FoodProperties BOUREK_SHEET = new FoodProperties.Builder().
             nutrition(2).saturationMod(0.1F).fast().build();
     public static final FoodProperties RAW_BOUREK= new FoodProperties.Builder().
-            nutrition(5).saturationMod(0.3F).build();
+            nutrition(6).saturationMod(0.3F).build();
     public static final FoodProperties BOUREK = new FoodProperties.Builder().
-            nutrition(10).saturationMod(0.8F).build();
+            nutrition(12).saturationMod(0.8F).build();
 
     //Samosa
     public static final FoodProperties RAW_SAMOSA = new FoodProperties.Builder().
@@ -61,15 +61,15 @@ public class ModFoods {
             .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT.get(), LONG_DURATION, 0), 1.0F)
             .build();
     public static final FoodProperties SAYADIEH = new FoodProperties.Builder().
-            nutrition(10).saturationMod(0.6F)
+            nutrition(12).saturationMod(0.8F)
             .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT.get(), MEDIUM_DURATION, 0), 1.0F)
             .build();
     public static final FoodProperties TAGINE = new FoodProperties.Builder().
-            nutrition(12).saturationMod(0.8F)
+            nutrition(14).saturationMod(0.9F)
             .effect(() -> new MobEffectInstance(ModEffects.COMFORT.get(), MEDIUM_DURATION, 0), 1.0F)
             .build();
     public static final FoodProperties CHICKPEA_AND_RICE = new FoodProperties.Builder().
-            nutrition(10).saturationMod(0.6F)
+            nutrition(10).saturationMod(0.7F)
             .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT.get(), SHORT_DURATION, 0), 1.0F)
             .build();
     public static final FoodProperties SWEET_TAGINE = new FoodProperties.Builder().
@@ -90,7 +90,7 @@ public class ModFoods {
 
     //Quiche
     public static final FoodProperties QUICHE_SLICE = new FoodProperties.Builder().
-            nutrition(7).saturationMod(0.6f).build();
+            nutrition(8).saturationMod(0.6f).build();
 
     //Dates
     public static final FoodProperties DATE = new FoodProperties.Builder().
