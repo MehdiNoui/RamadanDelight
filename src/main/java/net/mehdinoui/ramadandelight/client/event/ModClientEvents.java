@@ -1,8 +1,8 @@
-package net.mehdinoui.ramadandelight.common.event;
+package net.mehdinoui.ramadandelight.client.event;
 
 import net.mehdinoui.ramadandelight.RamadanDelight;
-import net.mehdinoui.ramadandelight.common.entity.client.ModModelLayers;
-import net.mehdinoui.ramadandelight.common.entity.client.RDBoatRenderer;
+import net.mehdinoui.ramadandelight.client.entity.ModModelLayers;
+import net.mehdinoui.ramadandelight.client.entity.RDBoatRenderer;
 import net.mehdinoui.ramadandelight.common.registry.ModEntities;
 import net.mehdinoui.ramadandelight.common.util.RDWoodTypes;
 import net.minecraft.client.model.BoatModel;

@@ -1,4 +1,4 @@
-package net.mehdinoui.ramadandelight.common.entity.client;
+package net.mehdinoui.ramadandelight.client.entity;
 
 import net.mehdinoui.ramadandelight.RamadanDelight;
 import net.minecraft.client.model.geom.ModelLayerLocation;

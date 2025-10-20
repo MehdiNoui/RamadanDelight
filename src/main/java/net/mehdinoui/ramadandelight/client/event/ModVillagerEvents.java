@@ -1,4 +1,4 @@
-package net.mehdinoui.ramadandelight.common.event;
+package net.mehdinoui.ramadandelight.client.event;
 
 import net.mehdinoui.ramadandelight.Configuration;
 import net.mehdinoui.ramadandelight.RamadanDelight;
