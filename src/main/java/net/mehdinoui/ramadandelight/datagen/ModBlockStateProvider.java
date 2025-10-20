@@ -15,7 +15,6 @@ public class ModBlockStateProvider extends BlockStateProvider {
     public ModBlockStateProvider(PackOutput output, ExistingFileHelper exFileHelper) {
         super(output, RamadanDelight.MOD_ID, exFileHelper);
     }
-
     @Override
     protected void registerStatesAndModels() {
         stairsBlock((StairBlock) ModBlocks.PALM_STAIRS.get(), blockTexture(ModBlocks.PALM_PLANKS.get()));
@@ -63,9 +62,5 @@ public class ModBlockStateProvider extends BlockStateProvider {
 
     private void blockItem(RegistryObject<Block> blockRegistryObject) {
         simpleBlockItem(blockRegistryObject.get(), new ModelFile.UncheckedModelFile("ramadandelight:block/" + ForgeRegistries.BLOCKS.getKey(blockRegistryObject.get()).getPath()));
-    }
-
-    private void blockWithItem(RegistryObject<Block> blockRegistryObject) {
-        simpleBlockWithItem(blockRegistryObject.get(), cubeAll(blockRegistryObject.get()));
     }
 }

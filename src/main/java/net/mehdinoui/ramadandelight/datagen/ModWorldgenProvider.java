@@ -1,4 +1,4 @@
-package net.mehdinoui.ramadandelight.common.datagen;
+package net.mehdinoui.ramadandelight.datagen;
 
 
 import net.mehdinoui.ramadandelight.RamadanDelight;
