@@ -19,15 +19,15 @@ public class ModComposterEvents {
         event.enqueueWork(() -> {
             //30%
             ComposterBlock.COMPOSTABLES.put(ModItems.PARSLEY_SEEDS.get(), 0.3F);
-            ComposterBlock.COMPOSTABLES.put(ModBlocks.PALM_SAPLING.get().asItem(), 0.3F);
-            ComposterBlock.COMPOSTABLES.put(ModBlocks.PALM_LEAVES.get().asItem(), 0.3F);
-            ComposterBlock.COMPOSTABLES.put(ModBlocks.DATES_BRANCH.get().asItem(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModItems.PALM_SAPLING.get(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModItems.PALM_LEAVES.get(), 0.3F);
+            ComposterBlock.COMPOSTABLES.put(ModItems.DATES_BRANCH.get(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModItems.DATE.get(), 0.3F);
             ComposterBlock.COMPOSTABLES.put(ModItems.CHICKPEA.get(), 0.3F);
             //65%
             ComposterBlock.COMPOSTABLES.put(ModItems.PARSLEY.get(), 0.65F);
-            ComposterBlock.COMPOSTABLES.put(ModBlocks.WILD_PARSLEY.get().asItem(), 0.65F);
-            ComposterBlock.COMPOSTABLES.put(ModBlocks.WILD_CHICKPEA.get().asItem(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModItems.WILD_PARSLEY.get(), 0.65F);
+            ComposterBlock.COMPOSTABLES.put(ModItems.WILD_CHICKPEA.get(), 0.65F);
             //85%
             ComposterBlock.COMPOSTABLES.put(ModItems.DATE_STUFFED_COOKIE.get(), 0.85F);
             //100%

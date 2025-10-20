@@ -31,6 +31,74 @@ public class ModItems {
         ITEMS.register(eventBus);
     }
 
+    // --- Blocks ---
+    public static final RegistryObject<Item> PARSLEY_BAG = ITEMS.register("parsley_bag",
+            () -> new BlockItem(ModBlocks.PARSLEY_BAG.get(), basicItem()));
+    public static final RegistryObject<Item> WILD_PARSLEY = ITEMS.register("wild_parsley",
+            () -> new BlockItem(ModBlocks.WILD_PARSLEY.get(), basicItem()));
+
+    public static final RegistryObject<Item> CHICKPEA_BAG = ITEMS.register("chickpea_bag",
+            () -> new BlockItem(ModBlocks.CHICKPEA_BAG.get(), basicItem()));
+    public static final RegistryObject<Item> WILD_CHICKPEA = ITEMS.register("wild_chickpea",
+            () -> new BlockItem(ModBlocks.WILD_CHICKPEA.get(), basicItem()));
+
+    public static final RegistryObject<Item> MOSAIC_TILES = ITEMS.register("mosaic_tiles",
+            () -> new BlockItem(ModBlocks.MOSAIC_TILES.get(), basicItem()));
+
+    public static final RegistryObject<Item> STAINED_GLASS_BLOCK = ITEMS.register("stained_glass_block",
+            () -> new BlockItem(ModBlocks.STAINED_GLASS_BLOCK.get(), basicItem()));
+    public static final RegistryObject<Item> BLUE_STAINED_GLASS_BLOCK = ITEMS.register("blue_stained_glass_block",
+            () -> new BlockItem(ModBlocks.BLUE_STAINED_GLASS_BLOCK.get(), basicItem()));
+    public static final RegistryObject<Item> GREEN_STAINED_GLASS_BLOCK = ITEMS.register("green_stained_glass_block",
+            () -> new BlockItem(ModBlocks.GREEN_STAINED_GLASS_BLOCK.get(), basicItem()));
+    public static final RegistryObject<Item> ORANGE_STAINED_GLASS_BLOCK = ITEMS.register("orange_stained_glass_block",
+            () -> new BlockItem(ModBlocks.ORANGE_STAINED_GLASS_BLOCK.get(), basicItem()));
+
+    public static final RegistryObject<Item> STAINED_GLASS_PANE = ITEMS.register("stained_glass_pane",
+            () -> new BlockItem(ModBlocks.STAINED_GLASS_PANE.get(), basicItem()));
+    public static final RegistryObject<Item> BLUE_STAINED_GLASS_PANE = ITEMS.register("blue_stained_glass_pane",
+            () -> new BlockItem(ModBlocks.BLUE_STAINED_GLASS_PANE.get(), basicItem()));
+    public static final RegistryObject<Item> GREEN_STAINED_GLASS_PANE = ITEMS.register("green_stained_glass_pane",
+            () -> new BlockItem(ModBlocks.GREEN_STAINED_GLASS_PANE.get(), basicItem()));
+    public static final RegistryObject<Item> ORANGE_STAINED_GLASS_PANE = ITEMS.register("orange_stained_glass_pane",
+            () -> new BlockItem(ModBlocks.ORANGE_STAINED_GLASS_PANE.get(), basicItem()));
+
+    // Palm wood set
+    public static final RegistryObject<Item> PALM_LOG = ITEMS.register("palm_log",
+            () -> new BlockItem(ModBlocks.PALM_LOG.get(), basicItem()));
+    public static final RegistryObject<Item> PALM_WOOD = ITEMS.register("palm_wood",
+            () -> new BlockItem(ModBlocks.PALM_WOOD.get(), basicItem()));
+    public static final RegistryObject<Item> STRIPPED_PALM_LOG = ITEMS.register("stripped_palm_log",
+            () -> new BlockItem(ModBlocks.STRIPPED_PALM_LOG.get(), basicItem()));
+    public static final RegistryObject<Item> STRIPPED_PALM_WOOD = ITEMS.register("stripped_palm_wood",
+            () -> new BlockItem(ModBlocks.STRIPPED_PALM_WOOD.get(), basicItem()));
+
+    public static final RegistryObject<Item> PALM_PLANKS = ITEMS.register("palm_planks",
+            () -> new BlockItem(ModBlocks.PALM_PLANKS.get(), basicItem()));
+    public static final RegistryObject<Item> PALM_LEAVES = ITEMS.register("palm_leaves",
+            () -> new BlockItem(ModBlocks.PALM_LEAVES.get(), basicItem()));
+    public static final RegistryObject<Item> PALM_SAPLING = ITEMS.register("palm_sapling",
+            () -> new BlockItem(ModBlocks.PALM_SAPLING.get(), basicItem()));
+
+    public static final RegistryObject<Item> PALM_STAIRS = ITEMS.register("palm_stairs",
+            () -> new BlockItem(ModBlocks.PALM_STAIRS.get(), basicItem()));
+    public static final RegistryObject<Item> PALM_SLAB = ITEMS.register("palm_slab",
+            () -> new BlockItem(ModBlocks.PALM_SLAB.get(), basicItem()));
+    public static final RegistryObject<Item> PALM_PRESSURE_PLATE = ITEMS.register("palm_pressure_plate",
+            () -> new BlockItem(ModBlocks.PALM_PRESSURE_PLATE.get(), basicItem()));
+    public static final RegistryObject<Item> PALM_BUTTON = ITEMS.register("palm_button",
+            () -> new BlockItem(ModBlocks.PALM_BUTTON.get(), basicItem()));
+    public static final RegistryObject<Item> PALM_FENCE = ITEMS.register("palm_fence",
+            () -> new BlockItem(ModBlocks.PALM_FENCE.get(), basicItem()));
+    public static final RegistryObject<Item> PALM_FENCE_GATE = ITEMS.register("palm_fence_gate",
+            () -> new BlockItem(ModBlocks.PALM_FENCE_GATE.get(), basicItem()));
+    public static final RegistryObject<Item> PALM_DOOR = ITEMS.register("palm_door",
+            () -> new BlockItem(ModBlocks.PALM_DOOR.get(), basicItem()));
+    public static final RegistryObject<Item> PALM_TRAPDOOR = ITEMS.register("palm_trapdoor",
+            () -> new BlockItem(ModBlocks.PALM_TRAPDOOR.get(), basicItem()));
+
+
+
     //Soups
     public static final RegistryObject<Item> HARIRA = ITEMS.register("harira",
             ()->new ConsumableItem(bowlFoodItem(ModFoods.HARIRA),true));

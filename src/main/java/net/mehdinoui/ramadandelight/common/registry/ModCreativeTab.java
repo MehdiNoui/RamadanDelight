@@ -17,31 +17,31 @@ public class ModCreativeTab {
             () -> CreativeModeTab.builder().icon(()-> new ItemStack(ModBlocks.FANOUS.get()))
                     .title(Component.translatable("creativetab.ramadandelight_tab"))
                     .displayItems((pParameters, pOutput) ->{
-                                pOutput.accept(ModBlocks.PALM_LOG.get());
-                                pOutput.accept(ModBlocks.PALM_WOOD.get());
-                                pOutput.accept(ModBlocks.STRIPPED_PALM_LOG.get());
-                                pOutput.accept(ModBlocks.STRIPPED_PALM_WOOD.get());
-                                pOutput.accept(ModBlocks.PALM_PLANKS.get());
-                                pOutput.accept(ModBlocks.PALM_STAIRS.get());
-                                pOutput.accept(ModBlocks.PALM_SLAB.get());
-                                pOutput.accept(ModBlocks.PALM_FENCE.get());
-                                pOutput.accept(ModBlocks.PALM_FENCE_GATE.get());
-                                pOutput.accept(ModBlocks.PALM_DOOR.get());
-                                pOutput.accept(ModBlocks.PALM_TRAPDOOR.get());
-                                pOutput.accept(ModBlocks.PALM_PRESSURE_PLATE.get());
-                                pOutput.accept(ModBlocks.PALM_BUTTON.get());
-                                pOutput.accept(ModBlocks.PALM_SIGN.get());
-                                pOutput.accept(ModBlocks.PALM_HANGING_SIGN.get());
+                                pOutput.accept(ModItems.PALM_LOG.get());
+                                pOutput.accept(ModItems.PALM_WOOD.get());
+                                pOutput.accept(ModItems.STRIPPED_PALM_LOG.get());
+                                pOutput.accept(ModItems.STRIPPED_PALM_WOOD.get());
+                                pOutput.accept(ModItems.PALM_PLANKS.get());
+                                pOutput.accept(ModItems.PALM_STAIRS.get());
+                                pOutput.accept(ModItems.PALM_SLAB.get());
+                                pOutput.accept(ModItems.PALM_FENCE.get());
+                                pOutput.accept(ModItems.PALM_FENCE_GATE.get());
+                                pOutput.accept(ModItems.PALM_DOOR.get());
+                                pOutput.accept(ModItems.PALM_TRAPDOOR.get());
+                                pOutput.accept(ModItems.PALM_PRESSURE_PLATE.get());
+                                pOutput.accept(ModItems.PALM_BUTTON.get());
+                                pOutput.accept(ModItems.PALM_SIGN.get());
+                                pOutput.accept(ModItems.PALM_HANGING_SIGN.get());
                                 pOutput.accept(ModItems.PALM_BOAT.get());
                                 pOutput.accept(ModItems.PALM_CHEST_BOAT.get());
-                                pOutput.accept(ModBlocks.PALM_LEAVES.get());
-                                pOutput.accept(ModBlocks.PALM_SAPLING.get());
+                                pOutput.accept(ModItems.PALM_LEAVES.get());
+                                pOutput.accept(ModItems.PALM_SAPLING.get());
 
                                 pOutput.accept(ModItems.DATES_BRANCH.get());
                                 pOutput.accept(ModItems.DATE.get());
                                 pOutput.accept(ModItems.CLUSTER_OF_DATES.get());
 
-                                pOutput.accept(ModBlocks.MOSAIC_TILES.get());
+                                pOutput.accept(ModItems.MOSAIC_TILES.get());
 
                                 pOutput.accept(ModItems.FANOUS.get());
                                 pOutput.accept(ModItems.COPPER_FANOUS.get());
@@ -50,21 +50,21 @@ public class ModCreativeTab {
 
                                 pOutput.accept(ModItems.DRUM.get());
 
-                                pOutput.accept(ModBlocks.STAINED_GLASS_BLOCK.get());
-                                pOutput.accept(ModBlocks.BLUE_STAINED_GLASS_BLOCK.get());
-                                pOutput.accept(ModBlocks.GREEN_STAINED_GLASS_BLOCK.get());
-                                pOutput.accept(ModBlocks.ORANGE_STAINED_GLASS_BLOCK.get());
+                                pOutput.accept(ModItems.STAINED_GLASS_BLOCK.get());
+                                pOutput.accept(ModItems.BLUE_STAINED_GLASS_BLOCK.get());
+                                pOutput.accept(ModItems.GREEN_STAINED_GLASS_BLOCK.get());
+                                pOutput.accept(ModItems.ORANGE_STAINED_GLASS_BLOCK.get());
 
-                                pOutput.accept(ModBlocks.STAINED_GLASS_PANE.get());
-                                pOutput.accept(ModBlocks.BLUE_STAINED_GLASS_PANE.get());
-                                pOutput.accept(ModBlocks.GREEN_STAINED_GLASS_PANE.get());
-                                pOutput.accept(ModBlocks.ORANGE_STAINED_GLASS_PANE.get());
+                                pOutput.accept(ModItems.STAINED_GLASS_PANE.get());
+                                pOutput.accept(ModItems.BLUE_STAINED_GLASS_PANE.get());
+                                pOutput.accept(ModItems.GREEN_STAINED_GLASS_PANE.get());
+                                pOutput.accept(ModItems.ORANGE_STAINED_GLASS_PANE.get());
 
-                                pOutput.accept(ModBlocks.CHICKPEA_BAG.get());
-                                pOutput.accept(ModBlocks.PARSLEY_BAG.get());
+                                pOutput.accept(ModItems.CHICKPEA_BAG.get());
+                                pOutput.accept(ModItems.PARSLEY_BAG.get());
 
-                                pOutput.accept(ModBlocks.WILD_CHICKPEA.get());
-                                pOutput.accept(ModBlocks.WILD_PARSLEY.get());
+                                pOutput.accept(ModItems.WILD_CHICKPEA.get());
+                                pOutput.accept(ModItems.WILD_PARSLEY.get());
 
                                 pOutput.accept(ModItems.CHICKPEA.get());
                                 pOutput.accept(ModItems.PARSLEY.get());

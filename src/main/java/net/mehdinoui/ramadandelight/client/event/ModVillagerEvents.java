@@ -74,7 +74,7 @@ public class ModVillagerEvents {
                 List<VillagerTrades.ItemListing> level4Trades = event.getTrades().get(4);
                 level4Trades.add((entity, random) -> new MerchantOffer(
                         new ItemStack(Items.EMERALD, 1),
-                        new ItemStack(ModBlocks.MOSAIC_TILES.get(), 1),
+                        new ItemStack(ModItems.MOSAIC_TILES.get(), 1),
                         12, // Max uses
                         15, // Villager XP
                         0.05f // Price multiplier
@@ -86,7 +86,7 @@ public class ModVillagerEvents {
     public static void onWandererTrades(WandererTradesEvent event) {
         if (Configuration.ENABLE_WANDERING_TRADER_SELLS.get()) {
             List<VillagerTrades.ItemListing> trades = event.getGenericTrades();
-            trades.add(new BasicItemListing(5, new ItemStack(ModBlocks.PALM_SAPLING.get()), 1, 1, 0.05f));
+            trades.add(new BasicItemListing(5, new ItemStack(ModItems.PALM_SAPLING.get()), 1, 1, 0.05f));
             trades.add(new BasicItemListing(5, new ItemStack(ModItems.DATES_BRANCH.get()), 1, 1, 0.05f));
             trades.add(new BasicItemListing(1, new ItemStack(ModItems.PARSLEY_SEEDS.get()), 12, 1, 0.05f));
             trades.add(new BasicItemListing(1, new ItemStack(ModItems.CHICKPEA.get()), 12, 1, 0.05f));
