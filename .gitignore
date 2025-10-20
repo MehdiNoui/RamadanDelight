@@ -12,7 +12,6 @@ logs
 log
 run-data/logs/
 run-data/config/
-src/generated/
 
 # idea
 out
@@ -31,3 +30,5 @@ run
 
 # Files from Forge MDK
 forge*changelog.txt
+/run-data/
+/src/test/
