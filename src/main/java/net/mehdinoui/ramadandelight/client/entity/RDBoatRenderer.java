@@ -1,4 +1,4 @@
-package net.mehdinoui.ramadandelight.common.entity.client;
+package net.mehdinoui.ramadandelight.client.entity;
 
 import com.google.common.collect.ImmutableMap;
 import com.mojang.datafixers.util.Pair;
