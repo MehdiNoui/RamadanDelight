@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/button",
+  "textures": {
+    "texture": "ramadandelight:block/palm_planks"
+  }
+}

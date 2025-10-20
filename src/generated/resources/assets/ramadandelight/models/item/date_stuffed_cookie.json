@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ramadandelight:item/date_stuffed_cookie"
+  }
+}
