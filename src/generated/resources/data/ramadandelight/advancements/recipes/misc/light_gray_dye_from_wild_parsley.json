@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ramadandelight:light_gray_dye_from_wild_parsley"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wild_parsley": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ramadandelight:wild_parsley"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_wild_parsley",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ramadandelight:light_gray_dye_from_wild_parsley"
+    ]
+  },
+  "sends_telemetry_event": false
+}

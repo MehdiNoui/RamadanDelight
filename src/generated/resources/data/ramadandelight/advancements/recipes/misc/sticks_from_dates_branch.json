@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_dates_branch": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ramadandelight:dates_branch"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ramadandelight:sticks_from_dates_branch"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_dates_branch",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ramadandelight:sticks_from_dates_branch"
+    ]
+  },
+  "sends_telemetry_event": false
+}

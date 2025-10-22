@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ramadandelight:chickpea_from_wild"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    },
+    "has_wild_chickpea": {
+      "conditions": {
+        "items": [
+          {
+            "items": [
+              "ramadandelight:wild_chickpea"
+            ]
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    }
+  },
+  "requirements": [
+    [
+      "has_wild_chickpea",
+      "has_the_recipe"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ramadandelight:chickpea_from_wild"
+    ]
+  },
+  "sends_telemetry_event": false
+}

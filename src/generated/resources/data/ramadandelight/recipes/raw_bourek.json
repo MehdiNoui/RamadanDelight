@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ramadandelight:bourek_sheet"
+    },
+    {
+      "item": "ramadandelight:savory_filling"
+    }
+  ],
+  "result": {
+    "item": "ramadandelight:raw_bourek"
+  }
+}

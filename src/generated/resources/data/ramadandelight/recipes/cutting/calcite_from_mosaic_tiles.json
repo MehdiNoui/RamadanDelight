@@ -1,0 +1,18 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "ramadandelight:mosaic_tiles"
+    }
+  ],
+  "result": [
+    {
+      "count": 4,
+      "item": "minecraft:calcite"
+    }
+  ],
+  "tool": {
+    "type": "farmersdelight:tool_action",
+    "action": "pickaxe_dig"
+  }
+}

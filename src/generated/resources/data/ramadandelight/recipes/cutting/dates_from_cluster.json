@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "ramadandelight:cluster_of_dates"
+    }
+  ],
+  "result": [
+    {
+      "count": 8,
+      "item": "ramadandelight:date"
+    },
+    {
+      "item": "ramadandelight:dates_branch"
+    }
+  ],
+  "tool": {
+    "tag": "forge:tools/knives"
+  }
+}

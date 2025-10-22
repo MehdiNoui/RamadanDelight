@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "G": {
+      "item": "ramadandelight:stained_glass_block"
+    },
+    "M": {
+      "tag": "forge:nuggets/iron"
+    },
+    "T": {
+      "item": "minecraft:torch"
+    }
+  },
+  "pattern": [
+    "MGM",
+    "GTG",
+    "MGM"
+  ],
+  "result": {
+    "item": "ramadandelight:fanous"
+  },
+  "show_notification": true
+}

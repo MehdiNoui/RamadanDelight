@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "minecraft:water_bucket"
+    },
+    {
+      "tag": "forge:grain/wheat"
+    }
+  ],
+  "result": {
+    "item": "ramadandelight:small_dough"
+  }
+}

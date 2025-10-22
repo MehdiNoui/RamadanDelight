@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:dough"
+    },
+    {
+      "item": "ramadandelight:savory_filling"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "item": "ramadandelight:raw_samosa"
+  }
+}

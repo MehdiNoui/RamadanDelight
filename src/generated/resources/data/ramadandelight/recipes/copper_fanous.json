@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "G": {
+      "item": "ramadandelight:green_stained_glass_block"
+    },
+    "M": {
+      "tag": "forge:ingots/copper"
+    },
+    "T": {
+      "item": "minecraft:torch"
+    }
+  },
+  "pattern": [
+    "MGM",
+    "GTG",
+    "MGM"
+  ],
+  "result": {
+    "item": "ramadandelight:copper_fanous"
+  },
+  "show_notification": true
+}

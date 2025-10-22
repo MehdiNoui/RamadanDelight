@@ -1,0 +1,23 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "ramadandelight:parsley"
+    },
+    {
+      "tag": "forge:cooked_beef"
+    },
+    {
+      "tag": "forge:grain/wheat"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "item": "ramadandelight:haleem"
+  }
+}

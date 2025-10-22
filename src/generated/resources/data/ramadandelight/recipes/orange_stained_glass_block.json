@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "D": {
+      "item": "minecraft:orange_dye"
+    },
+    "G": {
+      "item": "ramadandelight:stained_glass_block"
+    }
+  },
+  "pattern": [
+    "GGG",
+    "GDG",
+    "GGG"
+  ],
+  "result": {
+    "count": 8,
+    "item": "ramadandelight:orange_stained_glass_block"
+  },
+  "show_notification": true
+}
