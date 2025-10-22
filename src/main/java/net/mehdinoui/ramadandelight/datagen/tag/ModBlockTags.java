@@ -30,7 +30,11 @@ public class ModBlockTags extends BlockTagsProvider {
     }
 
     protected void registerForgeTags() {
-        // Storage Blocks Items
+        // Palm Logs Block
+        tag(RDForgeTags.PALM_LOGS).add(ModBlocks.PALM_LOG.get());
+        tag(RDForgeTags.PALM_LOGS).add(ModBlocks.PALM_WOOD.get());
+
+        // Storage Blocks
         tag(RDForgeTags.STORAGE_BLOCKS_CHICKPEA).add(ModBlocks.CHICKPEA_BAG.get());
         tag(RDForgeTags.STORAGE_BLOCKS_PARSLEY).add(ModBlocks.PARSLEY_BAG.get());
 

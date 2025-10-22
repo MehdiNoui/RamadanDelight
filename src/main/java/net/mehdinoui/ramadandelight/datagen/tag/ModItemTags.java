@@ -1,6 +1,7 @@
 package net.mehdinoui.ramadandelight.datagen.tag;
 
 import net.mehdinoui.ramadandelight.RamadanDelight;
+import net.mehdinoui.ramadandelight.common.registry.ModBlocks;
 import net.mehdinoui.ramadandelight.common.registry.ModItems;
 import net.mehdinoui.ramadandelight.common.tag.RDForgeTags;
 import net.minecraft.core.HolderLookup;
@@ -34,6 +35,10 @@ public class ModItemTags extends ItemTagsProvider {
     }
 
     protected void registerForgeTags() {
+        // Palm Blocks Items
+        tag(RDForgeTags.PALM_LOGS_ITEM).add(ModItems.PALM_LOG.get());
+        tag(RDForgeTags.PALM_LOGS_ITEM).add(ModItems.PALM_WOOD.get());
+
         // Storage Blocks Items
         tag(RDForgeTags.STORAGE_BLOCKS_ITEM_CHICKPEA).add(ModItems.CHICKPEA_BAG.get());
         tag(RDForgeTags.STORAGE_BLOCKS_ITEM_PARSLEY).add(ModItems.PARSLEY_BAG.get());
