@@ -14,10 +14,15 @@ public class RDForgeTags {
     private static TagKey<Item> forgeItemTag(String path) {
         return ItemTags.create(new ResourceLocation("forge", path));
     }
+
+    // -- Blocks --
+    // Palm Logs Blocks
+    public static final TagKey<Block> PALM_LOGS = forgeBlockTag("palm_logs");
     // Storage Blocks
     public static final TagKey<Block> STORAGE_BLOCKS_CHICKPEA = forgeBlockTag("storage_blocks/chickpea");
     public static final TagKey<Block> STORAGE_BLOCKS_PARSLEY = forgeBlockTag("storage_blocks/parsley");
 
+    // -- Items --
     // Crops
     public static final TagKey<Item> CROPS_CHICKPEA = forgeItemTag("crops/chickpea");
     public static final TagKey<Item> CROPS_PARSLEY = forgeItemTag("crops/parsley");
@@ -26,6 +31,8 @@ public class RDForgeTags {
     public static final TagKey<Item> FRUITS_DATE = forgeItemTag("fruits/date");
     // Grains
     public static final TagKey<Item> GRAIN_CHICKPEA = forgeItemTag("grain/chickpea");
+    // Palm Logs Items
+    public static final TagKey<Item> PALM_LOGS_ITEM  = forgeItemTag("palm_logs");
     // Seeds
     public static final TagKey<Item> SEEDS_PARSLEY = forgeItemTag("seeds/parsley");
     // Storage Item Blocks
