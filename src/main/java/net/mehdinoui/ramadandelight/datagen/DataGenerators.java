@@ -39,7 +39,10 @@ public class DataGenerators {
                     @Override
                     protected void buildRecipes(Consumer<FinishedRecipe> consumer) {
                         ModBasicRecipes.register(consumer);
+                        ModCookingRecipes.register(consumer);
                         ModCuttingRecipes.register(consumer);
+                        ModSmeltingRecipes.register(consumer);
+                        ModStoneCuttingRecipes.register(consumer);
                     }
                 });
         // WorldGen
