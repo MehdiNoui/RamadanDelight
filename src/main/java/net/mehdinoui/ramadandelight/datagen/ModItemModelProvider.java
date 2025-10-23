@@ -23,6 +23,7 @@ public class ModItemModelProvider extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        // Items
         simpleItem(ModItems.HARIRA);
         simpleItem(ModItems.CHORBA);
         simpleItem(ModItems.HALEEM);
@@ -77,10 +78,10 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleBlock(ModBlocks.GREEN_STAINED_GLASS_BLOCK);
         simpleBlock(ModBlocks.ORANGE_STAINED_GLASS_BLOCK);
         // Glass Panes
-        paneBlockItem(ModBlocks.STAINED_GLASS_PANE, ModBlocks.STAINED_GLASS_BLOCK);
-        paneBlockItem(ModBlocks.BLUE_STAINED_GLASS_PANE, ModBlocks.BLUE_STAINED_GLASS_BLOCK);
-        paneBlockItem(ModBlocks.GREEN_STAINED_GLASS_PANE, ModBlocks.GREEN_STAINED_GLASS_BLOCK);
-        paneBlockItem(ModBlocks.ORANGE_STAINED_GLASS_PANE, ModBlocks.ORANGE_STAINED_GLASS_BLOCK);
+        simpleBlockLayer0Custom(ModBlocks.STAINED_GLASS_PANE, ModBlocks.STAINED_GLASS_BLOCK);
+        simpleBlockLayer0Custom(ModBlocks.BLUE_STAINED_GLASS_PANE, ModBlocks.BLUE_STAINED_GLASS_BLOCK);
+        simpleBlockLayer0Custom(ModBlocks.GREEN_STAINED_GLASS_PANE, ModBlocks.GREEN_STAINED_GLASS_BLOCK);
+        simpleBlockLayer0Custom(ModBlocks.ORANGE_STAINED_GLASS_PANE, ModBlocks.ORANGE_STAINED_GLASS_BLOCK);
         // Wild Flowers and Saplings
         simpleBlockLayer0(ModBlocks.PALM_SAPLING);
         simpleBlockLayer0(ModBlocks.WILD_CHICKPEA);
@@ -88,72 +89,54 @@ public class ModItemModelProvider extends ItemModelProvider {
         // Wood
         buttonItem(ModBlocks.PALM_BUTTON, ModBlocks.PALM_PLANKS);
         fenceItem(ModBlocks.PALM_FENCE, ModBlocks.PALM_PLANKS);
-        fenceItem(ModBlocks.PALM_FENCE_GATE, ModBlocks.PALM_PLANKS);
-        simpleBlockItem(ModBlocks.PALM_DOOR);
+        fenceGateItem(ModBlocks.PALM_FENCE_GATE, ModBlocks.PALM_PLANKS);
+
         simpleBlock(ModBlocks.PALM_LOG);
         simpleBlock(ModBlocks.PALM_WOOD);
         simpleBlock(ModBlocks.STRIPPED_PALM_LOG);
         simpleBlock(ModBlocks.STRIPPED_PALM_WOOD);
-        simpleBlock(ModBlocks.PALM_PLANKS);
         simpleBlock(ModBlocks.PALM_LEAVES);
+        simpleBlock(ModBlocks.PALM_PLANKS);
 
-        simpleItem(ModItems.PALM_SIGN);
-        simpleItem(ModItems.PALM_HANGING_SIGN);
         simpleItem(ModItems.PALM_BOAT);
         simpleItem(ModItems.PALM_CHEST_BOAT);
+        simpleItem(ModItems.PALM_DOOR);
+        simpleItem(ModItems.PALM_SIGN);
+        simpleItem(ModItems.PALM_HANGING_SIGN);
     }
-
-    public void evenSimplerBlockItem(RegistryObject<Block> block) {
-        this.withExistingParent(RamadanDelight.MOD_ID + ":" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
-                modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath()));
-    }
-
+    // Palm Stuff Helpers
     public void buttonItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
         this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/button_inventory"))
                 .texture("texture",  new ResourceLocation(RamadanDelight.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
     }
-
     public void fenceItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
         this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/fence_inventory"))
                 .texture("texture",  new ResourceLocation(RamadanDelight.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
     }
-
-    public void stairsItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
-        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/stairs_inventory"))
+    public void fenceGateItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
+        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/template_fence_gate"))
                 .texture("texture",  new ResourceLocation(RamadanDelight.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
     }
 
-    public void slabItem(RegistryObject<Block> block, RegistryObject<Block> baseBlock) {
-        this.withExistingParent(ForgeRegistries.BLOCKS.getKey(block.get()).getPath(), mcLoc("block/slab_inventory"))
-                .texture("texture",  new ResourceLocation(RamadanDelight.MOD_ID, "block/" + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
-    }
-
-    private ItemModelBuilder simpleBlockItem(RegistryObject<Block> item) {
-        return withExistingParent(item.getId().getPath(),
-                new ResourceLocation("item/generated")).texture("layer0",
-                new ResourceLocation(RamadanDelight.MOD_ID,"item/" + item.getId().getPath()));
-    }
+    // Helpers
     private ItemModelBuilder simpleItem(RegistryObject<Item> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(RamadanDelight.MOD_ID,"item/" + item.getId().getPath()));
     }
-    private ItemModelBuilder paneBlockItem(RegistryObject<Block> item, RegistryObject<Block> baseBlock) {
-        return withExistingParent(item.getId().getPath(),
-                new ResourceLocation("item/generated")).texture("layer0",
-                new ResourceLocation(RamadanDelight.MOD_ID,"block/"  + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
+    public void simpleBlock(RegistryObject<Block> block) {
+        this.withExistingParent(
+                RamadanDelight.MOD_ID + ":" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
+                modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath()));
     }
     private ItemModelBuilder simpleBlockLayer0(RegistryObject<Block> item) {
         return withExistingParent(item.getId().getPath(),
                 new ResourceLocation("item/generated")).texture("layer0",
                 new ResourceLocation(RamadanDelight.MOD_ID,"block/" + item.getId().getPath()));
     }
-
-    public void simpleBlock(RegistryObject<Block> block) {
-        this.withExistingParent(
-                RamadanDelight.MOD_ID + ":" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath(),
-                modLoc("block/" + ForgeRegistries.BLOCKS.getKey(block.get()).getPath())
-        );
+    private ItemModelBuilder simpleBlockLayer0Custom(RegistryObject<Block> item, RegistryObject<Block> baseBlock) {
+        return withExistingParent(item.getId().getPath(),
+                new ResourceLocation("item/generated")).texture("layer0",
+                new ResourceLocation(RamadanDelight.MOD_ID,"block/"  + ForgeRegistries.BLOCKS.getKey(baseBlock.get()).getPath()));
     }
-
 }
