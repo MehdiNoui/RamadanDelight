@@ -1,5 +1,5 @@
 {
-  "parent": "minecraft:block/fence_inventory",
+  "parent": "minecraft:block/template_fence_gate",
   "textures": {
     "texture": "ramadandelight:block/palm_planks"
   }
