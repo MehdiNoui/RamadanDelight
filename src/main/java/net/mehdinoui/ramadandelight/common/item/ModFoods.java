@@ -46,7 +46,7 @@ public class ModFoods {
             .effect(() -> new MobEffectInstance(MobEffects.HUNGER, 300, 0), 0.3F)
             .build();
     public static final FoodProperties SAVORY_FILLING = new FoodProperties.Builder().
-            nutrition(5).saturationMod(0.5F).build();
+            nutrition(8).saturationMod(0.6F).build();
 
     // SALADS
     public static final FoodProperties TABBOULEH = new FoodProperties.Builder().
