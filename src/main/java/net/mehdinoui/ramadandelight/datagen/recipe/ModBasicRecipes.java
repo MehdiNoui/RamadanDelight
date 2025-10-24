@@ -21,6 +21,7 @@ import static net.minecraft.advancements.critereon.InventoryChangeTrigger.Trigge
 
 public class ModBasicRecipes {
     public static void register(Consumer<FinishedRecipe> consumer) {
+        compatRecipes(consumer);
         palmRecipes(consumer);
         shapefulRecipes(consumer);
         shapelessRecipes(consumer);
@@ -210,9 +211,7 @@ public class ModBasicRecipes {
                 .define('D', Ingredient.fromValues(Stream.of(
                         new Ingredient.TagValue(ForgeTags.COOKED_MUTTON),
                         new Ingredient.TagValue(ForgeTags.COOKED_CHICKEN),
-                        new Ingredient.TagValue(ForgeTags.COOKED_BEEF),
-                        new Ingredient.TagValue(ForgeTags.COOKED_PORK),
-                        new Ingredient.TagValue(ForgeTags.COOKED_BACON)
+                        new Ingredient.TagValue(ForgeTags.COOKED_BEEF)
                 )))
                 .define('E', vectorwing.farmersdelight.common.registry.ModItems.PIE_CRUST.get())
                 .define('F', Items.BAKED_POTATO)
@@ -294,7 +293,6 @@ public class ModBasicRecipes {
                 .save(consumer, new ResourceLocation(RamadanDelight.MOD_ID,"orange_stained_glass_pane"));
 
     }
-
     public static void shapelessRecipes(Consumer<FinishedRecipe> consumer) {
         // Building Blocks
         ShapelessRecipeBuilder.shapeless(RecipeCategory.BUILDING_BLOCKS, ModItems.MOSAIC_TILES.get(), 4)
@@ -354,13 +352,16 @@ public class ModBasicRecipes {
                 .requires(Items.WATER_BUCKET)
                 .unlockedBy("has_dough", hasItems(Items.WHEAT))
                 .save(consumer, new ResourceLocation(RamadanDelight.MOD_ID,"bourek_sheet"));
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.RAW_BOUREK.get())
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.RAW_BOUREK.get(), 2)
+                .requires(ModItems.BOUREK_SHEET.get())
                 .requires(ModItems.BOUREK_SHEET.get())
                 .requires(ModItems.SAVORY_FILLING.get())
                 .unlockedBy("has_savory_filling", hasItems(ModItems.SAVORY_FILLING.get()))
                 .save(consumer, new ResourceLocation(RamadanDelight.MOD_ID,"raw_bourek"));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.RAW_SAMOSA.get(), 3)
-                .requires(ForgeTags.DOUGH)
+                .requires(ModItems.SMALL_DOUGH.get())
+                .requires(ModItems.SMALL_DOUGH.get())
+                .requires(ModItems.SMALL_DOUGH.get())
                 .requires(ModItems.SAVORY_FILLING.get())
                 .unlockedBy("has_savory_filling", hasItems(ModItems.SAVORY_FILLING.get()))
                 .save(consumer, new ResourceLocation(RamadanDelight.MOD_ID,"raw_samosa"));
@@ -408,20 +409,6 @@ public class ModBasicRecipes {
                 .requires(Items.BOWL)
                 .unlockedBy("has_chickpea", hasItems(ModItems.CHICKPEA.get()))
                 .save(consumer, new ResourceLocation(RamadanDelight.MOD_ID,"chickpea_and_rice"));
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.SAVORY_FILLING.get())
-                .requires(ModItems.PARSLEY.get())
-                .requires(ForgeTags.EGGS)
-                .requires(ForgeTags.CROPS_ONION)
-                .requires(Ingredient.fromValues(Stream.of(
-                        new Ingredient.TagValue(ForgeTags.COOKED_MUTTON),
-                        new Ingredient.TagValue(ForgeTags.COOKED_CHICKEN),
-                        new Ingredient.TagValue(ForgeTags.COOKED_BEEF),
-                        new Ingredient.TagValue(ForgeTags.COOKED_PORK),
-                        new Ingredient.TagValue(ForgeTags.COOKED_BACON)
-                )))
-                .requires(Items.BOWL)
-                .unlockedBy("has_parsley", hasItems(ModItems.PARSLEY.get()))
-                .save(consumer, new ResourceLocation(RamadanDelight.MOD_ID,"savory_filling"));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.TABBOULEH.get())
                 .requires(ModItems.PARSLEY.get())
                 .requires(ForgeTags.CROPS_TOMATO)
@@ -436,8 +423,7 @@ public class ModBasicRecipes {
                 .unlockedBy("has_wild_parsley", hasItems(ModItems.WILD_PARSLEY.get()))
                 .save(consumer, new ResourceLocation(RamadanDelight.MOD_ID,"dye_from_wild_parsley"));
     }
-
-    public void compatRecipes(Consumer<FinishedRecipe> consumer) {
+    public static void compatRecipes(Consumer<FinishedRecipe> consumer) {
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, vectorwing.farmersdelight.common.registry.ModItems.MUTTON_WRAP.get())
                 .requires(ModItems.FLAT_BREAD.get())
                 .requires(ForgeTags.COOKED_MUTTON)

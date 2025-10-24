@@ -25,11 +25,21 @@ import static vectorwing.farmersdelight.data.recipe.CookingRecipes.SLOW_COOKING;
 public class ModCookingRecipes {
 
     public static void register(Consumer<FinishedRecipe> consumer) {
+        cookDrinks(consumer);
+        cookFeasts(consumer);
         cookingMeals(consumer);
         cookMiscellaneous(consumer);
-        cookDrinks(consumer);
     }
 
+    private static void cookDrinks(Consumer<FinishedRecipe> consumer) {
+        CookingPotRecipeBuilder.cookingPotRecipe(ModItems.DATE_SYRUP.get(), 1, NORMAL_COOKING, LARGE_EXP)
+                .addIngredient(ModItems.DATE.get())
+                .addIngredient(ModItems.DATE.get())
+                .addIngredient(Items.SUGAR)
+                .unlockedByItems("has_date", ModItems.DATE.get())
+                .setRecipeBookTab(CookingPotRecipeBookTab.DRINKS)
+                .build(consumer, new ResourceLocation(RamadanDelight.MOD_ID, "cooking/date_syrup"));
+    }
     private static void cookingMeals(Consumer<FinishedRecipe> consumer) {
         CookingPotRecipeBuilder.cookingPotRecipe(ModItems.CHORBA.get(), 1, NORMAL_COOKING, MEDIUM_EXP, Items.BOWL)
                 .addIngredient(ModItems.PARSLEY.get())
@@ -65,17 +75,18 @@ public class ModCookingRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .build(consumer, new ResourceLocation(RamadanDelight.MOD_ID, "cooking/hummus"));
 
-        // MAKLOBA (Feast)
-        CookingPotRecipeBuilder.cookingPotRecipe(ModItems.MAKLOBA_BLOCK.get(), 1, SLOW_COOKING, LARGE_EXP)
-                .addIngredient(Items.CARROT)
-                .addIngredient(ForgeTags.RAW_MUTTON)
-                .addIngredient(ForgeTags.RAW_MUTTON)
-                .addIngredient(ForgeTags.CROPS_TOMATO)
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.RICE.get())
-                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.RICE.get())
-                .unlockedByItems("has_mutton", Items.MUTTON)
-                .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
-                .build(consumer, new ResourceLocation(RamadanDelight.MOD_ID, "cooking/makloba"));
+        CookingPotRecipeBuilder.cookingPotRecipe(ModItems.SAVORY_FILLING.get(), 1, NORMAL_COOKING, SMALL_EXP, Items.BOWL)
+                .addIngredient(ModItems.PARSLEY.get())
+                .addIngredient(ForgeTags.EGGS)
+                .addIngredient(ForgeTags.CROPS_ONION)
+                .addIngredient(Ingredient.fromValues(Stream.of(
+                        new Ingredient.TagValue(ForgeTags.RAW_MUTTON),
+                        new Ingredient.TagValue(ForgeTags.RAW_CHICKEN),
+                        new Ingredient.TagValue(ForgeTags.RAW_BEEF)
+                )))
+                .unlockedByItems("has_parsley", ModItems.PARSLEY.get())
+                .setRecipeBookTab(CookingPotRecipeBookTab.MISC)
+                .build(consumer, new ResourceLocation(RamadanDelight.MOD_ID, "cooking/savory_filling"));
 
         CookingPotRecipeBuilder.cookingPotRecipe(ModItems.SAYADIEH.get(), 1, NORMAL_COOKING, MEDIUM_EXP, Items.BOWL)
                 .addIngredient(ForgeTags.RAW_FISHES_COD)
@@ -95,7 +106,6 @@ public class ModCookingRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
                 .build(consumer, new ResourceLocation(RamadanDelight.MOD_ID, "cooking/tagine"));
     }
-
     private static void cookMiscellaneous(Consumer<FinishedRecipe> consumer) {
         CookingPotRecipeBuilder.cookingPotRecipe(ModItems.LUQAIMAT.get(), 1, NORMAL_COOKING, MEDIUM_EXP)
                 .addIngredient(ModItems.SMALL_DOUGH.get())
@@ -131,14 +141,16 @@ public class ModCookingRecipes {
                 .setRecipeBookTab(CookingPotRecipeBookTab.MISC)
                 .build(consumer, new ResourceLocation(RamadanDelight.MOD_ID, "cooking/zalabiya"));
     }
-
-    private static void cookDrinks(Consumer<FinishedRecipe> consumer) {
-        CookingPotRecipeBuilder.cookingPotRecipe(ModItems.DATE_SYRUP.get(), 1, NORMAL_COOKING, LARGE_EXP)
-                .addIngredient(ModItems.DATE.get())
-                .addIngredient(ModItems.DATE.get())
-                .addIngredient(Items.SUGAR)
-                .unlockedByItems("has_date", ModItems.DATE.get())
-                .setRecipeBookTab(CookingPotRecipeBookTab.DRINKS)
-                .build(consumer, new ResourceLocation(RamadanDelight.MOD_ID, "cooking/date_syrup"));
+    private static void cookFeasts(Consumer<FinishedRecipe> consumer) {
+        CookingPotRecipeBuilder.cookingPotRecipe(ModItems.MAKLOBA_BLOCK.get(), 1, SLOW_COOKING, LARGE_EXP, Items.BOWL)
+                .addIngredient(Items.CARROT)
+                .addIngredient(ForgeTags.RAW_MUTTON)
+                .addIngredient(ForgeTags.RAW_MUTTON)
+                .addIngredient(ForgeTags.CROPS_TOMATO)
+                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.RICE.get())
+                .addIngredient(vectorwing.farmersdelight.common.registry.ModItems.RICE.get())
+                .unlockedByItems("has_mutton", Items.MUTTON)
+                .setRecipeBookTab(CookingPotRecipeBookTab.MEALS)
+                .build(consumer, new ResourceLocation(RamadanDelight.MOD_ID, "cooking/makloba"));
     }
 }
