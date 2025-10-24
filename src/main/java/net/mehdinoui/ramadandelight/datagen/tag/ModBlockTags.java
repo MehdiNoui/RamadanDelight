@@ -33,11 +33,9 @@ public class ModBlockTags extends BlockTagsProvider {
         // Palm Logs Block
         tag(RDForgeTags.PALM_LOGS).add(ModBlocks.PALM_LOG.get());
         tag(RDForgeTags.PALM_LOGS).add(ModBlocks.PALM_WOOD.get());
-
         // Storage Blocks
         tag(RDForgeTags.STORAGE_BLOCKS_CHICKPEA).add(ModBlocks.CHICKPEA_BAG.get());
         tag(RDForgeTags.STORAGE_BLOCKS_PARSLEY).add(ModBlocks.PARSLEY_BAG.get());
-
         // Glass Blocks
         tag(Tags.Blocks.GLASS_COLORLESS).add(ModBlocks.STAINED_GLASS_BLOCK.get());
         tag(Tags.Blocks.GLASS_BLUE).add(ModBlocks.BLUE_STAINED_GLASS_BLOCK.get());
@@ -71,7 +69,6 @@ public class ModBlockTags extends BlockTagsProvider {
         tag(Tags.Blocks.FENCE_GATES_WOODEN).add(ModBlocks.PALM_FENCE_GATE.get());
 
     }
-
     protected void registerMinecraftTags() {
         // Logs & Leaves
         tag(BlockTags.LOGS).add(ModBlocks.PALM_LOG.get());
@@ -146,7 +143,6 @@ public class ModBlockTags extends BlockTagsProvider {
                 ModBlocks.MOSAIC_TILES.get()
         );
     }
-
     protected void registerFarmersDelightTags() {
         tag(ModTags.STRAW_BLOCKS).add(
                 ModBlocks.CHICKPEA_BAG.get(),

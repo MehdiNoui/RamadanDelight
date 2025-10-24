@@ -38,33 +38,22 @@ public class ModItemTags extends ItemTagsProvider {
         // Palm Blocks Items
         tag(RDForgeTags.PALM_LOGS_ITEM).add(ModItems.PALM_LOG.get());
         tag(RDForgeTags.PALM_LOGS_ITEM).add(ModItems.PALM_WOOD.get());
-
         // Storage Blocks Items
         tag(RDForgeTags.STORAGE_BLOCKS_ITEM_CHICKPEA).add(ModItems.CHICKPEA_BAG.get());
         tag(RDForgeTags.STORAGE_BLOCKS_ITEM_PARSLEY).add(ModItems.PARSLEY_BAG.get());
-
         // Crops
         tag(Tags.Items.CROPS).addTag(RDForgeTags.CROPS_CHICKPEA);
         tag(RDForgeTags.CROPS_CHICKPEA).add(ModItems.CHICKPEA.get());
-
         tag(Tags.Items.CROPS).addTag(RDForgeTags.CROPS_PARSLEY);
         tag(RDForgeTags.CROPS_PARSLEY).add(ModItems.PARSLEY.get());
-
-        // Fruits
-        tag(RDForgeTags.FRUITS).addTag(RDForgeTags.FRUITS_DATE);
-        tag(RDForgeTags.FRUITS_DATE).add(ModItems.DATE.get());
-
         // Grains
         tag(ForgeTags.GRAIN).addTag(RDForgeTags.GRAIN_CHICKPEA);
         tag(RDForgeTags.GRAIN_CHICKPEA).add(ModItems.CHICKPEA.get());
-
         // Seeds
         tag(Tags.Items.SEEDS).addTag(RDForgeTags.SEEDS_PARSLEY);
         tag(RDForgeTags.SEEDS_PARSLEY).add(ModItems.PARSLEY_SEEDS.get());
-
         // Tortilla / Bread
         tag(RDForgeTags.TORTILLA).add(ModItems.FLAT_BREAD.get());
-
         // Vegetables
         tag(ForgeTags.VEGETABLES).addTag(RDForgeTags.VEGETABLES_PARSLEY);
         tag(RDForgeTags.VEGETABLES_PARSLEY).add(ModItems.PARSLEY.get());
@@ -79,7 +68,6 @@ public class ModItemTags extends ItemTagsProvider {
         tag(Tags.Items.GLASS_PANES_GREEN).add(ModItems.GREEN_STAINED_GLASS_PANE.get());
         tag(Tags.Items.GLASS_PANES_ORANGE).add(ModItems.ORANGE_STAINED_GLASS_PANE.get());
     }
-
     protected void registerMinecraftTags() {
         // Boats
         tag(ItemTags.BOATS).add(ModItems.PALM_BOAT.get());
@@ -87,6 +75,8 @@ public class ModItemTags extends ItemTagsProvider {
         // Fences and Gates
         tag(ItemTags.FENCES).add(ModItems.PALM_FENCE.get());
         tag(ItemTags.FENCE_GATES).add(ModItems.PALM_FENCE_GATE.get());
+        // Fox Foods
+        tag(ItemTags.FOX_FOOD).add(ModItems.DATE.get());
         // Hanging Signs
         tag(ItemTags.HANGING_SIGNS).add(ModItems.PALM_HANGING_SIGN.get());
         // Leaves, Logs, Planks
@@ -113,7 +103,6 @@ public class ModItemTags extends ItemTagsProvider {
         tag(ItemTags.WOODEN_SLABS).add(ModItems.PALM_SLAB.get());
         tag(ItemTags.WOODEN_TRAPDOORS).add(ModItems.PALM_TRAPDOOR.get());
     }
-
     protected void registerFarmersDelightTags() {
         // Drinks
         tag(ModTags.DRINKS).add(ModItems.DATE_SYRUP.get());

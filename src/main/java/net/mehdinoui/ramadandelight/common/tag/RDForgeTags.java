@@ -26,9 +26,6 @@ public class RDForgeTags {
     // Crops
     public static final TagKey<Item> CROPS_CHICKPEA = forgeItemTag("crops/chickpea");
     public static final TagKey<Item> CROPS_PARSLEY = forgeItemTag("crops/parsley");
-    // Fruits
-    public static final TagKey<Item> FRUITS = forgeItemTag("fruits");
-    public static final TagKey<Item> FRUITS_DATE = forgeItemTag("fruits/date");
     // Grains
     public static final TagKey<Item> GRAIN_CHICKPEA = forgeItemTag("grain/chickpea");
     // Palm Logs Items
