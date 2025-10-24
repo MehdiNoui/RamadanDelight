@@ -1,0 +1,34 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "item": "minecraft:bowl"
+  },
+  "cookingtime": 200,
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "ramadandelight:parsley"
+    },
+    {
+      "tag": "forge:eggs"
+    },
+    {
+      "tag": "forge:crops/onion"
+    },
+    [
+      {
+        "tag": "forge:raw_mutton"
+      },
+      {
+        "tag": "forge:raw_chicken"
+      },
+      {
+        "tag": "forge:raw_beef"
+      }
+    ]
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "item": "ramadandelight:savory_filling"
+  }
+}

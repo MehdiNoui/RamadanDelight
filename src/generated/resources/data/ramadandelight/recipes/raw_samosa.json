@@ -3,7 +3,13 @@
   "category": "misc",
   "ingredients": [
     {
-      "tag": "forge:dough"
+      "item": "ramadandelight:small_dough"
+    },
+    {
+      "item": "ramadandelight:small_dough"
+    },
+    {
+      "item": "ramadandelight:small_dough"
     },
     {
       "item": "ramadandelight:savory_filling"

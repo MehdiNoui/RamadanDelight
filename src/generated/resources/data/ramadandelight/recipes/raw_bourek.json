@@ -6,10 +6,14 @@
       "item": "ramadandelight:bourek_sheet"
     },
     {
+      "item": "ramadandelight:bourek_sheet"
+    },
+    {
       "item": "ramadandelight:savory_filling"
     }
   ],
   "result": {
+    "count": 2,
     "item": "ramadandelight:raw_bourek"
   }
 }
