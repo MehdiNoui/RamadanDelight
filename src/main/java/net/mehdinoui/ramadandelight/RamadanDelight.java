@@ -1,6 +1,5 @@
 package net.mehdinoui.ramadandelight;
 
-import com.mojang.logging.LogUtils;
 import net.mehdinoui.ramadandelight.common.registry.*;
 import net.mehdinoui.ramadandelight.common.worldgen.ModVillageStructures;
 import net.mehdinoui.ramadandelight.common.worldgen.tree.ModFoliagePlacer;
@@ -11,7 +10,6 @@ import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
-import org.slf4j.Logger;
 
 @Mod(RamadanDelight.MOD_ID)
 public class RamadanDelight {
