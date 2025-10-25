@@ -14,13 +14,9 @@ import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
 @Mod(RamadanDelight.MOD_ID)
-public class RamadanDelight
-{
+public class RamadanDelight {
     public static final String MOD_ID = "ramadandelight";
-    private static final Logger LOGGER = LogUtils.getLogger();
-
-    public RamadanDelight()
-    {
+    public RamadanDelight() {
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModCreativeTab.register(modEventBus);

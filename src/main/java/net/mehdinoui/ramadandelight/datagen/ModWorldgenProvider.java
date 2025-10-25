@@ -1,6 +1,5 @@
 package net.mehdinoui.ramadandelight.datagen;
 
-
 import net.mehdinoui.ramadandelight.RamadanDelight;
 import net.mehdinoui.ramadandelight.common.worldgen.ModBiomeModifiers;
 import net.mehdinoui.ramadandelight.common.worldgen.ModConfiguredFeatures;
