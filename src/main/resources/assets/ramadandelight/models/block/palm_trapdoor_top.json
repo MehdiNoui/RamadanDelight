@@ -1,7 +1,23 @@
 {
-  "parent": "minecraft:block/template_orientable_trapdoor_top",
-  "render_type": "minecraft:cutout",
-  "textures": {
-    "texture": "ramadandelight:block/palm_trap_door"
-  }
+	"credit": "Made with Blockbench",
+	"parent": "minecraft:block/template_orientable_trapdoor_top",
+	"render_type": "minecraft:cutout",
+	"textures": {
+		"texture": "ramadandelight:block/palm_trap_door"
+	},
+	"elements": [
+		{
+			"from": [0, 13, 0],
+			"to": [16, 16, 16],
+			"rotation": {"angle": 0, "axis": "y", "origin": [0, 13, 0]},
+			"faces": {
+				"north": {"uv": [16, 3, 0, 0], "rotation": 180, "texture": "#texture"},
+				"east": {"uv": [16, 0, 0, 3], "texture": "#texture"},
+				"south": {"uv": [0, 3, 16, 0], "rotation": 180, "texture": "#texture"},
+				"west": {"uv": [0, 0, 16, 3], "texture": "#texture"},
+				"up": {"uv": [0, 0, 16, 16], "rotation": 180, "texture": "#texture"},
+				"down": {"uv": [16, 0, 0, 16], "texture": "#texture"}
+			}
+		}
+	]
 }
