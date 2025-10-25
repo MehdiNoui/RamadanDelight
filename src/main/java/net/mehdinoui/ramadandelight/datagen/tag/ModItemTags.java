@@ -20,9 +20,7 @@ import vectorwing.farmersdelight.common.tag.ModTags;
 import java.util.concurrent.CompletableFuture;
 
 public class ModItemTags extends ItemTagsProvider {
-
-    public ModItemTags(PackOutput output, CompletableFuture<HolderLookup.Provider> provider,
-                       CompletableFuture<TagsProvider.TagLookup<Block>> blockTagProvider,
+    public ModItemTags(PackOutput output, CompletableFuture<HolderLookup.Provider> provider,  CompletableFuture<TagsProvider.TagLookup<Block>> blockTagProvider,
                        @Nullable ExistingFileHelper existingFileHelper) {
         super(output, provider, blockTagProvider, RamadanDelight.MOD_ID, existingFileHelper);
     }
@@ -32,12 +30,10 @@ public class ModItemTags extends ItemTagsProvider {
         registerForgeTags();
         registerMinecraftTags();
         registerFarmersDelightTags();
+        registerRamadanDelightTags();
     }
 
     protected void registerForgeTags() {
-        // Palm Blocks Items
-        tag(RDForgeTags.PALM_LOGS_ITEM).add(ModItems.PALM_LOG.get());
-        tag(RDForgeTags.PALM_LOGS_ITEM).add(ModItems.PALM_WOOD.get());
         // Storage Blocks Items
         tag(RDForgeTags.STORAGE_BLOCKS_ITEM_CHICKPEA).add(ModItems.CHICKPEA_BAG.get());
         tag(RDForgeTags.STORAGE_BLOCKS_ITEM_PARSLEY).add(ModItems.PARSLEY_BAG.get());
@@ -104,9 +100,8 @@ public class ModItemTags extends ItemTagsProvider {
         tag(ItemTags.WOODEN_TRAPDOORS).add(ModItems.PALM_TRAPDOOR.get());
     }
     protected void registerFarmersDelightTags() {
-        // Drinks
+        // Food
         tag(ModTags.DRINKS).add(ModItems.DATE_SYRUP.get());
-        // Meals
         tag(ModTags.MEALS).add(
                 ModItems.KUNAFA.get(),
                 ModItems.LUQAIMAT.get(),
@@ -122,9 +117,34 @@ public class ModItemTags extends ItemTagsProvider {
                 ModItems.TAGINE.get(),
                 ModItems.MAKLOBA.get()
         );
-        // Feasts
         tag(ModTags.FEASTS).add(ModItems.MAKLOBA_BLOCK.get(), ModItems.BOUREK_BLOCK.get());
         // Wild Crops
         tag(ModTags.WILD_CROPS_ITEM).add(ModItems.WILD_CHICKPEA.get(), ModItems.WILD_PARSLEY.get());
+    }
+    protected void registerRamadanDelightTags() {
+        tag(RDForgeTags.FANOUS_ITEM).add(
+                ModItems.FANOUS.get(),
+                ModItems.COPPER_FANOUS.get(),
+                ModItems.REDSTONE_FANOUS.get(),
+                ModItems.SOUL_FANOUS.get()
+        );
+        tag(RDForgeTags.STAINED_GLASS_BLOCKS_ITEM).add(
+                ModItems.STAINED_GLASS_BLOCK.get(),
+                ModItems.BLUE_STAINED_GLASS_BLOCK.get(),
+                ModItems.GREEN_STAINED_GLASS_BLOCK.get(),
+                ModItems.ORANGE_STAINED_GLASS_BLOCK.get()
+        );
+        tag(RDForgeTags.STAINED_GLASS_PANES_ITEM).add(
+                ModItems.STAINED_GLASS_PANE.get(),
+                ModItems.BLUE_STAINED_GLASS_PANE.get(),
+                ModItems.GREEN_STAINED_GLASS_PANE.get(),
+                ModItems.ORANGE_STAINED_GLASS_PANE.get()
+        );
+        tag(RDForgeTags.PALM_LOGS_ITEM).add(
+                ModItems.PALM_LOG.get(),
+                ModItems.PALM_WOOD.get(),
+                ModItems.STRIPPED_PALM_LOG.get(),
+                ModItems.STRIPPED_PALM_WOOD.get()
+        );
     }
 }

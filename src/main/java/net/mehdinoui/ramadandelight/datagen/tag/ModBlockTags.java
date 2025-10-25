@@ -27,12 +27,10 @@ public class ModBlockTags extends BlockTagsProvider {
         registerForgeTags();
         registerMinecraftTags();
         registerFarmersDelightTags();
+        registerRamadanDelightTags();
     }
 
     protected void registerForgeTags() {
-        // Palm Logs Block
-        tag(RDForgeTags.PALM_LOGS).add(ModBlocks.PALM_LOG.get());
-        tag(RDForgeTags.PALM_LOGS).add(ModBlocks.PALM_WOOD.get());
         // Storage Blocks
         tag(RDForgeTags.STORAGE_BLOCKS_CHICKPEA).add(ModBlocks.CHICKPEA_BAG.get());
         tag(RDForgeTags.STORAGE_BLOCKS_PARSLEY).add(ModBlocks.PARSLEY_BAG.get());
@@ -144,14 +142,43 @@ public class ModBlockTags extends BlockTagsProvider {
         );
     }
     protected void registerFarmersDelightTags() {
+        // Mineable With Knife
+        tag(ModTags.MINEABLE_WITH_KNIFE).add(ModBlocks.QUICHE.get());
+        // Straw Blocks
         tag(ModTags.STRAW_BLOCKS).add(
                 ModBlocks.CHICKPEA_BAG.get(),
                 ModBlocks.PARSLEY_BAG.get()
         );
-        tag(ModTags.MINEABLE_WITH_KNIFE).add(ModBlocks.QUICHE.get());
+        // Wild Crops
         tag(ModTags.WILD_CROPS).add(
                 ModBlocks.WILD_CHICKPEA.get(),
                 ModBlocks.WILD_PARSLEY.get()
+        );
+    }
+    protected void registerRamadanDelightTags() {
+        tag(RDForgeTags.FANOUS_BLOCKS).add(
+                ModBlocks.FANOUS.get(),
+                ModBlocks.COPPER_FANOUS.get(),
+                ModBlocks.REDSTONE_FANOUS.get(),
+                ModBlocks.SOUL_FANOUS.get()
+        );
+        tag(RDForgeTags.STAINED_GLASS_BLOCKS).add(
+                ModBlocks.STAINED_GLASS_BLOCK.get(),
+                ModBlocks.BLUE_STAINED_GLASS_BLOCK.get(),
+                ModBlocks.GREEN_STAINED_GLASS_BLOCK.get(),
+                ModBlocks.ORANGE_STAINED_GLASS_BLOCK.get()
+        );
+        tag(RDForgeTags.STAINED_GLASS_PANES_BLOCKS).add(
+                ModBlocks.STAINED_GLASS_PANE.get(),
+                ModBlocks.BLUE_STAINED_GLASS_PANE.get(),
+                ModBlocks.GREEN_STAINED_GLASS_PANE.get(),
+                ModBlocks.ORANGE_STAINED_GLASS_PANE.get()
+        );
+        tag(RDForgeTags.PALM_LOGS).add(
+                ModBlocks.PALM_LOG.get(),
+                ModBlocks.PALM_WOOD.get(),
+                ModBlocks.STRIPPED_PALM_LOG.get(),
+                ModBlocks.STRIPPED_PALM_WOOD.get()
         );
     }
 }
