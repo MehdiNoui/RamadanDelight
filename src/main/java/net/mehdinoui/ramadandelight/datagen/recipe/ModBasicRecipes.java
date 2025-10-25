@@ -393,13 +393,13 @@ public class ModBasicRecipes {
                 .requires(Ingredient.of(Items.HONEY_BOTTLE, ModItems.DATE_SYRUP.get()))
                 .unlockedBy("has_sweet_ingredient", hasItems(ModItems.DATE_SYRUP.get(), Items.HONEY_BOTTLE))
                 .save(consumer, new ResourceLocation(RamadanDelight.MOD_ID,"kunafa"));
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.MANAKISH.get())
-                .requires(RDForgeTags.TORTILLA)
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.MUSAKHAN.get())
+                .requires(ModItems.FLAT_BREAD.get())
                 .requires(ModItems.PARSLEY.get())
                 .requires(ForgeTags.COOKED_CHICKEN)
                 .requires(ForgeTags.CROPS_ONION)
                 .unlockedBy("has_parsley", hasItems(ModItems.PARSLEY.get()))
-                .save(consumer, new ResourceLocation(RamadanDelight.MOD_ID,"manakish"));
+                .save(consumer, new ResourceLocation(RamadanDelight.MOD_ID,"musakhan"));
 
         // Bowled Food Items
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.CHICKPEA_AND_RICE.get())

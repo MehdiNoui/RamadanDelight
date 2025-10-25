@@ -134,8 +134,8 @@ public class ModItems {
             () -> new Item(new Item.Properties().food(ModFoods.SMALL_DOUGH)));
     public static final RegistryObject<Item> FLAT_BREAD = ITEMS.register("flat_bread",
             () -> new Item(new Item.Properties().food(ModFoods.FLAT_BREAD)));
-    public static final RegistryObject<Item> MANAKISH = ITEMS.register("manakish",
-            () -> new Item(new Item.Properties().food(ModFoods.MANAKISH)));
+    public static final RegistryObject<Item> MUSAKHAN = ITEMS.register("musakhan",
+            () -> new Item(new Item.Properties().food(ModFoods.MUSAKHAN)));
 
     //Dishes
     public static final RegistryObject<Item> MAKLOBA_BLOCK = ITEMS.register("makloba_block",

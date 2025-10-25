@@ -83,7 +83,7 @@ public class ModCreativeTab {
                                 pOutput.accept(ModItems.LUQAIMAT.get());
 
                                 pOutput.accept(ModItems.FLAT_BREAD.get());
-                                pOutput.accept(ModItems.MANAKISH.get());
+                                pOutput.accept(ModItems.MUSAKHAN.get());
                                 pOutput.accept(ModItems.BOUREK.get());
                                 pOutput.accept(ModItems.SAMOSA.get());
 

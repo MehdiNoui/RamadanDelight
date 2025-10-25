@@ -61,7 +61,7 @@ public class ModFoods {
             nutrition(3).saturationMod(0.3F).fast().build();
     public static final FoodProperties KEBAB = new FoodProperties.Builder().
             nutrition(7).saturationMod(0.7F).fast().build();
-    public static final FoodProperties MANAKISH = new FoodProperties.Builder().
+    public static final FoodProperties MUSAKHAN = new FoodProperties.Builder().
             nutrition(9).saturationMod(0.8F)
             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 100, 0), 1.0F)
             .build();
