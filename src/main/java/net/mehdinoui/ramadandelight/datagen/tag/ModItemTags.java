@@ -1,7 +1,6 @@
 package net.mehdinoui.ramadandelight.datagen.tag;
 
 import net.mehdinoui.ramadandelight.RamadanDelight;
-import net.mehdinoui.ramadandelight.common.registry.ModBlocks;
 import net.mehdinoui.ramadandelight.common.registry.ModItems;
 import net.mehdinoui.ramadandelight.common.tag.RDForgeTags;
 import net.minecraft.core.HolderLookup;

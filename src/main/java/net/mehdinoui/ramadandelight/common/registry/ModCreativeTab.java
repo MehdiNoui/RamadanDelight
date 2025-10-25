@@ -10,9 +10,16 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModCreativeTab {
+    // --- Deferred Register ---
     public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
             DeferredRegister.create(Registries.CREATIVE_MODE_TAB, RamadanDelight.MOD_ID);
 
+    // --- Helper Methods ---
+    public static void register(IEventBus eventBus) {
+        CREATIVE_MODE_TABS.register(eventBus);
+    }
+
+    // --- Creative Tab Registry ---
     public static final RegistryObject<CreativeModeTab> RamadanDelight_TAB = CREATIVE_MODE_TABS.register("veggiesdelight_tab",
             () -> CreativeModeTab.builder().icon(()-> new ItemStack(ModBlocks.FANOUS.get()))
                     .title(Component.translatable("creativetab.ramadandelight_tab"))
@@ -111,8 +118,4 @@ public class ModCreativeTab {
                                 pOutput.accept(ModItems.BOUREK_BLOCK.get());
                     }
                     ).build());
-
-    public static void register(IEventBus eventBus) {
-        CREATIVE_MODE_TABS.register(eventBus);
-    }
 }

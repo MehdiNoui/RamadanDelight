@@ -14,29 +14,28 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
 public class ModEntities {
+    // --- Deferred Registers ---
     public static final DeferredRegister<BlockEntityType<?>> BLOCK_ENTITES =
             DeferredRegister.create(ForgeRegistries.BLOCK_ENTITY_TYPES, RamadanDelight.MOD_ID);
-
     public static final DeferredRegister<EntityType<?>> ENTITY_TYPES =
             DeferredRegister.create(ForgeRegistries.ENTITY_TYPES, RamadanDelight.MOD_ID);
 
-
+    // --- Helper Methods ---
     public static void register(IEventBus eventBus){
         BLOCK_ENTITES.register(eventBus);
         ENTITY_TYPES.register(eventBus);
     }
 
+    // --- Entity Registry ---
     public static final RegistryObject<BlockEntityType<RDSignBlockEntity>> MOD_SIGN =
             BLOCK_ENTITES.register("mod_sign", ()->
                     BlockEntityType.Builder.of(RDSignBlockEntity::new,
                             ModBlocks.PALM_SIGN.get(), ModBlocks.PALM_WALL_SIGN.get()).build(null));
 
-
     public static final RegistryObject<BlockEntityType<RDHangingSignBlockEntity>> MOD_HANGING_SIGN =
             BLOCK_ENTITES.register("mod_hanging_sign", ()->
                     BlockEntityType.Builder.of(RDHangingSignBlockEntity::new,
                             ModBlocks.PALM_HANGING_SIGN.get(), ModBlocks.PALM_WALL_HANGING_SIGN.get()).build(null));
-
 
     public static final RegistryObject<EntityType<RDBoatEntity>> MOD_BOAT =
             ENTITY_TYPES.register("mod_boat", ()->

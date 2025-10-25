@@ -21,11 +21,9 @@ import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.effect.MobEffects;
-import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.DyeColor;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.*;
-import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.level.block.state.properties.BlockSetType;
@@ -36,53 +34,79 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import vectorwing.farmersdelight.common.block.PieBlock;
 
-
-import java.util.function.Supplier;
-
 public class ModBlocks {
+    // --- Deferred Register ---
     public static final DeferredRegister<Block> BLOCKS =
             DeferredRegister.create(ForgeRegistries.BLOCKS, RamadanDelight.MOD_ID);
 
-    private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
-        RegistryObject<T> toReturn = BLOCKS.register(name, block);
-        registerBlockItem(name, toReturn);
-        return toReturn;
-    }
-    private static <T extends Block> RegistryObject<Item> registerBlockItem(String name, RegistryObject<T> block) {
-        return ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
-    }
-
+    // --- Helper Methods ---
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
     }
 
-    //Parsley
-    public static final RegistryObject<Block> PARSLEY_BAG = BLOCKS.register("parsley_bag",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    // --- Blocks Registry ---
+    // Crops Blocks
     public static final RegistryObject<Block> PARSLEY_CROP = BLOCKS.register("parsley_crop",
             () -> new ParsleyCropBlock(Block.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
-    public static final RegistryObject<Block> WILD_PARSLEY = BLOCKS.register("wild_parsley",
-            () -> new FlowerBlock(() -> MobEffects.LUCK, 5,
-                    BlockBehaviour.Properties.copy(Blocks.ALLIUM).noCollission().noOcclusion()));
-
-    //Chickpea
-    public static final RegistryObject<Block> CHICKPEA_BAG = BLOCKS.register("chickpea_bag",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
     public static final RegistryObject<Block> CHICKPEA_CROP = BLOCKS.register("chickpea_crop",
             () -> new ChickpeaCropBlock(Block.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
-    public static final RegistryObject<Block> WILD_CHICKPEA = BLOCKS.register("wild_chickpea",
-            () -> new FlowerBlock(() -> MobEffects.LUCK, 5,
-                    BlockBehaviour.Properties.copy(Blocks.ALLIUM).noCollission().noOcclusion()));
 
-    //Makloba
-    public static final RegistryObject<Block> MAKLOBA_BLOCK = BLOCKS.register("makloba_block",
-            () -> new MaklobaBlock(Block.Properties.copy(Blocks.CAKE), ModItems.MAKLOBA, true));
+    // Food Blocks
     public static final RegistryObject<Block> BOUREK_BLOCK = BLOCKS.register("bourek_block",
             () -> new BourekBlock(Block.Properties.copy(Blocks.CAKE)));
+    public static final RegistryObject<Block> MAKLOBA_BLOCK = BLOCKS.register("makloba_block",
+            () -> new MaklobaBlock(Block.Properties.copy(Blocks.CAKE), ModItems.MAKLOBA, true));
     public static final RegistryObject<Block> QUICHE = BLOCKS.register("quiche",
             () -> new PieBlock(Block.Properties.copy(Blocks.CAKE), ModItems.QUICHE_SLICE));
 
-    //Fanous
+
+    // Decoration, Misc & Storage Blocks
+    public static final RegistryObject<Block> PARSLEY_BAG = BLOCKS.register("parsley_bag",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> CHICKPEA_BAG = BLOCKS.register("chickpea_bag",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> MOSAIC_TILES = BLOCKS.register("mosaic_tiles",
+            () -> new CustomTiles(BlockBehaviour.Properties.copy(Blocks.CALCITE)));
+    public static final RegistryObject<Block> DRUM_BLOCK = BLOCKS.register("drum",
+            () -> new DrumBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
+
+
+    // Wild Plants & Vegetation
+    public static final RegistryObject<Block> WILD_PARSLEY = BLOCKS.register("wild_parsley",
+            () -> new FlowerBlock(() -> MobEffects.LUCK, 5,
+                    BlockBehaviour.Properties.copy(Blocks.ALLIUM).noCollission().noOcclusion()));
+    public static final RegistryObject<Block> WILD_CHICKPEA = BLOCKS.register("wild_chickpea",
+            () -> new FlowerBlock(() -> MobEffects.LUCK, 5,
+                    BlockBehaviour.Properties.copy(Blocks.ALLIUM).noCollission().noOcclusion()));
+    public static final RegistryObject<Block> DATES_BRANCH = BLOCKS.register("dates_branch",
+            () -> new DatesBranchBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)
+                    .noOcclusion()
+                    .strength(0.2f)
+                    .sound(SoundType.AZALEA)));
+    public static final RegistryObject<Block> PALM_SAPLING = BLOCKS.register("palm_sapling",
+            () -> new PalmSapling(new PalmTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
+
+    // Glass Blocks
+    public static final RegistryObject<Block> STAINED_GLASS_BLOCK = BLOCKS.register("stained_glass_block",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).strength(1.2f, 2.0f)));
+    public static final RegistryObject<Block> BLUE_STAINED_GLASS_BLOCK = BLOCKS.register("blue_stained_glass_block",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).strength(1.2f, 2.0f)));
+    public static final RegistryObject<Block> GREEN_STAINED_GLASS_BLOCK = BLOCKS.register("green_stained_glass_block",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).strength(1.2f, 2.0f)));
+    public static final RegistryObject<Block> ORANGE_STAINED_GLASS_BLOCK = BLOCKS.register("orange_stained_glass_block",
+            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).strength(1.2f, 2.0f)));
+
+    // Glass Panes
+    public static final RegistryObject<Block> STAINED_GLASS_PANE = BLOCKS.register("stained_glass_pane",
+            () -> new StainedGlassPaneBlock(DyeColor.WHITE, BlockBehaviour.Properties.copy(Blocks.BLUE_STAINED_GLASS_PANE).strength(1.2f, 2.0f).noOcclusion()));
+    public static final RegistryObject<Block> BLUE_STAINED_GLASS_PANE = BLOCKS.register("blue_stained_glass_pane",
+            () -> new StainedGlassPaneBlock(DyeColor.BLUE, BlockBehaviour.Properties.copy(Blocks.BLUE_STAINED_GLASS_PANE).strength(1.2f, 2.0f).noOcclusion()));
+    public static final RegistryObject<Block> GREEN_STAINED_GLASS_PANE = BLOCKS.register("green_stained_glass_pane",
+            () -> new StainedGlassPaneBlock(DyeColor.GREEN, BlockBehaviour.Properties.copy(Blocks.GREEN_STAINED_GLASS_PANE).strength(1.2f, 2.0f).noOcclusion()));
+    public static final RegistryObject<Block> ORANGE_STAINED_GLASS_PANE = BLOCKS.register("orange_stained_glass_pane",
+            () -> new StainedGlassPaneBlock(DyeColor.ORANGE, BlockBehaviour.Properties.copy(Blocks.ORANGE_STAINED_GLASS_PANE).strength(1.2f, 2.0f).noOcclusion()));
+
+    // Fanous Blocks
     public static final RegistryObject<Block> FANOUS = BLOCKS.register("fanous",
             () -> new FanousLantern(BlockBehaviour.Properties.copy(Blocks.LANTERN).pushReaction(PushReaction.DESTROY)));
     public static final RegistryObject<Block> COPPER_FANOUS = BLOCKS.register("copper_fanous",
@@ -105,33 +129,7 @@ public class ModBlocks {
                 }
             });
 
-    //Misc
-    public static final RegistryObject<Block> MOSAIC_TILES = BLOCKS.register("mosaic_tiles",
-            () -> new CustomTiles(BlockBehaviour.Properties.copy(Blocks.CALCITE)));
-    public static final RegistryObject<Block> DRUM_BLOCK = BLOCKS.register("drum",
-            () -> new DrumBlock(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)));
-
-    //Glass
-    public static final RegistryObject<Block> STAINED_GLASS_BLOCK = BLOCKS.register("stained_glass_block",
-            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).strength(1.2f, 2.0f)));
-    public static final RegistryObject<Block> BLUE_STAINED_GLASS_BLOCK = BLOCKS.register("blue_stained_glass_block",
-            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).strength(1.2f, 2.0f)));
-    public static final RegistryObject<Block> GREEN_STAINED_GLASS_BLOCK = BLOCKS.register("green_stained_glass_block",
-            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).strength(1.2f, 2.0f)));
-    public static final RegistryObject<Block> ORANGE_STAINED_GLASS_BLOCK = BLOCKS.register("orange_stained_glass_block",
-            () -> new GlassBlock(BlockBehaviour.Properties.copy(Blocks.GLASS).strength(1.2f, 2.0f)));
-
-    //Glass Panes
-    public static final RegistryObject<Block> STAINED_GLASS_PANE = BLOCKS.register("stained_glass_pane",
-            () -> new StainedGlassPaneBlock(DyeColor.WHITE, BlockBehaviour.Properties.copy(Blocks.BLUE_STAINED_GLASS_PANE).strength(1.2f, 2.0f).noOcclusion()));
-    public static final RegistryObject<Block> BLUE_STAINED_GLASS_PANE = BLOCKS.register("blue_stained_glass_pane",
-            () -> new StainedGlassPaneBlock(DyeColor.BLUE, BlockBehaviour.Properties.copy(Blocks.BLUE_STAINED_GLASS_PANE).strength(1.2f, 2.0f).noOcclusion()));
-    public static final RegistryObject<Block> GREEN_STAINED_GLASS_PANE = BLOCKS.register("green_stained_glass_pane",
-            () -> new StainedGlassPaneBlock(DyeColor.GREEN, BlockBehaviour.Properties.copy(Blocks.GREEN_STAINED_GLASS_PANE).strength(1.2f, 2.0f).noOcclusion()));
-    public static final RegistryObject<Block> ORANGE_STAINED_GLASS_PANE = BLOCKS.register("orange_stained_glass_pane",
-            () -> new StainedGlassPaneBlock(DyeColor.ORANGE, BlockBehaviour.Properties.copy(Blocks.ORANGE_STAINED_GLASS_PANE).strength(1.2f, 2.0f).noOcclusion()));
-
-    //Tree Base
+    // Palm Wood Base
     public static final RegistryObject<Block> PALM_LOG = BLOCKS.register("palm_log",
             () -> new WoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> PALM_WOOD = BLOCKS.register("palm_wood",
@@ -140,7 +138,6 @@ public class ModBlocks {
             () -> new WoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
     public static final RegistryObject<Block> STRIPPED_PALM_WOOD = BLOCKS.register("stripped_palm_wood",
             () -> new WoodBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LOG)));
-
     public static final RegistryObject<Block> PALM_PLANKS = BLOCKS.register("palm_planks",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS)){
                 public boolean isFlammable(final BlockState state, final BlockGetter world, final BlockPos pos, final Direction face) {
@@ -170,11 +167,7 @@ public class ModBlocks {
                 }
             });
 
-    public static final RegistryObject<Block> PALM_SAPLING = BLOCKS.register("palm_sapling",
-            () -> new PalmSapling(new PalmTreeGrower(), BlockBehaviour.Properties.copy(Blocks.OAK_SAPLING)));
-
-
-    //Wood set
+    // Palm Wood Set
     public static final RegistryObject<Block> PALM_STAIRS = BLOCKS.register("palm_stairs",
             () -> new StairBlock(() -> ModBlocks.PALM_PLANKS.get().defaultBlockState(),
                     BlockBehaviour.Properties.copy(Blocks.OAK_STAIRS).sound(SoundType.WOOD)){
@@ -190,7 +183,6 @@ public class ModBlocks {
                     return 5;
                 }
             });
-
     public static final RegistryObject<Block> PALM_SLAB = BLOCKS.register("palm_slab",
             () -> new SlabBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SLAB).sound(SoundType.WOOD)){
                 public boolean isFlammable(final BlockState state, final BlockGetter world, final BlockPos pos, final Direction face) {
@@ -205,7 +197,6 @@ public class ModBlocks {
                     return 5;
                 }
             });
-
     public static final RegistryObject<Block> PALM_PRESSURE_PLATE = BLOCKS.register("palm_pressure_plate",
             () -> new PressurePlateBlock(PressurePlateBlock.Sensitivity.EVERYTHING,
                     BlockBehaviour.Properties.copy(Blocks.OAK_PRESSURE_PLATE).sound(SoundType.WOOD), BlockSetType.OAK));
@@ -226,7 +217,6 @@ public class ModBlocks {
                     return 5;
                 }
             });
-
     public static final RegistryObject<Block> PALM_FENCE_GATE = BLOCKS.register("palm_fence_gate",
             () -> new FenceGateBlock(BlockBehaviour.Properties.copy(Blocks.OAK_FENCE_GATE), SoundEvents.FENCE_GATE_OPEN, SoundEvents.FENCE_GATE_CLOSE){
                 public boolean isFlammable(final BlockState state, final BlockGetter world, final BlockPos pos, final Direction face) {
@@ -241,7 +231,6 @@ public class ModBlocks {
                     return 5;
                 }
             });
-
     public static final RegistryObject<Block> PALM_DOOR = BLOCKS.register("palm_door",
             () -> new DoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_DOOR), BlockSetType.OAK){
                 public boolean isFlammable(final BlockState state, final BlockGetter world, final BlockPos pos, final Direction face) {
@@ -256,7 +245,6 @@ public class ModBlocks {
                     return 5;
                 }
             });
-
     public static final RegistryObject<Block> PALM_TRAPDOOR = BLOCKS.register("palm_trapdoor",
             () -> new TrapDoorBlock(BlockBehaviour.Properties.copy(Blocks.OAK_TRAPDOOR), BlockSetType.OAK){
                 public boolean isFlammable(final BlockState state, final BlockGetter world, final BlockPos pos, final Direction face) {
@@ -272,12 +260,7 @@ public class ModBlocks {
                 }
             });
 
-    public static final RegistryObject<Block> DATES_BRANCH = BLOCKS.register("dates_branch",
-            () -> new DatesBranchBlock(BlockBehaviour.Properties.copy(Blocks.OAK_LEAVES)
-                    .noOcclusion()
-                    .strength(0.2f)
-                    .sound(SoundType.AZALEA)));
-
+    // Palm Sign Blocks
     public static final RegistryObject<Block> PALM_SIGN = BLOCKS.register("palm_sign",
             () -> new PalmStandingSignBlock(BlockBehaviour.Properties.copy(Blocks.OAK_SIGN),
                     RDWoodTypes.PALM));
