@@ -1,9 +1,8 @@
 {
-  "replace": false,
   "values": [
     "ramadandelight:palm_log",
     "ramadandelight:palm_wood",
     "ramadandelight:stripped_palm_log",
-    "ramadandelight:palm_wood"
+    "ramadandelight:stripped_palm_wood"
   ]
 }
