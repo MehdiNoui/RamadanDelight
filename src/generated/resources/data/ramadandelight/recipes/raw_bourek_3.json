@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ramadandelight:bourek_sheet"
+    },
+    {
+      "item": "ramadandelight:bourek_sheet"
+    },
+    {
+      "tag": "forge:cooked_fishes"
+    },
+    {
+      "tag": "forge:salad_ingredients"
+    },
+    {
+      "tag": "forge:crops/onion"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "item": "ramadandelight:raw_bourek"
+  }
+}

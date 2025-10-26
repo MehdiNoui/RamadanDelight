@@ -1,12 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_savory_filling": {
+    "has_bourek_sheet": {
       "conditions": {
         "items": [
           {
             "items": [
-              "ramadandelight:savory_filling"
+              "ramadandelight:bourek_sheet"
             ]
           }
         ]
@@ -15,20 +15,20 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "ramadandelight:raw_bourek"
+        "recipe": "ramadandelight:raw_bourek_1"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_savory_filling",
+      "has_bourek_sheet",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "ramadandelight:raw_bourek"
+      "ramadandelight:raw_bourek_1"
     ]
   },
   "sends_telemetry_event": false

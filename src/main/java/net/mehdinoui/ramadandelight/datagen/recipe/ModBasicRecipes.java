@@ -356,8 +356,24 @@ public class ModBasicRecipes {
                 .requires(ModItems.BOUREK_SHEET.get())
                 .requires(ModItems.BOUREK_SHEET.get())
                 .requires(ModItems.SAVORY_FILLING.get())
-                .unlockedBy("has_savory_filling", hasItems(ModItems.SAVORY_FILLING.get()))
-                .save(consumer, new ResourceLocation(RamadanDelight.MOD_ID,"raw_bourek"));
+                .unlockedBy("has_bourek_sheet", hasItems(ModItems.BOUREK_SHEET.get()))
+                .save(consumer, new ResourceLocation(RamadanDelight.MOD_ID,"raw_bourek_1"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.RAW_BOUREK.get(), 2)
+                .requires(ModItems.BOUREK_SHEET.get())
+                .requires(ModItems.BOUREK_SHEET.get())
+                .requires(ForgeTags.MILK_BOTTLE)
+                .requires(Items.BAKED_POTATO)
+                .requires(ForgeTags.CROPS_ONION)
+                .unlockedBy("has_bourek_sheet", hasItems(ModItems.BOUREK_SHEET.get()))
+                .save(consumer, new ResourceLocation(RamadanDelight.MOD_ID,"raw_bourek_2"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.RAW_BOUREK.get(), 2)
+                .requires(ModItems.BOUREK_SHEET.get())
+                .requires(ModItems.BOUREK_SHEET.get())
+                .requires(ForgeTags.COOKED_FISHES)
+                .requires(ForgeTags.SALAD_INGREDIENTS)
+                .requires(ForgeTags.CROPS_ONION)
+                .unlockedBy("has_bourek_sheet", hasItems(ModItems.BOUREK_SHEET.get()))
+                .save(consumer, new ResourceLocation(RamadanDelight.MOD_ID,"raw_bourek_3"));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.RAW_SAMOSA.get(), 3)
                 .requires(ModItems.SMALL_DOUGH.get())
                 .requires(ModItems.SMALL_DOUGH.get())
