@@ -1,0 +1,46 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "vintagedelight"
+    }
+  ],
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "ramadandelight:parsley"
+    },
+    "B": {
+      "tag": "forge:cheese"
+    },
+    "C": {
+      "item": "farmersdelight:tomato_sauce"
+    },
+    "D": [
+      {
+        "tag": "forge:cooked_mutton"
+      },
+      {
+        "tag": "forge:cooked_chicken"
+      },
+      {
+        "tag": "forge:cooked_beef"
+      }
+    ],
+    "E": {
+      "item": "farmersdelight:pie_crust"
+    },
+    "F": {
+      "item": "minecraft:baked_potato"
+    }
+  },
+  "pattern": [
+    "ABC",
+    "DEF"
+  ],
+  "result": {
+    "item": "ramadandelight:quiche"
+  },
+  "show_notification": true
+}
