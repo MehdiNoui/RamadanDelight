@@ -9,20 +9,19 @@
   "category": "misc",
   "ingredients": [
     {
-      "item": "veggiesdelight:roasted_zucchini"
+      "item": "ramadandelight:flat_bread"
     },
     {
-      "item": "veggiesdelight:roasted_zucchini"
+      "tag": "forge:crops/onion"
     },
     {
-      "item": "veggiesdelight:roasted_zucchini"
+      "tag": "forge:cooked_chicken"
     },
     {
-      "item": "ramadandelight:savory_filling"
+      "item": "veggiesdelight:smoked_bellpepper"
     }
   ],
   "result": {
-    "item": "veggiesdelight:stuffed_zucchini_boat",
-    "count": 3
+    "item": "veggiesdelight:chicken_fajitas_wrap"
   }
 }
