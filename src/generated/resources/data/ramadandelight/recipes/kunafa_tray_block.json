@@ -6,7 +6,16 @@
       "tag": "forge:dough"
     },
     {
+      "tag": "forge:dough"
+    },
+    {
       "tag": "forge:milk"
+    },
+    {
+      "tag": "forge:milk"
+    },
+    {
+      "item": "minecraft:sugar"
     },
     {
       "item": "minecraft:sugar"
@@ -18,9 +27,12 @@
       {
         "item": "ramadandelight:date_syrup"
       }
-    ]
+    ],
+    {
+      "item": "minecraft:bowl"
+    }
   ],
   "result": {
-    "item": "ramadandelight:kunafa"
+    "item": "ramadandelight:kunafa_tray_block"
   }
 }

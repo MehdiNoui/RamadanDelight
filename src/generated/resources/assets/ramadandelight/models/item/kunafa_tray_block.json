@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ramadandelight:item/kunafa_tray_block"
+  }
+}

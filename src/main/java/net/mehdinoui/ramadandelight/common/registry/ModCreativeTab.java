@@ -49,6 +49,7 @@ public class ModCreativeTab {
                         // Desserts
                         pOutput.accept(ModItems.DATE_STUFFED_COOKIE.get());
                         pOutput.accept(ModItems.MHALBIYA.get());
+                        pOutput.accept(ModItems.KUNAFA_TRAY_BLOCK.get());
                         pOutput.accept(ModItems.KUNAFA.get());
                         pOutput.accept(ModItems.ZALABIYA.get());
                         pOutput.accept(ModItems.LUQAIMAT.get());

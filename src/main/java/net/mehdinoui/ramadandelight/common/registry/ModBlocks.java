@@ -5,6 +5,7 @@ import net.mehdinoui.ramadandelight.common.block.crops.ChickpeaCropBlock;
 import net.mehdinoui.ramadandelight.common.block.crops.DatesBranchBlock;
 import net.mehdinoui.ramadandelight.common.block.crops.ParsleyCropBlock;
 import net.mehdinoui.ramadandelight.common.block.food.BourekBlock;
+import net.mehdinoui.ramadandelight.common.block.food.KunafaTrayBlock;
 import net.mehdinoui.ramadandelight.common.block.food.MaklobaBlock;
 import net.mehdinoui.ramadandelight.common.block.misc.CustomTiles;
 import net.mehdinoui.ramadandelight.common.block.misc.DrumBlock;
@@ -54,6 +55,8 @@ public class ModBlocks {
     // Food Blocks
     public static final RegistryObject<Block> BOUREK_BLOCK = BLOCKS.register("bourek_block",
             () -> new BourekBlock(Block.Properties.copy(Blocks.CAKE)));
+    public static final RegistryObject<Block> KUNAFA_TRAY_BLOCK = BLOCKS.register("kunafa_tray_block",
+            () -> new KunafaTrayBlock(Block.Properties.copy(Blocks.CAKE), ModItems.KUNAFA, true));
     public static final RegistryObject<Block> MAKLOBA_BLOCK = BLOCKS.register("makloba_block",
             () -> new MaklobaBlock(Block.Properties.copy(Blocks.CAKE), ModItems.MAKLOBA, true));
     public static final RegistryObject<Block> QUICHE = BLOCKS.register("quiche",

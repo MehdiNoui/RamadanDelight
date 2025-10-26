@@ -132,6 +132,8 @@ public class ModItems {
     // Food Blocks
     public static final RegistryObject<Item> BOUREK_BLOCK = ITEMS.register("bourek_block",
             () -> new BlockItem(ModBlocks.BOUREK_BLOCK.get(), basicItem().stacksTo(1)));
+    public static final RegistryObject<Item> KUNAFA_TRAY_BLOCK = ITEMS.register("kunafa_tray_block",
+            () -> new BlockItem(ModBlocks.KUNAFA_TRAY_BLOCK.get(), basicItem().stacksTo(1)));
     public static final RegistryObject<Item> MAKLOBA_BLOCK = ITEMS.register("makloba_block",
             () -> new BlockItem(ModBlocks.MAKLOBA_BLOCK.get(), basicItem().stacksTo(1)));
     public static final RegistryObject<Item> QUICHE = ITEMS.register("quiche",

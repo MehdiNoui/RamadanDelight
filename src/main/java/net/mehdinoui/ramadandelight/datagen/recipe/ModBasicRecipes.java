@@ -386,13 +386,16 @@ public class ModBasicRecipes {
                 .save(consumer, new ResourceLocation(RamadanDelight.MOD_ID,"bourek_block"));
 
         // Food Items
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.KUNAFA.get())
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.KUNAFA_TRAY_BLOCK.get())
+                .requires(ForgeTags.DOUGH)
                 .requires(ForgeTags.DOUGH)
                 .requires(ForgeTags.MILK)
-                .requires(Items.SUGAR)
+                .requires(ForgeTags.MILK)
+                .requires(Items.SUGAR, 2)
                 .requires(Ingredient.of(Items.HONEY_BOTTLE, ModItems.DATE_SYRUP.get()))
+                .requires(Items.BOWL)
                 .unlockedBy("has_sweet_ingredient", hasItems(ModItems.DATE_SYRUP.get(), Items.HONEY_BOTTLE))
-                .save(consumer, new ResourceLocation(RamadanDelight.MOD_ID,"kunafa"));
+                .save(consumer, new ResourceLocation(RamadanDelight.MOD_ID,"kunafa_tray_block"));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.MUSAKHAN.get())
                 .requires(ModItems.FLAT_BREAD.get())
                 .requires(ModItems.PARSLEY.get())

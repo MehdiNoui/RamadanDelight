@@ -59,6 +59,7 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.ZALABIYA);
         simpleItem(ModItems.LUQAIMAT);
         simpleItem(ModItems.MHALBIYA);
+        simpleItem(ModItems.KUNAFA_TRAY_BLOCK);
         simpleItem(ModItems.KUNAFA);
         simpleItem(ModItems.DATE_SYRUP);
         simpleItem(ModItems.CHICKPEA_AND_RICE);

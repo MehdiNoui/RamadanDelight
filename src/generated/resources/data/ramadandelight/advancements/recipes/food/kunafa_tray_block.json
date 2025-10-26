@@ -20,7 +20,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "ramadandelight:kunafa"
+        "recipe": "ramadandelight:kunafa_tray_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -33,7 +33,7 @@
   ],
   "rewards": {
     "recipes": [
-      "ramadandelight:kunafa"
+      "ramadandelight:kunafa_tray_block"
     ]
   },
   "sends_telemetry_event": false

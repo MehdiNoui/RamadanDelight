@@ -116,7 +116,11 @@ public class ModItemTags extends ItemTagsProvider {
                 ModItems.TAGINE.get(),
                 ModItems.MAKLOBA.get()
         );
-        tag(ModTags.FEASTS).add(ModItems.MAKLOBA_BLOCK.get(), ModItems.BOUREK_BLOCK.get());
+        tag(ModTags.FEASTS).add(
+                ModItems.BOUREK_BLOCK.get(),
+                ModItems.KUNAFA_TRAY_BLOCK.get(),
+                ModItems.MAKLOBA_BLOCK.get()
+        );
         // Wild Crops
         tag(ModTags.WILD_CROPS_ITEM).add(ModItems.WILD_CHICKPEA.get(), ModItems.WILD_PARSLEY.get());
     }

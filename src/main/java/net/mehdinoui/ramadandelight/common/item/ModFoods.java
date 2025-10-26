@@ -40,7 +40,7 @@ public class ModFoods {
 
     // Desserts And Sweets
     public static final FoodProperties KUNAFA = new FoodProperties.Builder().
-            nutrition(10).saturationMod(0.7F).build();
+            nutrition(8).saturationMod(0.6F).build();
     public static final FoodProperties LUQAIMAT= new FoodProperties.Builder().
             nutrition(10).saturationMod(0.7F)
             .effect(() -> new MobEffectInstance(ModEffects.COMFORT.get(), SHORT_DURATION, 0), 1.0F)
