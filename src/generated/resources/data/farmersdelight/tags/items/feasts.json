@@ -1,6 +1,7 @@
 {
   "values": [
-    "ramadandelight:makloba_block",
-    "ramadandelight:bourek_block"
+    "ramadandelight:bourek_block",
+    "ramadandelight:kunafa_tray_block",
+    "ramadandelight:makloba_block"
   ]
 }
