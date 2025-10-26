@@ -72,7 +72,7 @@ public class ModFoods {
             .effect(() -> new MobEffectInstance(MobEffects.DAMAGE_RESISTANCE, 100, 0), 1.0F)
             .build();
     public static final FoodProperties QUICHE_SLICE = new FoodProperties.Builder().
-            nutrition(7).saturationMod(0.6f).build();
+            nutrition(8).saturationMod(0.7f).build();
     public static final FoodProperties SAMOSA = new FoodProperties.Builder().
             nutrition(6).saturationMod(0.6F).fast().build();
 
