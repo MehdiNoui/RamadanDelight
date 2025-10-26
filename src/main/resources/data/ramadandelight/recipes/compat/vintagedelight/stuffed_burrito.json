@@ -1,0 +1,33 @@
+{
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "vintagedelight"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "forge:bread"
+    },
+    {
+      "item": "ramadandelight:savory_filling"
+    },
+    {
+      "tag": "forge:salad_ingredients"
+    },
+    {
+      "tag": "forge:crops/tomato"
+    },
+    {
+      "tag": "forge:cheese"
+    },
+    {
+      "tag": "forge:vegetables/ghost_pepper"
+    }
+  ],
+  "result": {
+    "item": "vintagedelight:stuffed_burrito"
+  }
+}
