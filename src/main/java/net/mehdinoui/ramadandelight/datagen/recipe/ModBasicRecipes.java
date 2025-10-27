@@ -21,7 +21,6 @@ import static net.minecraft.advancements.critereon.InventoryChangeTrigger.Trigge
 
 public class ModBasicRecipes {
     public static void register(Consumer<FinishedRecipe> consumer) {
-        compatRecipes(consumer);
         palmRecipes(consumer);
         shapefulRecipes(consumer);
         shapelessRecipes(consumer);
@@ -237,7 +236,7 @@ public class ModBasicRecipes {
         // Stained Glass Blocks
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModItems.STAINED_GLASS_BLOCK.get(), 1)
                 .pattern("GIG")
-                .define('G', Tags.Items.GLASS)
+                .define('G', Items.GLASS)
                 .define('I', Items.IRON_INGOT)
                 .unlockedBy("has_iron", hasItems(Items.IRON_INGOT))
                 .save(consumer, new ResourceLocation(RamadanDelight.MOD_ID,"stained_glass_block"));
@@ -441,14 +440,5 @@ public class ModBasicRecipes {
                 .requires(ModItems.WILD_PARSLEY.get())
                 .unlockedBy("has_wild_parsley", hasItems(ModItems.WILD_PARSLEY.get()))
                 .save(consumer, new ResourceLocation(RamadanDelight.MOD_ID,"dye_from_wild_parsley"));
-    }
-    public static void compatRecipes(Consumer<FinishedRecipe> consumer) {
-        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, vectorwing.farmersdelight.common.registry.ModItems.MUTTON_WRAP.get())
-                .requires(ModItems.FLAT_BREAD.get())
-                .requires(ForgeTags.COOKED_MUTTON)
-                .requires(ForgeTags.SALAD_INGREDIENTS)
-                .requires(ForgeTags.CROPS_ONION)
-                .unlockedBy("has_flat_bread", hasItems(ModItems.FLAT_BREAD.get()))
-                .save(consumer, new ResourceLocation(RamadanDelight.MOD_ID, "mutton_wrap_from_rd"));
     }
 }

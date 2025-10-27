@@ -3,7 +3,7 @@
   "category": "building",
   "key": {
     "G": {
-      "tag": "forge:glass"
+      "item": "minecraft:glass"
     },
     "I": {
       "item": "minecraft:iron_ingot"
