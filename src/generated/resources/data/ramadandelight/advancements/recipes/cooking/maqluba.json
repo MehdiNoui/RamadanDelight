@@ -1,17 +1,12 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_sweet_ingredient": {
+    "has_mutton": {
       "conditions": {
         "items": [
           {
             "items": [
-              "ramadandelight:date_syrup"
-            ]
-          },
-          {
-            "items": [
-              "minecraft:honey_bottle"
+              "minecraft:mutton"
             ]
           }
         ]
@@ -20,21 +15,21 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "ramadandelight:kunafa_tray_block"
+        "recipe": "ramadandelight:cooking/maqluba"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_sweet_ingredient",
+      "has_mutton",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "ramadandelight:kunafa_tray_block"
+      "ramadandelight:cooking/maqluba"
     ]
   },
-  "sends_telemetry_event": false
+  "sends_telemetry_event": true
 }

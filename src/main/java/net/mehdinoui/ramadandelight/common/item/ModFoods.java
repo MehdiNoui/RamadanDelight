@@ -39,17 +39,17 @@ public class ModFoods {
             nutrition(2).saturationMod(0.3F).build();
 
     // Desserts And Sweets
-    public static final FoodProperties KUNAFA = new FoodProperties.Builder().
+    public static final FoodProperties KNAFEH = new FoodProperties.Builder().
             nutrition(8).saturationMod(0.6F).build();
     public static final FoodProperties LUQAIMAT= new FoodProperties.Builder().
             nutrition(10).saturationMod(0.7F)
             .effect(() -> new MobEffectInstance(ModEffects.COMFORT.get(), SHORT_DURATION, 0), 1.0F)
             .build();
-    public static final FoodProperties MHALBIYA= new FoodProperties.Builder().
+    public static final FoodProperties MAHALABIA = new FoodProperties.Builder().
             nutrition(7).saturationMod(0.6F)
             .effect(() -> new MobEffectInstance(MobEffects.LUCK, 100, 0), 1.0F)
             .build();
-    public static final FoodProperties ZALABIYA = new FoodProperties.Builder().
+    public static final FoodProperties ZALABIYEH = new FoodProperties.Builder().
             nutrition(8).saturationMod(0.6F)
             .effect(() -> new MobEffectInstance(MobEffects.MOVEMENT_SPEED, 100, 0), 0.3F)
             .build();
@@ -114,7 +114,7 @@ public class ModFoods {
             .build();
 
     // Feast Dishes & Slices
-    public static final FoodProperties MAKLOBA = new FoodProperties.Builder().
+    public static final FoodProperties MAQLUBA = new FoodProperties.Builder().
             nutrition(14).saturationMod(0.75f)
             .effect(() -> new MobEffectInstance(ModEffects.NOURISHMENT.get(), LONG_DURATION, 0), 1.0F)
             .build();

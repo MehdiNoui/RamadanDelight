@@ -76,14 +76,14 @@ public class ModItems {
 
     // -- Food Items
     // Desserts
-    public static final RegistryObject<Item> MHALBIYA = ITEMS.register("mhalbiya",
-            () -> new ConsumableItem(foodItem(ModFoods.MHALBIYA).craftRemainder(Items.GLASS_BOTTLE).stacksTo(16)));
-    public static final RegistryObject<Item> ZALABIYA = ITEMS.register("zalabiya",
-            () -> new Item(new Item.Properties().food(ModFoods.ZALABIYA)));
+    public static final RegistryObject<Item> MAHALABIA = ITEMS.register("mahalabia",
+            () -> new ConsumableItem(foodItem(ModFoods.MAHALABIA).craftRemainder(Items.GLASS_BOTTLE).stacksTo(16)));
+    public static final RegistryObject<Item> ZALABIYEH = ITEMS.register("zalabiyeh",
+            () -> new Item(new Item.Properties().food(ModFoods.ZALABIYEH)));
     public static final RegistryObject<Item> LUQAIMAT = ITEMS.register("luqaimat",
             () -> new ConsumableItem(bowlFoodItem(ModFoods.LUQAIMAT), true));
-    public static final RegistryObject<Item> KUNAFA = ITEMS.register("kunafa",
-            () -> new Item(new Item.Properties().food(ModFoods.KUNAFA)));
+    public static final RegistryObject<Item> KNAFEH = ITEMS.register("knafeh",
+            () -> new Item(new Item.Properties().food(ModFoods.KNAFEH)));
 
     // Salads
     public static final RegistryObject<Item> TABBOULEH = ITEMS.register("tabbouleh",
@@ -124,18 +124,18 @@ public class ModItems {
             () -> new ConsumableItem(bowlFoodItem(ModFoods.TAGINE), true));
 
     // Feast Dishes & Slices
-    public static final RegistryObject<Item> MAKLOBA = ITEMS.register("makloba",
-            () -> new ConsumableItem(bowlFoodItem(ModFoods.MAKLOBA), true));
+    public static final RegistryObject<Item> MAQLUBA = ITEMS.register("maqluba",
+            () -> new ConsumableItem(bowlFoodItem(ModFoods.MAQLUBA), true));
 
 
     // --- Block Items ---
     // Food Blocks
     public static final RegistryObject<Item> BOUREK_BLOCK = ITEMS.register("bourek_block",
             () -> new BlockItem(ModBlocks.BOUREK_BLOCK.get(), basicItem().stacksTo(1)));
-    public static final RegistryObject<Item> KUNAFA_TRAY_BLOCK = ITEMS.register("kunafa_tray_block",
-            () -> new BlockItem(ModBlocks.KUNAFA_TRAY_BLOCK.get(), basicItem().stacksTo(1)));
-    public static final RegistryObject<Item> MAKLOBA_BLOCK = ITEMS.register("makloba_block",
-            () -> new BlockItem(ModBlocks.MAKLOBA_BLOCK.get(), basicItem().stacksTo(1)));
+    public static final RegistryObject<Item> KNAFEH_TRAY_BLOCK = ITEMS.register("knafeh_tray_block",
+            () -> new BlockItem(ModBlocks.KNAFEH_TRAY_BLOCK.get(), basicItem().stacksTo(1)));
+    public static final RegistryObject<Item> MAQLUBA_BLOCK = ITEMS.register("maqluba_block",
+            () -> new BlockItem(ModBlocks.MAQLUBA_BLOCK.get(), basicItem().stacksTo(1)));
     public static final RegistryObject<Item> QUICHE = ITEMS.register("quiche",
             () -> new BlockItem(ModBlocks.QUICHE.get(), basicItem()));
 

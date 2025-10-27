@@ -6,7 +6,7 @@
 		"3": "ramadandelight:block/kunafa_tray_top",
 		"4": "ramadandelight:block/kunafa_tray_sides",
 		"5": "farmersdelight:block/tray_top",
-		"particle": "ramadandelight:block/kunafa_block"
+		"particle": "farmersdelight:block/tray_bottom"
 	},
 	"elements": [
 		{

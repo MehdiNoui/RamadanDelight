@@ -11,7 +11,7 @@ import vectorwing.farmersdelight.common.block.FeastBlock;
 
 import java.util.function.Supplier;
 
-public class KunafaTrayBlock extends FeastBlock {
+public class KnafehTrayBlock extends FeastBlock {
     private static final VoxelShape EMPTY_PAN = Shapes.or(
             box(1, 0, 3, 3, 5, 15),
             box(1, 0, 1, 13, 5, 3),
@@ -31,7 +31,7 @@ public class KunafaTrayBlock extends FeastBlock {
             FULL_PAN
     };
 
-    public KunafaTrayBlock(Properties properties, Supplier<Item> servingItem, boolean hasLeftovers) {
+    public KnafehTrayBlock(Properties properties, Supplier<Item> servingItem, boolean hasLeftovers) {
         super(properties, servingItem, hasLeftovers);
     }
     @Override

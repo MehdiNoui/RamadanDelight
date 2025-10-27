@@ -13,11 +13,11 @@ import vectorwing.farmersdelight.common.block.FeastBlock;
 
 import java.util.function.Supplier;
 
-public class MaklobaBlock extends FeastBlock {
+public class MaqlubaBlock extends FeastBlock {
     protected static final VoxelShape PLATE_SHAPE = Block.box(1.0D, 0.0D, 1.0D, 15.0D, 2.0D, 15.0D);
     protected static final VoxelShape RICE_SHAPE = Shapes.joinUnoptimized(PLATE_SHAPE, Block.box(3.0D, 2.0D, 3.0D, 13.0D, 8.0D, 13.0D), BooleanOp.OR);
 
-    public MaklobaBlock(Properties properties, Supplier<Item> servingItem, boolean hasLeftovers) {
+    public MaqlubaBlock(Properties properties, Supplier<Item> servingItem, boolean hasLeftovers) {
         super(properties, servingItem, hasLeftovers);
     }
 

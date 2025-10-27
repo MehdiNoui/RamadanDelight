@@ -102,7 +102,6 @@ public class ModItemTags extends ItemTagsProvider {
         // Food
         tag(ModTags.DRINKS).add(ModItems.DATE_SYRUP.get());
         tag(ModTags.MEALS).add(
-                ModItems.KUNAFA.get(),
                 ModItems.LUQAIMAT.get(),
                 ModItems.HUMMUS_TAHINI.get(),
                 ModItems.SAVORY_FILLING.get(),
@@ -114,12 +113,12 @@ public class ModItemTags extends ItemTagsProvider {
                 ModItems.CHICKPEA_AND_RICE.get(),
                 ModItems.SAYADIEH.get(),
                 ModItems.TAGINE.get(),
-                ModItems.MAKLOBA.get()
+                ModItems.MAQLUBA.get()
         );
         tag(ModTags.FEASTS).add(
                 ModItems.BOUREK_BLOCK.get(),
-                ModItems.KUNAFA_TRAY_BLOCK.get(),
-                ModItems.MAKLOBA_BLOCK.get()
+                ModItems.KNAFEH_TRAY_BLOCK.get(),
+                ModItems.MAQLUBA_BLOCK.get()
         );
         // Wild Crops
         tag(ModTags.WILD_CROPS_ITEM).add(ModItems.WILD_CHICKPEA.get(), ModItems.WILD_PARSLEY.get());

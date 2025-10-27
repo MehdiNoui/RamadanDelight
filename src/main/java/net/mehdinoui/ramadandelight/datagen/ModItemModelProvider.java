@@ -33,8 +33,8 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.RAW_KEBAB);
         simpleItem(ModItems.KEBAB);
         simpleItem(ModItems.MUSAKHAN);
-        simpleItem(ModItems.MAKLOBA_BLOCK);
-        simpleItem(ModItems.MAKLOBA);
+        simpleItem(ModItems.MAQLUBA_BLOCK);
+        simpleItem(ModItems.MAQLUBA);
         simpleItem(ModItems.SAYADIEH);
         simpleItem(ModItems.TABBOULEH);
         simpleItem(ModItems.PARSLEY);
@@ -56,11 +56,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.CLUSTER_OF_DATES);
         simpleItem(ModItems.CHICKPEA);
         simpleItem(ModItems.SWEET_TAGINE);
-        simpleItem(ModItems.ZALABIYA);
+        simpleItem(ModItems.ZALABIYEH);
         simpleItem(ModItems.LUQAIMAT);
-        simpleItem(ModItems.MHALBIYA);
-        simpleItem(ModItems.KUNAFA_TRAY_BLOCK);
-        simpleItem(ModItems.KUNAFA);
+        simpleItem(ModItems.MAHALABIA);
+        simpleItem(ModItems.KNAFEH_TRAY_BLOCK);
+        simpleItem(ModItems.KNAFEH);
         simpleItem(ModItems.DATE_SYRUP);
         simpleItem(ModItems.CHICKPEA_AND_RICE);
         simpleItem(ModItems.HUMMUS_TAHINI);

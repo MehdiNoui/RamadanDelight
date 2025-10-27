@@ -1,4 +1,10 @@
 {
+  "conditions": [
+    {
+      "type": "forge:mod_loaded",
+      "modid": "vintagedelight"
+    }
+  ],
   "type": "minecraft:crafting_shapeless",
   "category": "misc",
   "ingredients": [
@@ -9,10 +15,10 @@
       "tag": "forge:dough"
     },
     {
-      "tag": "forge:milk"
+      "tag": "forge:cheese"
     },
     {
-      "tag": "forge:milk"
+      "tag": "forge:cheese"
     },
     {
       "item": "minecraft:sugar"
@@ -33,6 +39,6 @@
     }
   ],
   "result": {
-    "item": "ramadandelight:kunafa_tray_block"
+    "item": "ramadandelight:knafeh_tray_block"
   }
 }

@@ -6,13 +6,13 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "ramadandelight:kunafa_tray_block"
+          "name": "ramadandelight:knafeh_tray_block"
         }
       ],
       "conditions": [
         {
           "condition": "minecraft:block_state_property",
-          "block": "ramadandelight:kunafa_tray_block",
+          "block": "ramadandelight:knafeh_tray_block",
           "properties": {
             "servings": "4"
           }
@@ -32,7 +32,7 @@
           "condition": "minecraft:inverted",
           "term": {
             "condition": "minecraft:block_state_property",
-            "block": "ramadandelight:kunafa_tray_block",
+            "block": "ramadandelight:knafeh_tray_block",
             "properties": {
               "servings": "4"
             }

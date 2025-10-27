@@ -1,12 +1,17 @@
 {
   "parent": "minecraft:recipes/root",
   "criteria": {
-    "has_mutton": {
+    "has_sweet_ingredient": {
       "conditions": {
         "items": [
           {
             "items": [
-              "minecraft:mutton"
+              "ramadandelight:date_syrup"
+            ]
+          },
+          {
+            "items": [
+              "minecraft:honey_bottle"
             ]
           }
         ]
@@ -15,21 +20,21 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "ramadandelight:cooking/makloba"
+        "recipe": "ramadandelight:knafeh_tray_block"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
   },
   "requirements": [
     [
-      "has_mutton",
+      "has_sweet_ingredient",
       "has_the_recipe"
     ]
   ],
   "rewards": {
     "recipes": [
-      "ramadandelight:cooking/makloba"
+      "ramadandelight:knafeh_tray_block"
     ]
   },
-  "sends_telemetry_event": true
+  "sends_telemetry_event": false
 }

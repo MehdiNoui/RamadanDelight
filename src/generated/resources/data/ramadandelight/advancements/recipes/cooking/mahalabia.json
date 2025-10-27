@@ -15,7 +15,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "ramadandelight:cooking/mhalbiya"
+        "recipe": "ramadandelight:cooking/mahalabia"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -28,7 +28,7 @@
   ],
   "rewards": {
     "recipes": [
-      "ramadandelight:cooking/mhalbiya"
+      "ramadandelight:cooking/mahalabia"
     ]
   },
   "sends_telemetry_event": true

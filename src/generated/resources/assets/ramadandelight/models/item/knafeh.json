@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/generated",
   "textures": {
-    "layer0": "ramadandelight:item/makloba_block"
+    "layer0": "ramadandelight:item/knafeh"
   }
 }

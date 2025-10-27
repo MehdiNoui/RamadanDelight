@@ -48,10 +48,10 @@ public class ModCreativeTab {
                         pOutput.accept(ModItems.SAVORY_FILLING.get());
                         // Desserts
                         pOutput.accept(ModItems.DATE_STUFFED_COOKIE.get());
-                        pOutput.accept(ModItems.MHALBIYA.get());
-                        pOutput.accept(ModItems.KUNAFA_TRAY_BLOCK.get());
-                        pOutput.accept(ModItems.KUNAFA.get());
-                        pOutput.accept(ModItems.ZALABIYA.get());
+                        pOutput.accept(ModItems.MAHALABIA.get());
+                        pOutput.accept(ModItems.KNAFEH_TRAY_BLOCK.get());
+                        pOutput.accept(ModItems.KNAFEH.get());
+                        pOutput.accept(ModItems.ZALABIYEH.get());
                         pOutput.accept(ModItems.LUQAIMAT.get());
                         // Salads
                         pOutput.accept(ModItems.TABBOULEH.get());
@@ -74,8 +74,8 @@ public class ModCreativeTab {
                         pOutput.accept(ModItems.SAYADIEH.get());
                         pOutput.accept(ModItems.TAGINE.get());
                         // Feasts
-                        pOutput.accept(ModItems.MAKLOBA_BLOCK.get());
-                        pOutput.accept(ModItems.MAKLOBA.get());
+                        pOutput.accept(ModItems.MAQLUBA_BLOCK.get());
+                        pOutput.accept(ModItems.MAQLUBA.get());
                         pOutput.accept(ModItems.BOUREK_BLOCK.get());
                     }).build());
 
