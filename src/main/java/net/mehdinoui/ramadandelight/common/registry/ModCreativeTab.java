@@ -26,6 +26,7 @@ public class ModCreativeTab {
                     .title(Component.translatable("creativetab.ramadandelight_tab"))
                     .displayItems((pParameters, pOutput) -> {
                         // Storage Crates
+                        pOutput.accept(ModItems.DATE_CRATE.get());
                         pOutput.accept(ModItems.CHICKPEA_BAG.get());
                         pOutput.accept(ModItems.PARSLEY_BAG.get());
                         // Wild Flowers

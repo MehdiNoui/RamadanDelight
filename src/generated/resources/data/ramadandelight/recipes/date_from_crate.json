@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ramadandelight:date_crate"
+    }
+  ],
+  "result": {
+    "count": 9,
+    "item": "ramadandelight:date"
+  }
+}

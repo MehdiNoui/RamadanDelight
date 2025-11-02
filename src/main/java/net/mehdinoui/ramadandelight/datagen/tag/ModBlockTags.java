@@ -31,6 +31,7 @@ public class ModBlockTags extends BlockTagsProvider {
     protected void registerForgeTags() {
         // Storage Blocks
         tag(RDForgeTags.STORAGE_BLOCKS_CHICKPEA).add(ModBlocks.CHICKPEA_BAG.get());
+        tag(RDForgeTags.STORAGE_BLOCKS_DATE).add(ModBlocks.DATE_CRATE.get());
         tag(RDForgeTags.STORAGE_BLOCKS_PARSLEY).add(ModBlocks.PARSLEY_BAG.get());
         // Glass Blocks
         tag(Tags.Blocks.GLASS_COLORLESS).add(ModBlocks.STAINED_GLASS_BLOCK.get());
@@ -97,6 +98,7 @@ public class ModBlockTags extends BlockTagsProvider {
         );
         // Mineable tags
         tag(BlockTags.MINEABLE_WITH_AXE).add(
+                ModBlocks.DATE_CRATE.get(),
                 ModBlocks.DRUM_BLOCK.get(),
                 ModBlocks.PALM_LOG.get(),
                 ModBlocks.PALM_WOOD.get(),

@@ -148,6 +148,13 @@ public class ModBasicRecipes {
                 .define('#', ModItems.CHICKPEA.get())
                 .unlockedBy("has_chickpea", hasItems(ModItems.CHICKPEA.get()))
                 .save(consumer, new ResourceLocation(RamadanDelight.MOD_ID,"chickpea_bag"));
+        ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModItems.DATE_CRATE.get(), 1)
+                .pattern("###")
+                .pattern("###")
+                .pattern("###")
+                .define('#', ModItems.DATE.get())
+                .unlockedBy("has_date", hasItems(ModItems.DATE.get()))
+                .save(consumer, new ResourceLocation(RamadanDelight.MOD_ID,"date_crate"));
         ShapedRecipeBuilder.shaped(RecipeCategory.BUILDING_BLOCKS, ModItems.PARSLEY_BAG.get(), 1)
                 .pattern("###")
                 .pattern("###")
@@ -302,11 +309,15 @@ public class ModBasicRecipes {
                 .unlockedBy("has_calcite", hasItems(Items.CALCITE))
                 .save(consumer, new ResourceLocation(RamadanDelight.MOD_ID, "mosaic_tiles"));
 
-        // From bag
+        // From storage blocks
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.CHICKPEA.get(), 9)
                 .requires(ModItems.CHICKPEA_BAG.get())
                 .unlockedBy("has_chickpea_bag", hasItems(ModItems.CHICKPEA_BAG.get()))
                 .save(consumer, new ResourceLocation(RamadanDelight.MOD_ID, "chickpea_from_bag"));
+        ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.DATE.get(), 9)
+                .requires(ModItems.DATE_CRATE.get())
+                .unlockedBy("has_date_crate", hasItems(ModItems.DATE_CRATE.get()))
+                .save(consumer, new ResourceLocation(RamadanDelight.MOD_ID, "date_from_crate"));
         ShapelessRecipeBuilder.shapeless(RecipeCategory.FOOD, ModItems.PARSLEY.get(), 9)
                 .requires(ModItems.PARSLEY_BAG.get())
                 .unlockedBy("has_parsley_bag", hasItems(ModItems.PARSLEY_BAG.get()))

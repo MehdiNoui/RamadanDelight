@@ -35,6 +35,7 @@ public class ModItemTags extends ItemTagsProvider {
     protected void registerForgeTags() {
         // Storage Blocks Items
         tag(RDForgeTags.STORAGE_BLOCKS_ITEM_CHICKPEA).add(ModItems.CHICKPEA_BAG.get());
+        tag(RDForgeTags.STORAGE_BLOCKS_ITEM_DATE).add(ModItems.DATE_CRATE.get());
         tag(RDForgeTags.STORAGE_BLOCKS_ITEM_PARSLEY).add(ModItems.PARSLEY_BAG.get());
         // Crops
         tag(Tags.Items.CROPS).addTag(RDForgeTags.CROPS_CHICKPEA);

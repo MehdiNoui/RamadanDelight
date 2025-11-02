@@ -66,8 +66,9 @@ public class ModItemModelProvider extends ItemModelProvider {
         simpleItem(ModItems.HUMMUS_TAHINI);
         // Blocks
         // Bags
-        simpleBlock(ModBlocks.PARSLEY_BAG);
         simpleBlock(ModBlocks.CHICKPEA_BAG);
+        simpleBlock(ModBlocks.DATE_CRATE);
+        simpleBlock(ModBlocks.PARSLEY_BAG);
         // Mosaic Tiles
         simpleBlock(ModBlocks.MOSAIC_TILES);
         // Glass

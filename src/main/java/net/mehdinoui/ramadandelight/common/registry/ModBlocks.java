@@ -47,10 +47,10 @@ public class ModBlocks {
 
     // --- Blocks Registry ---
     // Crops Blocks
-    public static final RegistryObject<Block> PARSLEY_CROP = BLOCKS.register("parsley_crop",
-            () -> new ParsleyCropBlock(Block.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
     public static final RegistryObject<Block> CHICKPEA_CROP = BLOCKS.register("chickpea_crop",
             () -> new ChickpeaCropBlock(Block.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
+    public static final RegistryObject<Block> PARSLEY_CROP = BLOCKS.register("parsley_crop",
+            () -> new ParsleyCropBlock(Block.Properties.copy(Blocks.WHEAT).noOcclusion().noCollission()));
 
     // Food Blocks
     public static final RegistryObject<Block> BOUREK_BLOCK = BLOCKS.register("bourek_block",
@@ -64,10 +64,12 @@ public class ModBlocks {
 
 
     // Decoration, Misc & Storage Blocks
-    public static final RegistryObject<Block> PARSLEY_BAG = BLOCKS.register("parsley_bag",
-            () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
     public static final RegistryObject<Block> CHICKPEA_BAG = BLOCKS.register("chickpea_bag",
             () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> PARSLEY_BAG = BLOCKS.register("parsley_bag",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.WHITE_WOOL)));
+    public static final RegistryObject<Block> DATE_CRATE = BLOCKS.register("date_crate",
+            () -> new Block(BlockBehaviour.Properties.copy(Blocks.OAK_PLANKS).strength(2.0F, 3.0F).sound(SoundType.WOOD)));
     public static final RegistryObject<Block> MOSAIC_TILES = BLOCKS.register("mosaic_tiles",
             () -> new CustomTiles(BlockBehaviour.Properties.copy(Blocks.CALCITE)));
     public static final RegistryObject<Block> DRUM_BLOCK = BLOCKS.register("drum",

@@ -47,6 +47,7 @@ public class RDForgeTags {
     // -- Blocks --
     // Storage Blocks
     public static final TagKey<Block> STORAGE_BLOCKS_CHICKPEA = forgeBlockTag("storage_blocks/chickpea");
+    public static final TagKey<Block> STORAGE_BLOCKS_DATE = forgeBlockTag("storage_blocks/date");
     public static final TagKey<Block> STORAGE_BLOCKS_PARSLEY = forgeBlockTag("storage_blocks/parsley");
 
     // -- Items --
@@ -59,6 +60,7 @@ public class RDForgeTags {
     public static final TagKey<Item> SEEDS_PARSLEY = forgeItemTag("seeds/parsley");
     // Storage Blocks Item
     public static final TagKey<Item> STORAGE_BLOCKS_ITEM_CHICKPEA = forgeItemTag("storage_blocks/chickpea");
+    public static final TagKey<Item> STORAGE_BLOCKS_ITEM_DATE = forgeItemTag("storage_blocks/date");
     public static final TagKey<Item> STORAGE_BLOCKS_ITEM_PARSLEY = forgeItemTag("storage_blocks/parsley");
     // Tortilla
     public static final TagKey<Item> TORTILLA = forgeItemTag("tortilla");

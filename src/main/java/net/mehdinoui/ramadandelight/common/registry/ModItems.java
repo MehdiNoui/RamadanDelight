@@ -142,6 +142,8 @@ public class ModItems {
     // Decoration, Misc & Storage Blocks
     public static final RegistryObject<Item> CHICKPEA_BAG = ITEMS.register("chickpea_bag",
             () -> new BlockItem(ModBlocks.CHICKPEA_BAG.get(), basicItem()));
+    public static final RegistryObject<Item> DATE_CRATE = ITEMS.register("date_crate",
+            () -> new BlockItem(ModBlocks.DATE_CRATE.get(), basicItem()));
     public static final RegistryObject<Item> PARSLEY_BAG = ITEMS.register("parsley_bag",
             () -> new BlockItem(ModBlocks.PARSLEY_BAG.get(), basicItem()));
     public static final RegistryObject<Item> DRUM = ITEMS.register("drum",
