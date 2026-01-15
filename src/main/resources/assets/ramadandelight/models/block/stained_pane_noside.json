@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/template_glass_pane_noside",
-  "textures": {
-    "pane": "ramadandelight:block/stained_glass_block"
-  },
-  "render_type": "minecraft:translucent"
-}

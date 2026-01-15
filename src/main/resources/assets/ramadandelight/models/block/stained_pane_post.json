@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/template_glass_pane_post",
-  "textures": {
-    "edge": "ramadandelight:block/stained_glass_pane_top",
-    "pane": "ramadandelight:block/stained_glass_block"
-  },
-  "render_type": "minecraft:translucent"
-}

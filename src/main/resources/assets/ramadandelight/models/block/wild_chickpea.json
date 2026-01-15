@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cross",
-  "textures": {
-    "cross": "ramadandelight:block/wild_chickpea"
-  },
-  "render_type": "minecraft:cutout"
-}

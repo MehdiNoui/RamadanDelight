@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cube_all",
-  "textures": {
-    "all": "ramadandelight:block/orange_stained_glass_block"
-  },
-  "render_type": "minecraft:translucent"
-}

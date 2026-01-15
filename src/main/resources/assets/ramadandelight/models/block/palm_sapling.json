@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/cross",
-  "textures": {
-    "cross": "ramadandelight:block/palm_sapling"
-  },
-  "render_type": "minecraft:cutout"
-}

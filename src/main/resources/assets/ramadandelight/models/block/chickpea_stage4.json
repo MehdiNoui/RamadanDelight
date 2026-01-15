@@ -1,7 +1,0 @@
-{
-  "parent": "minecraft:block/crop",
-  "textures": {
-    "crop": "ramadandelight:block/chickpea_stage4"
-  },
-  "render_type": "minecraft:cutout"
-}
