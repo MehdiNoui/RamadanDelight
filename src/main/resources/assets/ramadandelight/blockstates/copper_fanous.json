@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "ramadandelight:block/copper_fanous"
+    },
+    "hanging=true": {
+      "model": "ramadandelight:block/copper_fanous_hanging"
+    }
+  }
+}

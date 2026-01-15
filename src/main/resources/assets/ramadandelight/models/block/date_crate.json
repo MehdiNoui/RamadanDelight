@@ -1,0 +1,12 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "up": "ramadandelight:block/date_crate_top",
+    "down": "farmersdelight:block/crate_bottom",
+    "north": "ramadandelight:block/date_crate_side",
+    "south": "ramadandelight:block/date_crate_side",
+    "east": "ramadandelight:block/date_crate_side",
+    "west": "ramadandelight:block/date_crate_side",
+    "particle": "ramadandelight:block/date_crate_top"
+  }
+}

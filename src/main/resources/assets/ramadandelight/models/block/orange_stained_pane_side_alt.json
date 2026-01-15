@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/template_glass_pane_side_alt",
+  "textures": {
+    "edge": "ramadandelight:block/stained_glass_pane_top",
+    "pane": "ramadandelight:block/orange_stained_glass_block"
+  },
+  "render_type": "minecraft:translucent"
+}

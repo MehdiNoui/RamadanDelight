@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "hanging=false": {
+      "model": "ramadandelight:block/soul_fanous"
+    },
+    "hanging=true": {
+      "model": "ramadandelight:block/soul_fanous_hanging"
+    }
+  }
+}
