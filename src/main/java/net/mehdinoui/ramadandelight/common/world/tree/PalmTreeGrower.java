@@ -9,7 +9,7 @@ public class PalmTreeGrower {
     public static final TreeGrower PALM = new TreeGrower(
             "palm",
             Optional.empty(), // megaTree
-            Optional.of(ModConfiguredFeatures.PALM_KEY), // secondaryTree
+            Optional.of(ModConfiguredFeatures.DATE_PALM_CONFIGURED_KEY), // secondaryTree
             Optional.empty() // flowers
     );
 }

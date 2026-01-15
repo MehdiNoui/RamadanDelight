@@ -1,6 +1,5 @@
 package net.mehdinoui.ramadandelight;
 
-
 import net.mehdinoui.ramadandelight.common.registry.*;
 import net.mehdinoui.ramadandelight.common.world.ModVillageStructures;
 import net.mehdinoui.ramadandelight.common.world.tree.ModFoliagePlacer;
@@ -19,7 +18,7 @@ public class RamadanDelight {
         ModCreativeTab.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-        //ModPlacementModifiers.register(modEventBus);
+        ModPlacementModifiers.register(modEventBus);
         ModSoundEvents.register(modEventBus);
         ModEntities.register(modEventBus);
 

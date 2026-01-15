@@ -1,0 +1,19 @@
+{
+  "feature": "ramadandelight:patch_wild_parsley",
+  "placement": [
+    {
+      "type": "ramadandelight:configurable_rarity_filter",
+      "config_key": "wild_parsley"
+    },
+    {
+      "type": "minecraft:in_square"
+    },
+    {
+      "type": "minecraft:heightmap",
+      "heightmap": "MOTION_BLOCKING"
+    },
+    {
+      "type": "minecraft:biome"
+    }
+  ]
+}

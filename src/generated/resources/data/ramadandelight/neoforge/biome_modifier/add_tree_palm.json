@@ -1,6 +1,6 @@
 {
   "type": "neoforge:add_features",
   "biomes": "#c:is_desert",
-  "features": "ramadandelight:palm_placed",
+  "features": "ramadandelight:date_palm_tree",
   "step": "vegetal_decoration"
 }

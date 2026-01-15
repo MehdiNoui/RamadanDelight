@@ -25,7 +25,7 @@ public class ModBiomeModifiers {
         context.register(ADD_TREE_PALM,
                 new BiomeModifiers.AddFeaturesBiomeModifier(
                 biomes.getOrThrow(Tags.Biomes.IS_DESERT),
-                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.PALM_PLACED_KEY)),
+                HolderSet.direct(placedFeatures.getOrThrow(ModPlacedFeatures.DATE_PALM_PLACED_KEY)),
                 GenerationStep.Decoration.VEGETAL_DECORATION));
     }
 }

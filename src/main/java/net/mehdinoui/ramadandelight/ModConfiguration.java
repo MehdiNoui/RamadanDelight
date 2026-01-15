@@ -12,6 +12,11 @@ public class ModConfiguration {
     public static final ModConfigSpec.BooleanValue ENABLE_MASON_VILLAGER_TRADES;
     public static final ModConfigSpec.BooleanValue ENABLE_WANDERING_TRADER_SELLS;
 
+    // --- World Generation ---
+    public static final ModConfigSpec.IntValue CHANCE_DATE_PALM_TREE;
+    public static final ModConfigSpec.IntValue CHANCE_WILD_CHICKPEA;
+    public static final ModConfigSpec.IntValue CHANCE_WILD_PARSLEY;
+
     public static final ModConfigSpec.BooleanValue GENERATE_VILLAGE_STRUCTURES;
 
     static {
@@ -39,6 +44,20 @@ public class ModConfiguration {
         GENERATE_VILLAGE_STRUCTURES = BUILDER
                 .comment("Enable Ramadan Delight to add Palm Trees to Desert Villages")
                 .define("enableVillageStructures", true);
+
+        BUILDER.push("Worldgen Settings");
+
+        CHANCE_DATE_PALM_TREE = BUILDER
+                .comment("Chance of Date Palm Tree generating in the world. (0 to disable, higher = rarer)")
+                .defineInRange("chanceBellPeppers", 1, 0, 512);
+        CHANCE_WILD_CHICKPEA = BUILDER
+                .comment("Chance of Wild Chickpea in the world. (0 to disable, higher = rarer)")
+                .defineInRange("chanceBroccoli", 110, 0, 512);
+        CHANCE_WILD_PARSLEY = BUILDER
+                .comment("Chance of Cauliflowers generating in the world. (0 to disable, higher = rarer)")
+                .defineInRange("chanceCauliflowers", 130, 0, 512);
+
+        BUILDER.pop();
 
         CONFIG = BUILDER.build();
     }
