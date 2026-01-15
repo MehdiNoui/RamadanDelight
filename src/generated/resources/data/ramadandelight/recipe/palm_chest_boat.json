@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:chests/wooden"
+    },
+    {
+      "item": "ramadandelight:palm_boat"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "ramadandelight:palm_chest_boat"
+  }
+}

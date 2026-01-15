@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_parsley": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ramadandelight:parsley"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ramadandelight:cooking/cooking/harira"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_parsley"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ramadandelight:cooking/cooking/harira"
+    ]
+  }
+}

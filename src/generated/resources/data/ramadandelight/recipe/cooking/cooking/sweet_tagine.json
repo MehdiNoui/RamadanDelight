@@ -1,0 +1,27 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "c:foods/cooked_beef"
+    },
+    {
+      "item": "minecraft:apple"
+    },
+    {
+      "tag": "c:foods/berry"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "count": 1,
+    "id": "ramadandelight:sweet_tagine"
+  }
+}

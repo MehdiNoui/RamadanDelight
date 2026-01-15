@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_small_dough": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ramadandelight:small_dough"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ramadandelight:cooking/cooking/luqaimat"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_small_dough"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ramadandelight:cooking/cooking/luqaimat"
+    ]
+  }
+}

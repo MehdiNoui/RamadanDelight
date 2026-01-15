@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ramadandelight:wild_chickpea"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "ramadandelight:chickpea"
+  }
+}

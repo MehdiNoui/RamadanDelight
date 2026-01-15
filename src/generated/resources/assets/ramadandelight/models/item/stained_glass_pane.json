@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "ramadandelight:block/stained_glass_block"
+  }
+}

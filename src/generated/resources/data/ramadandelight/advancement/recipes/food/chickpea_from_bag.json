@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_chickpea_bag": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ramadandelight:chickpea_bag"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ramadandelight:chickpea_from_bag"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_chickpea_bag"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ramadandelight:chickpea_from_bag"
+    ]
+  }
+}

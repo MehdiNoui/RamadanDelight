@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_savory_filling": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ramadandelight:savory_filling"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ramadandelight:raw_samosa"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_savory_filling"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ramadandelight:raw_samosa"
+    ]
+  }
+}

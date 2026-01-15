@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:smoking",
+  "category": "food",
+  "cookingtime": 50,
+  "experience": 0.15,
+  "ingredient": {
+    "item": "ramadandelight:small_dough"
+  },
+  "result": {
+    "count": 1,
+    "id": "ramadandelight:flat_bread"
+  }
+}

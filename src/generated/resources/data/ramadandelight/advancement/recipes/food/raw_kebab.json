@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_minced_beef": {
+      "conditions": {
+        "items": [
+          {
+            "items": "farmersdelight:minced_beef"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ramadandelight:raw_kebab"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_minced_beef"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ramadandelight:raw_kebab"
+    ]
+  }
+}

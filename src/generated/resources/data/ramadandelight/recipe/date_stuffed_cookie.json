@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "D": {
+      "item": "ramadandelight:date"
+    },
+    "G": {
+      "tag": "c:crops/grain"
+    }
+  },
+  "pattern": [
+    "DGD"
+  ],
+  "result": {
+    "count": 8,
+    "id": "ramadandelight:date_stuffed_cookie"
+  }
+}

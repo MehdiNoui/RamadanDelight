@@ -1,0 +1,19 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "ramadandelight:quiche"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 4,
+        "id": "ramadandelight:quiche_slice"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knife"
+  }
+}

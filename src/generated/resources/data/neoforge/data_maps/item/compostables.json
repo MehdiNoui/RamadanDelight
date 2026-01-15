@@ -1,0 +1,43 @@
+{
+  "values": {
+    "ramadandelight:bourek": {
+      "chance": 1.0
+    },
+    "ramadandelight:chickpea": {
+      "chance": 0.3
+    },
+    "ramadandelight:cluster_of_dates": {
+      "chance": 1.0
+    },
+    "ramadandelight:date": {
+      "chance": 0.3
+    },
+    "ramadandelight:date_stuffed_cookie": {
+      "chance": 0.85
+    },
+    "ramadandelight:dates_branch": {
+      "chance": 0.3
+    },
+    "ramadandelight:palm_leaves": {
+      "chance": 0.3
+    },
+    "ramadandelight:palm_sapling": {
+      "chance": 0.3
+    },
+    "ramadandelight:parsley": {
+      "chance": 0.65
+    },
+    "ramadandelight:parsley_seeds": {
+      "chance": 0.3
+    },
+    "ramadandelight:quiche": {
+      "chance": 1.0
+    },
+    "ramadandelight:wild_chickpea": {
+      "chance": 0.65
+    },
+    "ramadandelight:wild_parsley": {
+      "chance": 0.65
+    }
+  }
+}

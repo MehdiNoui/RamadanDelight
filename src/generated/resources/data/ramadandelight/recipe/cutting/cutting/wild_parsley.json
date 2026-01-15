@@ -1,0 +1,26 @@
+{
+  "type": "farmersdelight:cutting",
+  "ingredients": [
+    {
+      "item": "ramadandelight:wild_parsley"
+    }
+  ],
+  "result": [
+    {
+      "item": {
+        "count": 1,
+        "id": "ramadandelight:parsley_seeds"
+      }
+    },
+    {
+      "chance": 0.5,
+      "item": {
+        "count": 1,
+        "id": "minecraft:light_gray_dye"
+      }
+    }
+  ],
+  "tool": {
+    "tag": "c:tools/knife"
+  }
+}

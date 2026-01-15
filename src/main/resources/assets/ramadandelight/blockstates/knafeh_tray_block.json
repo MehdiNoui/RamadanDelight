@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "facing=north,servings=0": { "model": "ramadandelight:block/knafeh_tray_leftover", "y": 0 },
+    "facing=south,servings=0": { "model": "ramadandelight:block/knafeh_tray_leftover", "y": 180 },
+    "facing=west,servings=0": { "model": "ramadandelight:block/knafeh_tray_leftover", "y": 270 },
+    "facing=east,servings=0": { "model": "ramadandelight:block/knafeh_tray_leftover", "y": 90 },
+
+    "facing=north,servings=1": { "model": "ramadandelight:block/knafeh_tray_stage3", "y": 0 },
+    "facing=south,servings=1": { "model": "ramadandelight:block/knafeh_tray_stage3", "y": 180 },
+    "facing=west,servings=1": { "model": "ramadandelight:block/knafeh_tray_stage3", "y": 270 },
+    "facing=east,servings=1": { "model": "ramadandelight:block/knafeh_tray_stage3", "y": 90 },
+
+    "facing=north,servings=2": { "model": "ramadandelight:block/knafeh_tray_stage2", "y": 0 },
+    "facing=south,servings=2": { "model": "ramadandelight:block/knafeh_tray_stage2", "y": 180 },
+    "facing=west,servings=2": { "model": "ramadandelight:block/knafeh_tray_stage2", "y": 270 },
+    "facing=east,servings=2": { "model": "ramadandelight:block/knafeh_tray_stage2", "y": 90 },
+
+    "facing=north,servings=3": { "model": "ramadandelight:block/knafeh_tray_stage1", "y": 0 },
+    "facing=south,servings=3": { "model": "ramadandelight:block/knafeh_tray_stage1", "y": 180 },
+    "facing=west,servings=3": { "model": "ramadandelight:block/knafeh_tray_stage1", "y": 270 },
+    "facing=east,servings=3": { "model": "ramadandelight:block/knafeh_tray_stage1", "y": 90 },
+
+    "facing=north,servings=4": { "model": "ramadandelight:block/knafeh_tray_stage0", "y": 0 },
+    "facing=south,servings=4": { "model": "ramadandelight:block/knafeh_tray_stage0", "y": 180 },
+    "facing=west,servings=4": { "model": "ramadandelight:block/knafeh_tray_stage0", "y": 270 },
+    "facing=east,servings=4": { "model": "ramadandelight:block/knafeh_tray_stage0", "y": 90 }
+  }
+}

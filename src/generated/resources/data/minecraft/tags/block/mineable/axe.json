@@ -1,0 +1,23 @@
+{
+  "values": [
+    "ramadandelight:date_crate",
+    "ramadandelight:drum",
+    "ramadandelight:palm_log",
+    "ramadandelight:palm_wood",
+    "ramadandelight:stripped_palm_log",
+    "ramadandelight:stripped_palm_wood",
+    "ramadandelight:palm_planks",
+    "ramadandelight:palm_stairs",
+    "ramadandelight:palm_slab",
+    "ramadandelight:palm_fence",
+    "ramadandelight:palm_fence_gate",
+    "ramadandelight:palm_door",
+    "ramadandelight:palm_trapdoor",
+    "ramadandelight:palm_button",
+    "ramadandelight:palm_pressure_plate",
+    "ramadandelight:palm_sign",
+    "ramadandelight:palm_wall_sign",
+    "ramadandelight:palm_hanging_sign",
+    "ramadandelight:palm_wall_hanging_sign"
+  ]
+}

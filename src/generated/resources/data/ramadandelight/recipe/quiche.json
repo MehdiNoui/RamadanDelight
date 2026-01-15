@@ -1,0 +1,40 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "key": {
+    "A": {
+      "item": "ramadandelight:parsley"
+    },
+    "B": {
+      "tag": "c:foods/milk"
+    },
+    "C": {
+      "item": "farmersdelight:tomato_sauce"
+    },
+    "D": [
+      {
+        "tag": "c:foods/cooked_mutton"
+      },
+      {
+        "tag": "c:foods/cooked_chicken"
+      },
+      {
+        "tag": "c:foods/cooked_beef"
+      }
+    ],
+    "E": {
+      "item": "farmersdelight:pie_crust"
+    },
+    "F": {
+      "item": "minecraft:baked_potato"
+    }
+  },
+  "pattern": [
+    "ABC",
+    "DEF"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ramadandelight:quiche"
+  }
+}

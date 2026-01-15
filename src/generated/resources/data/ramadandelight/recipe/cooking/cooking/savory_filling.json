@@ -1,0 +1,38 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "experience": 0.35,
+  "ingredients": [
+    {
+      "item": "ramadandelight:parsley"
+    },
+    {
+      "tag": "c:eggs"
+    },
+    {
+      "tag": "c:crops/onion"
+    },
+    {
+      "type": "neoforge:compound",
+      "children": [
+        {
+          "tag": "c:foods/raw_mutton"
+        },
+        {
+          "tag": "c:foods/raw_chicken"
+        },
+        {
+          "tag": "c:foods/raw_beef"
+        }
+      ]
+    }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "count": 1,
+    "id": "ramadandelight:savory_filling"
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "building",
+  "key": {
+    "G": {
+      "item": "minecraft:glass"
+    },
+    "I": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "pattern": [
+    "GIG"
+  ],
+  "result": {
+    "count": 1,
+    "id": "ramadandelight:stained_glass_block"
+  }
+}

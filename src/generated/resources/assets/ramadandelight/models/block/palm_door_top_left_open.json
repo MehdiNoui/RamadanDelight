@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/door_top_left_open",
+  "render_type": "minecraft:cutout",
+  "textures": {
+    "bottom": "ramadandelight:block/palm_door_bottom",
+    "top": "ramadandelight:block/palm_door_top"
+  }
+}

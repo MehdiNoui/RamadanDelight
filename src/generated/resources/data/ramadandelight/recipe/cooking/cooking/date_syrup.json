@@ -1,0 +1,20 @@
+{
+  "type": "farmersdelight:cooking",
+  "experience": 2.0,
+  "ingredients": [
+    {
+      "item": "ramadandelight:date"
+    },
+    {
+      "item": "ramadandelight:date"
+    },
+    {
+      "item": "minecraft:sugar"
+    }
+  ],
+  "recipe_book_tab": "drinks",
+  "result": {
+    "count": 1,
+    "id": "ramadandelight:date_syrup"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:campfire_cooking",
+  "category": "food",
+  "cookingtime": 600,
+  "experience": 0.35,
+  "ingredient": {
+    "item": "ramadandelight:raw_bourek"
+  },
+  "result": {
+    "count": 1,
+    "id": "ramadandelight:bourek"
+  }
+}

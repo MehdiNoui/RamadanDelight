@@ -1,0 +1,8 @@
+{
+  "parent": "minecraft:block/inner_stairs",
+  "textures": {
+    "bottom": "ramadandelight:block/palm_planks",
+    "side": "ramadandelight:block/palm_planks",
+    "top": "ramadandelight:block/palm_planks"
+  }
+}

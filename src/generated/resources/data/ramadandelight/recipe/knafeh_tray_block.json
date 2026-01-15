@@ -1,0 +1,39 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:foods/dough"
+    },
+    {
+      "tag": "c:foods/dough"
+    },
+    {
+      "tag": "c:foods/milk"
+    },
+    {
+      "tag": "c:foods/milk"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    {
+      "item": "minecraft:sugar"
+    },
+    [
+      {
+        "item": "minecraft:honey_bottle"
+      },
+      {
+        "item": "ramadandelight:date_syrup"
+      }
+    ],
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "ramadandelight:knafeh_tray_block"
+  }
+}

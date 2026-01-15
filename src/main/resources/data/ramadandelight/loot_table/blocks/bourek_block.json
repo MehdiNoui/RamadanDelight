@@ -1,0 +1,221 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "name": "pool1",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ramadandelight:bourek_block"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "ramadandelight:bourek_block",
+          "properties": {
+            "servings": "8"
+          }
+        }
+      ]
+    },
+    {
+      "name": "pool2",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ramadandelight:bourek"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": 7
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "ramadandelight:bourek_block",
+          "properties": {
+            "servings": "7"
+          }
+        }
+      ]
+    },
+    {
+      "name": "pool3",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ramadandelight:bourek"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": 6
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "ramadandelight:bourek_block",
+          "properties": {
+            "servings": "6"
+          }
+        }
+      ]
+    },
+    {
+      "name": "pool4",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ramadandelight:bourek"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": 5
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "ramadandelight:bourek_block",
+          "properties": {
+            "servings": "5"
+          }
+        }
+      ]
+    },
+    {
+      "name": "pool5",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ramadandelight:bourek"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": 4
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "ramadandelight:bourek_block",
+          "properties": {
+            "servings": "4"
+          }
+        }
+      ]
+    },
+    {
+      "name": "pool6",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ramadandelight:bourek"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": 3
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "ramadandelight:bourek_block",
+          "properties": {
+            "servings": "3"
+          }
+        }
+      ]
+    },
+    {
+      "name": "pool7",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ramadandelight:bourek"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": 2
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "ramadandelight:bourek_block",
+          "properties": {
+            "servings": "2"
+          }
+        }
+      ]
+    },
+    {
+      "name": "pool8",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "ramadandelight:bourek"
+        }
+      ],
+      "functions": [
+        {
+          "function": "minecraft:set_count",
+          "count": 1
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:block_state_property",
+          "block": "ramadandelight:bourek_block",
+          "properties": {
+            "servings": "1"
+          }
+        }
+      ]
+    },
+    {
+      "name": "pool9",
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "minecraft:bowl"
+        }
+      ],
+      "conditions": [
+        {
+          "condition": "minecraft:inverted",
+          "term": {
+            "condition": "minecraft:block_state_property",
+            "block": "ramadandelight:bourek_block",
+            "properties": {
+              "servings": "8"
+            }
+          }
+        }
+      ]
+    }
+  ]
+}

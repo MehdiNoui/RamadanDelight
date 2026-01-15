@@ -1,0 +1,237 @@
+package net.mehdinoui.ramadandelight.common.registry;
+
+import net.mehdinoui.ramadandelight.RamadanDelight;
+import net.mehdinoui.ramadandelight.common.entity.custom.RDBoatEntity;
+import net.mehdinoui.ramadandelight.common.item.ModFoods;
+import net.mehdinoui.ramadandelight.common.item.custom.ModBoatItem;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.food.FoodProperties;
+import net.minecraft.world.item.*;
+import net.minecraft.world.level.Level;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredItem;
+import net.neoforged.neoforge.registries.DeferredRegister;
+import org.jetbrains.annotations.NotNull;
+import vectorwing.farmersdelight.common.item.ConsumableItem;
+import vectorwing.farmersdelight.common.item.DrinkableItem;
+
+import static vectorwing.farmersdelight.common.registry.ModItems.*;
+
+public class ModItems {
+    // --- Deferred Register ---
+    public final static DeferredRegister.Items ITEMS =
+            DeferredRegister.createItems(RamadanDelight.MOD_ID);
+
+    // --- Helper Methods ---
+    public static Item.Properties bowlFoodItem(FoodProperties food) {
+        return new Item.Properties().food(food).craftRemainder(Items.BOWL).stacksTo(16);
+    }
+    public static Item.Properties stickFoodItem(FoodProperties food) {
+        return new Item.Properties().food(food).craftRemainder(Items.STICK).stacksTo(64);
+    }
+    public static void register(IEventBus eventBus) {
+        ITEMS.register(eventBus);
+    }
+
+    // --- Items Registry ---
+    // Crops And Seeds
+    public static final DeferredItem<Item> PARSLEY = ITEMS.register("parsley",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> PARSLEY_SEEDS = ITEMS.register("parsley_seeds",
+            () -> new ItemNameBlockItem(ModBlocks.PARSLEY_CROP.get(), new Item.Properties()));
+    public static final DeferredItem<Item> CHICKPEA = ITEMS.register("chickpea",
+            () -> new ItemNameBlockItem(ModBlocks.CHICKPEA_CROP.get(), new Item.Properties()
+                    .food(ModFoods.CHICKPEA)));
+
+    // Date Related Items
+    public static final DeferredItem<Item> DATE = ITEMS.register("date",
+            () -> new Item(new Item.Properties().food(ModFoods.DATE)));
+    public static final DeferredItem<Item> DATE_STUFFED_COOKIE = ITEMS.register("date_stuffed_cookie",
+            () -> new Item(new Item.Properties().food(ModFoods.DATE_STUFFED_COOKIE)));
+    public static final DeferredItem<Item> CLUSTER_OF_DATES = ITEMS.register("cluster_of_dates",
+            () -> new Item(new Item.Properties()));
+    public static final DeferredItem<Item> DATE_SYRUP = ITEMS.register("date_syrup",
+            () -> new DrinkableItem(drinkItem().food(ModFoods.DATE_SYRUP), true, false) {
+                @Override
+                public @NotNull ItemStack finishUsingItem(@NotNull ItemStack stack, @NotNull Level level, @NotNull LivingEntity consumer) {
+                    if (!level.isClientSide) { consumer.removeAllEffects(); }
+                    return super.finishUsingItem(stack, level, consumer);
+                }
+            });
+
+    // Basic Ingredient And Raw Food
+    public static final DeferredItem<Item> BOUREK_SHEET = ITEMS.register("bourek_sheet",
+            () -> new Item(new Item.Properties().food(ModFoods.BOUREK_SHEET)));
+    public static final DeferredItem<Item> SMALL_DOUGH = ITEMS.register("small_dough",
+            () -> new Item(new Item.Properties().food(ModFoods.SMALL_DOUGH)));
+    public static final DeferredItem<Item> SAVORY_FILLING = ITEMS.register("savory_filling",
+            () -> new ConsumableItem(bowlFoodItem(ModFoods.SAVORY_FILLING), true));
+    public static final DeferredItem<Item> RAW_BOUREK = ITEMS.register("raw_bourek",
+            () -> new Item(new Item.Properties().food(ModFoods.RAW_BOUREK)));
+    public static final DeferredItem<Item> RAW_SAMOSA = ITEMS.register("raw_samosa",
+            () -> new Item(new Item.Properties().food(ModFoods.RAW_SAMOSA)));
+    public static final DeferredItem<Item> RAW_KEBAB = ITEMS.register("raw_kebab",
+            () -> new ConsumableItem(stickFoodItem(ModFoods.RAW_KEBAB), false));
+
+    // -- Food Items
+    // Desserts
+    public static final DeferredItem<Item> MAHALABIA = ITEMS.register("mahalabia",
+            () -> new ConsumableItem(foodItem(ModFoods.MAHALABIA).craftRemainder(Items.GLASS_BOTTLE).stacksTo(16)));
+    public static final DeferredItem<Item> ZALABIYEH = ITEMS.register("zalabiyeh",
+            () -> new Item(new Item.Properties().food(ModFoods.ZALABIYEH)));
+    public static final DeferredItem<Item> LUQAIMAT = ITEMS.register("luqaimat",
+            () -> new ConsumableItem(bowlFoodItem(ModFoods.LUQAIMAT), true));
+    public static final DeferredItem<Item> KNAFEH = ITEMS.register("knafeh",
+            () -> new Item(new Item.Properties().food(ModFoods.KNAFEH)));
+
+    // Salads
+    public static final DeferredItem<Item> TABBOULEH = ITEMS.register("tabbouleh",
+            () -> new ConsumableItem(bowlFoodItem(ModFoods.TABBOULEH), true));
+
+    // Snacks & Baked Goods
+    public static final DeferredItem<Item> BOUREK = ITEMS.register("bourek",
+            () -> new Item(new Item.Properties().food(ModFoods.BOUREK)));
+    public static final DeferredItem<Item> FLAT_BREAD = ITEMS.register("flat_bread",
+            () -> new Item(new Item.Properties().food(ModFoods.FLAT_BREAD)));
+    public static final DeferredItem<Item> KEBAB = ITEMS.register("kebab",
+            () -> new Item(new Item.Properties().food(ModFoods.KEBAB)));
+    public static final DeferredItem<Item> MUSAKHAN = ITEMS.register("musakhan",
+            () -> new Item(new Item.Properties().food(ModFoods.MUSAKHAN)));
+    public static final DeferredItem<Item> QUICHE_SLICE = ITEMS.register("quiche_slice",
+            () -> new Item(new Item.Properties().food(ModFoods.QUICHE_SLICE)));
+    public static final DeferredItem<Item> SAMOSA = ITEMS.register("samosa",
+            () -> new Item(new Item.Properties().food(ModFoods.SAMOSA)));
+
+    // Soups & Bowled Foods
+    public static final DeferredItem<Item> CHORBA = ITEMS.register("chorba",
+            () -> new ConsumableItem(bowlFoodItem(ModFoods.CHORBA), true));
+    public static final DeferredItem<Item> HALEEM = ITEMS.register("haleem",
+            () -> new ConsumableItem(bowlFoodItem(ModFoods.HALEEM), true));
+    public static final DeferredItem<Item> HARIRA = ITEMS.register("harira",
+            () -> new ConsumableItem(bowlFoodItem(ModFoods.HARIRA), true));
+    public static final DeferredItem<Item> HUMMUS_TAHINI = ITEMS.register("hummus_tahini",
+            () -> new ConsumableItem(bowlFoodItem(ModFoods.HUMMUS_TAHINI), true));
+    public static final DeferredItem<Item> SWEET_TAGINE = ITEMS.register("sweet_tagine",
+            () -> new ConsumableItem(bowlFoodItem(ModFoods.SWEET_TAGINE), true));
+
+    // Dishes & Plated Meals
+    public static final DeferredItem<Item> CHICKPEA_AND_RICE = ITEMS.register("chickpea_and_rice",
+            () -> new ConsumableItem(bowlFoodItem(ModFoods.CHICKPEA_AND_RICE), true));
+    public static final DeferredItem<Item> SAYADIEH = ITEMS.register("sayadieh",
+            () -> new ConsumableItem(bowlFoodItem(ModFoods.SAYADIEH), true));
+    public static final DeferredItem<Item> TAGINE = ITEMS.register("tagine",
+            () -> new ConsumableItem(bowlFoodItem(ModFoods.TAGINE), true));
+
+    // Feast Dishes & Slices
+    public static final DeferredItem<Item> MAQLUBA = ITEMS.register("maqluba",
+            () -> new ConsumableItem(bowlFoodItem(ModFoods.MAQLUBA), true));
+
+
+    // --- Block Items ---
+    // Food Blocks
+    public static final DeferredItem<Item> BOUREK_BLOCK = ITEMS.register("bourek_block",
+            () -> new BlockItem(ModBlocks.BOUREK_BLOCK.get(), basicItem().stacksTo(1)));
+    public static final DeferredItem<Item> KNAFEH_TRAY_BLOCK = ITEMS.register("knafeh_tray_block",
+            () -> new BlockItem(ModBlocks.KNAFEH_TRAY_BLOCK.get(), basicItem().stacksTo(1)));
+    public static final DeferredItem<Item> MAQLUBA_BLOCK = ITEMS.register("maqluba_block",
+            () -> new BlockItem(ModBlocks.MAQLUBA_BLOCK.get(), basicItem().stacksTo(1)));
+    public static final DeferredItem<Item> QUICHE = ITEMS.register("quiche",
+            () -> new BlockItem(ModBlocks.QUICHE.get(), basicItem()));
+
+    // Decoration, Misc & Storage Blocks
+    public static final DeferredItem<Item> CHICKPEA_BAG = ITEMS.register("chickpea_bag",
+            () -> new BlockItem(ModBlocks.CHICKPEA_BAG.get(), basicItem()));
+    public static final DeferredItem<Item> DATE_CRATE = ITEMS.register("date_crate",
+            () -> new BlockItem(ModBlocks.DATE_CRATE.get(), basicItem()));
+    public static final DeferredItem<Item> PARSLEY_BAG = ITEMS.register("parsley_bag",
+            () -> new BlockItem(ModBlocks.PARSLEY_BAG.get(), basicItem()));
+    public static final DeferredItem<Item> DRUM = ITEMS.register("drum",
+            () -> new BlockItem(ModBlocks.DRUM_BLOCK.get(), basicItem()));
+    public static final DeferredItem<Item> MOSAIC_TILES = ITEMS.register("mosaic_tiles",
+            () -> new BlockItem(ModBlocks.MOSAIC_TILES.get(), basicItem()));
+
+    // Wild Plants & Vegetation
+    public static final DeferredItem<Item> WILD_PARSLEY = ITEMS.register("wild_parsley",
+            () -> new BlockItem(ModBlocks.WILD_PARSLEY.get(), basicItem()));
+    public static final DeferredItem<Item> WILD_CHICKPEA = ITEMS.register("wild_chickpea",
+            () -> new BlockItem(ModBlocks.WILD_CHICKPEA.get(), basicItem()));
+    public static final DeferredItem<Item> DATES_BRANCH = ITEMS.register("dates_branch",
+            () -> new BlockItem(ModBlocks.DATES_BRANCH.get(), basicItem()));
+
+    // Glass Blocks
+    public static final DeferredItem<Item> STAINED_GLASS_BLOCK = ITEMS.register("stained_glass_block",
+            () -> new BlockItem(ModBlocks.STAINED_GLASS_BLOCK.get(), basicItem()));
+    public static final DeferredItem<Item> BLUE_STAINED_GLASS_BLOCK = ITEMS.register("blue_stained_glass_block",
+            () -> new BlockItem(ModBlocks.BLUE_STAINED_GLASS_BLOCK.get(), basicItem()));
+    public static final DeferredItem<Item> GREEN_STAINED_GLASS_BLOCK = ITEMS.register("green_stained_glass_block",
+            () -> new BlockItem(ModBlocks.GREEN_STAINED_GLASS_BLOCK.get(), basicItem()));
+    public static final DeferredItem<Item> ORANGE_STAINED_GLASS_BLOCK = ITEMS.register("orange_stained_glass_block",
+            () -> new BlockItem(ModBlocks.ORANGE_STAINED_GLASS_BLOCK.get(), basicItem()));
+
+    // Glass Panes
+    public static final DeferredItem<Item> STAINED_GLASS_PANE = ITEMS.register("stained_glass_pane",
+            () -> new BlockItem(ModBlocks.STAINED_GLASS_PANE.get(), basicItem()));
+    public static final DeferredItem<Item> BLUE_STAINED_GLASS_PANE = ITEMS.register("blue_stained_glass_pane",
+            () -> new BlockItem(ModBlocks.BLUE_STAINED_GLASS_PANE.get(), basicItem()));
+    public static final DeferredItem<Item> GREEN_STAINED_GLASS_PANE = ITEMS.register("green_stained_glass_pane",
+            () -> new BlockItem(ModBlocks.GREEN_STAINED_GLASS_PANE.get(), basicItem()));
+    public static final DeferredItem<Item> ORANGE_STAINED_GLASS_PANE = ITEMS.register("orange_stained_glass_pane",
+            () -> new BlockItem(ModBlocks.ORANGE_STAINED_GLASS_PANE.get(), basicItem()));
+
+    // Fanous
+    public static final DeferredItem<Item> FANOUS = ITEMS.register("fanous",
+            () -> new BlockItem(ModBlocks.FANOUS.get(), basicItem()));
+    public static final DeferredItem<Item> COPPER_FANOUS = ITEMS.register("copper_fanous",
+            () -> new BlockItem(ModBlocks.COPPER_FANOUS.get(), basicItem()));
+    public static final DeferredItem<Item> REDSTONE_FANOUS = ITEMS.register("redstone_fanous",
+            () -> new BlockItem(ModBlocks.REDSTONE_FANOUS.get(), basicItem()));
+    public static final DeferredItem<Item> SOUL_FANOUS = ITEMS.register("soul_fanous",
+            () -> new BlockItem(ModBlocks.SOUL_FANOUS.get(), basicItem()));
+
+    // Palm Wood Set
+    public static final DeferredItem<Item> PALM_LOG = ITEMS.register("palm_log",
+            () -> new BlockItem(ModBlocks.PALM_LOG.get(), basicItem()));
+    public static final DeferredItem<Item> PALM_WOOD = ITEMS.register("palm_wood",
+            () -> new BlockItem(ModBlocks.PALM_WOOD.get(), basicItem()));
+    public static final DeferredItem<Item> STRIPPED_PALM_LOG = ITEMS.register("stripped_palm_log",
+            () -> new BlockItem(ModBlocks.STRIPPED_PALM_LOG.get(), basicItem()));
+    public static final DeferredItem<Item> STRIPPED_PALM_WOOD = ITEMS.register("stripped_palm_wood",
+            () -> new BlockItem(ModBlocks.STRIPPED_PALM_WOOD.get(), basicItem()));
+    public static final DeferredItem<Item> PALM_PLANKS = ITEMS.register("palm_planks",
+            () -> new BlockItem(ModBlocks.PALM_PLANKS.get(), basicItem()));
+    public static final DeferredItem<Item> PALM_LEAVES = ITEMS.register("palm_leaves",
+            () -> new BlockItem(ModBlocks.PALM_LEAVES.get(), basicItem()));
+    public static final DeferredItem<Item> PALM_SAPLING = ITEMS.register("palm_sapling",
+            () -> new BlockItem(ModBlocks.PALM_SAPLING.get(), basicItem()));
+    public static final DeferredItem<Item> PALM_STAIRS = ITEMS.register("palm_stairs",
+            () -> new BlockItem(ModBlocks.PALM_STAIRS.get(), basicItem()));
+    public static final DeferredItem<Item> PALM_SLAB = ITEMS.register("palm_slab",
+            () -> new BlockItem(ModBlocks.PALM_SLAB.get(), basicItem()));
+    public static final DeferredItem<Item> PALM_PRESSURE_PLATE = ITEMS.register("palm_pressure_plate",
+            () -> new BlockItem(ModBlocks.PALM_PRESSURE_PLATE.get(), basicItem()));
+    public static final DeferredItem<Item> PALM_BUTTON = ITEMS.register("palm_button",
+            () -> new BlockItem(ModBlocks.PALM_BUTTON.get(), basicItem()));
+    public static final DeferredItem<Item> PALM_FENCE = ITEMS.register("palm_fence",
+            () -> new BlockItem(ModBlocks.PALM_FENCE.get(), basicItem()));
+    public static final DeferredItem<Item> PALM_FENCE_GATE = ITEMS.register("palm_fence_gate",
+            () -> new BlockItem(ModBlocks.PALM_FENCE_GATE.get(), basicItem()));
+    public static final DeferredItem<Item> PALM_DOOR = ITEMS.register("palm_door",
+            () -> new BlockItem(ModBlocks.PALM_DOOR.get(), basicItem()));
+    public static final DeferredItem<Item> PALM_TRAPDOOR = ITEMS.register("palm_trapdoor",
+            () -> new BlockItem(ModBlocks.PALM_TRAPDOOR.get(), basicItem()));
+
+    // Signs & Boats
+    public static final DeferredItem<Item> PALM_SIGN = ITEMS.register("palm_sign",
+            () -> new SignItem(new Item.Properties().stacksTo(16),
+                    ModBlocks.PALM_SIGN.get(), ModBlocks.PALM_WALL_SIGN.get()));
+    public static final DeferredItem<Item> PALM_HANGING_SIGN = ITEMS.register("palm_hanging_sign",
+            () -> new HangingSignItem(ModBlocks.PALM_HANGING_SIGN.get(), ModBlocks.PALM_WALL_HANGING_SIGN.get(),
+                    new Item.Properties().stacksTo(16)));
+    public static final DeferredItem<Item> PALM_BOAT = ITEMS.register("palm_boat",
+            () -> new ModBoatItem(false, RDBoatEntity.Type.PALM,
+                    new Item.Properties()));
+    public static final DeferredItem<Item> PALM_CHEST_BOAT = ITEMS.register("palm_chest_boat",
+            () -> new ModBoatItem(true, RDBoatEntity.Type.PALM,
+                    new Item.Properties()));
+}

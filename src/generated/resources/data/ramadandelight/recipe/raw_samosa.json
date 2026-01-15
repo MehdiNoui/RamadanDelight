@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ramadandelight:small_dough"
+    },
+    {
+      "item": "ramadandelight:small_dough"
+    },
+    {
+      "item": "ramadandelight:small_dough"
+    },
+    {
+      "item": "ramadandelight:savory_filling"
+    }
+  ],
+  "result": {
+    "count": 3,
+    "id": "ramadandelight:raw_samosa"
+  }
+}

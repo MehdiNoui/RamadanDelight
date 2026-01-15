@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ramadandelight:flat_bread"
+    },
+    {
+      "item": "ramadandelight:parsley"
+    },
+    {
+      "tag": "c:foods/cooked_chicken"
+    },
+    {
+      "tag": "c:crops/onion"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "ramadandelight:musakhan"
+  }
+}

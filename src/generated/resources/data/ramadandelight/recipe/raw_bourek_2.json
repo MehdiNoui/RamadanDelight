@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ramadandelight:bourek_sheet"
+    },
+    {
+      "item": "ramadandelight:bourek_sheet"
+    },
+    {
+      "tag": "c:foods/milk"
+    },
+    {
+      "item": "minecraft:baked_potato"
+    },
+    {
+      "tag": "c:crops/onion"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "ramadandelight:raw_bourek"
+  }
+}

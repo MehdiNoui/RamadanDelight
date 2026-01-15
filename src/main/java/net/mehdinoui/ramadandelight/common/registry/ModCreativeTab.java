@@ -1,0 +1,131 @@
+package net.mehdinoui.ramadandelight.common.registry;
+
+import net.mehdinoui.ramadandelight.RamadanDelight;
+import net.minecraft.core.registries.Registries;
+import net.minecraft.network.chat.Component;
+import net.minecraft.world.item.CreativeModeTab;
+import net.minecraft.world.item.ItemStack;
+import net.neoforged.bus.api.IEventBus;
+import net.neoforged.neoforge.registries.DeferredRegister;
+
+import java.util.function.Supplier;
+
+public class ModCreativeTab {
+    // --- Deferred Register ---
+    public static final DeferredRegister<CreativeModeTab> CREATIVE_MODE_TABS =
+            DeferredRegister.create(Registries.CREATIVE_MODE_TAB, RamadanDelight.MOD_ID);
+
+    // --- Helper Methods ---
+    public static void register(IEventBus eventBus) {
+        CREATIVE_MODE_TABS.register(eventBus);
+    }
+
+    // --- Creative Tab Registry ---
+    public static final Supplier<CreativeModeTab> RamadanDelight_Tab = CREATIVE_MODE_TABS
+            .register("ramadandelight_tab", () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModItems.PARSLEY.get()))
+                    .title(Component.translatable("creativetab.ramadandelight_tab"))
+                    .displayItems((pParameters, pOutput) -> {
+                        // Storage Crates
+                        pOutput.accept(ModItems.DATE_CRATE.get());
+                        pOutput.accept(ModItems.CHICKPEA_BAG.get());
+                        pOutput.accept(ModItems.PARSLEY_BAG.get());
+                        // Wild Flowers
+                        pOutput.accept(ModItems.WILD_CHICKPEA.get());
+                        pOutput.accept(ModItems.WILD_PARSLEY.get());
+                        // Crops
+                        pOutput.accept(ModItems.CHICKPEA.get());
+                        pOutput.accept(ModItems.DATE.get());
+                        pOutput.accept(ModItems.PARSLEY.get());
+                        // Seeds
+                        pOutput.accept(ModItems.PARSLEY_SEEDS.get());
+                        // Drinks
+                        pOutput.accept(ModItems.DATE_SYRUP.get());
+                        // Basic Ingredients & Components
+                        pOutput.accept(ModItems.SMALL_DOUGH.get());
+                        pOutput.accept(ModItems.BOUREK_SHEET.get());
+                        pOutput.accept(ModItems.RAW_BOUREK.get());
+                        pOutput.accept(ModItems.RAW_SAMOSA.get());
+                        pOutput.accept(ModItems.RAW_KEBAB.get());
+                        pOutput.accept(ModItems.SAVORY_FILLING.get());
+                        // Desserts
+                        pOutput.accept(ModItems.DATE_STUFFED_COOKIE.get());
+                        pOutput.accept(ModItems.MAHALABIA.get());
+                        pOutput.accept(ModItems.KNAFEH_TRAY_BLOCK.get());
+                        pOutput.accept(ModItems.KNAFEH.get());
+                        pOutput.accept(ModItems.ZALABIYEH.get());
+                        pOutput.accept(ModItems.LUQAIMAT.get());
+                        // Salads
+                        pOutput.accept(ModItems.TABBOULEH.get());
+                        // Snacks & Baked Goods
+                        pOutput.accept(ModItems.FLAT_BREAD.get());
+                        pOutput.accept(ModItems.MUSAKHAN.get());
+                        pOutput.accept(ModItems.BOUREK.get());
+                        pOutput.accept(ModItems.SAMOSA.get());
+                        pOutput.accept(ModItems.KEBAB.get());
+                        pOutput.accept(ModItems.QUICHE.get());
+                        pOutput.accept(ModItems.QUICHE_SLICE.get());
+                        // Soups & Bowled Meals
+                        pOutput.accept(ModItems.HARIRA.get());
+                        pOutput.accept(ModItems.CHORBA.get());
+                        pOutput.accept(ModItems.HALEEM.get());
+                        pOutput.accept(ModItems.HUMMUS_TAHINI.get());
+                        pOutput.accept(ModItems.SWEET_TAGINE.get());
+                        // Plated Meals
+                        pOutput.accept(ModItems.CHICKPEA_AND_RICE.get());
+                        pOutput.accept(ModItems.SAYADIEH.get());
+                        pOutput.accept(ModItems.TAGINE.get());
+                        // Feasts
+                        pOutput.accept(ModItems.MAQLUBA_BLOCK.get());
+                        pOutput.accept(ModItems.MAQLUBA.get());
+                        pOutput.accept(ModItems.BOUREK_BLOCK.get());
+                    }).build());
+
+    public static final Supplier<CreativeModeTab> RamadanDelight_Decoration_Tab = CREATIVE_MODE_TABS
+            .register("ramadandelight_deco_tab", () -> CreativeModeTab.builder()
+                    .icon(() -> new ItemStack(ModBlocks.FANOUS.get()))
+                    .title(Component.translatable("creativetab.ramadandelight_deco_tab"))
+                    .displayItems((pParameters, pOutput) -> {
+                        // Palm Wood Set
+                        pOutput.accept(ModItems.PALM_LOG.get());
+                        pOutput.accept(ModItems.PALM_WOOD.get());
+                        pOutput.accept(ModItems.STRIPPED_PALM_LOG.get());
+                        pOutput.accept(ModItems.STRIPPED_PALM_WOOD.get());
+                        pOutput.accept(ModItems.PALM_PLANKS.get());
+                        pOutput.accept(ModItems.PALM_STAIRS.get());
+                        pOutput.accept(ModItems.PALM_SLAB.get());
+                        pOutput.accept(ModItems.PALM_FENCE.get());
+                        pOutput.accept(ModItems.PALM_FENCE_GATE.get());
+                        pOutput.accept(ModItems.PALM_DOOR.get());
+                        pOutput.accept(ModItems.PALM_TRAPDOOR.get());
+                        pOutput.accept(ModItems.PALM_PRESSURE_PLATE.get());
+                        pOutput.accept(ModItems.PALM_BUTTON.get());
+                        pOutput.accept(ModItems.PALM_SIGN.get());
+                        pOutput.accept(ModItems.PALM_HANGING_SIGN.get());
+                        pOutput.accept(ModItems.PALM_BOAT.get());
+                        pOutput.accept(ModItems.PALM_CHEST_BOAT.get());
+                        pOutput.accept(ModItems.PALM_LEAVES.get());
+                        pOutput.accept(ModItems.PALM_SAPLING.get());
+                        // Date-Related
+                        pOutput.accept(ModItems.DATES_BRANCH.get());
+                        pOutput.accept(ModItems.CLUSTER_OF_DATES.get());
+                        // Decoration Blocks
+                        pOutput.accept(ModItems.DRUM.get());
+                        pOutput.accept(ModItems.MOSAIC_TILES.get());
+                        // Fanous Blocks
+                        pOutput.accept(ModItems.FANOUS.get());
+                        pOutput.accept(ModItems.COPPER_FANOUS.get());
+                        pOutput.accept(ModItems.REDSTONE_FANOUS.get());
+                        pOutput.accept(ModItems.SOUL_FANOUS.get());
+                        // Glass Blocks
+                        pOutput.accept(ModItems.STAINED_GLASS_BLOCK.get());
+                        pOutput.accept(ModItems.BLUE_STAINED_GLASS_BLOCK.get());
+                        pOutput.accept(ModItems.GREEN_STAINED_GLASS_BLOCK.get());
+                        pOutput.accept(ModItems.ORANGE_STAINED_GLASS_BLOCK.get());
+                        // Glass Panes
+                        pOutput.accept(ModItems.STAINED_GLASS_PANE.get());
+                        pOutput.accept(ModItems.BLUE_STAINED_GLASS_PANE.get());
+                        pOutput.accept(ModItems.GREEN_STAINED_GLASS_PANE.get());
+                        pOutput.accept(ModItems.ORANGE_STAINED_GLASS_PANE.get());
+                    }).build());
+}

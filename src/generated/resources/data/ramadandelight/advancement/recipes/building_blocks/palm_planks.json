@@ -1,0 +1,35 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_palm_log": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ramadandelight:palm_log"
+          },
+          {
+            "items": "ramadandelight:palm_wood"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ramadandelight:palm_planks"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_palm_log"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ramadandelight:palm_planks"
+    ]
+  }
+}

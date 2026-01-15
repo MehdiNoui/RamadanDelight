@@ -1,0 +1,30 @@
+{
+  "type": "farmersdelight:cooking",
+  "container": {
+    "count": 1,
+    "id": "minecraft:bowl"
+  },
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "tag": "c:foods/raw_chicken"
+    },
+    {
+      "item": "minecraft:carrot"
+    },
+    {
+      "tag": "c:crops/potato"
+    },
+    {
+      "item": "ramadandelight:chickpea"
+    },
+    {
+      "item": "ramadandelight:parsley"
+    }
+  ],
+  "recipe_book_tab": "meals",
+  "result": {
+    "count": 1,
+    "id": "ramadandelight:tagine"
+  }
+}

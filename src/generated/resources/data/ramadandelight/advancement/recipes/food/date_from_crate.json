@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_date_crate": {
+      "conditions": {
+        "items": [
+          {
+            "items": "ramadandelight:date_crate"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "ramadandelight:date_from_crate"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_date_crate"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "ramadandelight:date_from_crate"
+    ]
+  }
+}

@@ -1,0 +1,31 @@
+{
+  "type": "farmersdelight:cooking",
+  "experience": 1.0,
+  "ingredients": [
+    {
+      "item": "ramadandelight:small_dough"
+    },
+    {
+      "item": "ramadandelight:small_dough"
+    },
+    {
+      "item": "ramadandelight:small_dough"
+    },
+    {
+      "type": "neoforge:compound",
+      "children": [
+        {
+          "item": "minecraft:honey_bottle"
+        },
+        {
+          "item": "ramadandelight:date_syrup"
+        }
+      ]
+    }
+  ],
+  "recipe_book_tab": "misc",
+  "result": {
+    "count": 1,
+    "id": "ramadandelight:luqaimat"
+  }
+}

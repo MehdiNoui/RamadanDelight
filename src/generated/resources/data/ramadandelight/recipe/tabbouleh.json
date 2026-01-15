@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "ramadandelight:parsley"
+    },
+    {
+      "tag": "c:crops/tomato"
+    },
+    {
+      "tag": "c:crops/onion"
+    },
+    {
+      "item": "minecraft:bowl"
+    }
+  ],
+  "result": {
+    "count": 1,
+    "id": "ramadandelight:tabbouleh"
+  }
+}
