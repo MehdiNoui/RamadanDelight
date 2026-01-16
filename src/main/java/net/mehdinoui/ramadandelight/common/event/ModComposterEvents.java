@@ -1,16 +1,10 @@
-package net.mehdinoui.ramadandelight.client.event;
+package net.mehdinoui.ramadandelight.common.event;
 
-import net.mehdinoui.ramadandelight.common.registry.ModBlocks;
 import net.mehdinoui.ramadandelight.common.registry.ModItems;
-import net.minecraft.world.entity.animal.Chicken;
-import net.minecraft.world.item.crafting.Ingredient;
 import net.minecraft.world.level.block.ComposterBlock;
-import net.minecraftforge.common.crafting.CompoundIngredient;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
-
-import java.util.Arrays;
 
 @Mod.EventBusSubscriber(bus = Mod.EventBusSubscriber.Bus.MOD, modid = "ramadandelight")
 public class ModComposterEvents {

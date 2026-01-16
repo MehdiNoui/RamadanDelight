@@ -1,8 +1,7 @@
-package net.mehdinoui.ramadandelight.client.event;
+package net.mehdinoui.ramadandelight.common.event;
 
 import net.mehdinoui.ramadandelight.Configuration;
 import net.mehdinoui.ramadandelight.RamadanDelight;
-import net.mehdinoui.ramadandelight.common.registry.ModBlocks;
 import net.mehdinoui.ramadandelight.common.registry.ModItems;
 import net.minecraft.world.entity.npc.VillagerProfession;
 import net.minecraft.world.entity.npc.VillagerTrades;

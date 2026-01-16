@@ -1,4 +1,4 @@
-package net.mehdinoui.ramadandelight.client.event;
+package net.mehdinoui.ramadandelight.common.event;
 
 import com.google.common.collect.ImmutableSet;
 import com.google.common.collect.Sets;
