@@ -1,7 +1,9 @@
 package net.mehdinoui.ramadandelight.common.registry;
 
 import net.mehdinoui.ramadandelight.RamadanDelight;
+import net.mehdinoui.ramadandelight.common.world.ConfigurableCountPlacement;
 import net.mehdinoui.ramadandelight.common.world.ConfigurableRarityFilter;
+import net.minecraft.core.BlockPos;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;
@@ -10,6 +12,7 @@ import net.minecraft.data.worldgen.placement.PlacementUtils;
 import net.minecraft.data.worldgen.placement.VegetationPlacements;
 import net.minecraft.resources.ResourceKey;
 import net.minecraft.resources.ResourceLocation;
+import net.minecraft.world.level.levelgen.blockpredicates.BlockPredicate;
 import net.minecraft.world.level.levelgen.feature.ConfiguredFeature;
 import net.minecraft.world.level.levelgen.placement.*;
 
@@ -31,10 +34,16 @@ public class ModPlacedFeatures {
         context.register(
                 DATE_PALM_PLACED_KEY,
                 new PlacedFeature(
-                configured.getOrThrow(ModConfiguredFeatures.DATE_PALM_CONFIGURED_KEY),
-                VegetationPlacements.treePlacement(
-                        PlacementUtils.countExtra(0, 0.01f, 1),
-                        ModBlocks.PALM_SAPLING.get()))
+                        configured.getOrThrow(ModConfiguredFeatures.DATE_PALM_CONFIGURED_KEY),
+                        List.of(
+                                new ConfigurableRarityFilter("date_palm_tree"),
+                                new ConfigurableCountPlacement("date_palm_count"),
+                                InSquarePlacement.spread(),
+                                PlacementUtils.HEIGHTMAP,
+                                BlockPredicateFilter.forPredicate(BlockPredicate.wouldSurvive(ModBlocks.PALM_SAPLING.get().defaultBlockState(), BlockPos.ZERO)),
+                                BiomeFilter.biome()
+                        )
+                )
         );
 
         context.register(

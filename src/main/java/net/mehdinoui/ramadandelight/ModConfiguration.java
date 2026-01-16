@@ -14,6 +14,7 @@ public class ModConfiguration {
 
     // --- World Generation ---
     public static final ModConfigSpec.IntValue CHANCE_DATE_PALM_TREE;
+    public static final ModConfigSpec.IntValue COUNT_DATE_PALM_TREE;
     public static final ModConfigSpec.IntValue CHANCE_WILD_CHICKPEA;
     public static final ModConfigSpec.IntValue CHANCE_WILD_PARSLEY;
 
@@ -49,13 +50,17 @@ public class ModConfiguration {
 
         CHANCE_DATE_PALM_TREE = BUILDER
                 .comment("Chance of Date Palm Tree generating in the world. (0 to disable, higher = rarer)")
-                .defineInRange("chanceBellPeppers", 1, 0, 512);
+                .defineInRange("chanceDatePalm", 100, 0, 512);
+        COUNT_DATE_PALM_TREE = BUILDER
+                .comment("Count of Date Palm Trees generating per chunk (0 to disable, higher = rarer)")
+                .defineInRange("countDatePalm", 1, 0, 16);
+
         CHANCE_WILD_CHICKPEA = BUILDER
                 .comment("Chance of Wild Chickpea in the world. (0 to disable, higher = rarer)")
-                .defineInRange("chanceBroccoli", 110, 0, 512);
+                .defineInRange("chanceChickpea", 110, 0, 512);
         CHANCE_WILD_PARSLEY = BUILDER
-                .comment("Chance of Cauliflowers generating in the world. (0 to disable, higher = rarer)")
-                .defineInRange("chanceCauliflowers", 130, 0, 512);
+                .comment("Chance of Parsley generating in the world. (0 to disable, higher = rarer)")
+                .defineInRange("chanceParsley", 130, 0, 512);
 
         BUILDER.pop();
 

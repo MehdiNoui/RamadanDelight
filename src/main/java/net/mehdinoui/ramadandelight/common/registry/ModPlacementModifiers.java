@@ -1,6 +1,7 @@
 package net.mehdinoui.ramadandelight.common.registry;
 
 import net.mehdinoui.ramadandelight.RamadanDelight;
+import net.mehdinoui.ramadandelight.common.world.ConfigurableCountPlacement;
 import net.mehdinoui.ramadandelight.common.world.ConfigurableRarityFilter;
 import net.minecraft.core.registries.BuiltInRegistries;
 import net.minecraft.world.level.levelgen.placement.PlacementModifierType;
@@ -22,4 +23,6 @@ public class ModPlacementModifiers {
     // --- Modifiers Registry ---
     public static final Supplier<PlacementModifierType<ConfigurableRarityFilter>> CONFIGURABLE_RARITY_FILTER =
             PLACEMENT_MODIFIERS.register("configurable_rarity_filter", () -> () -> ConfigurableRarityFilter.CODEC);
+    public static final Supplier<PlacementModifierType<ConfigurableCountPlacement>> CONFIGURABLE_COUNT =
+            PLACEMENT_MODIFIERS.register("configurable_count", () -> () -> ConfigurableCountPlacement.CODEC);
 }
