@@ -1,7 +1,7 @@
-package net.mehdinoui.ramadandelight.common.worldgen;
+package net.mehdinoui.ramadandelight.common.world;
 
 import com.mojang.datafixers.util.Pair;
-import net.mehdinoui.ramadandelight.Configuration;
+import net.mehdinoui.ramadandelight.ModConfiguration;
 import net.minecraft.core.Holder;
 import net.minecraft.core.Registry;
 import net.minecraft.core.registries.Registries;
@@ -16,12 +16,11 @@ import vectorwing.farmersdelight.common.world.VillageStructures;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.logging.Logger;
 
 public class ModVillageStructures
 {
     public static void addNewVillageBuilding(final ServerAboutToStartEvent event) {
-        if (!Configuration.GENERATE_VILLAGE_STRUCTURES.get()) {
+        if (!ModConfiguration.GENERATE_VILLAGE_STRUCTURES.get()) {
             return;
         }
 

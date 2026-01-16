@@ -1,7 +1,7 @@
-package net.mehdinoui.ramadandelight.common.worldgen.tree;
+package net.mehdinoui.ramadandelight.common.world.tree;
 
 import net.mehdinoui.ramadandelight.RamadanDelight;
-import net.mehdinoui.ramadandelight.common.worldgen.tree.custom.PalmFoliagePlacer;
+import net.mehdinoui.ramadandelight.common.world.tree.custom.PalmFoliagePlacer;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.levelgen.feature.foliageplacers.FoliagePlacerType;
 import net.minecraftforge.eventbus.api.IEventBus;

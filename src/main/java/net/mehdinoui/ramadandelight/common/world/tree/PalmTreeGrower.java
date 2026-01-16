@@ -1,4 +1,4 @@
-package net.mehdinoui.ramadandelight.common.worldgen.tree;
+package net.mehdinoui.ramadandelight.common.world.tree;
 
 import net.mehdinoui.ramadandelight.common.registry.ModConfiguredFeatures;
 import net.minecraft.resources.ResourceKey;
@@ -11,6 +11,6 @@ public class PalmTreeGrower extends AbstractTreeGrower {
     @Nullable
     @Override
     protected ResourceKey<ConfiguredFeature<?, ?>> getConfiguredFeature(RandomSource pRandom, boolean pHasFlowers) {
-        return ModConfiguredFeatures.PALM_KEY;
+        return ModConfiguredFeatures.DATE_PALM_CONFIGURED_KEY;
     }
 }

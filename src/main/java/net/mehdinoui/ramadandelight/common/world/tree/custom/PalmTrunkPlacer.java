@@ -1,9 +1,9 @@
-package net.mehdinoui.ramadandelight.common.worldgen.tree.custom;
+package net.mehdinoui.ramadandelight.common.world.tree.custom;
 
 import com.google.common.collect.ImmutableList;
 import com.mojang.serialization.Codec;
 import com.mojang.serialization.codecs.RecordCodecBuilder;
-import net.mehdinoui.ramadandelight.common.worldgen.tree.ModTrunkPlacer;
+import net.mehdinoui.ramadandelight.common.world.tree.ModTrunkPlacer;
 import net.minecraft.core.BlockPos;
 import net.minecraft.util.RandomSource;
 import net.minecraft.world.level.LevelSimulatedReader;

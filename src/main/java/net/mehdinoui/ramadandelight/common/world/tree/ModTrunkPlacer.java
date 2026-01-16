@@ -1,7 +1,7 @@
-package net.mehdinoui.ramadandelight.common.worldgen.tree;
+package net.mehdinoui.ramadandelight.common.world.tree;
 
 import net.mehdinoui.ramadandelight.RamadanDelight;
-import net.mehdinoui.ramadandelight.common.worldgen.tree.custom.PalmTrunkPlacer;
+import net.mehdinoui.ramadandelight.common.world.tree.custom.PalmTrunkPlacer;
 import net.minecraft.core.registries.Registries;
 import net.minecraft.world.level.levelgen.feature.trunkplacers.TrunkPlacerType;
 import net.minecraftforge.eventbus.api.IEventBus;
