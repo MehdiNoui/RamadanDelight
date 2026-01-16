@@ -86,5 +86,6 @@
   "block.ramadandelight.dates_branch": "Ветка финиковой пальмы",
 
   "entity.ramadandelight.mod_chest_boat": "Лодка с сундком",
-  "sounds.ramadandelight.beat": "Удар барабана"
+
+  "subtitles.ramadandelight.drum_beat": "Удар барабана"
 }

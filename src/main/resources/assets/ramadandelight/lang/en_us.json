@@ -85,8 +85,8 @@
   "block.ramadandelight.palm_sapling": "Date Palm Sapling",
   "block.ramadandelight.dates_branch": "Dates Palm Branch",
 
-
   "tooltip.ramadandelight.date_syrup_desc": "Removes all status effects",
   "entity.ramadandelight.mod_chest_boat": "Boat With Chest",
-  "sounds.ramadandelight.beat": "Drum Beat"
+
+  "subtitles.ramadandelight.drum_beat": "Drum Beat"
 }

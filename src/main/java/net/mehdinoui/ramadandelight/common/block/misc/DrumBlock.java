@@ -2,6 +2,7 @@ package net.mehdinoui.ramadandelight.common.block.misc;
 
 import net.mehdinoui.ramadandelight.common.registry.ModSoundEvents;
 import net.minecraft.core.BlockPos;
+import net.minecraft.core.particles.ParticleTypes;
 import net.minecraft.sounds.SoundEvent;
 import net.minecraft.sounds.SoundSource;
 import net.minecraft.world.InteractionResult;
@@ -28,10 +29,15 @@ public class DrumBlock extends Block {
     @Override
     protected InteractionResult useWithoutItem(BlockState state, Level level, BlockPos pos, Player player, BlockHitResult hitResult) {
         if (!level.isClientSide) {
-            SoundEvent drumSound = ModSoundEvents.Drum.get();
-            level.playSound(null, pos, drumSound, SoundSource.BLOCKS, 1.0F, 1.0F);
+            SoundEvent drumSound = ModSoundEvents.DRUM_BEAT.get();
+            float randomPitch = 0.8F + level.random.nextFloat() * 0.4F;
+            level.playSound(null, pos, drumSound, SoundSource.BLOCKS, 1.0F, randomPitch);
             return InteractionResult.SUCCESS;
+        } else {
+            level.addParticle(ParticleTypes.NOTE,
+                    pos.getX() + 0.5, pos.getY() + 0.5, pos.getZ() + 0.5,
+                    (double)level.random.nextInt(24) / 24.0D, 0.0D, 0.0D);
         }
-        return InteractionResult.CONSUME;
+        return InteractionResult.sidedSuccess(true);
     }
 }

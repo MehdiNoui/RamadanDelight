@@ -1,8 +1,9 @@
 {
-  "beat": {
-    "subtitles": "sounds.ramadandelight.beat",
+  "drum_beat": {
+    "category": "block",
+    "subtitle": "subtitles.ramadandelight.drum_beat",
     "sounds": [
-      "ramadandelight:beat"
+      "ramadandelight:drum_beat"
     ]
   }
 }
