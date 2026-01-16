@@ -32,8 +32,9 @@ public class ModCuttingRecipes {
                 .build(consumer,new ResourceLocation(RamadanDelight.MOD_ID, "cutting/wild_chickpea"));
         CuttingBoardRecipeBuilder.cuttingRecipe(
                         Ingredient.of(ModItems.WILD_PARSLEY.get()),
-                        Ingredient.of(ForgeTags.TOOLS_KNIVES), ModItems.PARSLEY_SEEDS.get(),1)
-                .addResultWithChance(Items.LIGHT_GRAY_DYE,0.5f,1)
+                        Ingredient.of(ForgeTags.TOOLS_KNIVES), ModItems.PARSLEY.get(),1)
+                .addResult(ModItems.PARSLEY_SEEDS.get(), 1)
+                .addResultWithChance(Items.LIGHT_GRAY_DYE, 0.5F)
                 .build(consumer,new ResourceLocation(RamadanDelight.MOD_ID, "cutting/wild_parsley"));
 
         // Slices
