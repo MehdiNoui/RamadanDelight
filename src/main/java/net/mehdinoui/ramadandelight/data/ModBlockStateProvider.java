@@ -1,4 +1,4 @@
-package net.mehdinoui.ramadandelight.datagen;
+package net.mehdinoui.ramadandelight.data;
 
 import net.mehdinoui.ramadandelight.RamadanDelight;
 import net.mehdinoui.ramadandelight.common.registry.ModBlocks;

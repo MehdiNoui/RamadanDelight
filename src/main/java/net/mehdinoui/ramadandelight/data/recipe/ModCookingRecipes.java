@@ -1,4 +1,4 @@
-package net.mehdinoui.ramadandelight.datagen.recipe;
+package net.mehdinoui.ramadandelight.data.recipe;
 
 import net.mehdinoui.ramadandelight.RamadanDelight;
 import net.mehdinoui.ramadandelight.common.registry.ModItems;
@@ -6,7 +6,6 @@ import net.minecraft.data.recipes.FinishedRecipe;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraftforge.common.Tags;
 import vectorwing.farmersdelight.client.recipebook.CookingPotRecipeBookTab;
 import vectorwing.farmersdelight.common.tag.ForgeTags;
 import vectorwing.farmersdelight.data.builder.CookingPotRecipeBuilder;
@@ -18,7 +17,6 @@ import static vectorwing.farmersdelight.data.recipe.CookingRecipes.SMALL_EXP;
 import static vectorwing.farmersdelight.data.recipe.CookingRecipes.MEDIUM_EXP;
 import static vectorwing.farmersdelight.data.recipe.CookingRecipes.LARGE_EXP;
 
-import static vectorwing.farmersdelight.data.recipe.CookingRecipes.FAST_COOKING;
 import static vectorwing.farmersdelight.data.recipe.CookingRecipes.NORMAL_COOKING;
 import static vectorwing.farmersdelight.data.recipe.CookingRecipes.SLOW_COOKING;
 

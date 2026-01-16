@@ -1,9 +1,9 @@
-package net.mehdinoui.ramadandelight.datagen;
+package net.mehdinoui.ramadandelight.data;
 
 import net.mehdinoui.ramadandelight.RamadanDelight;
-import net.mehdinoui.ramadandelight.datagen.recipe.*;
-import net.mehdinoui.ramadandelight.datagen.tag.ModBlockTags;
-import net.mehdinoui.ramadandelight.datagen.tag.ModItemTags;
+import net.mehdinoui.ramadandelight.data.recipe.*;
+import net.mehdinoui.ramadandelight.data.tag.ModBlockTags;
+import net.mehdinoui.ramadandelight.data.tag.ModItemTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;

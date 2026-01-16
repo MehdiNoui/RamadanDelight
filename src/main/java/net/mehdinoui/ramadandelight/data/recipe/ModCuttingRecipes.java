@@ -1,4 +1,4 @@
-package net.mehdinoui.ramadandelight.datagen.recipe;
+package net.mehdinoui.ramadandelight.data.recipe;
 
 import net.mehdinoui.ramadandelight.RamadanDelight;
 import net.mehdinoui.ramadandelight.common.registry.ModItems;

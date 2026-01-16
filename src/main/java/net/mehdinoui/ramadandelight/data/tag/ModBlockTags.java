@@ -1,4 +1,4 @@
-package net.mehdinoui.ramadandelight.datagen.tag;
+package net.mehdinoui.ramadandelight.data.tag;
 
 import net.mehdinoui.ramadandelight.RamadanDelight;
 import net.mehdinoui.ramadandelight.common.registry.ModBlocks;
