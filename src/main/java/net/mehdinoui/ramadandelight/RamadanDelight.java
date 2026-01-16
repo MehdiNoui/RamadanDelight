@@ -1,9 +1,9 @@
 package net.mehdinoui.ramadandelight;
 
 import net.mehdinoui.ramadandelight.common.registry.*;
-import net.mehdinoui.ramadandelight.common.worldgen.ModVillageStructures;
-import net.mehdinoui.ramadandelight.common.worldgen.tree.ModFoliagePlacer;
-import net.mehdinoui.ramadandelight.common.worldgen.tree.ModTrunkPlacer;
+import net.mehdinoui.ramadandelight.common.world.ModVillageStructures;
+import net.mehdinoui.ramadandelight.common.world.tree.ModFoliagePlacer;
+import net.mehdinoui.ramadandelight.common.world.tree.ModTrunkPlacer;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.ModLoadingContext;
@@ -20,13 +20,14 @@ public class RamadanDelight {
         ModCreativeTab.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
-        ModSounds.register(modEventBus);
+        ModSoundEvents.register(modEventBus);
         ModEntities.register(modEventBus);
+        ModPlacementModifiers.register(modEventBus);
 
         ModTrunkPlacer.register(modEventBus);
         ModFoliagePlacer.register(modEventBus);
 
-        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, Configuration.CONFIG);
+        ModLoadingContext.get().registerConfig(ModConfig.Type.COMMON, ModConfiguration.CONFIG);
 
         MinecraftForge.EVENT_BUS.addListener(ModVillageStructures::addNewVillageBuilding);
         MinecraftForge.EVENT_BUS.register(this);
