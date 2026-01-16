@@ -1,9 +1,9 @@
 package net.mehdinoui.ramadandelight.data;
 
 import net.mehdinoui.ramadandelight.RamadanDelight;
-import net.mehdinoui.ramadandelight.common.worldgen.ModBiomeModifiers;
-import net.mehdinoui.ramadandelight.common.worldgen.ModConfiguredFeatures;
-import net.mehdinoui.ramadandelight.common.worldgen.ModPlacedFeatures;
+import net.mehdinoui.ramadandelight.common.registry.ModBiomeModifiers;
+import net.mehdinoui.ramadandelight.common.registry.ModConfiguredFeatures;
+import net.mehdinoui.ramadandelight.common.registry.ModPlacedFeatures;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.core.RegistrySetBuilder;
 import net.minecraft.core.registries.Registries;

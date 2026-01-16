@@ -1,4 +1,4 @@
-package net.mehdinoui.ramadandelight.common.worldgen;
+package net.mehdinoui.ramadandelight.common.registry;
 
 import net.mehdinoui.ramadandelight.RamadanDelight;
 import net.minecraft.core.HolderSet;

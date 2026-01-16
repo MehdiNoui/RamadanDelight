@@ -1,7 +1,6 @@
-package net.mehdinoui.ramadandelight.common.worldgen;
+package net.mehdinoui.ramadandelight.common.registry;
 
 import net.mehdinoui.ramadandelight.RamadanDelight;
-import net.mehdinoui.ramadandelight.common.registry.ModBlocks;
 import net.minecraft.core.Holder;
 import net.minecraft.core.HolderGetter;
 import net.minecraft.core.registries.Registries;
