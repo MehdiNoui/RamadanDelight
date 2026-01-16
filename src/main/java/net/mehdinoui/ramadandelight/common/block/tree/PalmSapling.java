@@ -1,5 +1,6 @@
 package net.mehdinoui.ramadandelight.common.block.tree;
 
+import net.mehdinoui.ramadandelight.common.tag.RDForgeTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Blocks;
@@ -14,6 +15,6 @@ public class PalmSapling extends SaplingBlock {
 
     @Override
     protected boolean mayPlaceOn(BlockState pState, BlockGetter pLevel, BlockPos pPos) {
-        return pState.is(Blocks.SAND);
+        return pState.is(RDForgeTags.PALM_PLACEABLE_ON);
     }
 }
