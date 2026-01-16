@@ -5,6 +5,7 @@ import net.minecraft.core.Direction;
 import net.minecraft.world.item.context.BlockPlaceContext;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.LevelAccessor;
+import net.minecraft.world.level.LevelReader;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SimpleWaterloggedBlock;
@@ -82,17 +83,31 @@ public class FanousLantern extends Block implements SimpleWaterloggedBlock {
         }
         return null;
     }
+
+    @Override
+    public boolean canSurvive(BlockState state, LevelReader level, BlockPos pos) {
+        Direction direction = state.getValue(HANGING) ? Direction.UP : Direction.DOWN;
+        BlockPos supportPos = pos.relative(direction);
+        BlockState supportState = level.getBlockState(supportPos);
+
+        if (state.getValue(HANGING)) {
+            return Block.canSupportCenter(level, supportPos, Direction.DOWN) || supportState.is(Blocks.CHAIN);
+        } else {
+            return Block.canSupportCenter(level, supportPos, Direction.UP);
+        }
+    }
+
     @Override
     public BlockState updateShape(BlockState state, Direction facing, BlockState facingState, LevelAccessor level, BlockPos pos, BlockPos facingPos) {
         if (state.getValue(WATERLOGGED)) {
             level.scheduleTick(pos, Fluids.WATER, Fluids.WATER.getTickDelay(level));
         }
+
         Direction requiredSupport = state.getValue(HANGING) ? Direction.UP : Direction.DOWN;
-        if (facing == requiredSupport) {
-            if (!facingState.isFaceSturdy(level, facingPos, requiredSupport.getOpposite())) {
-                return Blocks.AIR.defaultBlockState();
-            }
+        if (facing == requiredSupport && !state.canSurvive(level, pos)) {
+            return Blocks.AIR.defaultBlockState();
         }
+
         return super.updateShape(state, facing, facingState, level, pos, facingPos);
     }
 
