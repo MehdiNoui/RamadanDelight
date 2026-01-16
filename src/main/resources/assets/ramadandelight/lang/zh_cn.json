@@ -86,5 +86,7 @@
     "block.ramadandelight.dates_branch": "枣椰树枝",
 
     "entity.ramadandelight.mod_chest_boat": "Boat With Chest",
+    "tooltip.ramadandelight.date_syrup_desc": "Removes all status effects",
+
     "sounds.ramadandelight.beat": "鼓点"
   }
