@@ -1,0 +1,28 @@
+{
+  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "veggiesdelight"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "item": "veggiesdelight:roasted_zucchini"
+    },
+    {
+      "item": "veggiesdelight:roasted_zucchini"
+    },
+    {
+      "item": "veggiesdelight:roasted_zucchini"
+    },
+    {
+      "item": "ramadandelight:savory_filling"
+    }
+  ],
+  "result": {
+    "id": "veggiesdelight:stuffed_zucchini_boat",
+    "count": 3
+  }
+}

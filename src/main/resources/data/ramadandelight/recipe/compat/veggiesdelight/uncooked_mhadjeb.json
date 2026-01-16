@@ -1,0 +1,22 @@
+{
+  "conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "veggiesdelight"
+    }
+  ],
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+    {
+      "tag": "c:foods/dough"
+    },
+    {
+      "item": "ramadandelight:savory_filling"
+    }
+  ],
+  "result": {
+    "count": 2,
+    "id": "veggiesdelight:uncooked_mhadjeb"
+  }
+}
