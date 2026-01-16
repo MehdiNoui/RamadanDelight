@@ -1,0 +1,30 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:cloche",
+  "input": {
+    "item": "ramadandelight:parsley"
+  },
+  "render": {
+    "type": "crop",
+    "block": "ramadandelight:parsley_crop"
+  },
+  "results": [
+    {
+      "id": "ramadandelight:parsley",
+      "count": 1
+    },
+    {
+      "id": "ramadandelight:parsley_seeds",
+      "count": 2
+    }
+  ],
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 800
+}

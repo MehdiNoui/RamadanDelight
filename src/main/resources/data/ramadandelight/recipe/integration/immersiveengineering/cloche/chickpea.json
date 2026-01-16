@@ -1,0 +1,26 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "immersiveengineering"
+    }
+  ],
+  "type": "immersiveengineering:cloche",
+  "input": {
+    "item": "ramadandelight:chickpea"
+  },
+  "render": {
+    "type": "crop",
+    "block": "ramadandelight:chickpea_crop"
+  },
+  "results": [
+    {
+      "id": "ramadandelight:chickpea",
+      "count": 2
+    }
+  ],
+  "soil": {
+    "item": "minecraft:dirt"
+  },
+  "time": 800
+}

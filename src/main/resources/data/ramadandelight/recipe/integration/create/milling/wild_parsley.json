@@ -1,0 +1,25 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "ramadandelight:wild_parsley"
+    }
+  ],
+  "results": [
+    {
+      "id": "ramadandelight:parsley_seeds",
+      "count": 1
+    },
+    {
+      "id": "minecraft:light_gray_dye",
+      "count": 1
+    }
+  ],
+  "processingTime": 50
+}

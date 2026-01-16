@@ -1,0 +1,21 @@
+{
+  "neoforge:conditions": [
+    {
+      "type": "neoforge:mod_loaded",
+      "modid": "create"
+    }
+  ],
+  "type": "create:milling",
+  "ingredients": [
+    {
+      "item": "ramadandelight:wild_chickpea"
+    }
+  ],
+  "results": [
+    {
+      "id": "ramadandelight:chickpea",
+      "count": 2
+    }
+  ],
+  "processingTime": 50
+}
