@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
   "biomes": "#forge:is_desert",
-  "features": "ramadandelight:palm_placed",
+  "features": "ramadandelight:date_palm_tree",
   "step": "vegetal_decoration"
 }

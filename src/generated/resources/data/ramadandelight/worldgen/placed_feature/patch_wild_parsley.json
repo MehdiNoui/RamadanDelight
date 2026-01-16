@@ -2,8 +2,8 @@
   "feature": "ramadandelight:patch_wild_parsley",
   "placement": [
     {
-      "type": "minecraft:rarity_filter",
-      "chance": 130
+      "type": "ramadandelight:configurable_rarity_filter",
+      "config_key": "wild_parsley"
     },
     {
       "type": "minecraft:in_square"
@@ -14,10 +14,6 @@
     },
     {
       "type": "minecraft:biome"
-    },
-    {
-      "type": "farmersdelight:biome_tag",
-      "tag": "minecraft:is_overworld"
     }
   ]
 }
