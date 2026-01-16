@@ -126,13 +126,11 @@ public class BlockTags extends BlockTagsProvider {
                 ModBlocks.PALM_HANGING_SIGN.get(),
                 ModBlocks.PALM_WALL_HANGING_SIGN.get()
         );
-        tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE).add(
-                ModBlocks.FANOUS.get(),
-                ModBlocks.COPPER_FANOUS.get(),
-                ModBlocks.REDSTONE_FANOUS.get(),
-                ModBlocks.SOUL_FANOUS.get(),
-                ModBlocks.MOSAIC_TILES.get()
-        );
+        tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.MOSAIC_TILES.get())
+                .addTag(RDCommonTags.FANOUS_BLOCKS)
+                .addTag(RDCommonTags.STAINED_GLASS_BLOCKS)
+                .addTag(RDCommonTags.STAINED_GLASS_PANES_BLOCKS);
         tag(net.minecraft.tags.BlockTags.MINEABLE_WITH_HOE).add(
                 ModBlocks.DATES_BRANCH.get(),
                 ModBlocks.PALM_LEAVES.get()

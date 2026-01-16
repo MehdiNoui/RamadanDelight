@@ -45,7 +45,7 @@ public class RDCommonTags {
     public static final TagKey<Item> PALM_LOGS_ITEM = rdItemTag("palm_logs");
 
 
-    // ------ Forge Tags ------
+    // ------ Common Tags ------
     // -- Blocks --
     // Storage Blocks
     public static final TagKey<Block> STORAGE_BLOCKS_CHICKPEA = commonBlockTag("storage_blocks/chickpea");
@@ -66,6 +66,4 @@ public class RDCommonTags {
     public static final TagKey<Item> STORAGE_BLOCKS_ITEM_PARSLEY = commonItemTag("storage_blocks/parsley");
     // Tortilla
     public static final TagKey<Item> TORTILLA = commonItemTag("foods/tortilla");
-    // Vegetables
-    public static final TagKey<Item> VEGETABLES_PARSLEY= commonItemTag("vegetables/parsley");
 }
