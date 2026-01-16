@@ -17,7 +17,7 @@ import net.mehdinoui.ramadandelight.common.block.signs.PalmWallSignBlock;
 import net.mehdinoui.ramadandelight.common.block.tree.PalmSapling;
 import net.mehdinoui.ramadandelight.common.block.tree.WoodBlock;
 import net.mehdinoui.ramadandelight.common.util.RDWoodTypes;
-import net.mehdinoui.ramadandelight.common.worldgen.tree.PalmTreeGrower;
+import net.mehdinoui.ramadandelight.common.world.tree.PalmTreeGrower;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
 import net.minecraft.sounds.SoundEvents;
