@@ -30,7 +30,7 @@ public class ModCuttingRecipes {
 
         CuttingBoardRecipeBuilder.cuttingRecipe(
                         Ingredient.of(ModItems.WILD_PARSLEY.get()),
-                        Ingredient.of(CommonTags.TOOLS_KNIFE), ModItems.PARSLEY_SEEDS.get(), 1)
+                        Ingredient.of(CommonTags.TOOLS_KNIFE), ModItems.PARSLEY.get(), 1)
                         .addResult(ModItems.PARSLEY_SEEDS.get(), 1)
                         .addResultWithChance(Items.LIGHT_GRAY_DYE, 0.5F)
                 .build(consumer, ResourceLocation.fromNamespaceAndPath(RamadanDelight.MOD_ID, "cutting/wild_parsley"));
