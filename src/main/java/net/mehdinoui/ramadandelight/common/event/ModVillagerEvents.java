@@ -1,6 +1,6 @@
 package net.mehdinoui.ramadandelight.common.event;
 
-import net.mehdinoui.ramadandelight.Configuration;
+import net.mehdinoui.ramadandelight.ModConfiguration;
 import net.mehdinoui.ramadandelight.RamadanDelight;
 import net.mehdinoui.ramadandelight.common.registry.ModItems;
 import net.minecraft.world.entity.npc.VillagerProfession;
@@ -20,8 +20,8 @@ import java.util.List;
 public class ModVillagerEvents {
     @SubscribeEvent
     public static void onVillagerTrades(VillagerTradesEvent event) {
-        if (Configuration.ENABLE_VILLAGER_TRADES.get()) {
-            if (Configuration.ENABLE_FARMER_VILLAGER_TRADES.get() && event.getType() == VillagerProfession.FARMER) {
+        if (ModConfiguration.ENABLE_VILLAGER_TRADES.get()) {
+            if (ModConfiguration.ENABLE_FARMER_VILLAGER_TRADES.get() && event.getType() == VillagerProfession.FARMER) {
                 List<VillagerTrades.ItemListing> level1Trades = event.getTrades().get(1);
                 List<VillagerTrades.ItemListing> level2Trades = event.getTrades().get(2);
                 List<VillagerTrades.ItemListing> level3Trades = event.getTrades().get(3);
@@ -69,7 +69,7 @@ public class ModVillagerEvents {
                         0.05f // Price multiplier
                 ));
             }
-            if (Configuration.ENABLE_MASON_VILLAGER_TRADES.get() && event.getType() == VillagerProfession.MASON) {
+            if (ModConfiguration.ENABLE_MASON_VILLAGER_TRADES.get() && event.getType() == VillagerProfession.MASON) {
                 List<VillagerTrades.ItemListing> level4Trades = event.getTrades().get(4);
                 level4Trades.add((entity, random) -> new MerchantOffer(
                         new ItemStack(Items.EMERALD, 1),
@@ -83,7 +83,7 @@ public class ModVillagerEvents {
     }
     @SubscribeEvent
     public static void onWandererTrades(WandererTradesEvent event) {
-        if (Configuration.ENABLE_WANDERING_TRADER_SELLS.get()) {
+        if (ModConfiguration.ENABLE_WANDERING_TRADER_SELLS.get()) {
             List<VillagerTrades.ItemListing> trades = event.getGenericTrades();
             trades.add(new BasicItemListing(5, new ItemStack(ModItems.PALM_SAPLING.get()), 1, 1, 0.05f));
             trades.add(new BasicItemListing(5, new ItemStack(ModItems.DATES_BRANCH.get()), 1, 1, 0.05f));
