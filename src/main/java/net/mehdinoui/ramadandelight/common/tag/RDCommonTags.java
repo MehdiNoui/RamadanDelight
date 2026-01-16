@@ -31,6 +31,8 @@ public class RDCommonTags {
     public static final TagKey<Block> STAINED_GLASS_PANES_BLOCKS = rdBlockTag("stained_glass_panes");
     // Palm Logs
     public static final TagKey<Block> PALM_LOGS = rdBlockTag("palm_logs");
+    // Palm Tree Placeable On
+    public static final TagKey<Block> PALM_PLACEABLE_ON = rdBlockTag("palm_placeable_on");
 
     // -- Items --
     // Fanous

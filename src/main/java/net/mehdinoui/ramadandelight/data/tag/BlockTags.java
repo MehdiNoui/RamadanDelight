@@ -188,5 +188,8 @@ public class BlockTags extends BlockTagsProvider {
                 ModBlocks.STRIPPED_PALM_LOG.get(),
                 ModBlocks.STRIPPED_PALM_WOOD.get()
         );
+        tag(RDCommonTags.PALM_PLACEABLE_ON)
+                .addTag(Tags.Blocks.SANDS)
+                .addTag(net.minecraft.tags.BlockTags.DIRT);
     }
 }

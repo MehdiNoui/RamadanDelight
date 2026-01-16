@@ -1,8 +1,8 @@
 package net.mehdinoui.ramadandelight.common.block.tree;
 
+import net.mehdinoui.ramadandelight.common.tag.RDCommonTags;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.BlockGetter;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SaplingBlock;
 import net.minecraft.world.level.block.grower.TreeGrower;
 import net.minecraft.world.level.block.state.BlockState;
@@ -14,6 +14,6 @@ public class PalmSapling extends SaplingBlock {
 
     @Override
     protected boolean mayPlaceOn(BlockState pState, BlockGetter pLevel, BlockPos pPos) {
-        return pState.is(Blocks.SAND);
+        return pState.is(RDCommonTags.PALM_PLACEABLE_ON);
     }
 }
