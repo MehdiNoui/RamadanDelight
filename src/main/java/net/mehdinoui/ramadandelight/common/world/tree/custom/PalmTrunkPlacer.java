@@ -36,7 +36,6 @@ public class PalmTrunkPlacer extends TrunkPlacer {
                                                             BlockPos pPos, TreeConfiguration pConfig) {
 
         int height = getTreeHeight(pRandom);
-        setDirtAt(pLevel, pBlockSetter, pRandom, pPos.below(), pConfig);
 
         for (int i = 0; i < height; i++) {
             placeLog(pLevel, pBlockSetter, pRandom, pPos.above(i), pConfig);
