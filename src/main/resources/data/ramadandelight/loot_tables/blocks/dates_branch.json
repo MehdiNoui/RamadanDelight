@@ -2,53 +2,85 @@
   "type": "minecraft:block",
   "pools": [
     {
-      "bonus_rolls": 0.0,
+      "name": "harvest_pool",
+      "rolls": 1,
       "conditions": [
         {
-          "condition": "minecraft:all_of",
-          "terms": [
+          "condition": "minecraft:block_state_property",
+          "block": "ramadandelight:dates_branch",
+          "properties": {
+            "age": "3"
+          }
+        }
+      ],
+      "entries": [
+        {
+          "type": "minecraft:alternatives",
+          "children": [
             {
-              "condition": "minecraft:block_state_property",
-              "block": "ramadandelight:dates_branch",
-              "properties": {
-                "age": "3"
-              }
+              "type": "minecraft:item",
+              "name": "ramadandelight:cluster_of_dates",
+              "conditions": [
+                {
+                  "condition": "minecraft:any_of",
+                  "terms": [
+                    {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                        "items": [
+                          "minecraft:shears"
+                        ]
+                      }
+                    },
+                    {
+                      "condition": "minecraft:match_tool",
+                      "predicate": {
+                        "enchantments": [
+                          {
+                            "enchantment": "minecraft:silk_touch",
+                            "levels": {
+                              "min": 1
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                }
+              ]
             },
             {
-              "condition": "minecraft:any_of",
-              "terms": [
+              "type": "minecraft:item",
+              "name": "ramadandelight:date",
+              "functions": [
                 {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "items": ["minecraft:shears"]
+                  "function": "minecraft:set_count",
+                  "count": {
+                    "type": "minecraft:uniform",
+                    "min": 4.0,
+                    "max": 6.0
                   }
                 },
                 {
-                  "condition": "minecraft:match_tool",
-                  "predicate": {
-                    "enchantments": [
-                      {
-                        "enchantment": "minecraft:silk_touch",
-                        "levels": { "min": 1 }
-                      }
-                    ]
+                  "function": "minecraft:apply_bonus",
+                  "enchantment": "minecraft:fortune",
+                  "formula": "minecraft:uniform_bonus_count",
+                  "parameters": {
+                    "bonusMultiplier": 1
                   }
+                },
+                {
+                  "function": "minecraft:explosion_decay"
                 }
               ]
             }
           ]
         }
-      ],
-      "entries": [
-        {
-          "type": "minecraft:item",
-          "name": "ramadandelight:cluster_of_dates"
-        }
-      ],
-      "rolls": 1.0
+      ]
     },
     {
-      "bonus_rolls": 0.0,
+      "name": "immature_dates",
+      "rolls": 1,
       "conditions": [
         {
           "condition": "minecraft:block_state_property",
@@ -61,35 +93,75 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "ramadandelight:date"
+          "name": "ramadandelight:date",
+          "functions": [
+            {
+              "function": "minecraft:set_count",
+              "count": {
+                "type": "minecraft:uniform",
+                "min": 0.0,
+                "max": 2.0
+              }
+            },
+            {
+              "function": "minecraft:explosion_decay"
+            }
+          ]
         }
-      ],
-      "rolls": {
-        "min": 0,
-        "max": 2
-      }
+      ]
     },
     {
-      "bonus_rolls": 0.0,
-      "conditions": [
-        {
-          "condition": "minecraft:block_state_property",
-          "block": "ramadandelight:dates_branch",
-          "properties": {
-            "age": "3"
-          }
-        }
-      ],
+      "name": "guaranteed_branch",
+      "rolls": 1,
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "ramadandelight:date"
+          "name": "ramadandelight:dates_branch",
+          "conditions": [
+            {
+              "condition": "minecraft:inverted",
+              "term": {
+                "condition": "minecraft:all_of",
+                "terms": [
+                  {
+                    "condition": "minecraft:block_state_property",
+                    "block": "ramadandelight:dates_branch",
+                    "properties": {
+                      "age": "3"
+                    }
+                  },
+                  {
+                    "condition": "minecraft:any_of",
+                    "terms": [
+                      {
+                        "condition": "minecraft:match_tool",
+                        "predicate": {
+                          "items": [
+                            "minecraft:shears"
+                          ]
+                        }
+                      },
+                      {
+                        "condition": "minecraft:match_tool",
+                        "predicate": {
+                          "enchantments": [
+                            {
+                              "enchantment": "minecraft:silk_touch",
+                              "levels": {
+                                "min": 1
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            }
+          ]
         }
-      ],
-      "rolls": {
-        "min": 4,
-        "max": 6
-      }
+      ]
     }
   ],
   "random_sequence": "ramadandelight:blocks/dates_branch"
