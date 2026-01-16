@@ -13,6 +13,12 @@
       }
     },
     {
+      "item": {
+        "count": 1,
+        "id": "ramadandelight:parsley_seeds"
+      }
+    },
+    {
       "chance": 0.5,
       "item": {
         "count": 1,
