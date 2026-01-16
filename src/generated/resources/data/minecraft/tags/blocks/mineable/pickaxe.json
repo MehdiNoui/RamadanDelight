@@ -1,9 +1,8 @@
 {
   "values": [
-    "ramadandelight:fanous",
-    "ramadandelight:copper_fanous",
-    "ramadandelight:redstone_fanous",
-    "ramadandelight:soul_fanous",
-    "ramadandelight:mosaic_tiles"
+    "ramadandelight:mosaic_tiles",
+    "#ramadandelight:fanous",
+    "#ramadandelight:stained_glass_blocks",
+    "#ramadandelight:stained_glass_panes"
   ]
 }

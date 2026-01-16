@@ -6,6 +6,7 @@ import net.mehdinoui.ramadandelight.common.tag.RDForgeTags;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.tags.BlockTags;
+import net.minecraft.tags.ItemTags;
 import net.minecraftforge.common.Tags;
 import net.minecraftforge.common.data.BlockTagsProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -33,16 +34,19 @@ public class ModBlockTags extends BlockTagsProvider {
         tag(RDForgeTags.STORAGE_BLOCKS_CHICKPEA).add(ModBlocks.CHICKPEA_BAG.get());
         tag(RDForgeTags.STORAGE_BLOCKS_DATE).add(ModBlocks.DATE_CRATE.get());
         tag(RDForgeTags.STORAGE_BLOCKS_PARSLEY).add(ModBlocks.PARSLEY_BAG.get());
+
         // Glass Blocks
         tag(Tags.Blocks.GLASS_COLORLESS).add(ModBlocks.STAINED_GLASS_BLOCK.get());
         tag(Tags.Blocks.GLASS_BLUE).add(ModBlocks.BLUE_STAINED_GLASS_BLOCK.get());
         tag(Tags.Blocks.GLASS_GREEN).add(ModBlocks.GREEN_STAINED_GLASS_BLOCK.get());
         tag(Tags.Blocks.GLASS_ORANGE).add(ModBlocks.ORANGE_STAINED_GLASS_BLOCK.get());
+
         // Glass Panes
         tag(Tags.Blocks.GLASS_PANES_COLORLESS).add(ModBlocks.STAINED_GLASS_PANE.get());
         tag(Tags.Blocks.GLASS_PANES_BLUE).add(ModBlocks.BLUE_STAINED_GLASS_PANE.get());
         tag(Tags.Blocks.GLASS_PANES_GREEN).add(ModBlocks.GREEN_STAINED_GLASS_PANE.get());
         tag(Tags.Blocks.GLASS_PANES_ORANGE).add(ModBlocks.ORANGE_STAINED_GLASS_PANE.get());
+
         // Stained Glasses
         tag(Tags.Blocks.STAINED_GLASS).add(
                 ModBlocks.BLUE_STAINED_GLASS_BLOCK.get(),
@@ -54,6 +58,7 @@ public class ModBlockTags extends BlockTagsProvider {
                 ModBlocks.GREEN_STAINED_GLASS_PANE.get(),
                 ModBlocks.ORANGE_STAINED_GLASS_PANE.get()
         );
+
         // General silica-based glass grouping
         tag(Tags.Blocks.GLASS_SILICA).add(
                 ModBlocks.STAINED_GLASS_BLOCK.get(),
@@ -61,6 +66,7 @@ public class ModBlockTags extends BlockTagsProvider {
                 ModBlocks.GREEN_STAINED_GLASS_BLOCK.get(),
                 ModBlocks.ORANGE_STAINED_GLASS_BLOCK.get()
         );
+
         // Wooden Fences & Gates
         tag(Tags.Blocks.FENCES_WOODEN).add(ModBlocks.PALM_FENCE.get());
         tag(Tags.Blocks.FENCE_GATES_WOODEN).add(ModBlocks.PALM_FENCE_GATE.get());
@@ -68,9 +74,12 @@ public class ModBlockTags extends BlockTagsProvider {
     }
     protected void registerMinecraftTags() {
         // Logs & Leaves
-        tag(BlockTags.LOGS).add(ModBlocks.PALM_LOG.get());
-        tag(BlockTags.LOGS_THAT_BURN).add(ModBlocks.PALM_LOG.get());
+        tag(BlockTags.LOGS).addTag(RDForgeTags.PALM_LOGS);
+        tag(BlockTags.LOGS_THAT_BURN).addTag(RDForgeTags.PALM_LOGS);
         tag(BlockTags.LEAVES).add(ModBlocks.PALM_LEAVES.get());
+        tag(BlockTags.OVERWORLD_NATURAL_LOGS).add(ModBlocks.PALM_LOG.get());
+        tag(BlockTags.SNAPS_GOAT_HORN).addTag(RDForgeTags.PALM_LOGS);
+
         // Crops
         tag(BlockTags.CROPS).add(
                 ModBlocks.CHICKPEA_CROP.get(),
@@ -80,6 +89,14 @@ public class ModBlockTags extends BlockTagsProvider {
                 ModBlocks.CHICKPEA_CROP.get(),
                 ModBlocks.PARSLEY_CROP.get()
         );
+
+        // Signs
+        tag(BlockTags.SIGNS).add(ModBlocks.PALM_SIGN.get());
+        tag(BlockTags.STANDING_SIGNS).add(ModBlocks.PALM_SIGN.get());
+        tag(BlockTags.WALL_SIGNS).add(ModBlocks.PALM_WALL_SIGN.get());
+        tag(BlockTags.CEILING_HANGING_SIGNS).add(ModBlocks.PALM_HANGING_SIGN.get());
+        tag(BlockTags.WALL_HANGING_SIGNS).add(ModBlocks.PALM_WALL_HANGING_SIGN.get());
+
         // Palm Wood
         tag(BlockTags.PLANKS).add(ModBlocks.PALM_PLANKS.get());
         tag(BlockTags.WOODEN_STAIRS).add(ModBlocks.PALM_STAIRS.get());
@@ -90,12 +107,14 @@ public class ModBlockTags extends BlockTagsProvider {
         tag(BlockTags.WOODEN_TRAPDOORS).add(ModBlocks.PALM_TRAPDOOR.get());
         tag(BlockTags.WOODEN_BUTTONS).add(ModBlocks.PALM_BUTTON.get());
         tag(BlockTags.WOODEN_PRESSURE_PLATES).add(ModBlocks.PALM_PRESSURE_PLATE.get());
+
         // Miscellaneous
         tag(BlockTags.SAPLINGS).add(ModBlocks.PALM_SAPLING.get());
         tag(BlockTags.SMALL_FLOWERS).add(
                 ModBlocks.WILD_CHICKPEA.get(),
                 ModBlocks.WILD_PARSLEY.get()
         );
+
         // Mineable tags
         tag(BlockTags.MINEABLE_WITH_AXE).add(
                 ModBlocks.DATE_CRATE.get(),
@@ -118,20 +137,20 @@ public class ModBlockTags extends BlockTagsProvider {
                 ModBlocks.PALM_HANGING_SIGN.get(),
                 ModBlocks.PALM_WALL_HANGING_SIGN.get()
         );
-        tag(BlockTags.MINEABLE_WITH_PICKAXE).add(
-                ModBlocks.FANOUS.get(),
-                ModBlocks.COPPER_FANOUS.get(),
-                ModBlocks.REDSTONE_FANOUS.get(),
-                ModBlocks.SOUL_FANOUS.get(),
-                ModBlocks.MOSAIC_TILES.get()
-        );
+        tag(BlockTags.MINEABLE_WITH_PICKAXE)
+                .add(ModBlocks.MOSAIC_TILES.get())
+                .addTag(RDForgeTags.FANOUS_BLOCKS)
+                .addTag(RDForgeTags.STAINED_GLASS_BLOCKS)
+                .addTag(RDForgeTags.STAINED_GLASS_PANES_BLOCKS);
         tag(BlockTags.MINEABLE_WITH_HOE).add(
                 ModBlocks.DATES_BRANCH.get(),
                 ModBlocks.PALM_LEAVES.get()
         );
+
         // Repellents
         tag(BlockTags.PIGLIN_REPELLENTS).add(ModBlocks.SOUL_FANOUS.get());
         tag(BlockTags.HOGLIN_REPELLENTS).add(ModBlocks.SOUL_FANOUS.get());
+
         // Tool level
         tag(BlockTags.NEEDS_STONE_TOOL).add(
                 ModBlocks.FANOUS.get(),
