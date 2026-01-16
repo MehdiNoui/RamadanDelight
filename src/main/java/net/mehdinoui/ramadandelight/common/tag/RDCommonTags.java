@@ -65,7 +65,7 @@ public class RDCommonTags {
     public static final TagKey<Item> STORAGE_BLOCKS_ITEM_DATE = commonItemTag("storage_blocks/date");
     public static final TagKey<Item> STORAGE_BLOCKS_ITEM_PARSLEY = commonItemTag("storage_blocks/parsley");
     // Tortilla
-    public static final TagKey<Item> TORTILLA = commonItemTag("tortilla");
+    public static final TagKey<Item> TORTILLA = commonItemTag("foods/tortilla");
     // Vegetables
     public static final TagKey<Item> VEGETABLES_PARSLEY= commonItemTag("vegetables/parsley");
 }
